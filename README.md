@@ -2,15 +2,21 @@
 
 ## Table of Contents
 
-- [About](#about)
-- [How does it work?](#how-does-it-work)
-- [History](#history)
+- [Retro PC](#retro-pc)
+  - [Table of Contents](#table-of-contents)
+  - [About](#about)
+  - [Schematic](#schematic)
+  - [History](#history)
  
 ### About
 
 A simple W650C02 microprocessor based computer development board to learn the basics of modern computer systems.
 
 Please write an e-mail to [DanielKampert@kampis-elektroecke.de](DanielKampert@kampis-elektroecke.de) if you have any questions.
+
+## Schematic
+
+![Schematic](Schematic.png "Schematic")
 
 ## History
 

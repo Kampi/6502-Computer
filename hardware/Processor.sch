@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 2 5
+Sheet 2 6
 Title "Retro PC"
 Date "2019-10-08"
 Rev "1.0"
@@ -1094,7 +1094,7 @@ Wire Bus Line
 	2750 7100 5750 7100
 Connection ~ 5750 7100
 Wire Bus Line
-	7350 7000 10000 7000
+	7350 7000 7900 7000
 Wire Bus Line
 	4800 7000 7350 7000
 Connection ~ 7350 7000
@@ -1399,9 +1399,6 @@ Wire Wire Line
 	10100 7250 11450 7250
 Wire Wire Line
 	11450 7100 10250 7100
-Wire Bus Line
-	5750 7100 7900 7100
-Connection ~ 7900 7100
 Entry Wire Line
 	10250 7000 10150 6900
 Wire Wire Line
@@ -1418,8 +1415,6 @@ Wire Wire Line
 	10100 7850 11450 7850
 Wire Wire Line
 	10100 7950 11450 7950
-Wire Bus Line
-	7900 7100 10150 7100
 Entry Wire Line
 	10100 7350 10000 7250
 Entry Wire Line
@@ -1680,101 +1675,16 @@ Text HLabel 4600 5100 2    50   Output ~ 0
 VPB
 Text HLabel 4400 5300 2    50   Input ~ 0
 BE
-$Comp
-L Device:D_Schottky D8
-U 1 1 5E087BEB
-P 2000 4400
-F 0 "D8" H 2000 4616 50  0000 C CNN
-F 1 "SD103A" H 2000 4525 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2000 4400 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/85754/sd103a.pdf" H 2000 4400 50  0001 C CNN
-F 4 "Vishay Semiconductors" H 2000 4400 50  0001 C CNN "Mfr."
-F 5 "SD103A-TR" H 2000 4400 50  0001 C CNN "Mfr. No."
-F 6 "625-SD103A" H 2000 4400 50  0001 C CNN "Mouser"
-	1    2000 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Schottky D9
-U 1 1 5E0A358A
-P 2000 4700
-F 0 "D9" H 2000 4916 50  0000 C CNN
-F 1 "SD103A" H 2000 4825 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2000 4700 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/85754/sd103a.pdf" H 2000 4700 50  0001 C CNN
-F 4 "Vishay Semiconductors" H 2000 4700 50  0001 C CNN "Mfr."
-F 5 "SD103A-TR" H 2000 4700 50  0001 C CNN "Mfr. No."
-F 6 "625-SD103A" H 2000 4700 50  0001 C CNN "Mouser"
-	1    2000 4700
-	1    0    0    -1  
-$EndComp
-Text HLabel 1700 4700 0    50   Input ~ 0
-~IRQ
-$Comp
-L Device:R R?
-U 1 1 5E0EA165
-P 2400 4000
-AR Path="/5E0EA165" Ref="R?"  Part="1" 
-AR Path="/5EB09E21/5E0EA165" Ref="R1"  Part="1" 
-F 0 "R1" H 2470 4046 50  0000 L CNN
-F 1 "10k" H 2470 3955 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2330 4000 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/427/sfr16s25-239894.pdf" H 2400 4000 50  0001 C CNN
-F 4 "Vishay / BC Components" H 2400 4000 50  0001 C CNN "Mfr."
-F 5 "SFR25H0001002JR500" H 2400 4000 50  0001 C CNN "Mfr. No."
-F 6 "594-SFR25H0001002JR5" H 2400 4000 50  0001 C CNN "Mouser"
-	1    2400 4000
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5E0EA16C
-P 2400 3750
-AR Path="/5E0EA16C" Ref="#PWR?"  Part="1" 
-AR Path="/5EB09E21/5E0EA16C" Ref="#PWR03"  Part="1" 
-F 0 "#PWR03" H 2400 3600 50  0001 C CNN
-F 1 "+5V" H 2415 3923 50  0000 C CNN
-F 2 "" H 2400 3750 50  0001 C CNN
-F 3 "" H 2400 3750 50  0001 C CNN
-	1    2400 3750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2400 3750 2400 3850
-Wire Wire Line
-	2150 4700 2400 4700
-Wire Wire Line
-	2400 4150 2400 4400
-Connection ~ 2400 4700
-Wire Wire Line
-	2400 4700 3250 4700
-Wire Wire Line
-	2150 4400 2400 4400
-Connection ~ 2400 4400
-Wire Wire Line
-	2400 4400 2400 4700
-Wire Wire Line
-	1700 4400 1850 4400
-Text Label 1700 4400 2    50   ~ 0
-~IRQ_VIA_1
 Text Label 10950 2250 2    50   ~ 0
 ~IRQ_VIA_1
 Text Label 11250 6400 2    50   ~ 0
 ~IRQ_ACIA
 Wire Wire Line
 	11250 6400 11450 6400
-Wire Wire Line
-	2400 4700 2400 5000
-Wire Wire Line
-	2400 5000 1700 5000
-Wire Wire Line
-	1700 4700 1850 4700
-Text Label 1700 5000 2    50   ~ 0
-~IRQ_ACIA
 Text Label 4350 9700 0    50   ~ 0
 ~CS_VIA_1
 $Comp
-L 74xx:74HC138 IC3
+L Retro-PC-rescue:74HC138-74xx-Retro-PC-rescue IC3
 U 1 1 5DA01AB5
 P 3750 10000
 AR Path="/5DA01AB5" Ref="IC3"  Part="1" 
@@ -1877,7 +1787,6 @@ Wire Wire Line
 	4250 9700 4350 9700
 Wire Wire Line
 	4350 9900 4250 9900
-NoConn ~ 4250 9800
 NoConn ~ 4250 10000
 NoConn ~ 4250 10100
 NoConn ~ 4250 10200
@@ -1885,6 +1794,281 @@ NoConn ~ 4250 10300
 NoConn ~ 4250 10400
 Wire Wire Line
 	4350 4800 4950 4800
+$Comp
+L Western_Design_Center:W65C22 IC10
+U 1 1 5DA8CE2C
+P 8700 2650
+F 0 "IC10" H 8250 3850 50  0000 C CNN
+F 1 "W65C22" H 8350 1450 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm_LongPads" H 8700 2650 50  0001 C CNN
+F 3 "https://www.westerndesigncenter.com/wdc/documentation/w65c22s.pdf" H 8700 2650 50  0001 C CNN
+	1    8700 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 750  8700 850 
+Wire Wire Line
+	9050 900  9050 850 
+Wire Wire Line
+	9050 1200 9050 1250
+Wire Wire Line
+	8700 850  8700 1400
+Connection ~ 8700 850 
+Wire Wire Line
+	8700 850  9050 850 
+$Comp
+L power:GND #PWR?
+U 1 1 5DA90421
+P 9050 1250
+AR Path="/5DA90421" Ref="#PWR?"  Part="1" 
+AR Path="/5EB09E21/5DA90421" Ref="#PWR063"  Part="1" 
+F 0 "#PWR063" H 9050 1000 50  0001 C CNN
+F 1 "GND" H 9055 1077 50  0000 C CNN
+F 2 "" H 9050 1250 50  0001 C CNN
+F 3 "" H 9050 1250 50  0001 C CNN
+	1    9050 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DA9042A
+P 9050 1050
+AR Path="/5DA9042A" Ref="C?"  Part="1" 
+AR Path="/5EB09E21/5DA9042A" Ref="C18"  Part="1" 
+F 0 "C18" H 9165 1096 50  0000 L CNN
+F 1 "100nF" H 9165 1005 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm" H 9088 900 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/400/eadmlcc_halogenfree_fa150_en-890480.pdf" H 9050 1050 50  0001 C CNN
+F 4 "TDK" H 9050 1050 50  0001 C CNN "Mfr."
+F 5 "FA18X8R1H104KRU06" H 9050 1050 50  0001 C CNN "Mfr. No."
+F 6 "810-FA18X8R1H104KRU6" H 9050 1050 50  0001 C CNN "Mouser"
+	1    9050 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DA90430
+P 8700 750
+AR Path="/5DA90430" Ref="#PWR?"  Part="1" 
+AR Path="/5EB09E21/5DA90430" Ref="#PWR061"  Part="1" 
+F 0 "#PWR061" H 8700 600 50  0001 C CNN
+F 1 "+5V" H 8715 923 50  0000 C CNN
+F 2 "" H 8700 750 50  0001 C CNN
+F 3 "" H 8700 750 50  0001 C CNN
+	1    8700 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DAAA0A4
+P 8700 4050
+AR Path="/5DAAA0A4" Ref="#PWR?"  Part="1" 
+AR Path="/5EB09E21/5DAAA0A4" Ref="#PWR062"  Part="1" 
+F 0 "#PWR062" H 8700 3800 50  0001 C CNN
+F 1 "GND" H 8705 3877 50  0000 C CNN
+F 2 "" H 8700 4050 50  0001 C CNN
+F 3 "" H 8700 4050 50  0001 C CNN
+	1    8700 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 4050 8700 3900
+Wire Bus Line
+	7900 3850 7550 3850
+Text Label 7650 2000 2    50   ~ 0
+R~W
+Wire Wire Line
+	8100 2000 7650 2000
+Text Label 7900 3700 0    50   ~ 0
+D7
+Text Label 7900 3600 0    50   ~ 0
+D6
+Text Label 7900 3500 0    50   ~ 0
+D5
+Text Label 7900 3400 0    50   ~ 0
+D4
+Text Label 7900 3300 0    50   ~ 0
+D3
+Text Label 7900 3200 0    50   ~ 0
+D2
+Text Label 7900 3100 0    50   ~ 0
+D1
+Text Label 7900 3000 0    50   ~ 0
+D0
+Wire Wire Line
+	7650 3700 8100 3700
+Wire Wire Line
+	7650 3600 8100 3600
+Wire Wire Line
+	7650 3500 8100 3500
+Wire Wire Line
+	7650 3400 8100 3400
+Wire Wire Line
+	7650 3300 8100 3300
+Wire Wire Line
+	7650 3200 8100 3200
+Wire Wire Line
+	7650 3100 8100 3100
+Wire Wire Line
+	7650 3000 8100 3000
+Entry Wire Line
+	7650 3700 7550 3800
+Entry Wire Line
+	7650 3600 7550 3700
+Entry Wire Line
+	7650 3500 7550 3600
+Entry Wire Line
+	7650 3400 7550 3500
+Entry Wire Line
+	7650 3300 7550 3400
+Entry Wire Line
+	7650 3200 7550 3300
+Entry Wire Line
+	7650 3100 7550 3200
+Entry Wire Line
+	7650 3000 7550 3100
+Text Label 1700 5700 2    50   ~ 0
+~IRQ_ACIA
+Wire Wire Line
+	1700 5400 1850 5400
+Wire Wire Line
+	2400 5700 1700 5700
+Text Label 1700 4400 2    50   ~ 0
+~IRQ_VIA_1
+Wire Wire Line
+	1700 4400 1850 4400
+Wire Wire Line
+	2150 4400 2400 4400
+Wire Wire Line
+	2400 5400 2400 5700
+Wire Wire Line
+	2400 4400 2400 4700
+Connection ~ 2400 5400
+Connection ~ 2400 4400
+Wire Wire Line
+	2400 4150 2400 4400
+Wire Wire Line
+	2150 5400 2400 5400
+Wire Wire Line
+	2400 3750 2400 3850
+$Comp
+L power:+5V #PWR?
+U 1 1 5E0EA16C
+P 2400 3750
+AR Path="/5E0EA16C" Ref="#PWR?"  Part="1" 
+AR Path="/5EB09E21/5E0EA16C" Ref="#PWR03"  Part="1" 
+F 0 "#PWR03" H 2400 3600 50  0001 C CNN
+F 1 "+5V" H 2415 3923 50  0000 C CNN
+F 2 "" H 2400 3750 50  0001 C CNN
+F 3 "" H 2400 3750 50  0001 C CNN
+	1    2400 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E0EA165
+P 2400 4000
+AR Path="/5E0EA165" Ref="R?"  Part="1" 
+AR Path="/5EB09E21/5E0EA165" Ref="R1"  Part="1" 
+F 0 "R1" H 2470 4046 50  0000 L CNN
+F 1 "10k" H 2470 3955 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2330 4000 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/427/sfr16s25-239894.pdf" H 2400 4000 50  0001 C CNN
+F 4 "Vishay / BC Components" H 2400 4000 50  0001 C CNN "Mfr."
+F 5 "SFR25H0001002JR500" H 2400 4000 50  0001 C CNN "Mfr. No."
+F 6 "594-SFR25H0001002JR5" H 2400 4000 50  0001 C CNN "Mouser"
+	1    2400 4000
+	-1   0    0    1   
+$EndComp
+Text HLabel 1700 5400 0    50   Input ~ 0
+~IRQ
+$Comp
+L Device:D_Schottky D9
+U 1 1 5E0A358A
+P 2000 5400
+F 0 "D9" H 2000 5616 50  0000 C CNN
+F 1 "SD103A" H 2000 5525 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2000 5400 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85754/sd103a.pdf" H 2000 5400 50  0001 C CNN
+F 4 "Vishay Semiconductors" H 2000 5400 50  0001 C CNN "Mfr."
+F 5 "SD103A-TR" H 2000 5400 50  0001 C CNN "Mfr. No."
+F 6 "625-SD103A" H 2000 5400 50  0001 C CNN "Mouser"
+	1    2000 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D8
+U 1 1 5E087BEB
+P 2000 4400
+F 0 "D8" H 2000 4616 50  0000 C CNN
+F 1 "SD103A" H 2000 4525 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2000 4400 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85754/sd103a.pdf" H 2000 4400 50  0001 C CNN
+F 4 "Vishay Semiconductors" H 2000 4400 50  0001 C CNN "Mfr."
+F 5 "SD103A-TR" H 2000 4400 50  0001 C CNN "Mfr. No."
+F 6 "625-SD103A" H 2000 4400 50  0001 C CNN "Mouser"
+	1    2000 4400
+	1    0    0    -1  
+$EndComp
+Text Label 7650 1700 2    50   ~ 0
+1MHz
+Text HLabel 7950 1600 0    50   Input ~ 0
+~RESET
+Wire Wire Line
+	7650 1800 8100 1800
+Wire Wire Line
+	8100 1700 7650 1700
+Wire Wire Line
+	7950 1600 8100 1600
+Text Label 7650 1800 2    50   ~ 0
+~IRQ_VIA_2
+$Comp
+L power:GND #PWR?
+U 1 1 5DD17184
+P 8000 2300
+AR Path="/5DD17184" Ref="#PWR?"  Part="1" 
+AR Path="/5EB09E21/5DD17184" Ref="#PWR013"  Part="1" 
+F 0 "#PWR013" H 8000 2050 50  0001 C CNN
+F 1 "GND" H 8005 2127 50  0000 C CNN
+F 2 "" H 8000 2300 50  0001 C CNN
+F 3 "" H 8000 2300 50  0001 C CNN
+	1    8000 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8000 2300 8100 2300
+Wire Wire Line
+	8100 2200 7650 2200
+Text Label 7650 2200 2    50   ~ 0
+~CS_VIA_2
+Text Label 4350 9800 0    50   ~ 0
+~CS_VIA_2
+Wire Wire Line
+	4250 9800 4350 9800
+Text Label 7900 2500 0    50   ~ 0
+A0
+Text Label 7900 2600 0    50   ~ 0
+A1
+Text Label 7900 2800 0    50   ~ 0
+A3
+Entry Wire Line
+	7450 2800 7550 2700
+Entry Wire Line
+	7450 2700 7550 2600
+Entry Wire Line
+	7450 2600 7550 2500
+Entry Wire Line
+	7450 2900 7550 2800
+Wire Wire Line
+	7550 2500 8100 2500
+Wire Wire Line
+	8100 2600 7550 2600
+Wire Wire Line
+	7550 2700 8100 2700
+Wire Wire Line
+	8100 2800 7550 2800
+Text Label 7900 2700 0    50   ~ 0
+A2
 $Comp
 L Memory_EEPROM:28C256 IC?
 U 1 1 5EBEAFAB
@@ -1901,6 +2085,41 @@ F 6 "535-28-6553-10" H 6600 5500 50  0001 C CNN "Mouser"
 	1    6600 5500
 	1    0    0    -1  
 $EndComp
+Connection ~ 7900 7000
+Wire Bus Line
+	7900 7000 10000 7000
+Wire Bus Line
+	5750 7100 7450 7100
+Connection ~ 7450 7100
+Wire Bus Line
+	7450 7100 10150 7100
+Text HLabel 10050 1400 2    50   Input ~ 0
+LCD[0..7]
+Text Label 1650 4900 2    50   ~ 0
+~IRQ_VIA_1
+Wire Wire Line
+	1650 4900 1800 4900
+$Comp
+L Device:D_Schottky D?
+U 1 1 5DEA544B
+P 1950 4900
+F 0 "D?" H 1950 5116 50  0000 C CNN
+F 1 "SD103A" H 1950 5025 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 1950 4900 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85754/sd103a.pdf" H 1950 4900 50  0001 C CNN
+F 4 "Vishay Semiconductors" H 1950 4900 50  0001 C CNN "Mfr."
+F 5 "SD103A-TR" H 1950 4900 50  0001 C CNN "Mfr. No."
+F 6 "625-SD103A" H 1950 4900 50  0001 C CNN "Mouser"
+	1    1950 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 4700 2400 4700
+Connection ~ 2400 4700
+Wire Wire Line
+	2400 4700 2400 5400
+Wire Bus Line
+	7450 2600 7450 7100
 Wire Bus Line
 	10150 3050 10150 7100
 Wire Bus Line
@@ -1912,13 +2131,15 @@ Wire Bus Line
 Wire Bus Line
 	2750 7100 2750 10300
 Wire Bus Line
+	7550 3100 7550 3850
+Wire Bus Line
 	10000 7000 10000 7850
 Wire Bus Line
 	4800 5800 4800 7000
 Wire Bus Line
 	2750 5000 2750 7100
 Wire Bus Line
-	7900 5100 7900 7100
+	7900 3850 7900 7000
 Wire Bus Line
 	5750 4700 5750 7100
 Wire Bus Line

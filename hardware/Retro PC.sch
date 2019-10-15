@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title "Retro PC"
 Date "2019-10-08"
 Rev "1.0"
@@ -230,4 +230,10 @@ Wire Wire Line
 	8050 7200 8250 7200
 Wire Wire Line
 	10250 5450 10250 6500
+$Sheet
+S 8300 9600 1350 1250
+U 5DADBF97
+F0 "LCD" 50
+F1 "LCD.sch" 50
+$EndSheet
 $EndSCHEMATC

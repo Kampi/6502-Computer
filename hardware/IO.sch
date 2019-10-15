@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 4 6
 Title "Retro PC"
 Date "2019-10-08"
 Rev "1.0"
@@ -627,8 +627,226 @@ Wire Wire Line
 	1300 6400 1600 6400
 Text HLabel 1600 6400 2    50   Output ~ 0
 ~NMI
+Text HLabel 10350 2150 2    50   Input ~ 0
+R~W
+Text HLabel 8800 1150 0    50   Input ~ 0
+A[15..0]
+Text HLabel 8800 1050 0    50   BiDi ~ 0
+D[7..0]
+Entry Wire Line
+	9250 1550 9350 1450
+Entry Wire Line
+	9250 1450 9350 1350
+Entry Wire Line
+	9250 1650 9350 1550
+Entry Wire Line
+	9250 1750 9350 1650
+Entry Wire Line
+	9250 1850 9350 1750
+Entry Wire Line
+	9250 1950 9350 1850
+Entry Wire Line
+	9250 2050 9350 1950
+Entry Wire Line
+	9250 2150 9350 2050
+Entry Wire Line
+	9250 2250 9350 2150
+Entry Wire Line
+	9250 2350 9350 2250
+Entry Wire Line
+	9350 2350 9250 2450
+Entry Wire Line
+	9250 2550 9350 2450
+Entry Wire Line
+	9250 2850 9350 2750
+Entry Wire Line
+	9350 2550 9250 2650
+Entry Wire Line
+	9250 2750 9350 2650
+Entry Wire Line
+	9250 2950 9350 2850
+Entry Wire Line
+	10700 1450 10600 1350
+Entry Wire Line
+	10700 1550 10600 1450
+Entry Wire Line
+	10700 1650 10600 1550
+Entry Wire Line
+	10700 1750 10600 1650
+Entry Wire Line
+	10700 1850 10600 1750
+Entry Wire Line
+	10700 1950 10600 1850
+Entry Wire Line
+	10700 2050 10600 1950
+Entry Wire Line
+	10700 2150 10600 2050
+Wire Wire Line
+	9350 1350 9750 1350
+Wire Wire Line
+	9350 1450 9750 1450
+Wire Wire Line
+	9350 1550 9750 1550
+Wire Wire Line
+	9350 1650 9750 1650
+Wire Wire Line
+	9350 1950 9750 1950
+Wire Wire Line
+	9350 2050 9750 2050
+Wire Wire Line
+	9350 2150 9750 2150
+Wire Wire Line
+	9350 2250 9750 2250
+Wire Wire Line
+	9350 2350 9750 2350
+Wire Wire Line
+	9350 2450 9750 2450
+Wire Wire Line
+	9350 2550 9750 2550
+Wire Wire Line
+	9350 2650 9750 2650
+Wire Wire Line
+	9350 2850 9750 2850
+Wire Wire Line
+	9350 2750 9750 2750
+Wire Wire Line
+	9350 1750 9750 1750
+Wire Wire Line
+	9350 1850 9750 1850
+Text Label 9450 1350 0    50   ~ 0
+A0
+Text Label 9450 1550 0    50   ~ 0
+A2
+Text Label 9450 1650 0    50   ~ 0
+A3
+Text Label 9450 1750 0    50   ~ 0
+A4
+Text Label 9450 1850 0    50   ~ 0
+A5
+Text Label 9450 1950 0    50   ~ 0
+A6
+Text Label 9450 2050 0    50   ~ 0
+A7
+Text Label 9450 2150 0    50   ~ 0
+A8
+Text Label 9450 2250 0    50   ~ 0
+A9
+Text Label 9450 2350 0    50   ~ 0
+A10
+Text Label 9450 2450 0    50   ~ 0
+A11
+Text Label 9450 2550 0    50   ~ 0
+A12
+Text Label 9450 2650 0    50   ~ 0
+A13
+Text Label 9450 2750 0    50   ~ 0
+A14
+Text Label 9450 2850 0    50   ~ 0
+A15
+Wire Wire Line
+	10250 1350 10600 1350
+Wire Wire Line
+	10250 1450 10600 1450
+Wire Wire Line
+	10250 1550 10600 1550
+Wire Wire Line
+	10250 1650 10600 1650
+Wire Wire Line
+	10250 1750 10600 1750
+Wire Wire Line
+	10250 1850 10600 1850
+Wire Wire Line
+	10250 1950 10600 1950
+Wire Wire Line
+	10250 2050 10600 2050
+Text Label 10400 1350 0    50   ~ 0
+D0
+Text Label 10400 1450 0    50   ~ 0
+D1
+Text Label 10400 1550 0    50   ~ 0
+D2
+Text Label 10400 1650 0    50   ~ 0
+D3
+Text Label 10400 1750 0    50   ~ 0
+D4
+Text Label 10400 1850 0    50   ~ 0
+D5
+Text Label 10400 1950 0    50   ~ 0
+D6
+Text Label 10400 2050 0    50   ~ 0
+D7
+$Comp
+L Connector_Generic:Conn_02x20_Odd_Even J3
+U 1 1 5DBDED7E
+P 9950 2250
+F 0 "J3" H 10000 3367 50  0000 C CNN
+F 1 "Conn_02x20_Odd_Even" H 10000 3276 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Horizontal" H 9950 2250 50  0001 C CNN
+F 3 "https://cdn.harwin.com/pdfs/M20-974.pdf" H 9950 2250 50  0001 C CNN
+F 4 "Harwin" H 9950 2250 50  0001 C CNN "Mfr."
+F 5 "M20-9742046" H 9950 2250 50  0001 C CNN "Mfr. No."
+F 6 "855-M20-9742046" H 9950 2250 50  0001 C CNN "Mouser"
+	1    9950 2250
+	1    0    0    -1  
+$EndComp
+Wire Bus Line
+	9250 1150 8800 1150
+Wire Bus Line
+	8800 1050 10700 1050
+Wire Wire Line
+	10350 2150 10250 2150
+$Comp
+L power:GND #PWR?
+U 1 1 5DC0914B
+P 9650 3600
+AR Path="/5DC0914B" Ref="#PWR?"  Part="1" 
+AR Path="/5EB09E21/5DC0914B" Ref="#PWR?"  Part="1" 
+AR Path="/5EC67F7B/5DC0914B" Ref="#PWR070"  Part="1" 
+F 0 "#PWR070" H 9650 3350 50  0001 C CNN
+F 1 "GND" H 9655 3427 50  0000 C CNN
+F 2 "" H 9650 3600 50  0001 C CNN
+F 3 "" H 9650 3600 50  0001 C CNN
+	1    9650 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 3600 9650 3250
+Wire Wire Line
+	9750 3250 9650 3250
+$Comp
+L power:+5V #PWR?
+U 1 1 5DC11208
+P 10650 3150
+AR Path="/5DC11208" Ref="#PWR?"  Part="1" 
+AR Path="/5EB09E21/5DC11208" Ref="#PWR?"  Part="1" 
+AR Path="/5EC67F7B/5DC11208" Ref="#PWR071"  Part="1" 
+F 0 "#PWR071" H 10650 3000 50  0001 C CNN
+F 1 "+5V" H 10665 3323 50  0000 C CNN
+F 2 "" H 10650 3150 50  0001 C CNN
+F 3 "" H 10650 3150 50  0001 C CNN
+	1    10650 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10650 3150 10650 3250
+Wire Wire Line
+	10250 3250 10650 3250
+Text Label 9450 1450 0    50   ~ 0
+A1
+Text HLabel 10350 2250 2    50   Input ~ 0
+1MHz
+Wire Wire Line
+	10350 2250 10250 2250
+Text HLabel 10350 2350 2    50   Output ~ 0
+~RESET
+Wire Wire Line
+	10350 2350 10250 2350
 Wire Bus Line
 	2850 3450 2850 4150
 Wire Bus Line
 	1800 1000 1800 1700
+Wire Bus Line
+	10700 1050 10700 2150
+Wire Bus Line
+	9250 1150 9250 2950
 $EndSCHEMATC

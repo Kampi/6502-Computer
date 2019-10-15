@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 3 6
 Title "Retro PC"
 Date "2019-10-08"
 Rev "1.0"
@@ -38,11 +38,11 @@ AR Path="/5E95D1DF" Ref="J?"  Part="1"
 AR Path="/5E9064F2/5E95D1DF" Ref="J2"  Part="1" 
 F 0 "J2" H 2970 3347 50  0000 R CNN
 F 1 "SERIAL" H 2970 3438 50  0000 R CNN
-F 2 "Connector_USB:USB_Micro-B_Wuerth_629105150521" H 3350 3400 50  0001 C CNN
+F 2 "Connector_USB:USB_B_TE_5787834_Vertical" H 3350 3400 50  0001 C CNN
 F 3 "https://www.belfuse.com/resources/datasheets/stewartconnector/ds-stw-usb-2.0-and-3.0-connectors.pdf" H 3350 3400 50  0001 C CNN
-F 4 "Wurth Elektronik" H 3200 3450 50  0001 C CNN "Mfr."
-F 5 "629105150521" H 3200 3450 50  0001 C CNN "Mfr. No."
-F 6 "710-629105150521" H 3200 3450 50  0001 C CNN "Mouser"
+F 4 "TE Connectivity" H 3200 3450 50  0001 C CNN "Mfr."
+F 5 "5787834-1" H 3200 3450 50  0001 C CNN "Mfr. No."
+F 6 "571-5787834-1" H 3200 3450 50  0001 C CNN "Mouser"
 	1    3200 3450
 	1    0    0    -1  
 $EndComp

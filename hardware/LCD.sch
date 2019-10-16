@@ -52,7 +52,10 @@ P 6650 3200
 F 0 "RV1" H 6580 3154 50  0000 R CNN
 F 1 "10k" H 6580 3245 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Vishay_T73YP_Vertical" H 6650 3200 50  0001 C CNN
-F 3 "~" H 6650 3200 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/51016/t73.pdf" H 6650 3200 50  0001 C CNN
+F 4 "Vishay" H 6650 3200 50  0001 C CNN "Mfr."
+F 5 "T73YP103KT20 " H 6650 3200 50  0001 C CNN "Mfr. No."
+F 6 "72-T73YP103KT20 " H 6650 3200 50  0001 C CNN "Mouser"
 	1    6650 3200
 	-1   0    0    1   
 $EndComp

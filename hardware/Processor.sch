@@ -280,7 +280,7 @@ Wire Wire Line
 	4350 4700 4400 4700
 Connection ~ 2750 7100
 Wire Wire Line
-	6750 7550 6800 7550
+	6750 7450 6800 7450
 $Comp
 L ECS:ECS-100X X?
 U 1 1 5EBEB282
@@ -525,7 +525,7 @@ Wire Wire Line
 	12650 7850 12650 8300
 Text HLabel 13900 7550 2    50   Output ~ 0
 ACIAReady
-Text Label 6750 7550 2    50   ~ 0
+Text Label 6750 7450 2    50   ~ 0
 1MHz
 Text Label 11200 7350 0    50   ~ 0
 D1
@@ -858,16 +858,10 @@ Wire Wire Line
 	11400 3250 10250 3250
 Text Label 11200 3150 0    50   ~ 0
 A2
-Wire Wire Line
-	6800 7750 6150 7750
 Text Label 3000 10200 0    50   ~ 0
 A15
 Entry Wire Line
 	2750 10100 2850 10200
-Wire Wire Line
-	6150 7750 6150 7650
-Wire Wire Line
-	6150 7650 4350 7650
 Wire Wire Line
 	9900 5700 9550 5700
 Wire Wire Line
@@ -919,7 +913,7 @@ R~W
 Wire Wire Line
 	9550 6400 9650 6400
 Wire Wire Line
-	9650 6400 9650 7650
+	9650 6400 9650 7550
 Wire Wire Line
 	9650 6300 9550 6300
 Text Label 9650 5700 0    50   ~ 0
@@ -1327,7 +1321,7 @@ Entry Wire Line
 Entry Wire Line
 	5750 4700 5850 4600
 Wire Wire Line
-	9650 7650 7400 7650
+	9650 7550 7400 7550
 Entry Wire Line
 	2750 9800 2850 9900
 Entry Wire Line
@@ -1530,15 +1524,15 @@ $EndComp
 $Comp
 L 74xx:74HC00 IC1
 U 2 1 5DE275DC
-P 7100 7650
-F 0 "IC1" H 7100 7975 50  0000 C CNN
-F 1 "74HC00" H 7100 7884 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 7100 7650 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 7100 7650 50  0001 C CNN
-F 4 "Texas Instruments" H 7100 7650 50  0001 C CNN "Mfr."
-F 5 "SN74HC00AN" H 7100 7650 50  0001 C CNN "Mfr. No."
-F 6 "595-SN74HC00AN" H 7100 7650 50  0001 C CNN "Mouser"
-	2    7100 7650
+P 7100 7550
+F 0 "IC1" H 7100 7875 50  0000 C CNN
+F 1 "74HC00" H 7100 7784 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 7100 7550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 7100 7550 50  0001 C CNN
+F 4 "Texas Instruments" H 7100 7550 50  0001 C CNN "Mfr."
+F 5 "SN74HC00AN" H 7100 7550 50  0001 C CNN "Mfr. No."
+F 6 "595-SN74HC00AN" H 7100 7550 50  0001 C CNN "Mouser"
+	2    7100 7550
 	1    0    0    -1  
 $EndComp
 Entry Wire Line
@@ -2130,6 +2124,8 @@ Text HLabel 4800 4300 2    50   Output ~ 0
 1MHz
 Wire Wire Line
 	4350 4300 4800 4300
+Wire Wire Line
+	4350 7650 6800 7650
 Wire Bus Line
 	10150 4700 10150 7100
 Wire Bus Line

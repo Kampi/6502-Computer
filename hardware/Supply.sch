@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 6
+Sheet 2 6
 Title "Retro PC"
 Date "2019-10-08"
 Rev "1.0"
@@ -245,7 +245,7 @@ AR Path="/5E9AA4C9" Ref="J?"  Part="1"
 AR Path="/5E9728CC/5E9AA4C9" Ref="J1"  Part="1" 
 F 0 "J1" H 2457 4175 50  0000 C CNN
 F 1 "12V" H 2457 4084 50  0000 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_Wuerth_6941xx301002" H 2450 3810 50  0001 C CNN
+F 2 "Wuerth:BarrelJack_Wuerth_6941xx301002" H 2450 3810 50  0001 C CNN
 F 3 "https://katalog.we-online.de/em/datasheet/6941xx301002.pdf" H 2450 3810 50  0001 C CNN
 F 4 "Wurth Elektronik" H 2400 3850 50  0001 C CNN "Mfr."
 F 5 "694106301002" H 2400 3850 50  0001 C CNN "Mfr. No."

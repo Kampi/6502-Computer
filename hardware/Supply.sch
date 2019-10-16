@@ -238,22 +238,6 @@ $EndComp
 Wire Wire Line
 	3750 4050 3750 4650
 $Comp
-L Connector:Barrel_Jack J?
-U 1 1 5E9AA4C9
-P 2400 3850
-AR Path="/5E9AA4C9" Ref="J?"  Part="1" 
-AR Path="/5E9728CC/5E9AA4C9" Ref="J1"  Part="1" 
-F 0 "J1" H 2457 4175 50  0000 C CNN
-F 1 "12V" H 2457 4084 50  0000 C CNN
-F 2 "Wuerth:BarrelJack_Wuerth_6941xx301002" H 2450 3810 50  0001 C CNN
-F 3 "https://katalog.we-online.de/em/datasheet/6941xx301002.pdf" H 2450 3810 50  0001 C CNN
-F 4 "Wurth Elektronik" H 2400 3850 50  0001 C CNN "Mfr."
-F 5 "694106301002" H 2400 3850 50  0001 C CNN "Mfr. No."
-F 6 "710-694106301002" H 2400 3850 50  0001 C CNN "Mouser"
-	1    2400 3850
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5E9AA4CF
 P 2750 4650
@@ -488,4 +472,18 @@ F 3 "" H 4750 4650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4750 4650 4750 4500
+$Comp
+L Wuerth:ConBarrel X1
+U 1 1 5DA7C8DA
+P 2400 3850
+F 0 "X1" H 2457 4083 50  0000 C CNN
+F 1 "ConBarrel" H 2400 3650 50  0001 C CNN
+F 2 "Wuerth:BarrelJack_Wuerth_6941xx301002" H 2450 3810 50  0001 C CNN
+F 3 "https://katalog.we-online.de/em/datasheet/6941xx301002.pdf" H 2450 3810 50  0001 C CNN
+F 4 "Wurth Elektronik" H 2400 3850 50  0001 C CNN "Mfr."
+F 5 "694106301002" H 2400 3850 50  0001 C CNN "Mfr. No."
+F 6 "710-694106301002" H 2400 3850 50  0001 C CNN "Mouser"
+	1    2400 3850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -142,7 +142,7 @@ Wire Wire Line
 Text Notes 3550 2350 0    100  ~ 0
 VIA 1
 Text Notes 3550 2600 0    100  ~ 0
-VIA 2 (Not available)
+VIA 2
 Text Notes 900  2600 0    100  ~ 0
 $8400 - $87FF
 Text Notes 900  2850 0    100  ~ 0

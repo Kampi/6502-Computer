@@ -1670,7 +1670,7 @@ Wire Wire Line
 Text Label 4350 9700 0    50   ~ 0
 ~CS_VIA_1
 $Comp
-L Retro-PC-rescue:74HC138-74xx-Retro-PC-rescue IC3
+L 74xx:74HC138 IC3
 U 1 1 5DA01AB5
 P 3750 10000
 AR Path="/5DA01AB5" Ref="IC3"  Part="1" 
@@ -2080,7 +2080,7 @@ Wire Bus Line
 Text HLabel 10050 1400 2    50   Input ~ 0
 LCD[0..7]
 Text Label 1700 4700 2    50   ~ 0
-~IRQ_VIA_1
+~IRQ_VIA_2
 Wire Wire Line
 	1700 4700 1850 4700
 $Comp

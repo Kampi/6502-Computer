@@ -31,22 +31,6 @@ F 6 "895-FT232RL" H 5650 3850 50  0001 C CNN "Mouser"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_A J?
-U 1 1 5E95D1DF
-P 3200 3450
-AR Path="/5E95D1DF" Ref="J?"  Part="1" 
-AR Path="/5E9064F2/5E95D1DF" Ref="J2"  Part="1" 
-F 0 "J2" H 2970 3347 50  0000 R CNN
-F 1 "SERIAL" H 2970 3438 50  0000 R CNN
-F 2 "TE_Connectivity:USB_B_TE_2923042_Horizontal" H 3350 3400 50  0001 C CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F292304%7FD4%7Fpdf%7FEnglish%7FENG_CD_292304_D4.pdf%7F292304-2" H 3350 3400 50  0001 C CNN
-F 4 "TE Connectivity" H 3200 3450 50  0001 C CNN "Mfr."
-F 5 "292304-2" H 3200 3450 50  0001 C CNN "Mfr. No."
-F 6 "571-292304-2" H 3200 3450 50  0001 C CNN "Mouser"
-	1    3200 3450
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:LED D?
 U 1 1 5E95D1E6
 P 7400 3500
@@ -396,4 +380,18 @@ Wire Wire Line
 	7400 3350 7400 3300
 Wire Wire Line
 	7750 3350 7750 3300
+$Comp
+L TE_Connectivity:USB_B J1
+U 1 1 5DA7E5BF
+P 3200 3450
+F 0 "J1" H 3257 3917 50  0000 C CNN
+F 1 "USB_B" H 3257 3826 50  0000 C CNN
+F 2 "TE_Connectivity:USB_B_TE_2923042_Horizontal" H 3350 3400 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F292304%7FD4%7Fpdf%7FEnglish%7FENG_CD_292304_D4.pdf%7F292304-2" H 3350 3400 50  0001 C CNN
+F 4 "TE Connectivity" H 3257 4007 50  0001 C CNN "Mfr."
+F 5 "292304-2" H 3257 3916 50  0001 C CNN "Mfr. No."
+F 6 "571-292304-2" H 3257 3825 50  0001 C CNN "Mouser"
+	1    3200 3450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

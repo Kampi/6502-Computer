@@ -264,8 +264,8 @@ F 0 "U1" H 3750 3992 50  0000 C CNN
 F 1 "R-785.0-0.5" H 3750 3901 50  0000 C CNN
 F 2 "Converter_DCDC:Converter_DCDC_RECOM_R-78E-0.5_THT" H 3800 3500 50  0001 L CIN
 F 3 "https://www.recom-power.com/pdf/Innoline/R-78xx-0.5.pdf" H 3750 3750 50  0001 C CNN
-F 4 "919-R-785.0-0.5" H 3750 3750 50  0001 C CNN "Mouser"
-F 5 "R-785.0-0.5" H 3750 3750 50  0001 C CNN "Mfr. No."
+F 4 "919-R-785.0-1.0" H 3750 3750 50  0001 C CNN "Mouser"
+F 5 "R-785.0-1.0" H 3750 3750 50  0001 C CNN "Mfr. No."
 F 6 "Recom" H 3750 3750 50  0001 C CNN "Mfr."
 	1    3750 3750
 	1    0    0    -1  
@@ -477,8 +477,8 @@ L Wuerth:ConBarrel X1
 U 1 1 5DA7C8DA
 P 2400 3850
 F 0 "X1" H 2457 4083 50  0000 C CNN
-F 1 "ConBarrel" H 2400 3650 50  0001 C CNN
-F 2 "Wuerth:BarrelJack_Wuerth_6941xx301002" H 2450 3810 50  0001 C CNN
+F 1 "DC IN" H 2400 3650 50  0000 C CNN
+F 2 "Connector_Custom:BarrelJack_Wuerth_6941xx301002" H 2450 3810 50  0001 C CNN
 F 3 "https://katalog.we-online.de/em/datasheet/6941xx301002.pdf" H 2450 3810 50  0001 C CNN
 F 4 "Wurth Elektronik" H 2400 3850 50  0001 C CNN "Mfr."
 F 5 "694106301002" H 2400 3850 50  0001 C CNN "Mfr. No."

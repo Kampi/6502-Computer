@@ -45,20 +45,6 @@ F 3 "" H 6650 4650 50  0001 C CNN
 	1    6650 4650
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_POT RV1
-U 1 1 5DE99AEE
-P 6650 3200
-F 0 "RV1" H 6580 3154 50  0000 R CNN
-F 1 "10k" H 6580 3245 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Vishay_T73YP_Vertical" H 6650 3200 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/51016/t73.pdf" H 6650 3200 50  0001 C CNN
-F 4 "Vishay" H 6650 3200 50  0001 C CNN "Mfr."
-F 5 "T73YP103KT20 " H 6650 3200 50  0001 C CNN "Mfr. No."
-F 6 "72-T73YP103KT20 " H 6650 3200 50  0001 C CNN "Mouser"
-	1    6650 3200
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	6150 3500 6150 3450
 Wire Wire Line
@@ -154,5 +140,19 @@ F 2 "Display:LCD-016N002L" H 5620 2880 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/37299/37299.pdf" H 6100 3500 50  0001 C CNN
 	1    5600 3800
 	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 5DE99AEE
+P 6650 3200
+F 0 "RV1" H 6580 3154 50  0000 R CNN
+F 1 "10k" H 6580 3245 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Vishay_T73YP_Vertical" H 6650 3200 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/51016/t73.pdf" H 6650 3200 50  0001 C CNN
+F 4 "Vishay" H 6650 3200 50  0001 C CNN "Mfr."
+F 5 "T73YP103KT20 " H 6650 3200 50  0001 C CNN "Mfr. No."
+F 6 "72-T73YP103KT20 " H 6650 3200 50  0001 C CNN "Mouser"
+	1    6650 3200
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC

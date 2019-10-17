@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 3 6
 Title "Retro PC"
 Date "2019-10-08"
 Rev "1.0"
@@ -776,11 +776,11 @@ D6
 Text Label 10400 2050 0    50   ~ 0
 D7
 $Comp
-L Connector_Generic:Conn_02x20_Odd_Even J3
+L Connector_Generic:Conn_02x20_Odd_Even X3
 U 1 1 5DBDED7E
 P 9950 2250
-F 0 "J3" H 10000 3367 50  0000 C CNN
-F 1 "Conn_02x20_Odd_Even" H 10000 3276 50  0000 C CNN
+F 0 "X3" H 10000 3367 50  0000 C CNN
+F 1 "Expansion" H 10000 3276 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Horizontal" H 9950 2250 50  0001 C CNN
 F 3 "https://cdn.harwin.com/pdfs/M20-974.pdf" H 9950 2250 50  0001 C CNN
 F 4 "Harwin" H 9950 2250 50  0001 C CNN "Mfr."
@@ -834,13 +834,27 @@ Wire Wire Line
 Text Label 9450 1450 0    50   ~ 0
 A1
 Text HLabel 10350 2250 2    50   Input ~ 0
-1MHz
+Clock
 Wire Wire Line
 	10350 2250 10250 2250
 Text HLabel 10350 2350 2    50   Output ~ 0
 ~RESET
 Wire Wire Line
 	10350 2350 10250 2350
+Text HLabel 10350 2450 2    50   Input ~ 0
+~IRQ
+Wire Wire Line
+	10350 2450 10250 2450
+NoConn ~ 9750 3150
+NoConn ~ 9750 3050
+NoConn ~ 9750 2950
+NoConn ~ 10250 3150
+NoConn ~ 10250 3050
+NoConn ~ 10250 2950
+NoConn ~ 10250 2850
+NoConn ~ 10250 2750
+NoConn ~ 10250 2650
+NoConn ~ 10250 2550
 Wire Bus Line
 	2850 3450 2850 4150
 Wire Bus Line

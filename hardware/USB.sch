@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 6
+Sheet 6 6
 Title "Retro PC"
 Date "2019-10-08"
 Rev "1.0"
@@ -242,23 +242,6 @@ F 3 "" H 5650 5050 50  0001 C CNN
 	1    5650 5050
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5ECF32B5
-P 3600 3200
-AR Path="/5ECF32B5" Ref="#PWR?"  Part="1" 
-AR Path="/5E9064F2/5ECF32B5" Ref="#PWR048"  Part="1" 
-F 0 "#PWR048" H 3600 3050 50  0001 C CNN
-F 1 "+5V" H 3615 3373 50  0000 C CNN
-F 2 "" H 3600 3200 50  0001 C CNN
-F 3 "" H 3600 3200 50  0001 C CNN
-	1    3600 3200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3500 3250 3600 3250
-Wire Wire Line
-	3600 3250 3600 3200
 Text HLabel 4750 3850 0    50   Input ~ 0
 ~RESET
 Text HLabel 6600 3450 2    50   Input ~ 0
@@ -270,7 +253,7 @@ Wire Wire Line
 Wire Wire Line
 	6600 3450 6450 3450
 Text HLabel 6600 3550 2    50   Output ~ 0
-ModemReady
+~ModemReady
 Wire Wire Line
 	6450 3550 6600 3550
 $Comp
@@ -381,12 +364,14 @@ Wire Wire Line
 Wire Wire Line
 	7750 3350 7750 3300
 $Comp
-L TE_Connectivity:USB_B J1
+L Connector_Custom:USB-B X2
 U 1 1 5DA7E5BF
 P 3200 3450
-F 0 "J1" H 3257 3917 50  0000 C CNN
+AR Path="/5DA7E5BF" Ref="X2"  Part="1" 
+AR Path="/5E9064F2/5DA7E5BF" Ref="X2"  Part="1" 
+F 0 "X2" H 3257 3917 50  0000 C CNN
 F 1 "USB_B" H 3257 3826 50  0000 C CNN
-F 2 "TE_Connectivity:USB_B_TE_2923042_Horizontal" H 3350 3400 50  0001 C CNN
+F 2 "Connector_Custom:USB-B_TE_2923042_Horizontal" H 3350 3400 50  0001 C CNN
 F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F292304%7FD4%7Fpdf%7FEnglish%7FENG_CD_292304_D4.pdf%7F292304-2" H 3350 3400 50  0001 C CNN
 F 4 "TE Connectivity" H 3257 4007 50  0001 C CNN "Mfr."
 F 5 "292304-2" H 3257 3916 50  0001 C CNN "Mfr. No."
@@ -394,4 +379,5 @@ F 6 "571-292304-2" H 3257 3825 50  0001 C CNN "Mouser"
 	1    3200 3450
 	1    0    0    -1  
 $EndComp
+NoConn ~ 3500 3250
 $EndSCHEMATC

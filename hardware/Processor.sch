@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 6 6
+Sheet 5 6
 Title "Retro PC"
 Date "2019-10-08"
 Rev "1.0"
@@ -498,33 +498,16 @@ Text Label 11300 6600 2    50   ~ 0
 R~W
 Text Label 4600 5400 0    50   ~ 0
 R~W
-Text HLabel 13900 6800 2    50   Output ~ 0
+Text HLabel 13900 7150 2    50   Output ~ 0
 TxD
-Text HLabel 13900 6900 2    50   Input ~ 0
+Text HLabel 13900 7250 2    50   Input ~ 0
 RxD
 Text HLabel 13900 7350 2    50   Output ~ 0
 RTS
 Text HLabel 13900 7450 2    50   Input ~ 0
 CTS
 Text HLabel 13900 7750 2    50   Input ~ 0
-ModemReady
-$Comp
-L power:GND #PWR?
-U 1 1 5F24C1CA
-P 12650 8300
-AR Path="/5F24C1CA" Ref="#PWR?"  Part="1" 
-AR Path="/5EB09E21/5F24C1CA" Ref="#PWR032"  Part="1" 
-F 0 "#PWR032" H 12650 8050 50  0001 C CNN
-F 1 "GND" H 12655 8127 50  0000 C CNN
-F 2 "" H 12650 8300 50  0001 C CNN
-F 3 "" H 12650 8300 50  0001 C CNN
-	1    12650 8300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12650 7850 12650 8300
-Text HLabel 13900 7550 2    50   Output ~ 0
-ACIAReady
+~ModemReady
 Text Label 6750 7450 2    50   ~ 0
 1MHz
 Text Label 11200 7350 0    50   ~ 0
@@ -1342,7 +1325,7 @@ Wire Wire Line
 	12550 6200 12650 6200
 Wire Wire Line
 	12550 6100 12650 6100
-NoConn ~ 12550 7250
+NoConn ~ 12550 7050
 Wire Wire Line
 	11300 6200 11450 6200
 Wire Wire Line
@@ -1352,17 +1335,13 @@ Wire Wire Line
 Wire Wire Line
 	12550 7750 13900 7750
 Wire Wire Line
-	12550 7850 12650 7850
-Wire Wire Line
 	12000 5250 12000 5900
 Wire Wire Line
 	10250 7000 11450 7000
 Wire Wire Line
-	13900 6900 12550 6900
+	13900 7250 12550 7250
 Wire Wire Line
-	12550 7550 13900 7550
-Wire Wire Line
-	12550 6800 13900 6800
+	12550 7150 13900 7150
 Wire Wire Line
 	12000 8300 12000 8150
 Text Label 11200 7250 0    50   ~ 0
@@ -1670,7 +1649,7 @@ Wire Wire Line
 Text Label 4350 9700 0    50   ~ 0
 ~CS_VIA_1
 $Comp
-L 74xx:74HC138 IC3
+L Retro-PC-rescue:74HC138-74xx IC3
 U 1 1 5DA01AB5
 P 3750 10000
 AR Path="/5DA01AB5" Ref="IC3"  Part="1" 
@@ -2053,22 +2032,6 @@ Wire Wire Line
 	8100 2800 7550 2800
 Text Label 7900 2700 0    50   ~ 0
 A2
-$Comp
-L Memory_EEPROM:28C256 IC?
-U 1 1 5EBEAFAB
-P 6600 5500
-AR Path="/5EBEAFAB" Ref="IC?"  Part="1" 
-AR Path="/5EB09E21/5EBEAFAB" Ref="IC4"  Part="1" 
-F 0 "IC4" H 6350 6650 50  0000 C CNN
-F 1 "SYSTEM ROM" H 6550 6550 50  0000 C CNN
-F 2 "Package_DIP:DIP-28_W15.24mm_LongPads" H 6600 5500 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc0006.pdf" H 6600 5500 50  0001 C CNN
-F 4 "Aries Electronics" H 6600 5500 50  0001 C CNN "Mfr."
-F 5 "28-6553-10*" H 6600 5500 50  0001 C CNN "Mfr. No."
-F 6 "535-28-6553-10" H 6600 5500 50  0001 C CNN "Mouser"
-	1    6600 5500
-	1    0    0    -1  
-$EndComp
 Connection ~ 7900 7000
 Wire Bus Line
 	7900 7000 10000 7000
@@ -2077,8 +2040,8 @@ Wire Bus Line
 Connection ~ 7450 7100
 Wire Bus Line
 	7450 7100 10150 7100
-Text HLabel 10050 1400 2    50   Input ~ 0
-LCD[0..7]
+Text HLabel 10050 1400 2    50   BiDi ~ 0
+LCD[0..10]
 Text Label 1700 4700 2    50   ~ 0
 ~IRQ_VIA_2
 Wire Wire Line
@@ -2121,11 +2084,128 @@ R~W
 Wire Wire Line
 	4350 5400 4800 5400
 Text HLabel 4800 4300 2    50   Output ~ 0
-1MHz
+Clock
 Wire Wire Line
 	4350 4300 4800 4300
 Wire Wire Line
 	4350 7650 6800 7650
+$Comp
+L Memory_EEPROM:28C256 IC?
+U 1 1 5EBEAFAB
+P 6600 5500
+AR Path="/5EBEAFAB" Ref="IC?"  Part="1" 
+AR Path="/5EB09E21/5EBEAFAB" Ref="IC4"  Part="1" 
+F 0 "IC4" H 6350 6650 50  0000 C CNN
+F 1 "SYSTEM ROM" H 6550 6550 50  0000 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm_LongPads" H 6600 5500 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc0006.pdf" H 6600 5500 50  0001 C CNN
+F 4 "Aries Electronics" H 6600 5500 50  0001 C CNN "Mfr."
+F 5 "28-6553-10*" H 6600 5500 50  0001 C CNN "Mfr. No."
+F 6 "535-28-6553-10" H 6600 5500 50  0001 C CNN "Mouser"
+	1    6600 5500
+	1    0    0    -1  
+$EndComp
+Text HLabel 9900 2650 2    50   BiDi ~ 0
+PS2[0..1]
+Entry Wire Line
+	9700 3450 9800 3350
+Entry Wire Line
+	9700 3350 9800 3250
+Wire Wire Line
+	9700 3450 9300 3450
+Wire Wire Line
+	9300 3350 9700 3350
+Text Label 9450 3350 0    50   ~ 0
+PS20
+Text Label 9450 3450 0    50   ~ 0
+PS21
+Wire Bus Line
+	9800 2650 9900 2650
+Wire Bus Line
+	9750 1400 10050 1400
+Entry Wire Line
+	9650 1950 9750 1850
+Entry Wire Line
+	9650 2050 9750 1950
+Entry Wire Line
+	9650 2250 9750 2150
+Entry Wire Line
+	9650 2350 9750 2250
+Entry Wire Line
+	9650 2550 9750 2450
+Entry Wire Line
+	9650 2750 9750 2650
+Entry Wire Line
+	9650 2450 9750 2350
+Entry Wire Line
+	9650 2150 9750 2050
+Entry Wire Line
+	9650 1850 9750 1750
+Entry Wire Line
+	9650 2950 9750 2850
+Entry Wire Line
+	9650 2850 9750 2750
+Wire Wire Line
+	9650 1850 9300 1850
+Wire Wire Line
+	9300 1950 9650 1950
+Wire Wire Line
+	9650 2050 9300 2050
+Wire Wire Line
+	9300 2150 9650 2150
+Wire Wire Line
+	9650 2250 9300 2250
+Wire Wire Line
+	9300 2350 9650 2350
+Wire Wire Line
+	9650 2450 9300 2450
+Wire Wire Line
+	9300 2550 9650 2550
+Text Label 9400 1850 0    50   ~ 0
+LCD3
+Text Label 9400 1950 0    50   ~ 0
+LCD4
+Text Label 9400 2050 0    50   ~ 0
+LCD5
+Text Label 9400 2150 0    50   ~ 0
+LCD6
+Text Label 9400 2250 0    50   ~ 0
+LCD7
+Text Label 9400 2350 0    50   ~ 0
+LCD8
+Text Label 9400 2450 0    50   ~ 0
+LCD9
+Text Label 9400 2550 0    50   ~ 0
+LCD10
+Wire Wire Line
+	9300 2750 9650 2750
+Wire Wire Line
+	9650 2850 9300 2850
+Wire Wire Line
+	9300 2950 9650 2950
+Text Label 9400 2750 0    50   ~ 0
+LCD0
+Text Label 9400 2850 0    50   ~ 0
+LCD1
+Text Label 9400 2950 0    50   ~ 0
+LCD2
+Wire Wire Line
+	12550 7650 13900 7650
+Text HLabel 13900 7650 2    50   Output ~ 0
+~ReceiverReady
+Text HLabel 13900 7950 2    50   Input ~ 0
+~Carrier
+Wire Wire Line
+	12550 7950 13900 7950
+NoConn ~ 9300 3050
+NoConn ~ 9300 3150
+NoConn ~ 9300 3250
+NoConn ~ 9300 3600
+NoConn ~ 9300 3700
+NoConn ~ 9300 1600
+NoConn ~ 9300 1700
+Wire Bus Line
+	9800 2650 9800 3350
 Wire Bus Line
 	10150 4700 10150 7100
 Wire Bus Line
@@ -2141,13 +2221,15 @@ Wire Bus Line
 Wire Bus Line
 	2750 7100 2750 10300
 Wire Bus Line
+	9750 1400 9750 3100
+Wire Bus Line
 	7550 3100 7550 3850
 Wire Bus Line
 	10000 7000 10000 7850
 Wire Bus Line
-	4800 5800 4800 7000
-Wire Bus Line
 	10000 3550 10000 4550
+Wire Bus Line
+	4800 5800 4800 7000
 Wire Bus Line
 	2750 5000 2750 7100
 Wire Bus Line

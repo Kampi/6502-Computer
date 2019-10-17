@@ -23,10 +23,10 @@ AR Path="/5E9728CC/5E9AA460" Ref="R5"  Part="1"
 F 0 "R5" H 5720 3696 50  0000 L CNN
 F 1 "10k" H 5720 3605 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5580 3650 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/427/sfr16s25-239894.pdf" H 5650 3650 50  0001 C CNN
-F 4 "Vishay / BC Components" H 5650 3650 50  0001 C CNN "Mfr."
-F 5 "SFR25H0001002JR500" H 5650 3650 50  0001 C CNN "Mfr. No."
-F 6 "594-SFR25H0001002JR5" H 5650 3650 50  0001 C CNN "Mouser"
+F 3 "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf" H 5650 3650 50  0001 C CNN
+F 4 "Yageo" H 5650 3650 50  0001 C CNN "Mfr."
+F 5 "MFP-25BRD52-10K" H 5650 3650 50  0001 C CNN "Mfr. No."
+F 6 "603-MFP-25BRD52-10K" H 5650 3650 50  0001 C CNN "Mouser"
 	1    5650 3650
 	1    0    0    -1  
 $EndComp
@@ -255,15 +255,15 @@ Wire Wire Line
 Wire Wire Line
 	2700 3750 2850 3750
 $Comp
-L Regulator_Switching:R-785.0-0.5 U?
+L Regulator_Switching:R-785.0-1.0 U?
 U 1 1 5E9AA4DB
 P 3750 3750
 AR Path="/5E9AA4DB" Ref="U?"  Part="1" 
 AR Path="/5E9728CC/5E9AA4DB" Ref="U1"  Part="1" 
 F 0 "U1" H 3750 3992 50  0000 C CNN
-F 1 "R-785.0-0.5" H 3750 3901 50  0000 C CNN
+F 1 "R-785.0-1.0" H 3750 3901 50  0000 C CNN
 F 2 "Converter_DCDC:Converter_DCDC_RECOM_R-78E-0.5_THT" H 3800 3500 50  0001 L CIN
-F 3 "https://www.recom-power.com/pdf/Innoline/R-78xx-0.5.pdf" H 3750 3750 50  0001 C CNN
+F 3 "https://www.recom-power.com/pdf/Innoline/R-78xx-0.1.pdf" H 3750 3750 50  0001 C CNN
 F 4 "919-R-785.0-1.0" H 3750 3750 50  0001 C CNN "Mouser"
 F 5 "R-785.0-1.0" H 3750 3750 50  0001 C CNN "Mfr. No."
 F 6 "Recom" H 3750 3750 50  0001 C CNN "Mfr."
@@ -444,7 +444,10 @@ AR Path="/5E9728CC/5D9EA844" Ref="R8"  Part="1"
 F 0 "R8" H 4820 3896 50  0000 L CNN
 F 1 "470" H 4820 3805 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4680 3850 50  0001 C CNN
-F 3 "" H 4750 3850 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf" H 4750 3850 50  0001 C CNN
+F 4 "Yageo" H 4750 3850 50  0001 C CNN "Mfr."
+F 5 "MFP-25BRD52-470R" H 4750 3850 50  0001 C CNN "Mfr. No."
+F 6 "603-MFP-25BRD52-470R" H 4750 3850 50  0001 C CNN "Mouser"
 	1    4750 3850
 	1    0    0    -1  
 $EndComp

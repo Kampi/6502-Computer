@@ -524,10 +524,10 @@ AR Path="/5EC67F7B/5D9FD99A" Ref="R9"  Part="1"
 F 0 "R9" H 920 6096 50  0000 L CNN
 F 1 "10k" H 920 6005 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 780 6050 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/427/sfr16s25-239894.pdf" H 850 6050 50  0001 C CNN
-F 4 "Vishay / BC Components" H 850 6050 50  0001 C CNN "Mfr."
-F 5 "SFR25H0001002JR500" H 850 6050 50  0001 C CNN "Mfr. No."
-F 6 "594-SFR25H0001002JR5" H 850 6050 50  0001 C CNN "Mouser"
+F 3 "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf" H 850 6050 50  0001 C CNN
+F 4 "Yageo" H 850 6050 50  0001 C CNN "Mfr."
+F 5 "MFP-25BRD52-10K" H 850 6050 50  0001 C CNN "Mfr. No."
+F 6 "603-MFP-25BRD52-10K" H 850 6050 50  0001 C CNN "Mouser"
 	1    850  6050
 	1    0    0    -1  
 $EndComp

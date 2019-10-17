@@ -159,10 +159,10 @@ AR Path="/5EB09E21/5EBEB08E" Ref="R3"  Part="1"
 F 0 "R3" H 5120 5146 50  0000 L CNN
 F 1 "10k" H 5120 5055 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4980 5100 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/427/sfr16s25-239894.pdf" H 5050 5100 50  0001 C CNN
-F 4 "Vishay / BC Components" H 5050 5100 50  0001 C CNN "Mfr."
-F 5 "SFR25H0001002JR500" H 5050 5100 50  0001 C CNN "Mfr. No."
-F 6 "594-SFR25H0001002JR5" H 5050 5100 50  0001 C CNN "Mouser"
+F 3 "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf" H 5050 5100 50  0001 C CNN
+F 4 "Yageo" H 5050 5100 50  0001 C CNN "Mfr."
+F 5 "MFP-25BRD52-10K" H 5050 5100 50  0001 C CNN "Mfr. No."
+F 6 "603-MFP-25BRD52-10K" H 5050 5100 50  0001 C CNN "Mouser"
 	1    5050 5100
 	0    1    1    0   
 $EndComp
@@ -475,10 +475,10 @@ AR Path="/5EB09E21/5F1A8FA3" Ref="R4"  Part="1"
 F 0 "R4" H 12970 6196 50  0000 L CNN
 F 1 "1M" H 12970 6105 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 12830 6150 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/414/MFR-1528371.pdf" H 12900 6150 50  0001 C CNN
-F 4 "Welwyn" H 12900 6150 50  0001 C CNN "Mfr."
-F 5 "MFR3-1M0FC" H 12900 6150 50  0001 C CNN "Mfr. No."
-F 6 "756-MFR3-1M0FC" H 12900 6150 50  0001 C CNN "Mouser"
+F 3 "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFR_2013-467719.pdf" H 12900 6150 50  0001 C CNN
+F 4 "Yageo" H 12900 6150 50  0001 C CNN "Mfr."
+F 5 "MFR-25FRE52-1M" H 12900 6150 50  0001 C CNN "Mfr. No."
+F 6 "603-MFR-25FRE52-1M" H 12900 6150 50  0001 C CNN "Mouser"
 	1    12900 6150
 	-1   0    0    1   
 $EndComp
@@ -1649,7 +1649,7 @@ Wire Wire Line
 Text Label 4350 9700 0    50   ~ 0
 ~CS_VIA_1
 $Comp
-L Retro-PC-rescue:74HC138-74xx IC3
+L 74xx:74HC138 IC3
 U 1 1 5DA01AB5
 P 3750 10000
 AR Path="/5DA01AB5" Ref="IC3"  Part="1" 
@@ -1767,6 +1767,9 @@ F 0 "IC10" H 8250 3850 50  0000 C CNN
 F 1 "W65C22" H 8350 1450 50  0000 C CNN
 F 2 "Package_DIP:DIP-40_W15.24mm_LongPads" H 8700 2650 50  0001 C CNN
 F 3 "https://www.westerndesigncenter.com/wdc/documentation/w65c22s.pdf" H 8700 2650 50  0001 C CNN
+F 4 "Western Design Center" H 8700 2650 50  0001 C CNN "Mfr."
+F 5 "W65C22N6TPG-14" H 8700 2650 50  0001 C CNN "Mfr. No."
+F 6 "955-W65C22N6TPG-14" H 8700 2650 50  0001 C CNN "Mouser"
 	1    8700 2650
 	1    0    0    -1  
 $EndComp
@@ -1936,10 +1939,10 @@ AR Path="/5EB09E21/5E0EA165" Ref="R1"  Part="1"
 F 0 "R1" H 2470 3996 50  0000 L CNN
 F 1 "10k" H 2470 3905 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2330 3950 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/427/sfr16s25-239894.pdf" H 2400 3950 50  0001 C CNN
-F 4 "Vishay / BC Components" H 2400 3950 50  0001 C CNN "Mfr."
-F 5 "SFR25H0001002JR500" H 2400 3950 50  0001 C CNN "Mfr. No."
-F 6 "594-SFR25H0001002JR5" H 2400 3950 50  0001 C CNN "Mouser"
+F 3 "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf" H 2400 3950 50  0001 C CNN
+F 4 "Yageo" H 2400 3950 50  0001 C CNN "Mfr."
+F 5 "MFP-25BRD52-10K" H 2400 3950 50  0001 C CNN "Mfr. No."
+F 6 "603-MFP-25BRD52-10K" H 2400 3950 50  0001 C CNN "Mouser"
 	1    2400 3950
 	-1   0    0    1   
 $EndComp

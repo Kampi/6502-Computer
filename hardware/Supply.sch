@@ -8,7 +8,7 @@ Sheet 2 6
 Title "Retro PC"
 Date "2019-10-08"
 Rev "1.0"
-Comp ""
+Comp "https://www.kampis-elektroecke.de"
 Comment1 "Author: Daniel Kampert"
 Comment2 ""
 Comment3 ""
@@ -318,38 +318,38 @@ Wire Wire Line
 $Comp
 L Device:C C?
 U 1 1 5E9AA4F6
-P 6600 4400
+P 6550 4400
 AR Path="/5E9AA4F6" Ref="C?"  Part="1" 
 AR Path="/5E9728CC/5E9AA4F6" Ref="C12"  Part="1" 
-F 0 "C12" H 6715 4446 50  0000 L CNN
-F 1 "100nF" H 6715 4355 50  0000 L CNN
-F 2 "Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm" H 6638 4250 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/400/eadmlcc_halogenfree_fa150_en-890480.pdf" H 6600 4400 50  0001 C CNN
-F 4 "TDK" H 6600 4400 50  0001 C CNN "Mfr."
-F 5 "FA18X8R1H104KRU06" H 6600 4400 50  0001 C CNN "Mfr. No."
-F 6 "810-FA18X8R1H104KRU6" H 6600 4400 50  0001 C CNN "Mouser"
-	1    6600 4400
+F 0 "C12" H 6665 4446 50  0000 L CNN
+F 1 "100nF" H 6665 4355 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm" H 6588 4250 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/400/eadmlcc_halogenfree_fa150_en-890480.pdf" H 6550 4400 50  0001 C CNN
+F 4 "TDK" H 6550 4400 50  0001 C CNN "Mfr."
+F 5 "FA18X8R1H104KRU06" H 6550 4400 50  0001 C CNN "Mfr. No."
+F 6 "810-FA18X8R1H104KRU6" H 6550 4400 50  0001 C CNN "Mouser"
+	1    6550 4400
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5E9AA4FC
-P 6600 4650
+P 6550 4650
 AR Path="/5E9AA4FC" Ref="#PWR?"  Part="1" 
 AR Path="/5E9728CC/5E9AA4FC" Ref="#PWR043"  Part="1" 
-F 0 "#PWR043" H 6600 4400 50  0001 C CNN
-F 1 "GND" H 6605 4477 50  0000 C CNN
-F 2 "" H 6600 4650 50  0001 C CNN
-F 3 "" H 6600 4650 50  0001 C CNN
-	1    6600 4650
+F 0 "#PWR043" H 6550 4400 50  0001 C CNN
+F 1 "GND" H 6555 4477 50  0000 C CNN
+F 2 "" H 6550 4650 50  0001 C CNN
+F 3 "" H 6550 4650 50  0001 C CNN
+	1    6550 4650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6600 4550 6600 4650
+	6550 4550 6550 4650
 Wire Wire Line
-	6800 4200 6600 4200
+	6800 4200 6550 4200
 Wire Wire Line
-	6600 4200 6600 4250
+	6550 4200 6550 4250
 $Comp
 L Device:C C?
 U 1 1 5E9AA505
@@ -357,7 +357,7 @@ P 7900 4400
 AR Path="/5E9AA505" Ref="C?"  Part="1" 
 AR Path="/5E9728CC/5E9AA505" Ref="C13"  Part="1" 
 F 0 "C13" H 8015 4446 50  0000 L CNN
-F 1 "100nF" H 8015 4355 50  0001 L CNN
+F 1 "100nF" H 8015 4355 50  0000 L CNN
 F 2 "Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm" H 7938 4250 50  0001 C CNN
 F 3 "https://www.mouser.de/datasheet/2/400/eadmlcc_halogenfree_fa150_en-890480.pdf" H 7900 4400 50  0001 C CNN
 F 4 "TDK" H 7900 4400 50  0001 C CNN "Mfr."
@@ -403,7 +403,7 @@ P 7300 4000
 AR Path="/5E9AA51D" Ref="IC?"  Part="1" 
 AR Path="/5E9728CC/5E9AA51D" Ref="IC8"  Part="1" 
 F 0 "IC8" H 6950 4350 50  0000 C CNN
-F 1 "TL7702" H 7050 3650 50  0000 C CNN
+F 1 "TL7702A" H 7050 3650 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 7300 4000 50  0001 C CNN
 F 3 "http://www.ti.com.cn/cn/lit/ds/symlink/tl7705b.pdf" H 7300 4000 50  0001 C CNN
 F 4 "Texas Instruments" H 7300 4000 50  0001 C CNN "Mfr."

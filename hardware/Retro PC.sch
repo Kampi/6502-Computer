@@ -8,7 +8,7 @@ Sheet 1 6
 Title "Retro PC"
 Date "2019-10-08"
 Rev "1.0"
-Comp ""
+Comp "https://www.kampis-elektroecke.de"
 Comment1 "Author: Daniel Kampert"
 Comment2 ""
 Comment3 ""
@@ -64,24 +64,18 @@ U 5EC67F7B
 F0 "IO" 50
 F1 "IO.sch" 50
 F2 "CB[1..2]" O R 9650 8300 50 
-F3 "PB[0..7]" O R 9650 8500 50 
-F4 "PA[0..7]" O R 9650 8600 50 
-F5 "~NMI" O L 8250 8950 50 
-F6 "~IRQ" O L 8250 8750 50 
+F3 "PB[0..7]" O R 9650 8400 50 
+F4 "PA[0..7]" O R 9650 8500 50 
+F5 "~NMI" O L 8250 9300 50 
+F6 "~IRQ" O L 8250 9200 50 
 F7 "R~W" I R 9650 9150 50 
 F8 "A[15..0]" I R 9650 8950 50 
 F9 "D[7..0]" B R 9650 9050 50 
 F10 "~RESET" O L 8250 8350 50 
 F11 "Clock" I R 9650 9250 50 
+F12 "~TerminalReady" I R 9650 8750 50 
+F13 "~CarrierDetect" O R 9650 8850 50 
 $EndSheet
-Wire Bus Line
-	9650 8500 10250 8500
-Wire Bus Line
-	10250 8500 10250 7600
-Wire Bus Line
-	9650 8600 10350 8600
-Wire Bus Line
-	10350 8600 10350 7500
 Text Notes 900  1850 0    100  ~ 0
 $0000 - $FFFF\n
 Wire Notes Line width 18 style solid
@@ -145,10 +139,6 @@ Text Notes 2650 2850 0    100  ~ 0
 Text Notes 2650 3100 0    100  ~ 0
 24K
 Wire Wire Line
-	8250 8950 7800 8950
-Wire Wire Line
-	8250 8750 7900 8750
-Wire Wire Line
 	7900 7650 8250 7650
 Wire Wire Line
 	10250 5450 10250 6450
@@ -178,16 +168,12 @@ F11 "~IRQ" I L 8250 7650 50
 F12 "R~W" O R 9850 7250 50 
 F13 "A[15..0]" O R 9850 7050 50 
 F14 "D[7..0]" B R 9850 7150 50 
-F15 "RDY" O L 8250 7100 50 
-F16 "SYNC" O L 8250 7000 50 
-F17 "VPB" O L 8250 6950 50 
-F18 "BE" I L 8250 7450 50 
-F19 "LCD[0..10]" B L 8250 6700 50 
-F20 "PS2[0..1]" B L 8250 6800 50 
-F21 "~ModemReady" I R 9850 6750 50 
-F22 "~ReceiverReady" O R 9850 6850 50 
-F23 "Clock" O R 9850 7350 50 
-F24 "~Carrier" I R 9850 6950 50 
+F15 "LCD[0..10]" B L 8250 6700 50 
+F16 "PS2[0..1]" B L 8250 6800 50 
+F17 "~ModemReady" I R 9850 6750 50 
+F18 "Clock" O R 9850 7350 50 
+F19 "~TerminalReady" O R 9850 6850 50 
+F20 "~CarrierDetect" I R 9850 6950 50 
 $EndSheet
 Wire Bus Line
 	10900 8950 9650 8950
@@ -203,8 +189,6 @@ Wire Wire Line
 	9850 7350 10600 7350
 Wire Wire Line
 	10600 9250 9650 9250
-Wire Wire Line
-	7900 8750 7900 7650
 Connection ~ 8000 6450
 Wire Wire Line
 	8250 8350 8000 8350
@@ -231,9 +215,9 @@ F6 "RTS" O R 9850 5750 50
 F7 "~ModemReady" O R 9850 5850 50 
 $EndSheet
 Wire Bus Line
-	9850 7600 10250 7600
+	9850 7600 10100 7600
 Wire Bus Line
-	9850 7500 10350 7500
+	9850 7500 10200 7500
 Wire Wire Line
 	10600 7350 10600 9250
 Wire Bus Line
@@ -246,6 +230,32 @@ Wire Bus Line
 	9850 7050 10900 7050
 Wire Wire Line
 	7800 7750 8250 7750
+Wire Bus Line
+	9650 8400 10100 8400
+Wire Bus Line
+	10100 8400 10100 7600
+Wire Bus Line
+	9650 8500 10200 8500
+Wire Bus Line
+	10200 8500 10200 7500
 Wire Wire Line
-	7800 7750 7800 8950
+	11100 6850 11100 8750
+Wire Wire Line
+	9850 6850 11100 6850
+Wire Wire Line
+	9650 8750 11100 8750
+Wire Wire Line
+	9650 8850 11000 8850
+Wire Wire Line
+	11000 8850 11000 6950
+Wire Wire Line
+	11000 6950 9850 6950
+Wire Wire Line
+	8250 9200 7900 9200
+Wire Wire Line
+	8250 9300 7800 9300
+Wire Wire Line
+	7800 7750 7800 9300
+Wire Wire Line
+	7900 7650 7900 9200
 $EndSCHEMATC

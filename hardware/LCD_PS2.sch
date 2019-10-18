@@ -5,11 +5,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 6
-Title ""
+Title "Retro PC"
 Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Rev "1.0"
+Comp "https://www.kampis-elektroecke.de"
+Comment1 "Author: Daniel Kampert"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -264,10 +264,6 @@ F 6 "652-3386T-1-103LF" H 6650 3200 50  0001 C CNN "Mouser"
 	1    6650 3200
 	-1   0    0    1   
 $EndComp
-Wire Bus Line
-	4600 6050 4600 6350
-Wire Bus Line
-	4600 3100 4600 4300
 $Comp
 L Display_Character:WC1602A DS1
 U 1 1 5DAA1FEA
@@ -282,4 +278,8 @@ F 6 "763-0220GZ-FSW-GBW" H 5600 3800 50  0001 C CNN "Mouser"
 	1    5600 3800
 	1    0    0    -1  
 $EndComp
+Wire Bus Line
+	4600 6050 4600 6350
+Wire Bus Line
+	4600 3100 4600 4300
 $EndSCHEMATC

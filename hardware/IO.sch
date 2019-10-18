@@ -8,7 +8,7 @@ Sheet 3 6
 Title "Retro PC"
 Date "2019-10-08"
 Rev "1.0"
-Comp ""
+Comp "https://www.kampis-elektroecke.de"
 Comment1 "Author: Daniel Kampert"
 Comment2 ""
 Comment3 ""
@@ -854,7 +854,62 @@ NoConn ~ 10250 2950
 NoConn ~ 10250 2850
 NoConn ~ 10250 2750
 NoConn ~ 10250 2650
-NoConn ~ 10250 2550
+Text HLabel 10350 2550 2    50   Input ~ 0
+~TerminalReady
+Wire Wire Line
+	10350 2550 10250 2550
+Text HLabel 3850 6200 0    50   Output ~ 0
+~CarrierDetect
+$Comp
+L Switch:SW_SPDT SW5
+U 1 1 5DC04457
+P 4050 6200
+F 0 "SW5" H 4050 6485 50  0000 C CNN
+F 1 "CARRIER" H 4050 6394 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_E-Switch_EG1224_SPDT_Angled" H 4050 6200 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/140/EG-345873.pdf" H 4050 6200 50  0001 C CNN
+F 4 "E-Switch" H 4050 6200 50  0001 C CNN "Mfr."
+F 5 "EG1224" H 4050 6200 50  0001 C CNN "Mfr. No."
+F 6 "612-EG1224" H 4050 6200 50  0001 C CNN "Mouser"
+	1    4050 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DC0FBD8
+P 4350 6400
+AR Path="/5DC0FBD8" Ref="#PWR?"  Part="1" 
+AR Path="/5EB09E21/5DC0FBD8" Ref="#PWR?"  Part="1" 
+AR Path="/5EC67F7B/5DC0FBD8" Ref="#PWR048"  Part="1" 
+F 0 "#PWR048" H 4350 6150 50  0001 C CNN
+F 1 "GND" H 4355 6227 50  0000 C CNN
+F 2 "" H 4350 6400 50  0001 C CNN
+F 3 "" H 4350 6400 50  0001 C CNN
+	1    4350 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DC13EF2
+P 4350 6050
+AR Path="/5DC13EF2" Ref="#PWR?"  Part="1" 
+AR Path="/5E9728CC/5DC13EF2" Ref="#PWR?"  Part="1" 
+AR Path="/5EC67F7B/5DC13EF2" Ref="#PWR032"  Part="1" 
+F 0 "#PWR032" H 4350 5900 50  0001 C CNN
+F 1 "+5V" H 4365 6223 50  0000 C CNN
+F 2 "" H 4350 6050 50  0001 C CNN
+F 3 "" H 4350 6050 50  0001 C CNN
+	1    4350 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 6100 4350 6100
+Wire Wire Line
+	4350 6100 4350 6050
+Wire Wire Line
+	4250 6300 4350 6300
+Wire Wire Line
+	4350 6300 4350 6400
 Wire Bus Line
 	2850 3450 2850 4150
 Wire Bus Line

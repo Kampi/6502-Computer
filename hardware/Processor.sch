@@ -8,7 +8,7 @@ Sheet 5 6
 Title "Retro PC"
 Date "2019-10-08"
 Rev "1.0"
-Comp ""
+Comp "https://www.kampis-elektroecke.de"
 Comment1 "Author: Daniel Kampert"
 Comment2 ""
 Comment3 ""
@@ -20,8 +20,8 @@ U 1 1 5EBEAF78
 P 3800 5350
 AR Path="/5EBEAF78" Ref="IC?"  Part="1" 
 AR Path="/5EB09E21/5EBEAF78" Ref="IC2"  Part="1" 
-F 0 "IC2" H 3400 6650 50  0000 C CNN
-F 1 "W65C02" H 3500 6550 50  0000 C CNN
+F 0 "IC2" H 3400 6550 50  0000 C CNN
+F 1 "W65C02" H 3490 4150 50  0000 C CNN
 F 2 "Package_DIP:DIP-40_W15.24mm_LongPads" H 3800 5050 50  0001 C CNN
 F 3 "https://www.westerndesigncenter.com/wdc/documentation/w65c02s.pdf" H 3800 5350 50  0001 C CNN
 F 4 "Western Design Center" H 3800 5350 50  0001 C CNN "Mfr."
@@ -153,28 +153,22 @@ NoConn ~ 4350 5200
 $Comp
 L Device:R R?
 U 1 1 5EBEB08E
-P 5050 5100
+P 4600 5000
 AR Path="/5EBEB08E" Ref="R?"  Part="1" 
 AR Path="/5EB09E21/5EBEB08E" Ref="R3"  Part="1" 
-F 0 "R3" H 5120 5146 50  0000 L CNN
-F 1 "10k" H 5120 5055 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4980 5100 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf" H 5050 5100 50  0001 C CNN
-F 4 "Yageo" H 5050 5100 50  0001 C CNN "Mfr."
-F 5 "MFP-25BRD52-10K" H 5050 5100 50  0001 C CNN "Mfr. No."
-F 6 "603-MFP-25BRD52-10K" H 5050 5100 50  0001 C CNN "Mouser"
-	1    5050 5100
+F 0 "R3" H 4670 5046 50  0000 L CNN
+F 1 "10k" H 4670 4955 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4530 5000 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf" H 4600 5000 50  0001 C CNN
+F 4 "Yageo" H 4600 5000 50  0001 C CNN "Mfr."
+F 5 "MFP-25BRD52-10K" H 4600 5000 50  0001 C CNN "Mfr. No."
+F 6 "603-MFP-25BRD52-10K" H 4600 5000 50  0001 C CNN "Mouser"
+	1    4600 5000
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4850 5100 4850 5000
 NoConn ~ 4350 4900
 Wire Wire Line
-	4350 5300 4400 5300
-Wire Wire Line
-	4350 5100 4600 5100
-Wire Wire Line
-	4350 5000 4850 5000
+	4350 5000 4450 5000
 Wire Wire Line
 	2850 4900 3250 4900
 Wire Wire Line
@@ -271,13 +265,6 @@ Text Label 4500 6300 0    50   ~ 0
 D6
 Text Label 4500 6400 0    50   ~ 0
 D7
-Wire Wire Line
-	4900 5100 4850 5100
-Wire Wire Line
-	4850 5000 4950 5000
-Connection ~ 4850 5000
-Wire Wire Line
-	4350 4700 4400 4700
 Connection ~ 2750 7100
 Wire Wire Line
 	6750 7450 6800 7450
@@ -788,8 +775,8 @@ U 1 1 5EBEAF7E
 P 12000 3100
 AR Path="/5EBEAF7E" Ref="IC?"  Part="1" 
 AR Path="/5EB09E21/5EBEAF7E" Ref="IC6"  Part="1" 
-F 0 "IC6" H 11550 4400 50  0000 C CNN
-F 1 "W65C22" H 11650 4300 50  0000 C CNN
+F 0 "IC6" H 11550 4300 50  0000 C CNN
+F 1 "W65C22" H 11650 1900 50  0000 C CNN
 F 2 "Package_DIP:DIP-40_W15.24mm_LongPads" H 12000 3100 50  0001 C CNN
 F 3 "https://www.westerndesigncenter.com/wdc/documentation/w65c22s.pdf" H 12000 3100 50  0001 C CNN
 F 4 "Western Design Center" H 12000 3100 50  0001 C CNN "Mfr."
@@ -1049,8 +1036,8 @@ U 1 1 5EBEAF84
 P 8950 5700
 AR Path="/5EBEAF84" Ref="IC?"  Part="1" 
 AR Path="/5EB09E21/5EBEAF84" Ref="IC5"  Part="1" 
-F 0 "IC5" H 8500 6650 50  0000 C CNN
-F 1 "RAM" H 8650 6550 50  0000 C CNN
+F 0 "IC5" H 8450 6550 50  0000 C CNN
+F 1 "RAM" H 8470 4850 50  0000 C CNN
 F 2 "Package_DIP:DIP-28_W15.24mm_LongPads" H 8950 5700 50  0001 C CNN
 F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C62256A.pdf" H 8950 5700 50  0001 C CNN
 F 4 "Alliance Memory" H 8950 5700 50  0001 C CNN "Mfr."
@@ -1181,18 +1168,18 @@ Wire Wire Line
 Wire Wire Line
 	7000 4600 7250 4600
 Wire Wire Line
-	5200 5100 5300 5100
+	4750 5000 4850 5000
 $Comp
 L power:+5V #PWR?
 U 1 1 5EBEB095
-P 5300 5100
+P 4850 5000
 AR Path="/5EBEB095" Ref="#PWR?"  Part="1" 
 AR Path="/5EB09E21/5EBEB095" Ref="#PWR014"  Part="1" 
-F 0 "#PWR014" H 5300 4950 50  0001 C CNN
-F 1 "+5V" H 5315 5273 50  0000 C CNN
-F 2 "" H 5300 5100 50  0001 C CNN
-F 3 "" H 5300 5100 50  0001 C CNN
-	1    5300 5100
+F 0 "#PWR014" H 4850 4850 50  0001 C CNN
+F 1 "+5V" H 4865 5173 50  0000 C CNN
+F 2 "" H 4850 5000 50  0001 C CNN
+F 3 "" H 4850 5000 50  0001 C CNN
+	1    4850 5000
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -1630,16 +1617,8 @@ Wire Wire Line
 	11400 2650 10950 2650
 Text Label 10950 2650 2    50   ~ 0
 ~CS_VIA_1
-Text HLabel 4950 5000 2    50   Output ~ 0
-RDY
 Text HLabel 4950 4800 2    50   Input ~ 0
 ~NMI
-Text HLabel 4400 4700 2    50   Output ~ 0
-SYNC
-Text HLabel 4600 5100 2    50   Output ~ 0
-VPB
-Text HLabel 4400 5300 2    50   Input ~ 0
-BE
 Text Label 10950 2250 2    50   ~ 0
 ~IRQ_VIA_1
 Text Label 11250 6400 2    50   ~ 0
@@ -2090,22 +2069,6 @@ Wire Wire Line
 	4350 4300 4800 4300
 Wire Wire Line
 	4350 7650 6800 7650
-$Comp
-L Memory_EEPROM:28C256 IC?
-U 1 1 5EBEAFAB
-P 6600 5500
-AR Path="/5EBEAFAB" Ref="IC?"  Part="1" 
-AR Path="/5EB09E21/5EBEAFAB" Ref="IC4"  Part="1" 
-F 0 "IC4" H 6350 6650 50  0000 C CNN
-F 1 "SYSTEM ROM" H 6550 6550 50  0000 C CNN
-F 2 "Package_DIP:DIP-28_W15.24mm_LongPads" H 6600 5500 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc0006.pdf" H 6600 5500 50  0001 C CNN
-F 4 "Aries Electronics" H 6600 5500 50  0001 C CNN "Mfr."
-F 5 "28-6553-10*" H 6600 5500 50  0001 C CNN "Mfr. No."
-F 6 "535-28-6553-10" H 6600 5500 50  0001 C CNN "Mouser"
-	1    6600 5500
-	1    0    0    -1  
-$EndComp
 Text HLabel 9900 2650 2    50   BiDi ~ 0
 PS2[0..1]
 Entry Wire Line
@@ -2193,9 +2156,9 @@ LCD2
 Wire Wire Line
 	12550 7650 13900 7650
 Text HLabel 13900 7650 2    50   Output ~ 0
-~ReceiverReady
+~TerminalReady
 Text HLabel 13900 7950 2    50   Input ~ 0
-~Carrier
+~CarrierDetect
 Wire Wire Line
 	12550 7950 13900 7950
 NoConn ~ 9300 3050
@@ -2205,6 +2168,27 @@ NoConn ~ 9300 3600
 NoConn ~ 9300 3700
 NoConn ~ 9300 1600
 NoConn ~ 9300 1700
+Text HLabel 4800 4300 2    50   Output ~ 0
+Clock
+$Comp
+L Memory_EEPROM:28C256 IC?
+U 1 1 5EBEAFAB
+P 6600 5500
+AR Path="/5EBEAFAB" Ref="IC?"  Part="1" 
+AR Path="/5EB09E21/5EBEAFAB" Ref="IC4"  Part="1" 
+F 0 "IC4" H 6350 6540 50  0000 C CNN
+F 1 "SYSTEM ROM" H 6530 4450 50  0000 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm_LongPads" H 6600 5500 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc0006.pdf" H 6600 5500 50  0001 C CNN
+F 4 "Microchip Technology / Atmel" H 6600 5500 50  0001 C CNN "Mfr."
+F 5 "AT28C256-15PU" H 6600 5500 50  0001 C CNN "Mfr. No."
+F 6 "556-AT28C256-15PU" H 6600 5500 50  0001 C CNN "Mouser"
+	1    6600 5500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4350 5300
+NoConn ~ 4350 5100
+NoConn ~ 4350 4700
 Wire Bus Line
 	9800 2650 9800 3350
 Wire Bus Line
@@ -2239,6 +2223,4 @@ Wire Bus Line
 	7900 3850 7900 7000
 Wire Bus Line
 	5750 4700 5750 7100
-Text HLabel 4800 4300 2    50   Output ~ 0
-Clock
 $EndSCHEMATC

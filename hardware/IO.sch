@@ -8,7 +8,7 @@ Sheet 3 6
 Title "Retro PC"
 Date "2019-10-08"
 Rev "1.0"
-Comp "https://www.kampis-elektroecke.de"
+Comp ""
 Comment1 "Author: Daniel Kampert"
 Comment2 ""
 Comment3 ""

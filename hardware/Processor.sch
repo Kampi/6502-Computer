@@ -8,7 +8,7 @@ Sheet 5 6
 Title "Retro PC"
 Date "2019-10-08"
 Rev "1.0"
-Comp "https://www.kampis-elektroecke.de"
+Comp ""
 Comment1 "Author: Daniel Kampert"
 Comment2 ""
 Comment3 ""
@@ -2086,8 +2086,6 @@ Text HLabel 4800 5400 2    50   Output ~ 0
 R~W
 Wire Wire Line
 	4350 5400 4800 5400
-Text HLabel 4800 4300 2    50   Output ~ 0
-Clock
 Wire Wire Line
 	4350 4300 4800 4300
 Wire Wire Line
@@ -2241,4 +2239,6 @@ Wire Bus Line
 	7900 3850 7900 7000
 Wire Bus Line
 	5750 4700 5750 7100
+Text HLabel 4800 4300 2    50   Output ~ 0
+Clock
 $EndSCHEMATC

@@ -1,2 +1,3 @@
 (sym_lib_table
+  (lib (name Retro-PC-rescue)(type Legacy)(uri "${KIPRJMOD}/Retro PC-rescue.lib")(options "")(descr ""))
 )

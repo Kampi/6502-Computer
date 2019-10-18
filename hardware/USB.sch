@@ -370,7 +370,7 @@ P 3200 3450
 AR Path="/5DA7E5BF" Ref="X2"  Part="1" 
 AR Path="/5E9064F2/5DA7E5BF" Ref="X2"  Part="1" 
 F 0 "X2" H 3257 3917 50  0000 C CNN
-F 1 "USB_B" H 3257 3826 50  0000 C CNN
+F 1 "SERIAL" H 3257 3826 50  0000 C CNN
 F 2 "Connector_Custom:USB-B_TE_2923042_Horizontal" H 3350 3400 50  0001 C CNN
 F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F292304%7FD4%7Fpdf%7FEnglish%7FENG_CD_292304_D4.pdf%7F292304-2" H 3350 3400 50  0001 C CNN
 F 4 "TE Connectivity" H 3257 4007 50  0001 C CNN "Mfr."

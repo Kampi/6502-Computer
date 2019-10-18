@@ -1050,7 +1050,7 @@ P 8950 5700
 AR Path="/5EBEAF84" Ref="IC?"  Part="1" 
 AR Path="/5EB09E21/5EBEAF84" Ref="IC5"  Part="1" 
 F 0 "IC5" H 8500 6650 50  0000 C CNN
-F 1 "AS6C62256A" H 8650 6550 50  0000 C CNN
+F 1 "RAM" H 8650 6550 50  0000 C CNN
 F 2 "Package_DIP:DIP-28_W15.24mm_LongPads" H 8950 5700 50  0001 C CNN
 F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C62256A.pdf" H 8950 5700 50  0001 C CNN
 F 4 "Alliance Memory" H 8950 5700 50  0001 C CNN "Mfr."
@@ -1649,7 +1649,7 @@ Wire Wire Line
 Text Label 4350 9700 0    50   ~ 0
 ~CS_VIA_1
 $Comp
-L 74xx:74HC138 IC3
+L Retro-PC-rescue:74HC138-74xx IC3
 U 1 1 5DA01AB5
 P 3750 10000
 AR Path="/5DA01AB5" Ref="IC3"  Part="1" 

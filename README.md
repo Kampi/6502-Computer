@@ -7,10 +7,13 @@
   - [About](#about)
   - [Schematic](#schematic)
   - [History](#history)
- 
-### About
+  - [Maintainer](#maintainer)
 
-A simple W650C02 microprocessor based computer development board to learn the basics of modern computer systems.
+## About
+
+A simple W650C02 microprocessor based computer development board to learn some basics of older computer systems.
+
+![Overview](doc/img/Overview_Small.png)
 
 Please write an e-mail to [DanielKampert@kampis-elektroecke.de](DanielKampert@kampis-elektroecke.de) if you have any questions.
 

@@ -1,4 +1,4 @@
-16302616632343639
+16307316040136118
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -6509,6 +6509,27 @@ mcrf hirose ufl u.fl microcoaxial
 0
 4
 2
+Connector_Custom
+BarrelJack_Wuerth_6941xx301002
+Wuerth electronics barrel jack connector (5.5mm outher diameter, inner diameter 2.05mm or 2.55mm depending on exact order number), See: http://katalog.we-online.de/em/datasheet/6941xx301002.pdf
+connector barrel jack
+0
+3
+3
+Connector_Custom
+Mini-DIN_TE_Female_6Pin_2rows
+A footprint for the generic 6 pin Mini-DIN through hole connector with shell.
+mini din 6pin connector socket
+0
+9
+7
+Connector_Custom
+USB-B_TE_2923042_Horizontal
+
+USB B horizontal female connector
+0
+6
+5
 Connector_DIN
 DIN41612_B2_2x8_Horizontal
 DIN 41612 connector, type B/2, horizontal, 16 pins wide, 2 rows, even columns
@@ -62908,6 +62929,13 @@ TO-264-5 Vertical RM 3.81mm
 0
 5
 5
+Potentiometer
+Bourns_3386T_Vertical
+Potentiometer, vertical, Bourns 3386T
+Potentiometer vertical Bourns 3386T
+0
+3
+3
 Potentiometer_SMD
 Potentiometer_ACP_CA6-VSMD_Vertical
 Potentiometer, vertical, ACP CA6-VSMD, http://www.acptechnologies.com/wp-content/uploads/2017/06/01-ACP-CA6.pdf
@@ -66779,13 +66807,6 @@ THT DIP DIL ZIF 25.4mm 1000mil Socket
 0
 40
 40
-Socket
-AriesElectronics_28355410
-28-3554-10-1
-Connector
-0
-30
-30
 Socket
 DIP_Socket-14_W4.3_W5.08_W7.62_W10.16_W10.9_3M_214-3339-00-0602J
 3M 14-pin zero insertion force socket, through-hole, row spacing 7.62 mm (300 mils), http://multimedia.3m.com/mws/media/494546O/3mtm-dip-sockets-100-2-54-mm-ts0365.pdf

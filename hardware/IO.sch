@@ -780,7 +780,7 @@ L Connector_Generic:Conn_02x20_Odd_Even X3
 U 1 1 5DBDED7E
 P 9950 2250
 F 0 "X3" H 10000 3367 50  0000 C CNN
-F 1 "Expansion" H 10000 3276 50  0000 C CNN
+F 1 "EXPANSION" H 10000 3276 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Horizontal" H 9950 2250 50  0001 C CNN
 F 3 "https://cdn.harwin.com/pdfs/M20-974.pdf" H 9950 2250 50  0001 C CNN
 F 4 "Harwin" H 9950 2250 50  0001 C CNN "Mfr."

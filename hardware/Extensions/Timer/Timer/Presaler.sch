@@ -1,0 +1,756 @@
+EESchema Schematic File Version 4
+LIBS:Timer-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 5
+Title "Timer Expansion"
+Date "2019-10-20"
+Rev "1.0"
+Comp "https://www.kampis-elektroecke.de"
+Comment1 "Author: Daniel Kampert"
+Comment2 ""
+Comment3 ""
+Comment4 "Clock Prescaler"
+$EndDescr
+Wire Wire Line
+	1100 1400 3450 1400
+$Comp
+L 74xx:74AHC04 U?
+U 1 1 5DC200D1
+P 3200 2300
+AR Path="/5DC200D1" Ref="U?"  Part="1" 
+AR Path="/5DC15C71/5DC200D1" Ref="IC7"  Part="1" 
+F 0 "IC7" H 3200 2617 50  0000 C CNN
+F 1 "74AHC04" H 3200 2526 50  0000 C CNN
+F 2 "" H 3200 2300 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT04.pdf" H 3200 2300 50  0001 C CNN
+	1    3200 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2300 3750 2300
+Wire Wire Line
+	3750 2300 3750 1700
+Wire Wire Line
+	3750 2300 4600 2300
+Wire Wire Line
+	4600 2300 4600 1700
+Connection ~ 3750 2300
+Wire Wire Line
+	4050 1500 4150 1500
+Wire Wire Line
+	4150 1500 4150 1800
+Wire Wire Line
+	4150 1800 3350 1800
+Wire Wire Line
+	3350 1800 3350 1300
+Wire Wire Line
+	3350 1300 3450 1300
+Wire Wire Line
+	4050 1300 4100 1300
+Wire Wire Line
+	4200 1300 4200 1400
+Wire Wire Line
+	4200 1400 4300 1400
+Wire Wire Line
+	4900 1500 5050 1500
+Wire Wire Line
+	5050 1500 5050 1800
+Wire Wire Line
+	5050 1800 4250 1800
+Wire Wire Line
+	4250 1800 4250 1300
+Wire Wire Line
+	4250 1300 4300 1300
+Wire Wire Line
+	4100 1300 4100 800 
+Wire Wire Line
+	4100 800  4400 800 
+Connection ~ 4100 1300
+Wire Wire Line
+	4100 1300 4200 1300
+Text Label 4400 800  0    50   ~ 0
+DIV2
+Wire Wire Line
+	4600 1100 4600 1050
+Wire Wire Line
+	4600 1050 3750 1050
+Wire Wire Line
+	3750 1050 3750 1100
+Connection ~ 3750 1050
+Wire Wire Line
+	4600 1050 5550 1050
+Connection ~ 5550 1050
+Wire Wire Line
+	5550 1050 5550 1100
+Wire Wire Line
+	6400 1050 5550 1050
+Wire Wire Line
+	6400 1100 6400 1050
+Text Label 6200 800  0    50   ~ 0
+DIV8
+Wire Wire Line
+	5900 1300 6000 1300
+Connection ~ 5900 1300
+Wire Wire Line
+	5900 800  6200 800 
+Wire Wire Line
+	5900 1300 5900 800 
+Wire Wire Line
+	6050 1300 6100 1300
+Wire Wire Line
+	6050 1800 6050 1300
+Wire Wire Line
+	6850 1800 6050 1800
+Wire Wire Line
+	6700 1500 6850 1500
+Wire Wire Line
+	6000 1400 6100 1400
+Wire Wire Line
+	6000 1300 6000 1400
+Wire Wire Line
+	5850 1300 5900 1300
+Wire Wire Line
+	5150 1300 5250 1300
+Wire Wire Line
+	5150 1800 5150 1300
+Wire Wire Line
+	5950 1800 5150 1800
+Wire Wire Line
+	5950 1500 5950 1800
+Wire Wire Line
+	5850 1500 5950 1500
+Wire Wire Line
+	6400 2300 6400 1700
+Wire Wire Line
+	5550 2300 5550 1700
+Wire Wire Line
+	4600 2300 5550 2300
+Connection ~ 4600 2300
+Connection ~ 5550 2300
+Wire Wire Line
+	5550 2300 6400 2300
+Connection ~ 4600 1050
+Wire Wire Line
+	5050 1400 5050 1300
+Wire Wire Line
+	5050 1300 4950 1300
+Wire Wire Line
+	5050 1400 5250 1400
+Wire Wire Line
+	4950 1300 4950 800 
+Wire Wire Line
+	4950 800  5250 800 
+Text Label 5250 800  0    50   ~ 0
+DIV4
+$Comp
+L power:+5V #PWR?
+U 1 1 5DC20128
+P 3750 900
+AR Path="/5DC20128" Ref="#PWR?"  Part="1" 
+AR Path="/5DC15C71/5DC20128" Ref="#PWR04"  Part="1" 
+F 0 "#PWR04" H 3750 750 50  0001 C CNN
+F 1 "+5V" H 3765 1073 50  0000 C CNN
+F 2 "" H 3750 900 50  0001 C CNN
+F 3 "" H 3750 900 50  0001 C CNN
+	1    3750 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 900  3750 1050
+Text Label 7100 800  0    50   ~ 0
+DIV16
+Wire Wire Line
+	6800 800  7100 800 
+Wire Wire Line
+	6800 1300 6800 800 
+Wire Wire Line
+	6850 1500 6850 1800
+Wire Wire Line
+	6700 1300 6800 1300
+Connection ~ 4950 1300
+Wire Wire Line
+	4950 1300 4900 1300
+Wire Wire Line
+	3150 3300 3450 3300
+Text Label 3150 3300 2    50   ~ 0
+DIV16
+$Comp
+L 74xx:74AHC04 U?
+U 1 1 5DC28397
+P 3200 4200
+AR Path="/5DC28397" Ref="U?"  Part="1" 
+AR Path="/5DC15C71/5DC28397" Ref="IC14"  Part="1" 
+F 0 "IC14" H 3200 4517 50  0000 C CNN
+F 1 "74AHC04" H 3200 4426 50  0000 C CNN
+F 2 "" H 3200 4200 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT04.pdf" H 3200 4200 50  0001 C CNN
+	1    3200 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 4200 3750 4200
+Wire Wire Line
+	3750 4200 3750 3600
+Wire Wire Line
+	3750 4200 4600 4200
+Wire Wire Line
+	4600 4200 4600 3600
+Connection ~ 3750 4200
+Wire Wire Line
+	4050 3400 4150 3400
+Wire Wire Line
+	4150 3400 4150 3700
+Wire Wire Line
+	4150 3700 3350 3700
+Wire Wire Line
+	3350 3700 3350 3200
+Wire Wire Line
+	3350 3200 3450 3200
+Wire Wire Line
+	4050 3200 4100 3200
+Wire Wire Line
+	4200 3200 4200 3300
+Wire Wire Line
+	4200 3300 4300 3300
+Wire Wire Line
+	4900 3400 5050 3400
+Wire Wire Line
+	5050 3400 5050 3700
+Wire Wire Line
+	5050 3700 4250 3700
+Wire Wire Line
+	4250 3700 4250 3200
+Wire Wire Line
+	4250 3200 4300 3200
+Wire Wire Line
+	4100 3200 4100 2700
+Wire Wire Line
+	4100 2700 4400 2700
+Connection ~ 4100 3200
+Wire Wire Line
+	4100 3200 4200 3200
+Text Label 4400 2700 0    50   ~ 0
+DIV32
+Wire Wire Line
+	4600 3000 4600 2950
+Wire Wire Line
+	4600 2950 3750 2950
+Wire Wire Line
+	3750 2950 3750 3000
+Connection ~ 3750 2950
+Wire Wire Line
+	4600 2950 5550 2950
+Connection ~ 5550 2950
+Wire Wire Line
+	5550 2950 5550 3000
+Wire Wire Line
+	6400 2950 5550 2950
+Wire Wire Line
+	6400 3000 6400 2950
+Text Label 6200 2700 0    50   ~ 0
+DIV128
+Wire Wire Line
+	5900 3200 6000 3200
+Connection ~ 5900 3200
+Wire Wire Line
+	5900 2700 6200 2700
+Wire Wire Line
+	5900 3200 5900 2700
+Wire Wire Line
+	6050 3200 6100 3200
+Wire Wire Line
+	6050 3700 6050 3200
+Wire Wire Line
+	6850 3700 6050 3700
+Wire Wire Line
+	6700 3400 6850 3400
+Wire Wire Line
+	6000 3300 6100 3300
+Wire Wire Line
+	6000 3200 6000 3300
+Wire Wire Line
+	5850 3200 5900 3200
+Wire Wire Line
+	5150 3200 5250 3200
+Wire Wire Line
+	5150 3700 5150 3200
+Wire Wire Line
+	5950 3700 5150 3700
+Wire Wire Line
+	5950 3400 5950 3700
+Wire Wire Line
+	5850 3400 5950 3400
+Wire Wire Line
+	6400 4200 6400 3600
+Wire Wire Line
+	5550 4200 5550 3600
+Wire Wire Line
+	4600 4200 5550 4200
+Connection ~ 4600 4200
+Connection ~ 5550 4200
+Wire Wire Line
+	5550 4200 6400 4200
+Connection ~ 4600 2950
+Wire Wire Line
+	5050 3300 5050 3200
+Wire Wire Line
+	5050 3200 4950 3200
+Wire Wire Line
+	5050 3300 5250 3300
+Wire Wire Line
+	4950 3200 4950 2700
+Wire Wire Line
+	4950 2700 5250 2700
+Text Label 5250 2700 0    50   ~ 0
+DIV64
+$Comp
+L power:+5V #PWR?
+U 1 1 5DC283EE
+P 3750 2800
+AR Path="/5DC283EE" Ref="#PWR?"  Part="1" 
+AR Path="/5DC15C71/5DC283EE" Ref="#PWR05"  Part="1" 
+F 0 "#PWR05" H 3750 2650 50  0001 C CNN
+F 1 "+5V" H 3765 2973 50  0000 C CNN
+F 2 "" H 3750 2800 50  0001 C CNN
+F 3 "" H 3750 2800 50  0001 C CNN
+	1    3750 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 2800 3750 2950
+Wire Wire Line
+	6850 3400 6850 3700
+Connection ~ 4950 3200
+Wire Wire Line
+	4950 3200 4900 3200
+$Comp
+L 74xx:74LS151 IC8
+U 1 1 5DC2F633
+P 6100 6050
+F 0 "IC8" H 5850 6800 50  0000 C CNN
+F 1 "74LS151" H 5850 5200 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 6100 6050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS151" H 6100 6050 50  0001 C CNN
+F 4 "Texas Instruments" H 6100 6050 50  0001 C CNN "Mfr."
+F 5 "SN74LS151N" H 6100 6050 50  0001 C CNN "Mfr. No."
+F 6 "595-SN74LS151N" H 6100 6050 50  0001 C CNN "Mouser"
+	1    6100 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 5550 5300 5550
+Text Label 5300 5550 2    50   ~ 0
+DIV4
+Wire Wire Line
+	5600 5450 5300 5450
+Text Label 5300 5450 2    50   ~ 0
+DIV2
+Wire Wire Line
+	5600 5650 5300 5650
+Text Label 5300 5650 2    50   ~ 0
+DIV8
+Wire Wire Line
+	5600 5750 5300 5750
+Text Label 5300 5750 2    50   ~ 0
+DIV16
+Wire Wire Line
+	5600 5850 5300 5850
+Text Label 5300 5850 2    50   ~ 0
+DIV32
+Wire Wire Line
+	5600 5950 5300 5950
+Text Label 5300 5950 2    50   ~ 0
+DIV64
+Wire Wire Line
+	5600 6050 5300 6050
+Text Label 5300 6050 2    50   ~ 0
+DIV128
+$Comp
+L Device:C C?
+U 1 1 5DC590EA
+P 6400 4900
+AR Path="/5DC590EA" Ref="C?"  Part="1" 
+AR Path="/5DC15C71/5DC590EA" Ref="C1"  Part="1" 
+F 0 "C1" H 6515 4946 50  0000 L CNN
+F 1 "100nF" H 6515 4855 50  0000 L CNN
+F 2 "" H 6438 4750 50  0001 C CNN
+F 3 "~" H 6400 4900 50  0001 C CNN
+	1    6400 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DC590F0
+P 6400 5100
+AR Path="/5DC590F0" Ref="#PWR?"  Part="1" 
+AR Path="/5DC15C71/5DC590F0" Ref="#PWR09"  Part="1" 
+F 0 "#PWR09" H 6400 4850 50  0001 C CNN
+F 1 "GND" H 6405 4927 50  0000 C CNN
+F 2 "" H 6400 5100 50  0001 C CNN
+F 3 "" H 6400 5100 50  0001 C CNN
+	1    6400 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 5150 6100 4700
+Wire Wire Line
+	6100 4700 6400 4700
+Wire Wire Line
+	6400 4700 6400 4750
+Wire Wire Line
+	6400 5050 6400 5100
+$Comp
+L power:+5V #PWR?
+U 1 1 5DC590FA
+P 6100 4650
+AR Path="/5DC590FA" Ref="#PWR?"  Part="1" 
+AR Path="/5DC15C71/5DC590FA" Ref="#PWR07"  Part="1" 
+F 0 "#PWR07" H 6100 4500 50  0001 C CNN
+F 1 "+5V" H 6115 4823 50  0000 C CNN
+F 2 "" H 6100 4650 50  0001 C CNN
+F 3 "" H 6100 4650 50  0001 C CNN
+	1    6100 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 4650 6100 4700
+Connection ~ 6100 4700
+$Comp
+L power:GND #PWR?
+U 1 1 5DC650B2
+P 6100 7100
+AR Path="/5DC650B2" Ref="#PWR?"  Part="1" 
+AR Path="/5DC15C71/5DC650B2" Ref="#PWR08"  Part="1" 
+F 0 "#PWR08" H 6100 6850 50  0001 C CNN
+F 1 "GND" H 6105 6927 50  0000 C CNN
+F 2 "" H 6100 7100 50  0001 C CNN
+F 3 "" H 6100 7100 50  0001 C CNN
+	1    6100 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 7050 6100 7100
+$Comp
+L power:GND #PWR?
+U 1 1 5DC6971C
+P 5550 7100
+AR Path="/5DC6971C" Ref="#PWR?"  Part="1" 
+AR Path="/5DC15C71/5DC6971C" Ref="#PWR06"  Part="1" 
+F 0 "#PWR06" H 5550 6850 50  0001 C CNN
+F 1 "GND" H 5555 6927 50  0000 C CNN
+F 2 "" H 5550 7100 50  0001 C CNN
+F 3 "" H 5550 7100 50  0001 C CNN
+	1    5550 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 6750 5550 6750
+Wire Wire Line
+	5550 6750 5550 7100
+Text HLabel 6750 5450 2    50   Output ~ 0
+TimerClock
+Wire Wire Line
+	6750 5450 6600 5450
+Text HLabel 1100 1400 0    50   Input ~ 0
+Clock
+Text HLabel 1100 3200 0    50   Input ~ 0
+~Reset
+Wire Wire Line
+	1100 3200 2000 3200
+Wire Wire Line
+	2000 3200 2000 4200
+Wire Wire Line
+	2000 4200 2900 4200
+Wire Wire Line
+	2000 2300 2000 3200
+Wire Wire Line
+	2000 2300 2900 2300
+Connection ~ 2000 3200
+Entry Wire Line
+	2050 5700 2150 5800
+Entry Wire Line
+	2050 5800 2150 5900
+Entry Wire Line
+	2050 5900 2150 6000
+Entry Wire Line
+	2050 6000 2150 6100
+Entry Wire Line
+	2050 6100 2150 6200
+Entry Wire Line
+	2050 6200 2150 6300
+Entry Wire Line
+	2050 6300 2150 6400
+Entry Wire Line
+	2050 6400 2150 6500
+Wire Bus Line
+	2050 5700 1100 5700
+Text Label 2300 5800 0    50   ~ 0
+D0
+Text Label 2300 5900 0    50   ~ 0
+D1
+Text Label 2300 6000 0    50   ~ 0
+D2
+Text Label 2300 6100 0    50   ~ 0
+D3
+Text Label 2300 6200 0    50   ~ 0
+D4
+Text Label 2300 6300 0    50   ~ 0
+D5
+Text Label 2300 6400 0    50   ~ 0
+D6
+Text Label 2300 6500 0    50   ~ 0
+D7
+$Comp
+L power:GND #PWR?
+U 1 1 5DCA3AA9
+P 3050 7250
+AR Path="/5DCA3AA9" Ref="#PWR?"  Part="1" 
+AR Path="/5DC15C71/5DCA3AA9" Ref="#PWR03"  Part="1" 
+F 0 "#PWR03" H 3050 7000 50  0001 C CNN
+F 1 "GND" H 3055 7077 50  0000 C CNN
+F 2 "" H 3050 7250 50  0001 C CNN
+F 3 "" H 3050 7250 50  0001 C CNN
+	1    3050 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 7100 3050 7250
+Wire Wire Line
+	3550 5900 3950 5900
+Wire Wire Line
+	3550 6000 3850 6000
+Text HLabel 2350 6700 0    50   Input ~ 0
+Clock
+Text HLabel 2350 6800 0    50   Input ~ 0
+~SetPrescaler
+NoConn ~ 3550 6100
+NoConn ~ 3550 6200
+NoConn ~ 3550 6300
+NoConn ~ 3550 6500
+Wire Wire Line
+	5600 6550 3850 6550
+Wire Wire Line
+	3850 6550 3850 6000
+Wire Wire Line
+	3950 5900 3950 6450
+Wire Wire Line
+	3950 6450 5600 6450
+Wire Wire Line
+	5600 6350 4050 6350
+Wire Wire Line
+	3550 5800 4050 5800
+Wire Wire Line
+	4050 5800 4050 6350
+Text HLabel 1100 5700 0    50   Input ~ 0
+D[0..7]
+NoConn ~ 6600 5550
+NoConn ~ 5600 6150
+NoConn ~ 3550 6400
+$Comp
+L Device:C C?
+U 1 1 5DAFDBF1
+P 3350 5250
+AR Path="/5DAFDBF1" Ref="C?"  Part="1" 
+AR Path="/5DD5BCF5/5DAFDBF1" Ref="C?"  Part="1" 
+AR Path="/5DC15C71/5DAFDBF1" Ref="C6"  Part="1" 
+F 0 "C6" H 3465 5296 50  0000 L CNN
+F 1 "100nF" H 3465 5205 50  0000 L CNN
+F 2 "" H 3388 5100 50  0001 C CNN
+F 3 "~" H 3350 5250 50  0001 C CNN
+	1    3350 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DAFDBF7
+P 3350 5450
+AR Path="/5DAFDBF7" Ref="#PWR?"  Part="1" 
+AR Path="/5DD5BCF5/5DAFDBF7" Ref="#PWR?"  Part="1" 
+AR Path="/5DC15C71/5DAFDBF7" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0103" H 3350 5200 50  0001 C CNN
+F 1 "GND" H 3355 5277 50  0000 C CNN
+F 2 "" H 3350 5450 50  0001 C CNN
+F 3 "" H 3350 5450 50  0001 C CNN
+	1    3350 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 5500 3050 5050
+Wire Wire Line
+	3050 5050 3350 5050
+Wire Wire Line
+	3350 5050 3350 5100
+Wire Wire Line
+	3350 5400 3350 5450
+$Comp
+L power:+5V #PWR?
+U 1 1 5DAFDC01
+P 3050 5000
+AR Path="/5DAFDC01" Ref="#PWR?"  Part="1" 
+AR Path="/5DD5BCF5/5DAFDC01" Ref="#PWR?"  Part="1" 
+AR Path="/5DC15C71/5DAFDC01" Ref="#PWR0104"  Part="1" 
+F 0 "#PWR0104" H 3050 4850 50  0001 C CNN
+F 1 "+5V" H 3065 5173 50  0000 C CNN
+F 2 "" H 3050 5000 50  0001 C CNN
+F 3 "" H 3050 5000 50  0001 C CNN
+	1    3050 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 5000 3050 5050
+Connection ~ 3050 5050
+$Comp
+L 74xx:74LS74 IC1
+U 1 1 5DB0495D
+P 3750 1400
+F 0 "IC1" H 3550 1650 50  0000 C CNN
+F 1 "74LS74" H 3550 1150 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W10.16mm_LongPads" H 3750 1400 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74s74.pdf" H 3750 1400 50  0001 C CNN
+F 4 "Texas Instruments" H 3750 1400 50  0001 C CNN "Mfr."
+F 5 "SN74LS74AN" H 3750 1400 50  0001 C CNN "Mfr. No."
+F 6 "595-SN74LS74AN" H 3750 1400 50  0001 C CNN "Mouser"
+	1    3750 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS74 IC1
+U 2 1 5DB0587F
+P 4600 1400
+F 0 "IC1" H 4400 1650 50  0000 C CNN
+F 1 "74LS74" H 4400 1150 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W10.16mm_LongPads" H 4600 1400 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74s74.pdf" H 4600 1400 50  0001 C CNN
+F 4 "Texas Instruments" H 4600 1400 50  0001 C CNN "Mfr."
+F 5 "SN74LS74AN" H 4600 1400 50  0001 C CNN "Mfr. No."
+F 6 "595-SN74LS74AN" H 4600 1400 50  0001 C CNN "Mouser"
+	2    4600 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS74 IC3
+U 1 1 5DB248FE
+P 5550 1400
+F 0 "IC3" H 5350 1650 50  0000 C CNN
+F 1 "74LS74" H 5350 1150 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W10.16mm_LongPads" H 5550 1400 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74s74.pdf" H 5550 1400 50  0001 C CNN
+F 4 "Texas Instruments" H 5550 1400 50  0001 C CNN "Mfr."
+F 5 "SN74LS74AN" H 5550 1400 50  0001 C CNN "Mfr. No."
+F 6 "595-SN74LS74AN" H 5550 1400 50  0001 C CNN "Mouser"
+	1    5550 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS74 IC6
+U 1 1 5DB2E34C
+P 5550 3300
+F 0 "IC6" H 5350 3550 50  0000 C CNN
+F 1 "74LS74" H 5350 3050 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W10.16mm_LongPads" H 5550 3300 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74s74.pdf" H 5550 3300 50  0001 C CNN
+F 4 "Texas Instruments" H 5550 3300 50  0001 C CNN "Mfr."
+F 5 "SN74LS74AN" H 5550 3300 50  0001 C CNN "Mfr. No."
+F 6 "595-SN74LS74AN" H 5550 3300 50  0001 C CNN "Mouser"
+	1    5550 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS74 IC2
+U 1 1 5DB36744
+P 3750 3300
+F 0 "IC2" H 3550 3550 50  0000 C CNN
+F 1 "74LS74" H 3550 3050 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W10.16mm_LongPads" H 3750 3300 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74s74.pdf" H 3750 3300 50  0001 C CNN
+F 4 "Texas Instruments" H 3750 3300 50  0001 C CNN "Mfr."
+F 5 "SN74LS74AN" H 3750 3300 50  0001 C CNN "Mfr. No."
+F 6 "595-SN74LS74AN" H 3750 3300 50  0001 C CNN "Mouser"
+	1    3750 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS74 IC3
+U 2 1 5DB3EDFD
+P 6400 1400
+F 0 "IC3" H 6200 1650 50  0000 C CNN
+F 1 "74LS74" H 6200 1150 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W10.16mm_LongPads" H 6400 1400 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74s74.pdf" H 6400 1400 50  0001 C CNN
+F 4 "Texas Instruments" H 6400 1400 50  0001 C CNN "Mfr."
+F 5 "SN74LS74AN" H 6400 1400 50  0001 C CNN "Mfr. No."
+F 6 "595-SN74LS74AN" H 6400 1400 50  0001 C CNN "Mouser"
+	2    6400 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS74 IC6
+U 2 1 5DB47321
+P 6400 3300
+F 0 "IC6" H 6200 3550 50  0000 C CNN
+F 1 "74LS74" H 6200 3050 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W10.16mm_LongPads" H 6400 3300 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74s74.pdf" H 6400 3300 50  0001 C CNN
+F 4 "Texas Instruments" H 6400 3300 50  0001 C CNN "Mfr."
+F 5 "SN74LS74AN" H 6400 3300 50  0001 C CNN "Mfr. No."
+F 6 "595-SN74LS74AN" H 6400 3300 50  0001 C CNN "Mouser"
+	2    6400 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS74 IC2
+U 2 1 5DB4F6EA
+P 4600 3300
+F 0 "IC2" H 4400 3550 50  0000 C CNN
+F 1 "74LS74" H 4400 3050 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W10.16mm_LongPads" H 4600 3300 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74s74.pdf" H 4600 3300 50  0001 C CNN
+F 4 "Texas Instruments" H 4600 3300 50  0001 C CNN "Mfr."
+F 5 "SN74LS74AN" H 4600 3300 50  0001 C CNN "Mfr. No."
+F 6 "595-SN74LS74AN" H 4600 3300 50  0001 C CNN "Mouser"
+	2    4600 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 6500 2550 6500
+Wire Wire Line
+	2550 6400 2150 6400
+Wire Wire Line
+	2150 6300 2550 6300
+Wire Wire Line
+	2550 6200 2150 6200
+Wire Wire Line
+	2150 6100 2550 6100
+Wire Wire Line
+	2550 6000 2150 6000
+Wire Wire Line
+	2150 5900 2550 5900
+Wire Wire Line
+	2550 5800 2150 5800
+$Comp
+L 74xx:74LS377 IC?
+U 1 1 5DB95702
+P 3050 6300
+AR Path="/5DD5BCF5/5DB95702" Ref="IC?"  Part="1" 
+AR Path="/5DC15C71/5DB95702" Ref="IC4"  Part="1" 
+F 0 "IC4" H 2800 6950 50  0000 C CNN
+F 1 "74LS377" H 2800 5650 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm_LongPads" H 3050 6300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS377" H 3050 6300 50  0001 C CNN
+F 4 "Texas Instruments" H 3050 6300 50  0001 C CNN "Mfr."
+F 5 "SN74LS377N" H 3050 6300 50  0001 C CNN "Mfr. No."
+F 6 "595-SN74LS377N" H 3050 6300 50  0001 C CNN "Mouser"
+	1    3050 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 6700 2550 6700
+Wire Wire Line
+	2350 6800 2550 6800
+NoConn ~ 6700 3200
+Wire Bus Line
+	2050 5700 2050 6400
+$EndSCHEMATC

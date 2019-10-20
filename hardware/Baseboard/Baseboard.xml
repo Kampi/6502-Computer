@@ -1,0 +1,2590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>D:\Dropbox\Git\Retro PC\hardware\Retro PC.sch</source>
+    <date>18.10.2019 21:44:55</date>
+    <tool>Eeschema (5.1.4)-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Retro PC</title>
+        <company>https://www.kampis-elektroecke.de</company>
+        <rev>1.0</rev>
+        <date>2019-10-08</date>
+        <source>Retro PC.sch</source>
+        <comment number="1" value="Author: Daniel Kampert"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value="System architecture"/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Supply/" tstamps="/5E9728CC/">
+      <title_block>
+        <title>Retro PC</title>
+        <company>https://www.kampis-elektroecke.de</company>
+        <rev>1.0</rev>
+        <date>2019-10-08</date>
+        <source>Supply.sch</source>
+        <comment number="1" value="Author: Daniel Kampert"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value="Supply"/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/IO/" tstamps="/5EC67F7B/">
+      <title_block>
+        <title>Retro PC</title>
+        <company>https://www.kampis-elektroecke.de</company>
+        <rev>1.0</rev>
+        <date>2019-10-08</date>
+        <source>IO.sch</source>
+        <comment number="1" value="Author: Daniel Kampert"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value="I/O"/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/LCD / PS2/" tstamps="/5DADBF97/">
+      <title_block>
+        <title>Retro PC</title>
+        <company>https://www.kampis-elektroecke.de</company>
+        <rev>1.0</rev>
+        <date/>
+        <source>LCD_PS2.sch</source>
+        <comment number="1" value="Author: Daniel Kampert"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/Processor/" tstamps="/5EB09E21/">
+      <title_block>
+        <title>Retro PC</title>
+        <company>https://www.kampis-elektroecke.de</company>
+        <rev>1.0</rev>
+        <date>2019-10-08</date>
+        <source>Processor.sch</source>
+        <comment number="1" value="Author: Daniel Kampert"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value="Processor"/>
+      </title_block>
+    </sheet>
+    <sheet number="6" name="/USB/" tstamps="/5E9064F2/">
+      <title_block>
+        <title>Retro PC</title>
+        <company>https://www.kampis-elektroecke.de</company>
+        <rev>1.0</rev>
+        <date>2019-10-08</date>
+        <source>USB.sch</source>
+        <comment number="1" value="Author: Daniel Kampert"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value="USB"/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="R5">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Yageo</field>
+        <field name="Mfr. No.">MFP-25BRD52-10K</field>
+        <field name="Mouser">603-MFP-25BRD52-10K</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Supply/" tstamps="/5E9728CC/"/>
+      <tstamp>5E9AA460</tstamp>
+    </comp>
+    <comp ref="SW1">
+      <value>RESET</value>
+      <footprint>Button_Switch_THT:SW_PUSH_6mm_H4.3mm</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&amp;DocId=Customer+Drawing%7F1825910%7FC10%7Fpdf%7FEnglish%7FENG_CD_1825910_C10.pdf%7F2-1825910-7</datasheet>
+      <fields>
+        <field name="Mfr.">TE Connectivity / Alcoswitch</field>
+        <field name="Mfr. No.">2-1825910-7</field>
+        <field name="Mouser">506-2-1825910-7</field>
+      </fields>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <sheetpath names="/Supply/" tstamps="/5E9728CC/"/>
+      <tstamp>5E9AA469</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/400/eadmlcc_halogenfree_fa150_en-890480.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">TDK</field>
+        <field name="Mfr. No.">FA18X8R1H104KRU06</field>
+        <field name="Mouser">810-FA18X8R1H104KRU6</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Supply/" tstamps="/5E9728CC/"/>
+      <tstamp>5E9AA47C</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>330nF</value>
+      <footprint>Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/40/SR-Series-1016911.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">AVX</field>
+        <field name="Mfr. No.">SR205E334MARTR1</field>
+        <field name="Mouser">581-SR205E334MARTR1</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Supply/" tstamps="/5E9728CC/"/>
+      <tstamp>5E9AA491</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/400/eadmlcc_halogenfree_fa150_en-890480.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">TDK</field>
+        <field name="Mfr. No.">FA18X8R1H104KRU06</field>
+        <field name="Mouser">810-FA18X8R1H104KRU6</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Supply/" tstamps="/5E9728CC/"/>
+      <tstamp>5E9AA497</tstamp>
+    </comp>
+    <comp ref="D10">
+      <value>1N4148</value>
+      <footprint>Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/308/1N4148-1118184.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">ON Semiconductor / Fairchild</field>
+        <field name="Mfr. No.">1N4148</field>
+        <field name="Mouser">512-1N4148</field>
+      </fields>
+      <libsource lib="Diode" part="1N4148W" description="75V 0.15A Fast Switching Diode, SOD-123"/>
+      <sheetpath names="/Supply/" tstamps="/5E9728CC/"/>
+      <tstamp>5E9AA4B5</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>R-785.0-1.0</value>
+      <footprint>Converter_DCDC:Converter_DCDC_RECOM_R-78E-0.5_THT</footprint>
+      <datasheet>https://www.recom-power.com/pdf/Innoline/R-78xx-0.1.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Recom</field>
+        <field name="Mfr. No.">R-785.0-1.0</field>
+        <field name="Mouser">919-R-785.0-1.0</field>
+      </fields>
+      <libsource lib="Regulator_Switching" part="R-785.0-1.0" description="1A Step-Down DC/DC-Regulator, 6.5-18V input, 5V fixed Output Voltage, LM78xx replacement, -40°C to +85°C, SIP3"/>
+      <sheetpath names="/Supply/" tstamps="/5E9728CC/"/>
+      <tstamp>5E9AA4DB</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/400/eadmlcc_halogenfree_fa150_en-890480.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">TDK</field>
+        <field name="Mfr. No.">FA18X8R1H104KRU06</field>
+        <field name="Mouser">810-FA18X8R1H104KRU6</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Supply/" tstamps="/5E9728CC/"/>
+      <tstamp>5E9AA4F6</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/400/eadmlcc_halogenfree_fa150_en-890480.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">TDK</field>
+        <field name="Mfr. No.">FA18X8R1H104KRU06</field>
+        <field name="Mouser">810-FA18X8R1H104KRU6</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Supply/" tstamps="/5E9728CC/"/>
+      <tstamp>5E9AA505</tstamp>
+    </comp>
+    <comp ref="IC8">
+      <value>TL7702A</value>
+      <footprint>Package_DIP:DIP-8_W7.62mm_LongPads</footprint>
+      <datasheet>http://www.ti.com.cn/cn/lit/ds/symlink/tl7705b.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Texas Instruments</field>
+        <field name="Mfr. No.">TL7702ACP</field>
+        <field name="Mouser">595-TL7702ACP</field>
+      </fields>
+      <libsource lib="Power_Supervisor" part="TL7702B" description="Supply-Voltage Supervisors, 2.53V, PDIP-8/SOIC-8"/>
+      <sheetpath names="/Supply/" tstamps="/5E9728CC/"/>
+      <tstamp>5E9AA51D</tstamp>
+    </comp>
+    <comp ref="D13">
+      <value>POWER</value>
+      <footprint>LED_THT:LED_D5.0mm</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/90/C503B_RAS_RAN_AAS_AAN_RBS_RBN_ABS_ABN_RCS_RCN_ACS_-269115.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Cree Inc.</field>
+        <field name="Mfr. No.">C503B-RAN-CZ0C0AA1</field>
+        <field name="Mouser">941-C503BRANCZ0C0AA1</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/Supply/" tstamps="/5E9728CC/"/>
+      <tstamp>5D9EA3B0</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>470</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Yageo</field>
+        <field name="Mfr. No.">MFP-25BRD52-470R</field>
+        <field name="Mouser">603-MFP-25BRD52-470R</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Supply/" tstamps="/5E9728CC/"/>
+      <tstamp>5D9EA844</tstamp>
+    </comp>
+    <comp ref="X1">
+      <value>DC IN</value>
+      <footprint>Connector_Custom:BarrelJack_Wuerth_6941xx301002</footprint>
+      <datasheet>https://katalog.we-online.de/em/datasheet/6941xx301002.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Wurth Elektronik</field>
+        <field name="Mfr. No.">694106301002</field>
+        <field name="Mouser">710-694106301002</field>
+      </fields>
+      <libsource lib="Wuerth" part="ConBarrel" description="Würth DC Barrel Jack"/>
+      <sheetpath names="/Supply/" tstamps="/5E9728CC/"/>
+      <tstamp>5DA7C8DA</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>LED1</value>
+      <footprint>LED_THT:LED_D5.0mm</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/90/C503B_RAS_RAN_AAS_AAN_RBS_RBN_ABS_ABN_RCS_RCN_ACS_-269115.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Cree Inc.</field>
+        <field name="Mfr. No.">C503B-RAN-CZ0C0AA1</field>
+        <field name="Mouser">941-C503BRANCZ0C0AA1</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/IO/" tstamps="/5EC67F7B/"/>
+      <tstamp>5ED5BEAF</tstamp>
+    </comp>
+    <comp ref="D0">
+      <value>LED0</value>
+      <footprint>LED_THT:LED_D5.0mm</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/90/C503B_RAS_RAN_AAS_AAN_RBS_RBN_ABS_ABN_RCS_RCN_ACS_-269115.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Cree Inc.</field>
+        <field name="Mfr. No.">C503B-RAN-CZ0C0AA1</field>
+        <field name="Mouser">941-C503BRANCZ0C0AA1</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/IO/" tstamps="/5EC67F7B/"/>
+      <tstamp>5ED5BEB8</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>LED2</value>
+      <footprint>LED_THT:LED_D5.0mm</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/90/C503B_RAS_RAN_AAS_AAN_RBS_RBN_ABS_ABN_RCS_RCN_ACS_-269115.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Cree Inc.</field>
+        <field name="Mfr. No.">C503B-RAN-CZ0C0AA1</field>
+        <field name="Mouser">941-C503BRANCZ0C0AA1</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/IO/" tstamps="/5EC67F7B/"/>
+      <tstamp>5ED5BEA6</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>LED3</value>
+      <footprint>LED_THT:LED_D5.0mm</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/90/C503B_RAS_RAN_AAS_AAN_RBS_RBN_ABS_ABN_RCS_RCN_ACS_-269115.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Cree Inc.</field>
+        <field name="Mfr. No.">C503B-RAN-CZ0C0AA1</field>
+        <field name="Mouser">941-C503BRANCZ0C0AA1</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/IO/" tstamps="/5EC67F7B/"/>
+      <tstamp>5ED5BE9D</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>LED4</value>
+      <footprint>LED_THT:LED_D5.0mm</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/90/C503B_RAS_RAN_AAS_AAN_RBS_RBN_ABS_ABN_RCS_RCN_ACS_-269115.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Cree Inc.</field>
+        <field name="Mfr. No.">C503B-RAN-CZ0C0AA1</field>
+        <field name="Mouser">941-C503BRANCZ0C0AA1</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/IO/" tstamps="/5EC67F7B/"/>
+      <tstamp>5ED5BE94</tstamp>
+    </comp>
+    <comp ref="D5">
+      <value>LED5</value>
+      <footprint>LED_THT:LED_D5.0mm</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/90/C503B_RAS_RAN_AAS_AAN_RBS_RBN_ABS_ABN_RCS_RCN_ACS_-269115.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Cree Inc.</field>
+        <field name="Mfr. No.">C503B-RAN-CZ0C0AA1</field>
+        <field name="Mouser">941-C503BRANCZ0C0AA1</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/IO/" tstamps="/5EC67F7B/"/>
+      <tstamp>5ED5BE8B</tstamp>
+    </comp>
+    <comp ref="D6">
+      <value>LED6</value>
+      <footprint>LED_THT:LED_D5.0mm</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/90/C503B_RAS_RAN_AAS_AAN_RBS_RBN_ABS_ABN_RCS_RCN_ACS_-269115.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Cree Inc.</field>
+        <field name="Mfr. No.">C503B-RAN-CZ0C0AA1</field>
+        <field name="Mouser">941-C503BRANCZ0C0AA1</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/IO/" tstamps="/5EC67F7B/"/>
+      <tstamp>5ED5BE82</tstamp>
+    </comp>
+    <comp ref="RN2">
+      <value>470</value>
+      <footprint>Resistor_THT:R_Array_SIP9</footprint>
+      <datasheet>http://www.vishay.com/docs/31509/csc.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Bourns</field>
+        <field name="Mfr. No.">4608M-102-471LF</field>
+        <field name="Mouser">652-4608M-2LF-470</field>
+      </fields>
+      <libsource lib="Device" part="R_Network08" description="8 resistor network, star topology, bussed resistors, small symbol"/>
+      <sheetpath names="/IO/" tstamps="/5EC67F7B/"/>
+      <tstamp>5ED5BED1</tstamp>
+    </comp>
+    <comp ref="D7">
+      <value>LED7</value>
+      <footprint>LED_THT:LED_D5.0mm</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/90/C503B_RAS_RAN_AAS_AAN_RBS_RBN_ABS_ABN_RCS_RCN_ACS_-269115.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Cree Inc.</field>
+        <field name="Mfr. No.">C503B-RAN-CZ0C0AA1</field>
+        <field name="Mouser">941-C503BRANCZ0C0AA1</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/IO/" tstamps="/5EC67F7B/"/>
+      <tstamp>5ED5BE79</tstamp>
+    </comp>
+    <comp ref="SW2">
+      <value>Interrupt</value>
+      <footprint>Button_Switch_THT:SW_DIP_SPSTx02_Slide_9.78x7.26mm_W7.62mm_P2.54mm</footprint>
+      <datasheet>https://www.weltroniker.de/DB-Pool/DIP_NDI.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Diptronics</field>
+        <field name="Mfr. No.">NDI-02S-V</field>
+        <field name="Mouser">113-NDI02SV</field>
+      </fields>
+      <libsource lib="Switch" part="SW_DIP_x02" description="2x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"/>
+      <sheetpath names="/IO/" tstamps="/5EC67F7B/"/>
+      <tstamp>5EE8631D</tstamp>
+    </comp>
+    <comp ref="SW3">
+      <value>Port B</value>
+      <footprint>Button_Switch_THT:SW_DIP_SPSTx08_Slide_9.78x22.5mm_W7.62mm_P2.54mm</footprint>
+      <datasheet>https://www.weltroniker.de/DB-Pool/DIP_NDI.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Diptronics</field>
+        <field name="Mfr. No.">NDI-08S-V</field>
+        <field name="Mouser">113-NDI08SV</field>
+      </fields>
+      <libsource lib="Switch" part="SW_DIP_x08" description="8x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"/>
+      <sheetpath names="/IO/" tstamps="/5EC67F7B/"/>
+      <tstamp>5EE69B10</tstamp>
+    </comp>
+    <comp ref="RN1">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Array_SIP11</footprint>
+      <datasheet>http://www.vishay.com/docs/31509/csc.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Bourns</field>
+        <field name="Mfr. No.">4611X-101-103LF</field>
+        <field name="Mouser">652-4611X-1LF-10K</field>
+      </fields>
+      <libsource lib="Device" part="R_Network10" description="10 resistor network, star topology, bussed resistors, small symbol"/>
+      <sheetpath names="/IO/" tstamps="/5EC67F7B/"/>
+      <tstamp>5DE6C8B4</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Yageo</field>
+        <field name="Mfr. No.">MFP-25BRD52-10K</field>
+        <field name="Mouser">603-MFP-25BRD52-10K</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/IO/" tstamps="/5EC67F7B/"/>
+      <tstamp>5D9FD99A</tstamp>
+    </comp>
+    <comp ref="SW4">
+      <value>~NMI</value>
+      <footprint>Button_Switch_THT:SW_PUSH_6mm_H4.3mm</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&amp;DocId=Customer+Drawing%7F1825910%7FC10%7Fpdf%7FEnglish%7FENG_CD_1825910_C10.pdf%7F2-1825910-7</datasheet>
+      <fields>
+        <field name="Mfr.">TE Connectivity / Alcoswitch</field>
+        <field name="Mfr. No.">2-1825910-7</field>
+        <field name="Mouser">506-2-1825910-7</field>
+      </fields>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <sheetpath names="/IO/" tstamps="/5EC67F7B/"/>
+      <tstamp>5D9FD9A3</tstamp>
+    </comp>
+    <comp ref="C17">
+      <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/400/eadmlcc_halogenfree_fa150_en-890480.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">TDK</field>
+        <field name="Mfr. No.">FA18X8R1H104KRU06</field>
+        <field name="Mouser">810-FA18X8R1H104KRU6</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/IO/" tstamps="/5EC67F7B/"/>
+      <tstamp>5D9FD9B9</tstamp>
+    </comp>
+    <comp ref="X3">
+      <value>EXPANSION</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Horizontal</footprint>
+      <datasheet>https://cdn.harwin.com/pdfs/M20-974.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Harwin</field>
+        <field name="Mfr. No.">M20-9742046</field>
+        <field name="Mouser">855-M20-9742046</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_02x20_Odd_Even" description="Generic connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/IO/" tstamps="/5EC67F7B/"/>
+      <tstamp>5DBDED7E</tstamp>
+    </comp>
+    <comp ref="SW5">
+      <value>CARRIER</value>
+      <footprint>Button_Switch_THT:SW_E-Switch_EG1224_SPDT_Angled</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/140/EG-345873.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">E-Switch</field>
+        <field name="Mfr. No.">EG1224</field>
+        <field name="Mouser">612-EG1224</field>
+      </fields>
+      <libsource lib="Switch" part="SW_SPDT" description="Switch, single pole double throw"/>
+      <sheetpath names="/IO/" tstamps="/5EC67F7B/"/>
+      <tstamp>5DC04457</tstamp>
+    </comp>
+    <comp ref="X4">
+      <value>KEYBOARD</value>
+      <footprint>Connector_Custom:Mini-DIN_TE_Female_6Pin_2rows</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&amp;DocId=Customer+Drawing%7F5749180%7FA1%7Ftif%7FEnglish%7FENG_CD_5749180_A1.tif%7F5749180-1</datasheet>
+      <fields>
+        <field name="Mfr.">TE Connectivity / AMP </field>
+        <field name="Mfr. No.">5749180-1</field>
+        <field name="Mouser">571-5749180-1</field>
+      </fields>
+      <libsource lib="Connector_Custom" part="Mini-DIN-6" description="6-pin Mini-DIN connector"/>
+      <sheetpath names="/LCD / PS2/" tstamps="/5DADBF97/"/>
+      <tstamp>5DD571A9</tstamp>
+    </comp>
+    <comp ref="RV1">
+      <value>10k</value>
+      <footprint>Potentiometer:Bourns_3386T_Vertical</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/54/3386-776606.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Bourns</field>
+        <field name="Mfr. No.">3386T-1-103LF</field>
+        <field name="Mouser">652-3386T-1-103LF</field>
+      </fields>
+      <libsource lib="Device" part="R_POT" description="Potentiometer"/>
+      <sheetpath names="/LCD / PS2/" tstamps="/5DADBF97/"/>
+      <tstamp>5DE99AEE</tstamp>
+    </comp>
+    <comp ref="DS1">
+      <value>DISPLAY</value>
+      <footprint>Display:WC1602A</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/291/NHD-0220GZ-FSW-GBW-L-29740.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Newhaven Display</field>
+        <field name="Mfr. No.">NHD-0220GZ-FSW-GBW-L</field>
+        <field name="Mouser">763-0220GZ-FSW-GBW</field>
+      </fields>
+      <libsource lib="Display_Character" part="WC1602A" description="LCD 16x2 Alphanumeric , 8 bit parallel bus, 5V VDD"/>
+      <sheetpath names="/LCD / PS2/" tstamps="/5DADBF97/"/>
+      <tstamp>5DAA1FEA</tstamp>
+    </comp>
+    <comp ref="IC2">
+      <value>W65C02</value>
+      <footprint>Package_DIP:DIP-40_W15.24mm_LongPads</footprint>
+      <datasheet>https://www.westerndesigncenter.com/wdc/documentation/w65c02s.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Western Design Center</field>
+        <field name="Mfr. No.">W65C02S6TPG-14</field>
+        <field name="Mouser">955-W65C02S6TPG-14</field>
+      </fields>
+      <libsource lib="Western_Design_Center" part="W65C02" description="8-Bit Microprocessor"/>
+      <sheetpath names="/Processor/" tstamps="/5EB09E21/"/>
+      <tstamp>5EBEAF78</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/400/eadmlcc_halogenfree_fa150_en-890480.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">TDK</field>
+        <field name="Mfr. No.">FA18X8R1H104KRU06</field>
+        <field name="Mouser">810-FA18X8R1H104KRU6</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Processor/" tstamps="/5EB09E21/"/>
+      <tstamp>5EBEAFEE</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Yageo</field>
+        <field name="Mfr. No.">MFP-25BRD52-10K</field>
+        <field name="Mouser">603-MFP-25BRD52-10K</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Processor/" tstamps="/5EB09E21/"/>
+      <tstamp>5EBEB08E</tstamp>
+    </comp>
+    <comp ref="XTAL1">
+      <value>1MHz</value>
+      <footprint>Oscillator:Oscillator_DIP-14</footprint>
+      <datasheet>https://ecsxtal.com/store/pdf/ecs-100x.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">ECS</field>
+        <field name="Mfr. No.">ECS-100AX-010</field>
+        <field name="Mouser">520-TCF100-X</field>
+      </fields>
+      <libsource lib="ECS" part="ECS-100X" description="ECS-100X Series"/>
+      <sheetpath names="/Processor/" tstamps="/5EB09E21/"/>
+      <tstamp>5EBEB282</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/400/eadmlcc_halogenfree_fa150_en-890480.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">TDK</field>
+        <field name="Mfr. No.">FA18X8R1H104KRU06</field>
+        <field name="Mouser">810-FA18X8R1H104KRU6</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Processor/" tstamps="/5EB09E21/"/>
+      <tstamp>5F0A0D7C</tstamp>
+    </comp>
+    <comp ref="XTAL2">
+      <value>1.8432MHz</value>
+      <footprint>Crystal:Crystal_HC49-U_Vertical</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/96/008-0308-0-1160929.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">CTS Electronic Components</field>
+        <field name="Mfr. No.">MP018B</field>
+        <field name="Mouser">774-MP018B</field>
+      </fields>
+      <libsource lib="Device" part="Crystal" description="Two pin crystal"/>
+      <sheetpath names="/Processor/" tstamps="/5EB09E21/"/>
+      <tstamp>5F163710</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/400/eadmlcc_halogenfree_fa150_en-890480.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">TDK</field>
+        <field name="Mfr. No.">FA18X8R1H104KRU06</field>
+        <field name="Mouser">810-FA18X8R1H104KRU6</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Processor/" tstamps="/5EB09E21/"/>
+      <tstamp>5F17EFA5</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>1M</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFR_2013-467719.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Yageo</field>
+        <field name="Mfr. No.">MFR-25FRE52-1M</field>
+        <field name="Mouser">603-MFR-25FRE52-1M</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Processor/" tstamps="/5EB09E21/"/>
+      <tstamp>5F1A8FA3</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/400/eadmlcc_halogenfree_fa150_en-890480.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">TDK</field>
+        <field name="Mfr. No.">FA18X8R1H104KRU06</field>
+        <field name="Mouser">810-FA18X8R1H104KRU6</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Processor/" tstamps="/5EB09E21/"/>
+      <tstamp>5EBEB06D</tstamp>
+    </comp>
+    <comp ref="IC6">
+      <value>W65C22</value>
+      <footprint>Package_DIP:DIP-40_W15.24mm_LongPads</footprint>
+      <datasheet>https://www.westerndesigncenter.com/wdc/documentation/w65c22s.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Western Design Center</field>
+        <field name="Mfr. No.">W65C22N6TPG-14</field>
+        <field name="Mouser">955-W65C22N6TPG-14</field>
+      </fields>
+      <libsource lib="Western_Design_Center" part="W65C22" description="I/O-Controller - Versatile Interface Adapter (VIA)"/>
+      <sheetpath names="/Processor/" tstamps="/5EB09E21/"/>
+      <tstamp>5EBEAF7E</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/400/eadmlcc_halogenfree_fa150_en-890480.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">TDK</field>
+        <field name="Mfr. No.">FA18X8R1H104KRU06</field>
+        <field name="Mouser">810-FA18X8R1H104KRU6</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Processor/" tstamps="/5EB09E21/"/>
+      <tstamp>5EBEB046</tstamp>
+    </comp>
+    <comp ref="IC5">
+      <value>RAM</value>
+      <footprint>Package_DIP:DIP-28_W15.24mm_LongPads</footprint>
+      <datasheet>https://www.alliancememory.com/wp-content/uploads/pdf/AS6C62256A.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Alliance Memory</field>
+        <field name="Mfr. No.">AS6C62256-55PCN</field>
+        <field name="Mouser">913-AS6C62256-55PCN</field>
+      </fields>
+      <libsource lib="Alliance_Memory" part="AS6C62256A" description="256K, 2.7-5.5V, 70ns 32K x 8 Asynch SRAM"/>
+      <sheetpath names="/Processor/" tstamps="/5EB09E21/"/>
+      <tstamp>5EBEAF84</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/400/eadmlcc_halogenfree_fa150_en-890480.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">TDK</field>
+        <field name="Mfr. No.">FA18X8R1H104KRU06</field>
+        <field name="Mouser">810-FA18X8R1H104KRU6</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Processor/" tstamps="/5EB09E21/"/>
+      <tstamp>5EBEB030</tstamp>
+    </comp>
+    <comp ref="IC7">
+      <value>W65C51</value>
+      <footprint>Package_DIP:DIP-28_W15.24mm_LongPads</footprint>
+      <datasheet>https://www.westerndesigncenter.com/wdc/documentation/w65c51s.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Western Design Center</field>
+        <field name="Mfr. No.">W65C51N6TPG-14</field>
+        <field name="Mouser">955-W65C51N6TPG-14</field>
+      </fields>
+      <libsource lib="Western_Design_Center" part="W65C51" description="Communication Interface - Asynch. Communication Interface Adapter (ACIA)"/>
+      <sheetpath names="/Processor/" tstamps="/5EB09E21/"/>
+      <tstamp>5F08EFF6</tstamp>
+    </comp>
+    <comp ref="IC1">
+      <value>74HC00</value>
+      <footprint>Package_DIP:DIP-14_W7.62mm_LongPads</footprint>
+      <datasheet>http://www.ti.com/lit/gpn/sn74hc00</datasheet>
+      <fields>
+        <field name="Mfr.">Texas Instruments</field>
+        <field name="Mfr. No.">SN74HC00AN</field>
+        <field name="Mouser">595-SN74HC00AN</field>
+      </fields>
+      <libsource lib="74xx" part="74HC00" description="Quad 2-input NAND gate"/>
+      <sheetpath names="/Processor/" tstamps="/5EB09E21/"/>
+      <tstamp>5DD62749</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/400/eadmlcc_halogenfree_fa150_en-890480.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">TDK</field>
+        <field name="Mfr. No.">FA18X8R1H104KRU06</field>
+        <field name="Mouser">810-FA18X8R1H104KRU6</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Processor/" tstamps="/5EB09E21/"/>
+      <tstamp>5DD67E33</tstamp>
+    </comp>
+    <comp ref="IC3">
+      <value>74HC138</value>
+      <footprint>Package_DIP:DIP-16_W7.62mm_LongPads</footprint>
+      <datasheet>http://www.ti.com/lit/gpn/sn74HC138</datasheet>
+      <fields>
+        <field name="Mfr.">Texas Instruments</field>
+        <field name="Mfr. No.">SN74HC138AN</field>
+        <field name="Mouser">595-SN74HC138AN</field>
+      </fields>
+      <libsource lib="Retro-PC-rescue" part="74HC138-74xx" description=""/>
+      <sheetpath names="/Processor/" tstamps="/5EB09E21/"/>
+      <tstamp>5DA01AB5</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/400/eadmlcc_halogenfree_fa150_en-890480.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">TDK</field>
+        <field name="Mfr. No.">FA18X8R1H104KRU06</field>
+        <field name="Mouser">810-FA18X8R1H104KRU6</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Processor/" tstamps="/5EB09E21/"/>
+      <tstamp>5DA77F99</tstamp>
+    </comp>
+    <comp ref="IC10">
+      <value>W65C22</value>
+      <footprint>Package_DIP:DIP-40_W15.24mm_LongPads</footprint>
+      <datasheet>https://www.westerndesigncenter.com/wdc/documentation/w65c22s.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Western Design Center</field>
+        <field name="Mfr. No.">W65C22N6TPG-14</field>
+        <field name="Mouser">955-W65C22N6TPG-14</field>
+      </fields>
+      <libsource lib="Western_Design_Center" part="W65C22" description="I/O-Controller - Versatile Interface Adapter (VIA)"/>
+      <sheetpath names="/Processor/" tstamps="/5EB09E21/"/>
+      <tstamp>5DA8CE2C</tstamp>
+    </comp>
+    <comp ref="C18">
+      <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/400/eadmlcc_halogenfree_fa150_en-890480.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">TDK</field>
+        <field name="Mfr. No.">FA18X8R1H104KRU06</field>
+        <field name="Mouser">810-FA18X8R1H104KRU6</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Processor/" tstamps="/5EB09E21/"/>
+      <tstamp>5DA9042A</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Yageo</field>
+        <field name="Mfr. No.">MFP-25BRD52-10K</field>
+        <field name="Mouser">603-MFP-25BRD52-10K</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Processor/" tstamps="/5EB09E21/"/>
+      <tstamp>5E0EA165</tstamp>
+    </comp>
+    <comp ref="D9">
+      <value>SD103A</value>
+      <footprint>Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal</footprint>
+      <datasheet>https://www.vishay.com/docs/85754/sd103a.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Vishay Semiconductors</field>
+        <field name="Mfr. No.">SD103A-TR</field>
+        <field name="Mouser">625-SD103A</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <sheetpath names="/Processor/" tstamps="/5EB09E21/"/>
+      <tstamp>5E0A358A</tstamp>
+    </comp>
+    <comp ref="D8">
+      <value>SD103A</value>
+      <footprint>Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal</footprint>
+      <datasheet>https://www.vishay.com/docs/85754/sd103a.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Vishay Semiconductors</field>
+        <field name="Mfr. No.">SD103A-TR</field>
+        <field name="Mouser">625-SD103A</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <sheetpath names="/Processor/" tstamps="/5EB09E21/"/>
+      <tstamp>5E087BEB</tstamp>
+    </comp>
+    <comp ref="D14">
+      <value>SD103A</value>
+      <footprint>Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal</footprint>
+      <datasheet>https://www.vishay.com/docs/85754/sd103a.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Vishay Semiconductors</field>
+        <field name="Mfr. No.">SD103A-TR</field>
+        <field name="Mouser">625-SD103A</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <sheetpath names="/Processor/" tstamps="/5EB09E21/"/>
+      <tstamp>5DEA544B</tstamp>
+    </comp>
+    <comp ref="IC4">
+      <value>SYSTEM ROM</value>
+      <footprint>Package_DIP:DIP-28_W15.24mm_LongPads</footprint>
+      <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/doc0006.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Microchip Technology / Atmel</field>
+        <field name="Mfr. No.">AT28C256-15PU</field>
+        <field name="Mouser">556-AT28C256-15PU</field>
+      </fields>
+      <libsource lib="Memory_EEPROM" part="28C256" description="Paged Parallel EEPROM 256Kb (32K x 8), DIP-28/SOIC-28"/>
+      <sheetpath names="/Processor/" tstamps="/5EB09E21/"/>
+      <tstamp>5EBEAFAB</tstamp>
+    </comp>
+    <comp ref="IC9">
+      <value>FT232RL</value>
+      <footprint>Package_SO:SSOP-28_5.3x10.2mm_P0.65mm</footprint>
+      <datasheet>http://www.ftdichip.com/Products/ICs/FT232RL.htm</datasheet>
+      <fields>
+        <field name="Mfr.">FTDI</field>
+        <field name="Mfr. No.">FT232RL-REEL</field>
+        <field name="Mouser">895-FT232RL</field>
+      </fields>
+      <libsource lib="Interface_USB" part="FT232RL" description="USB to Serial Interface, SSOP-28"/>
+      <sheetpath names="/USB/" tstamps="/5E9064F2/"/>
+      <tstamp>5E95D1D6</tstamp>
+    </comp>
+    <comp ref="D11">
+      <value>TX</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/216/apt2012pyw-1173287.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Kingbright</field>
+        <field name="Mfr. No.">APT2012PYW</field>
+        <field name="Mouser">604-APT2012PYW</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/USB/" tstamps="/5E9064F2/"/>
+      <tstamp>5E95D1E6</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Yageo</field>
+        <field name="Mfr. No.">MFP-25BRD52-1K</field>
+        <field name="Mouser">603-MFP-25BRD52-1K</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/USB/" tstamps="/5E9064F2/"/>
+      <tstamp>5E95D1EC</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Yageo</field>
+        <field name="Mfr. No.">MFP-25BRD52-1K</field>
+        <field name="Mouser">603-MFP-25BRD52-1K</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/USB/" tstamps="/5E9064F2/"/>
+      <tstamp>5E95D1F2</tstamp>
+    </comp>
+    <comp ref="D12">
+      <value>RX</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/216/apt2012pgw-1173286.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">Kingbright</field>
+        <field name="Mfr. No.">APT2012PGW</field>
+        <field name="Mouser">604-APT2012PGW</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/USB/" tstamps="/5E9064F2/"/>
+      <tstamp>5E95D1F8</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">KEMET</field>
+        <field name="Mfr. No.">C0805C104K5RACTU</field>
+        <field name="Mouser">80-C0805C104K5R</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/USB/" tstamps="/5E9064F2/"/>
+      <tstamp>5E95D20C</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">KEMET</field>
+        <field name="Mfr. No.">C0805C104K5RACTU</field>
+        <field name="Mouser">80-C0805C104K5R</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/USB/" tstamps="/5E9064F2/"/>
+      <tstamp>5E2B4DFA</tstamp>
+    </comp>
+    <comp ref="C16">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf</datasheet>
+      <fields>
+        <field name="Mfr.">KEMET</field>
+        <field name="Mfr. No.">C0805C104K5RACTU</field>
+        <field name="Mouser">80-C0805C104K5R</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/USB/" tstamps="/5E9064F2/"/>
+      <tstamp>5E2BDF0E</tstamp>
+    </comp>
+    <comp ref="X2">
+      <value>SERIAL</value>
+      <footprint>Connector_Custom:USB-B_TE_2923042_Horizontal</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&amp;DocId=Customer+Drawing%7F292304%7FD4%7Fpdf%7FEnglish%7FENG_CD_292304_D4.pdf%7F292304-2</datasheet>
+      <fields>
+        <field name="Mfr.">TE Connectivity</field>
+        <field name="Mfr. No.">292304-2</field>
+        <field name="Mouser">571-292304-2</field>
+      </fields>
+      <libsource lib="Connector_Custom" part="USB-B" description="USB Type B connector"/>
+      <sheetpath names="/USB/" tstamps="/5E9064F2/"/>
+      <tstamp>5DA7E5BF</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="74xx" part="74LS00">
+      <aliases>
+        <alias>74LS37</alias>
+        <alias>7400</alias>
+        <alias>74HCT00</alias>
+        <alias>74HC00</alias>
+      </aliases>
+      <description>Quad 2-input NAND gate</description>
+      <docs>http://www.ti.com/lit/gpn/sn74ls00</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>SO14*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74LS00</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+        <pin num="2" name="~" type="input"/>
+        <pin num="3" name="~" type="output"/>
+        <pin num="4" name="~" type="input"/>
+        <pin num="5" name="~" type="input"/>
+        <pin num="6" name="~" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="~" type="output"/>
+        <pin num="9" name="~" type="input"/>
+        <pin num="10" name="~" type="input"/>
+        <pin num="11" name="~" type="output"/>
+        <pin num="12" name="~" type="input"/>
+        <pin num="13" name="~" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Alliance_Memory" part="AS6C62256A">
+      <description>256K, 2.7-5.5V, 70ns 32K x 8 Asynch SRAM</description>
+      <docs>https://www.alliancememory.com/wp-content/uploads/pdf/AS6C62256A.pdf</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">AS6C62256A</field>
+        <field name="Footprint">Package_DIP:DIP-28_W15.24mm_LongPads</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A14" type="input"/>
+        <pin num="2" name="A12" type="input"/>
+        <pin num="3" name="A7" type="input"/>
+        <pin num="4" name="A6" type="input"/>
+        <pin num="5" name="A5" type="input"/>
+        <pin num="6" name="A4" type="input"/>
+        <pin num="7" name="A3" type="input"/>
+        <pin num="8" name="A2" type="input"/>
+        <pin num="9" name="A1" type="input"/>
+        <pin num="10" name="A0" type="input"/>
+        <pin num="11" name="DQ0" type="input"/>
+        <pin num="12" name="DQ1" type="input"/>
+        <pin num="13" name="DQ2" type="input"/>
+        <pin num="14" name="Vss" type="power_in"/>
+        <pin num="15" name="DQ3" type="input"/>
+        <pin num="16" name="DQ4" type="input"/>
+        <pin num="17" name="DQ5" type="input"/>
+        <pin num="18" name="DQ6" type="input"/>
+        <pin num="19" name="DQ7" type="input"/>
+        <pin num="20" name="~CS" type="input"/>
+        <pin num="21" name="A10" type="input"/>
+        <pin num="22" name="~OE" type="input"/>
+        <pin num="23" name="A11" type="input"/>
+        <pin num="24" name="A9" type="input"/>
+        <pin num="25" name="A8" type="input"/>
+        <pin num="26" name="A13" type="input"/>
+        <pin num="27" name="~WE" type="input"/>
+        <pin num="28" name="Vcc" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Custom" part="Mini-DIN-6">
+      <description>6-pin Mini-DIN connector</description>
+      <docs>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&amp;DocId=Customer+Drawing%7F5749180%7FA1%7Ftif%7FEnglish%7FENG_CD_5749180_A1.tif%7F5749180-1</docs>
+      <footprints>
+        <fp>MINI?DIN*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">X</field>
+        <field name="Value">Mini-DIN-6</field>
+        <field name="Footprint">Connector_Custom:Mini-DIN_TE_Female_6Pin_2rows</field>
+        <field name="Mfr.">TE Connectivity</field>
+        <field name="Mfr. No.">5749180-1</field>
+        <field name="Mouser">571-5749180-1</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+        <pin num="5" name="~" type="passive"/>
+        <pin num="6" name="~" type="passive"/>
+        <pin num="7" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Custom" part="USB-B">
+      <description>USB Type B connector</description>
+      <docs> ~</docs>
+      <footprints>
+        <fp>USB*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">X</field>
+        <field name="Value">USB-B</field>
+        <field name="Footprint">Connector_Custom:USB-B_TE_2923042_Horizontal</field>
+        <field name="Mfr.">TE Connectivity</field>
+        <field name="Mfr. No.">292304-2</field>
+        <field name="Mouser">571-292304-2</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VBUS" type="power_out"/>
+        <pin num="2" name="D-" type="passive"/>
+        <pin num="3" name="D+" type="passive"/>
+        <pin num="4" name="GND" type="power_out"/>
+        <pin num="5" name="Shield" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_02x20_Odd_Even">
+      <description>Generic connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x20_Odd_Even</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+        <pin num="13" name="Pin_13" type="passive"/>
+        <pin num="14" name="Pin_14" type="passive"/>
+        <pin num="15" name="Pin_15" type="passive"/>
+        <pin num="16" name="Pin_16" type="passive"/>
+        <pin num="17" name="Pin_17" type="passive"/>
+        <pin num="18" name="Pin_18" type="passive"/>
+        <pin num="19" name="Pin_19" type="passive"/>
+        <pin num="20" name="Pin_20" type="passive"/>
+        <pin num="21" name="Pin_21" type="passive"/>
+        <pin num="22" name="Pin_22" type="passive"/>
+        <pin num="23" name="Pin_23" type="passive"/>
+        <pin num="24" name="Pin_24" type="passive"/>
+        <pin num="25" name="Pin_25" type="passive"/>
+        <pin num="26" name="Pin_26" type="passive"/>
+        <pin num="27" name="Pin_27" type="passive"/>
+        <pin num="28" name="Pin_28" type="passive"/>
+        <pin num="29" name="Pin_29" type="passive"/>
+        <pin num="30" name="Pin_30" type="passive"/>
+        <pin num="31" name="Pin_31" type="passive"/>
+        <pin num="32" name="Pin_32" type="passive"/>
+        <pin num="33" name="Pin_33" type="passive"/>
+        <pin num="34" name="Pin_34" type="passive"/>
+        <pin num="35" name="Pin_35" type="passive"/>
+        <pin num="36" name="Pin_36" type="passive"/>
+        <pin num="37" name="Pin_37" type="passive"/>
+        <pin num="38" name="Pin_38" type="passive"/>
+        <pin num="39" name="Pin_39" type="passive"/>
+        <pin num="40" name="Pin_40" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Crystal">
+      <description>Two pin crystal</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Crystal*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Schottky">
+      <description>Schottky diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Network08">
+      <description>8 resistor network, star topology, bussed resistors, small symbol</description>
+      <docs>http://www.vishay.com/docs/31509/csc.pdf</docs>
+      <footprints>
+        <fp>R?Array?SIP*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">RN</field>
+        <field name="Value">R_Network08</field>
+        <field name="Footprint">Resistor_THT:R_Array_SIP9</field>
+      </fields>
+      <pins>
+        <pin num="1" name="common" type="passive"/>
+        <pin num="2" name="R1" type="passive"/>
+        <pin num="3" name="R2" type="passive"/>
+        <pin num="4" name="R3" type="passive"/>
+        <pin num="5" name="R4" type="passive"/>
+        <pin num="6" name="R5" type="passive"/>
+        <pin num="7" name="R6" type="passive"/>
+        <pin num="8" name="R7" type="passive"/>
+        <pin num="9" name="R8" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Network10">
+      <description>10 resistor network, star topology, bussed resistors, small symbol</description>
+      <docs>http://www.vishay.com/docs/31509/csc.pdf</docs>
+      <footprints>
+        <fp>R?Array?SIP*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">RN</field>
+        <field name="Value">R_Network10</field>
+        <field name="Footprint">Resistor_THT:R_Array_SIP11</field>
+      </fields>
+      <pins>
+        <pin num="1" name="common" type="passive"/>
+        <pin num="2" name="R1" type="passive"/>
+        <pin num="3" name="R2" type="passive"/>
+        <pin num="4" name="R3" type="passive"/>
+        <pin num="5" name="R4" type="passive"/>
+        <pin num="6" name="R5" type="passive"/>
+        <pin num="7" name="R6" type="passive"/>
+        <pin num="8" name="R7" type="passive"/>
+        <pin num="9" name="R8" type="passive"/>
+        <pin num="10" name="R9" type="passive"/>
+        <pin num="11" name="R10" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_POT">
+      <description>Potentiometer</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Potentiometer*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">RV</field>
+        <field name="Value">R_POT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Diode" part="MMSD914">
+      <aliases>
+        <alias>1N4148W</alias>
+        <alias>BAV16W</alias>
+        <alias>1N4448W</alias>
+        <alias>MMSD4148</alias>
+      </aliases>
+      <description>100V 0.2A Switching Diode, SOD-123</description>
+      <docs>https://www.onsemi.com/pub/Collateral/MMSD914T1-D.PDF</docs>
+      <footprints>
+        <fp>D*SOD?123*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">MMSD914</field>
+        <field name="Footprint">Diode_SMD:D_SOD-123</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Display_Character" part="WC1602A">
+      <description>LCD 16x2 Alphanumeric , 8 bit parallel bus, 5V VDD</description>
+      <docs>http://www.wincomlcd.com/pdf/WC1602A-SFYLYHTC06.pdf</docs>
+      <footprints>
+        <fp>*WC*1602A*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">DS</field>
+        <field name="Value">WC1602A</field>
+        <field name="Footprint">Display:WC1602A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VSS" type="power_in"/>
+        <pin num="2" name="VDD" type="power_in"/>
+        <pin num="3" name="VO" type="input"/>
+        <pin num="4" name="RS" type="input"/>
+        <pin num="5" name="R/W" type="input"/>
+        <pin num="6" name="E" type="input"/>
+        <pin num="7" name="D0" type="input"/>
+        <pin num="8" name="D1" type="input"/>
+        <pin num="9" name="D2" type="input"/>
+        <pin num="10" name="D3" type="input"/>
+        <pin num="11" name="D4" type="input"/>
+        <pin num="12" name="D5" type="input"/>
+        <pin num="13" name="D6" type="input"/>
+        <pin num="14" name="D7" type="input"/>
+        <pin num="15" name="LED(+)" type="power_in"/>
+        <pin num="16" name="LED(-)" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="ECS" part="ECS-100X">
+      <description>ECS-100X Series</description>
+      <fields>
+        <field name="Reference">X</field>
+        <field name="Value">ECS-100X</field>
+        <field name="Footprint">Oscillator:Oscillator_DIP-14</field>
+      </fields>
+      <pins>
+        <pin num="1" name="NC" type="NotConnected"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="OUT" type="output"/>
+        <pin num="14" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Interface_USB" part="FT232RL">
+      <description>USB to Serial Interface, SSOP-28</description>
+      <docs>http://www.ftdichip.com/Products/ICs/FT232RL.htm</docs>
+      <footprints>
+        <fp>SSOP*5.3x10.2mm*P0.65mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">FT232RL</field>
+        <field name="Footprint">Package_SO:SSOP-28_5.3x10.2mm_P0.65mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="TXD" type="output"/>
+        <pin num="2" name="DTR" type="output"/>
+        <pin num="3" name="RTS" type="output"/>
+        <pin num="4" name="VCCIO" type="power_in"/>
+        <pin num="5" name="RXD" type="input"/>
+        <pin num="6" name="RI" type="input"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="9" name="DCR" type="input"/>
+        <pin num="10" name="DCD" type="input"/>
+        <pin num="11" name="CTS" type="input"/>
+        <pin num="12" name="CBUS4" type="BiDi"/>
+        <pin num="13" name="CBUS2" type="BiDi"/>
+        <pin num="14" name="CBUS3" type="BiDi"/>
+        <pin num="15" name="USBD+" type="BiDi"/>
+        <pin num="16" name="USBD-" type="BiDi"/>
+        <pin num="17" name="3V3OUT" type="power_out"/>
+        <pin num="18" name="GND" type="power_in"/>
+        <pin num="19" name="~RESET~" type="input"/>
+        <pin num="20" name="VCC" type="power_in"/>
+        <pin num="21" name="GND" type="power_in"/>
+        <pin num="22" name="CBUS1" type="BiDi"/>
+        <pin num="23" name="CBUS0" type="BiDi"/>
+        <pin num="25" name="AGND" type="power_in"/>
+        <pin num="26" name="TEST" type="input"/>
+        <pin num="27" name="OSCI" type="input"/>
+        <pin num="28" name="OSCO" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="Memory_EEPROM" part="28C256">
+      <description>Paged Parallel EEPROM 256Kb (32K x 8), DIP-28/SOIC-28</description>
+      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/doc0006.pdf</docs>
+      <footprints>
+        <fp>DIP*W15.24mm*</fp>
+        <fp>SOIC*7.5x17.9mm*P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">28C256</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A14" type="input"/>
+        <pin num="2" name="A12" type="input"/>
+        <pin num="3" name="A7" type="input"/>
+        <pin num="4" name="A6" type="input"/>
+        <pin num="5" name="A5" type="input"/>
+        <pin num="6" name="A4" type="input"/>
+        <pin num="7" name="A3" type="input"/>
+        <pin num="8" name="A2" type="input"/>
+        <pin num="9" name="A1" type="input"/>
+        <pin num="10" name="A0" type="input"/>
+        <pin num="11" name="D0" type="3state"/>
+        <pin num="12" name="D1" type="3state"/>
+        <pin num="13" name="D2" type="3state"/>
+        <pin num="14" name="GND" type="power_in"/>
+        <pin num="15" name="D3" type="3state"/>
+        <pin num="16" name="D4" type="3state"/>
+        <pin num="17" name="D5" type="3state"/>
+        <pin num="18" name="D6" type="3state"/>
+        <pin num="19" name="D7" type="3state"/>
+        <pin num="20" name="~CS" type="input"/>
+        <pin num="21" name="A10" type="input"/>
+        <pin num="22" name="~OE" type="input"/>
+        <pin num="23" name="A11" type="input"/>
+        <pin num="24" name="A9" type="input"/>
+        <pin num="25" name="A8" type="input"/>
+        <pin num="26" name="A13" type="input"/>
+        <pin num="27" name="~WE" type="input"/>
+        <pin num="28" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Power_Supervisor" part="TL7702A">
+      <aliases>
+        <alias>TL7705A</alias>
+        <alias>TL7709A</alias>
+        <alias>TL7712A</alias>
+        <alias>TL7715A</alias>
+        <alias>TL7702B</alias>
+        <alias>TL7733B</alias>
+        <alias>TL7705B</alias>
+      </aliases>
+      <description>Supply-Voltage Supervisors, 2.53V, PDIP-8/SOIC-8</description>
+      <docs>http://www.ti.com.cn/cn/lit/ds/symlink/tl7705a.pdf</docs>
+      <footprints>
+        <fp>SOIC*3.9x4.9mm*P1.27mm*</fp>
+        <fp>DIP*W7.62mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TL7702A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="REF" type="output"/>
+        <pin num="2" name="~RESIN" type="input"/>
+        <pin num="3" name="CT" type="passive"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="~RESET" type="openCol"/>
+        <pin num="6" name="RESET" type="openCol"/>
+        <pin num="7" name="SENSE" type="input"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Switching" part="R-78E5.0-0.5">
+      <aliases>
+        <alias>R-78E3.3-0.5</alias>
+        <alias>R-78E9.0-0.5</alias>
+        <alias>R-78E12-0.5</alias>
+        <alias>R-78E15-0.5</alias>
+        <alias>R-78E5.0-1.0</alias>
+        <alias>R-78E3.3-1.0</alias>
+        <alias>R-78C1.8-1.0</alias>
+        <alias>R-78C5.0-1.0</alias>
+        <alias>R-78C3.3-1.0</alias>
+        <alias>R-78C9.0-1.0</alias>
+        <alias>R-78C12-1.0</alias>
+        <alias>R-78C15-1.0</alias>
+        <alias>R-781.8-1.0</alias>
+        <alias>R-782.5-1.0</alias>
+        <alias>R-783.3-1.0</alias>
+        <alias>R-785.0-1.0</alias>
+        <alias>R-781.5-0.5</alias>
+        <alias>R-781.8-0.5</alias>
+        <alias>R-782.5-0.5</alias>
+        <alias>R-783.3-0.5</alias>
+        <alias>R-785.0-0.5</alias>
+        <alias>R-786.5-0.5</alias>
+        <alias>R-7812-0.5</alias>
+        <alias>R-7815-0.5</alias>
+      </aliases>
+      <description>500mA Step-Down DC/DC-Regulator, 7-28V input, 5V fixed Output Voltage, LM78xx replacement, -40°C to +85°C, SIP3</description>
+      <docs>https://www.recom-power.com/pdf/Innoline/R-78Exx-0.5.pdf</docs>
+      <footprints>
+        <fp>Converter*DCDC*RECOM*R*78E*0.5*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">R-78E5.0-0.5</field>
+        <field name="Footprint">Converter_DCDC:Converter_DCDC_RECOM_R-78E-0.5_THT</field>
+        <field name="Mfr. No.">R-785.0-0.5</field>
+        <field name="Mouser">919-R-785.0-0.5</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="OUT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="Retro-PC-rescue" part="74HC138-74xx">
+      <footprints>
+        <fp>DIP?16*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74HC138-74xx</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A0" type="input"/>
+        <pin num="2" name="A1" type="input"/>
+        <pin num="3" name="A2" type="input"/>
+        <pin num="4" name="E1" type="input"/>
+        <pin num="5" name="E2" type="input"/>
+        <pin num="6" name="E3" type="input"/>
+        <pin num="7" name="O7" type="output"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="O6" type="output"/>
+        <pin num="10" name="O5" type="output"/>
+        <pin num="11" name="O4" type="output"/>
+        <pin num="12" name="O3" type="output"/>
+        <pin num="13" name="O2" type="output"/>
+        <pin num="14" name="O1" type="output"/>
+        <pin num="15" name="O0" type="output"/>
+        <pin num="16" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_DIP_x02">
+      <description>2x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>SW?DIP?x2*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_DIP_x02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_DIP_x08">
+      <description>8x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>SW?DIP?x8*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_DIP_x08</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+        <pin num="5" name="~" type="passive"/>
+        <pin num="6" name="~" type="passive"/>
+        <pin num="7" name="~" type="passive"/>
+        <pin num="8" name="~" type="passive"/>
+        <pin num="9" name="~" type="passive"/>
+        <pin num="10" name="~" type="passive"/>
+        <pin num="11" name="~" type="passive"/>
+        <pin num="12" name="~" type="passive"/>
+        <pin num="13" name="~" type="passive"/>
+        <pin num="14" name="~" type="passive"/>
+        <pin num="15" name="~" type="passive"/>
+        <pin num="16" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_Push">
+      <description>Push button switch, generic, two pins</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Push</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_SPDT">
+      <description>Switch, single pole double throw</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_SPDT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Western_Design_Center" part="W65C02">
+      <description>8-Bit Microprocessor</description>
+      <docs>https://www.westerndesigncenter.com/wdc/documentation/w65c02s.pdf</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">W65C02</field>
+        <field name="Footprint">Package_DIP:DIP-40_W15.24mm_LongPads</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VPB" type="output"/>
+        <pin num="2" name="RDY" type="input"/>
+        <pin num="3" name="PHI1O" type="output"/>
+        <pin num="4" name="~IRQ" type="input"/>
+        <pin num="5" name="~ML" type="output"/>
+        <pin num="6" name="~NMI" type="input"/>
+        <pin num="7" name="SYNC" type="input"/>
+        <pin num="8" name="Vcc" type="power_in"/>
+        <pin num="9" name="A0" type="output"/>
+        <pin num="10" name="A1" type="output"/>
+        <pin num="11" name="A2" type="output"/>
+        <pin num="12" name="A3" type="output"/>
+        <pin num="13" name="A4" type="output"/>
+        <pin num="14" name="A5" type="output"/>
+        <pin num="15" name="A6" type="output"/>
+        <pin num="16" name="A7" type="output"/>
+        <pin num="17" name="A8" type="output"/>
+        <pin num="18" name="A9" type="output"/>
+        <pin num="19" name="A10" type="output"/>
+        <pin num="20" name="A11" type="output"/>
+        <pin num="21" name="Vss" type="power_in"/>
+        <pin num="22" name="A12" type="output"/>
+        <pin num="23" name="A13" type="output"/>
+        <pin num="24" name="A14" type="output"/>
+        <pin num="25" name="A15" type="output"/>
+        <pin num="26" name="D7" type="BiDi"/>
+        <pin num="27" name="D6" type="BiDi"/>
+        <pin num="28" name="D5" type="BiDi"/>
+        <pin num="29" name="D4" type="BiDi"/>
+        <pin num="30" name="D3" type="BiDi"/>
+        <pin num="31" name="D2" type="BiDi"/>
+        <pin num="32" name="D1" type="BiDi"/>
+        <pin num="33" name="D0" type="BiDi"/>
+        <pin num="34" name="R/~W" type="output"/>
+        <pin num="35" name="NC" type="NotConnected"/>
+        <pin num="36" name="BE" type="input"/>
+        <pin num="37" name="PHI2" type="input"/>
+        <pin num="38" name="~SO" type="input"/>
+        <pin num="39" name="PHI2O" type="output"/>
+        <pin num="40" name="~RESET" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Western_Design_Center" part="W65C22">
+      <description>I/O-Controller - Versatile Interface Adapter (VIA)</description>
+      <docs>https://www.westerndesigncenter.com/wdc/documentation/w65c22s.pdf</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">W65C22</field>
+        <field name="Footprint">Package_DIP:DIP-40_W15.24mm_LongPads</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Vss" type="power_in"/>
+        <pin num="2" name="PA0" type="BiDi"/>
+        <pin num="3" name="PA1" type="BiDi"/>
+        <pin num="4" name="PA2" type="BiDi"/>
+        <pin num="5" name="PA3" type="BiDi"/>
+        <pin num="6" name="PA4" type="BiDi"/>
+        <pin num="7" name="PA5" type="BiDi"/>
+        <pin num="8" name="PA6" type="BiDi"/>
+        <pin num="9" name="PA7" type="BiDi"/>
+        <pin num="10" name="PB0" type="BiDi"/>
+        <pin num="11" name="PB1" type="BiDi"/>
+        <pin num="12" name="PB2" type="BiDi"/>
+        <pin num="13" name="PB3" type="BiDi"/>
+        <pin num="14" name="PB4" type="BiDi"/>
+        <pin num="15" name="PB5" type="BiDi"/>
+        <pin num="16" name="PB6" type="BiDi"/>
+        <pin num="17" name="PB7" type="BiDi"/>
+        <pin num="18" name="CB1" type="BiDi"/>
+        <pin num="19" name="CB2" type="BiDi"/>
+        <pin num="20" name="Vcc" type="power_in"/>
+        <pin num="21" name="~IRQ" type="output"/>
+        <pin num="22" name="R/~W" type="input"/>
+        <pin num="23" name="~CS2B" type="input"/>
+        <pin num="24" name="CS1" type="input"/>
+        <pin num="25" name="PHI2" type="input"/>
+        <pin num="26" name="D7" type="input"/>
+        <pin num="27" name="D6" type="input"/>
+        <pin num="28" name="D5" type="input"/>
+        <pin num="29" name="D4" type="input"/>
+        <pin num="30" name="D3" type="input"/>
+        <pin num="31" name="D2" type="input"/>
+        <pin num="32" name="D1" type="input"/>
+        <pin num="33" name="D0" type="input"/>
+        <pin num="34" name="~RESET" type="input"/>
+        <pin num="35" name="RS3" type="input"/>
+        <pin num="36" name="RS2" type="input"/>
+        <pin num="37" name="RS1" type="input"/>
+        <pin num="38" name="RS0" type="input"/>
+        <pin num="39" name="CA2" type="BiDi"/>
+        <pin num="40" name="CA1" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="Western_Design_Center" part="W65C51">
+      <description>Communication Interface - Asynch. Communication Interface Adapter (ACIA)</description>
+      <docs>https://www.westerndesigncenter.com/wdc/documentation/w65c51s.pdf</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">W65C51</field>
+        <field name="Footprint">Package_DIP:DIP-28_W15.24mm_LongPads</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Vss" type="power_in"/>
+        <pin num="2" name="CS0" type="input"/>
+        <pin num="3" name="~CS1B" type="input"/>
+        <pin num="4" name="~RESET" type="input"/>
+        <pin num="5" name="RxC" type="input"/>
+        <pin num="6" name="XTLI" type="input"/>
+        <pin num="7" name="XLTO" type="output"/>
+        <pin num="8" name="RTSB" type="output"/>
+        <pin num="9" name="CTSB" type="input"/>
+        <pin num="10" name="TxD" type="output"/>
+        <pin num="11" name="DTRB" type="output"/>
+        <pin num="12" name="RxD" type="input"/>
+        <pin num="13" name="RS0" type="input"/>
+        <pin num="14" name="RS1" type="input"/>
+        <pin num="15" name="Vdd" type="power_in"/>
+        <pin num="16" name="DCDB" type="input"/>
+        <pin num="17" name="DSRB" type="input"/>
+        <pin num="18" name="D0" type="input"/>
+        <pin num="19" name="D1" type="input"/>
+        <pin num="20" name="D2" type="input"/>
+        <pin num="21" name="D3" type="input"/>
+        <pin num="22" name="D4" type="input"/>
+        <pin num="23" name="D5" type="input"/>
+        <pin num="24" name="D6" type="input"/>
+        <pin num="25" name="D7" type="input"/>
+        <pin num="26" name="~IRQ" type="output"/>
+        <pin num="27" name="PHI2" type="input"/>
+        <pin num="28" name="R/~W" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Wuerth" part="ConBarrel">
+      <aliases>
+        <alias>Jack-DC</alias>
+      </aliases>
+      <description>Würth DC Barrel Jack</description>
+      <docs>https://katalog.we-online.de/em/datasheet/6941xx301002.pdf</docs>
+      <footprints>
+        <fp>BarrelJack*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">X</field>
+        <field name="Value">ConBarrel</field>
+        <field name="Footprint">Wuerth:BarrelJack_Wuerth_6941xx301002</field>
+        <field name="Mfr.">Wurth Elektronik</field>
+        <field name="Mfr. No.">694106301002</field>
+        <field name="Mouser">710-694106301002</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="74xx">
+      <uri>D:\KiCad\share\kicad\library/74xx.lib</uri>
+    </library>
+    <library logical="Alliance_Memory">
+      <uri>D:\Dropbox\Git\KiCAD/Symbols/Alliance_Memory.lib</uri>
+    </library>
+    <library logical="Connector_Custom">
+      <uri>D:\Dropbox\Git\KiCAD/Symbols/Connector_Custom.lib</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>D:\KiCad\share\kicad\library/Connector_Generic.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>D:\KiCad\share\kicad\library/Device.lib</uri>
+    </library>
+    <library logical="Diode">
+      <uri>D:\KiCad\share\kicad\library/Diode.lib</uri>
+    </library>
+    <library logical="Display_Character">
+      <uri>D:\KiCad\share\kicad\library/Display_Character.lib</uri>
+    </library>
+    <library logical="ECS">
+      <uri>D:\Dropbox\Git\KiCAD/Symbols/ECS.lib</uri>
+    </library>
+    <library logical="Interface_USB">
+      <uri>D:\KiCad\share\kicad\library/Interface_USB.lib</uri>
+    </library>
+    <library logical="Memory_EEPROM">
+      <uri>D:\KiCad\share\kicad\library/Memory_EEPROM.lib</uri>
+    </library>
+    <library logical="Power_Supervisor">
+      <uri>D:\KiCad\share\kicad\library/Power_Supervisor.lib</uri>
+    </library>
+    <library logical="Regulator_Switching">
+      <uri>D:\KiCad\share\kicad\library/Regulator_Switching.lib</uri>
+    </library>
+    <library logical="Retro-PC-rescue">
+      <uri>D:\Dropbox\Git\Retro PC\hardware/Retro PC-rescue.lib</uri>
+    </library>
+    <library logical="Switch">
+      <uri>D:\KiCad\share\kicad\library/Switch.lib</uri>
+    </library>
+    <library logical="Western_Design_Center">
+      <uri>D:\Dropbox\Git\KiCAD/Symbols/WesternDesignCenter.lib</uri>
+    </library>
+    <library logical="Wuerth">
+      <uri>D:\Dropbox\Git\KiCAD/Symbols/Wuerth.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/USB/CTS">
+      <node ref="IC9" pin="11"/>
+      <node ref="IC7" pin="8"/>
+    </net>
+    <net code="2" name="/IO/~TerminalReady">
+      <node ref="IC7" pin="11"/>
+      <node ref="X3" pin="26"/>
+    </net>
+    <net code="3" name="/IO/~CarrierDetect">
+      <node ref="SW5" pin="2"/>
+      <node ref="IC7" pin="16"/>
+    </net>
+    <net code="4" name="/IO/~IRQ">
+      <node ref="D9" pin="1"/>
+      <node ref="X3" pin="24"/>
+    </net>
+    <net code="5" name="/IO/~NMI">
+      <node ref="C17" pin="1"/>
+      <node ref="R9" pin="2"/>
+      <node ref="IC2" pin="6"/>
+      <node ref="SW4" pin="2"/>
+    </net>
+    <net code="6" name="/Processor/~ModemReady">
+      <node ref="IC9" pin="2"/>
+      <node ref="IC7" pin="17"/>
+    </net>
+    <net code="7" name="/IO/Clock">
+      <node ref="XTAL1" pin="8"/>
+      <node ref="IC6" pin="25"/>
+      <node ref="IC7" pin="27"/>
+      <node ref="IC2" pin="37"/>
+      <node ref="IC1" pin="4"/>
+      <node ref="X3" pin="20"/>
+      <node ref="IC10" pin="25"/>
+    </net>
+    <net code="8" name="/IO/R~W">
+      <node ref="IC5" pin="27"/>
+      <node ref="IC7" pin="28"/>
+      <node ref="IC10" pin="22"/>
+      <node ref="X3" pin="18"/>
+      <node ref="IC2" pin="34"/>
+      <node ref="IC6" pin="22"/>
+    </net>
+    <net code="9" name="/Processor/CTS">
+      <node ref="IC7" pin="9"/>
+      <node ref="IC9" pin="3"/>
+    </net>
+    <net code="10" name="/IO/~RESET">
+      <node ref="X3" pin="22"/>
+      <node ref="IC7" pin="4"/>
+      <node ref="IC6" pin="34"/>
+      <node ref="IC9" pin="19"/>
+      <node ref="IC2" pin="40"/>
+      <node ref="IC8" pin="5"/>
+      <node ref="IC10" pin="34"/>
+    </net>
+    <net code="11" name="/Processor/RxD">
+      <node ref="IC9" pin="1"/>
+      <node ref="IC7" pin="12"/>
+    </net>
+    <net code="12" name="/USB/RxD">
+      <node ref="IC9" pin="5"/>
+      <node ref="IC7" pin="10"/>
+    </net>
+    <net code="13" name="+5V">
+      <node ref="IC1" pin="14"/>
+      <node ref="C1" pin="1"/>
+      <node ref="C16" pin="1"/>
+      <node ref="IC2" pin="8"/>
+      <node ref="IC9" pin="20"/>
+      <node ref="D12" pin="2"/>
+      <node ref="R8" pin="1"/>
+      <node ref="R5" pin="1"/>
+      <node ref="IC9" pin="4"/>
+      <node ref="C2" pin="1"/>
+      <node ref="C10" pin="1"/>
+      <node ref="U1" pin="3"/>
+      <node ref="D11" pin="2"/>
+      <node ref="SW5" pin="1"/>
+      <node ref="R1" pin="2"/>
+      <node ref="C18" pin="1"/>
+      <node ref="IC5" pin="28"/>
+      <node ref="IC10" pin="20"/>
+      <node ref="C3" pin="1"/>
+      <node ref="IC3" pin="16"/>
+      <node ref="C6" pin="1"/>
+      <node ref="IC7" pin="15"/>
+      <node ref="C4" pin="1"/>
+      <node ref="XTAL1" pin="14"/>
+      <node ref="IC4" pin="27"/>
+      <node ref="C5" pin="1"/>
+      <node ref="IC4" pin="28"/>
+      <node ref="SW3" pin="9"/>
+      <node ref="R9" pin="1"/>
+      <node ref="IC6" pin="20"/>
+      <node ref="C7" pin="1"/>
+      <node ref="R3" pin="1"/>
+      <node ref="C15" pin="1"/>
+      <node ref="DS1" pin="15"/>
+      <node ref="DS1" pin="2"/>
+      <node ref="X4" pin="5"/>
+      <node ref="SW2" pin="3"/>
+      <node ref="X3" pin="40"/>
+      <node ref="SW3" pin="15"/>
+      <node ref="SW3" pin="16"/>
+      <node ref="SW3" pin="14"/>
+      <node ref="SW2" pin="4"/>
+      <node ref="SW3" pin="10"/>
+      <node ref="SW3" pin="11"/>
+      <node ref="SW3" pin="13"/>
+      <node ref="SW3" pin="12"/>
+    </net>
+    <net code="14" name="Net-(X4-Pad6)">
+      <node ref="X4" pin="6"/>
+    </net>
+    <net code="15" name="GND">
+      <node ref="C7" pin="2"/>
+      <node ref="DS1" pin="1"/>
+      <node ref="C6" pin="2"/>
+      <node ref="IC6" pin="23"/>
+      <node ref="IC4" pin="22"/>
+      <node ref="C4" pin="2"/>
+      <node ref="IC3" pin="8"/>
+      <node ref="IC7" pin="1"/>
+      <node ref="RN1" pin="1"/>
+      <node ref="RN2" pin="1"/>
+      <node ref="IC4" pin="14"/>
+      <node ref="IC10" pin="1"/>
+      <node ref="IC10" pin="23"/>
+      <node ref="X3" pin="39"/>
+      <node ref="SW4" pin="1"/>
+      <node ref="C17" pin="2"/>
+      <node ref="C18" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="DS1" pin="16"/>
+      <node ref="SW5" pin="3"/>
+      <node ref="C5" pin="2"/>
+      <node ref="RV1" pin="1"/>
+      <node ref="C8" pin="2"/>
+      <node ref="IC5" pin="14"/>
+      <node ref="X4" pin="7"/>
+      <node ref="IC5" pin="22"/>
+      <node ref="XTAL1" pin="7"/>
+      <node ref="X4" pin="4"/>
+      <node ref="C10" pin="2"/>
+      <node ref="C9" pin="2"/>
+      <node ref="C11" pin="2"/>
+      <node ref="SW1" pin="1"/>
+      <node ref="U1" pin="2"/>
+      <node ref="C12" pin="2"/>
+      <node ref="C13" pin="2"/>
+      <node ref="D13" pin="1"/>
+      <node ref="X1" pin="2"/>
+      <node ref="C14" pin="1"/>
+      <node ref="X2" pin="4"/>
+      <node ref="X2" pin="5"/>
+      <node ref="IC8" pin="4"/>
+      <node ref="IC9" pin="18"/>
+      <node ref="IC2" pin="21"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C15" pin="2"/>
+      <node ref="IC1" pin="7"/>
+      <node ref="IC9" pin="7"/>
+      <node ref="C2" pin="2"/>
+      <node ref="IC7" pin="3"/>
+      <node ref="IC6" pin="1"/>
+      <node ref="IC9" pin="25"/>
+      <node ref="C16" pin="2"/>
+      <node ref="IC9" pin="21"/>
+    </net>
+    <net code="16" name="Net-(X4-Pad3)">
+      <node ref="X4" pin="3"/>
+    </net>
+    <net code="17" name="Net-(RV1-Pad3)">
+      <node ref="RV1" pin="3"/>
+    </net>
+    <net code="18" name="Net-(DS1-Pad3)">
+      <node ref="DS1" pin="3"/>
+      <node ref="RV1" pin="2"/>
+    </net>
+    <net code="19" name="Net-(IC9-Pad9)">
+      <node ref="IC9" pin="9"/>
+    </net>
+    <net code="20" name="Net-(IC9-Pad10)">
+      <node ref="IC9" pin="10"/>
+    </net>
+    <net code="21" name="Net-(IC9-Pad6)">
+      <node ref="IC9" pin="6"/>
+    </net>
+    <net code="22" name="Net-(IC9-Pad13)">
+      <node ref="IC9" pin="13"/>
+    </net>
+    <net code="23" name="Net-(IC9-Pad14)">
+      <node ref="IC9" pin="14"/>
+    </net>
+    <net code="24" name="Net-(IC9-Pad12)">
+      <node ref="IC9" pin="12"/>
+    </net>
+    <net code="25" name="Net-(IC9-Pad26)">
+      <node ref="IC9" pin="26"/>
+    </net>
+    <net code="26" name="Net-(IC9-Pad28)">
+      <node ref="IC9" pin="28"/>
+    </net>
+    <net code="27" name="Net-(IC9-Pad27)">
+      <node ref="IC9" pin="27"/>
+    </net>
+    <net code="28" name="Net-(X2-Pad1)">
+      <node ref="X2" pin="1"/>
+    </net>
+    <net code="29" name="Net-(D11-Pad1)">
+      <node ref="R6" pin="1"/>
+      <node ref="D11" pin="1"/>
+    </net>
+    <net code="30" name="/USB/D-">
+      <node ref="IC9" pin="16"/>
+      <node ref="X2" pin="2"/>
+    </net>
+    <net code="31" name="/USB/D+">
+      <node ref="X2" pin="3"/>
+      <node ref="IC9" pin="15"/>
+    </net>
+    <net code="32" name="Net-(D12-Pad1)">
+      <node ref="R7" pin="1"/>
+      <node ref="D12" pin="1"/>
+    </net>
+    <net code="33" name="Net-(C14-Pad2)">
+      <node ref="IC9" pin="17"/>
+      <node ref="C14" pin="2"/>
+    </net>
+    <net code="34" name="Net-(IC9-Pad22)">
+      <node ref="IC9" pin="22"/>
+      <node ref="R7" pin="2"/>
+    </net>
+    <net code="35" name="Net-(IC9-Pad23)">
+      <node ref="IC9" pin="23"/>
+      <node ref="R6" pin="2"/>
+    </net>
+    <net code="36" name="Net-(C11-Pad1)">
+      <node ref="SW1" pin="2"/>
+      <node ref="IC8" pin="2"/>
+      <node ref="IC8" pin="7"/>
+      <node ref="R5" pin="2"/>
+      <node ref="C11" pin="1"/>
+    </net>
+    <net code="37" name="Net-(C13-Pad1)">
+      <node ref="IC8" pin="1"/>
+      <node ref="C13" pin="1"/>
+    </net>
+    <net code="38" name="Net-(C12-Pad1)">
+      <node ref="C12" pin="1"/>
+      <node ref="IC8" pin="3"/>
+    </net>
+    <net code="39" name="+VDC">
+      <node ref="U1" pin="1"/>
+      <node ref="C9" pin="1"/>
+      <node ref="IC8" pin="8"/>
+      <node ref="D10" pin="1"/>
+    </net>
+    <net code="40" name="Net-(D10-Pad2)">
+      <node ref="X1" pin="1"/>
+      <node ref="D10" pin="2"/>
+    </net>
+    <net code="41" name="Net-(D13-Pad2)">
+      <node ref="D13" pin="2"/>
+      <node ref="R8" pin="2"/>
+    </net>
+    <net code="42" name="Net-(IC8-Pad6)">
+      <node ref="IC8" pin="6"/>
+    </net>
+    <net code="43" name="Net-(C8-Pad1)">
+      <node ref="R4" pin="2"/>
+      <node ref="C8" pin="1"/>
+      <node ref="IC7" pin="6"/>
+      <node ref="XTAL2" pin="1"/>
+    </net>
+    <net code="44" name="Net-(IC7-Pad5)">
+      <node ref="IC7" pin="5"/>
+    </net>
+    <net code="45" name="/Processor/~CS_ACIA">
+      <node ref="IC3" pin="13"/>
+      <node ref="IC7" pin="2"/>
+    </net>
+    <net code="46" name="Net-(IC1-Pad6)">
+      <node ref="IC5" pin="20"/>
+      <node ref="IC1" pin="6"/>
+    </net>
+    <net code="47" name="/Processor/~IRQ_VIA_1">
+      <node ref="D8" pin="1"/>
+      <node ref="IC6" pin="21"/>
+    </net>
+    <net code="48" name="/Processor/~CS_VIA_1">
+      <node ref="IC3" pin="15"/>
+      <node ref="IC6" pin="24"/>
+    </net>
+    <net code="49" name="/Processor/~IRQ_ACIA">
+      <node ref="D9" pin="2"/>
+      <node ref="IC2" pin="4"/>
+      <node ref="D14" pin="2"/>
+      <node ref="IC7" pin="26"/>
+      <node ref="D8" pin="2"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="50" name="Net-(IC3-Pad7)">
+      <node ref="IC3" pin="7"/>
+    </net>
+    <net code="51" name="/Processor/~CS_VIA_2">
+      <node ref="IC3" pin="14"/>
+      <node ref="IC10" pin="24"/>
+    </net>
+    <net code="52" name="Net-(IC3-Pad12)">
+      <node ref="IC3" pin="12"/>
+    </net>
+    <net code="53" name="Net-(IC3-Pad11)">
+      <node ref="IC3" pin="11"/>
+    </net>
+    <net code="54" name="Net-(IC3-Pad10)">
+      <node ref="IC3" pin="10"/>
+    </net>
+    <net code="55" name="Net-(IC1-Pad3)">
+      <node ref="IC1" pin="3"/>
+      <node ref="IC1" pin="5"/>
+    </net>
+    <net code="56" name="Net-(IC1-Pad8)">
+      <node ref="IC4" pin="20"/>
+      <node ref="IC1" pin="8"/>
+    </net>
+    <net code="59" name="/Processor/~IRQ_VIA_2">
+      <node ref="IC10" pin="21"/>
+      <node ref="D14" pin="1"/>
+    </net>
+    <net code="63" name="Net-(IC2-Pad1)">
+      <node ref="IC2" pin="1"/>
+    </net>
+    <net code="64" name="Net-(IC2-Pad36)">
+      <node ref="IC2" pin="36"/>
+    </net>
+    <net code="65" name="Net-(IC2-Pad7)">
+      <node ref="IC2" pin="7"/>
+    </net>
+    <net code="66" name="Net-(IC10-Pad13)">
+      <node ref="IC10" pin="13"/>
+    </net>
+    <net code="67" name="Net-(IC10-Pad14)">
+      <node ref="IC10" pin="14"/>
+    </net>
+    <net code="69" name="Net-(IC10-Pad39)">
+      <node ref="IC10" pin="39"/>
+    </net>
+    <net code="70" name="Net-(IC10-Pad40)">
+      <node ref="IC10" pin="40"/>
+    </net>
+    <net code="71" name="Net-(IC10-Pad19)">
+      <node ref="IC10" pin="19"/>
+    </net>
+    <net code="72" name="Net-(IC10-Pad18)">
+      <node ref="IC10" pin="18"/>
+    </net>
+    <net code="73" name="Net-(IC10-Pad15)">
+      <node ref="IC10" pin="15"/>
+    </net>
+    <net code="74" name="Net-(IC3-Pad9)">
+      <node ref="IC3" pin="9"/>
+    </net>
+    <net code="76" name="Net-(XTAL1-Pad1)">
+      <node ref="XTAL1" pin="1"/>
+    </net>
+    <net code="77" name="Net-(IC7-Pad7)">
+      <node ref="IC7" pin="7"/>
+      <node ref="R4" pin="1"/>
+      <node ref="XTAL2" pin="2"/>
+    </net>
+    <net code="78" name="Net-(IC2-Pad38)">
+      <node ref="IC2" pin="38"/>
+    </net>
+    <net code="79" name="Net-(IC2-Pad3)">
+      <node ref="IC2" pin="3"/>
+    </net>
+    <net code="80" name="Net-(IC2-Pad35)">
+      <node ref="IC2" pin="35"/>
+    </net>
+    <net code="81" name="Net-(IC2-Pad39)">
+      <node ref="IC2" pin="39"/>
+    </net>
+    <net code="82" name="Net-(IC2-Pad5)">
+      <node ref="IC2" pin="5"/>
+    </net>
+    <net code="83" name="Net-(IC2-Pad2)">
+      <node ref="R3" pin="2"/>
+      <node ref="IC2" pin="2"/>
+    </net>
+    <net code="85" name="Net-(IC6-Pad40)">
+      <node ref="IC6" pin="40"/>
+    </net>
+    <net code="86" name="Net-(IC6-Pad39)">
+      <node ref="IC6" pin="39"/>
+    </net>
+    <net code="87" name="Net-(D7-Pad1)">
+      <node ref="RN2" pin="2"/>
+      <node ref="D7" pin="1"/>
+    </net>
+    <net code="88" name="Net-(D0-Pad1)">
+      <node ref="D0" pin="1"/>
+      <node ref="RN2" pin="9"/>
+    </net>
+    <net code="89" name="Net-(D1-Pad1)">
+      <node ref="RN2" pin="8"/>
+      <node ref="D1" pin="1"/>
+    </net>
+    <net code="90" name="Net-(D6-Pad1)">
+      <node ref="RN2" pin="3"/>
+      <node ref="D6" pin="1"/>
+    </net>
+    <net code="91" name="Net-(D5-Pad1)">
+      <node ref="RN2" pin="4"/>
+      <node ref="D5" pin="1"/>
+    </net>
+    <net code="92" name="Net-(D4-Pad1)">
+      <node ref="RN2" pin="5"/>
+      <node ref="D4" pin="1"/>
+    </net>
+    <net code="93" name="Net-(D3-Pad1)">
+      <node ref="D3" pin="1"/>
+      <node ref="RN2" pin="6"/>
+    </net>
+    <net code="94" name="Net-(D2-Pad1)">
+      <node ref="RN2" pin="7"/>
+      <node ref="D2" pin="1"/>
+    </net>
+    <net code="95" name="Net-(X3-Pad32)">
+      <node ref="X3" pin="32"/>
+    </net>
+    <net code="96" name="Net-(X3-Pad33)">
+      <node ref="X3" pin="33"/>
+    </net>
+    <net code="97" name="Net-(X3-Pad34)">
+      <node ref="X3" pin="34"/>
+    </net>
+    <net code="98" name="Net-(X3-Pad35)">
+      <node ref="X3" pin="35"/>
+    </net>
+    <net code="99" name="Net-(X3-Pad36)">
+      <node ref="X3" pin="36"/>
+    </net>
+    <net code="100" name="Net-(X3-Pad37)">
+      <node ref="X3" pin="37"/>
+    </net>
+    <net code="101" name="Net-(X3-Pad38)">
+      <node ref="X3" pin="38"/>
+    </net>
+    <net code="102" name="Net-(X3-Pad28)">
+      <node ref="X3" pin="28"/>
+    </net>
+    <net code="103" name="Net-(X3-Pad30)">
+      <node ref="X3" pin="30"/>
+    </net>
+    <net code="104" name="/IO/D7">
+      <node ref="X3" pin="16"/>
+      <node ref="IC6" pin="26"/>
+      <node ref="IC10" pin="26"/>
+      <node ref="IC2" pin="26"/>
+      <node ref="IC7" pin="25"/>
+      <node ref="IC4" pin="19"/>
+      <node ref="IC5" pin="19"/>
+    </net>
+    <net code="105" name="/IO/A11">
+      <node ref="IC2" pin="20"/>
+      <node ref="IC4" pin="23"/>
+      <node ref="IC3" pin="2"/>
+      <node ref="IC5" pin="23"/>
+      <node ref="X3" pin="23"/>
+    </net>
+    <net code="106" name="/IO/A12">
+      <node ref="X3" pin="25"/>
+      <node ref="IC3" pin="3"/>
+      <node ref="IC5" pin="2"/>
+      <node ref="IC4" pin="2"/>
+      <node ref="IC2" pin="22"/>
+    </net>
+    <net code="107" name="/IO/A13">
+      <node ref="IC4" pin="26"/>
+      <node ref="IC3" pin="4"/>
+      <node ref="IC2" pin="23"/>
+      <node ref="IC5" pin="26"/>
+      <node ref="IC1" pin="10"/>
+      <node ref="X3" pin="27"/>
+    </net>
+    <net code="108" name="/IO/A14">
+      <node ref="X3" pin="29"/>
+      <node ref="IC4" pin="1"/>
+      <node ref="IC2" pin="24"/>
+      <node ref="IC3" pin="5"/>
+      <node ref="IC5" pin="1"/>
+    </net>
+    <net code="109" name="/IO/A15">
+      <node ref="IC2" pin="25"/>
+      <node ref="X3" pin="31"/>
+      <node ref="IC3" pin="6"/>
+      <node ref="IC1" pin="2"/>
+      <node ref="IC1" pin="1"/>
+      <node ref="IC1" pin="9"/>
+    </net>
+    <net code="110" name="/IO/D0">
+      <node ref="X3" pin="2"/>
+      <node ref="IC6" pin="33"/>
+      <node ref="IC2" pin="33"/>
+      <node ref="IC7" pin="18"/>
+      <node ref="IC10" pin="33"/>
+      <node ref="IC5" pin="11"/>
+      <node ref="IC4" pin="11"/>
+    </net>
+    <net code="111" name="/IO/D1">
+      <node ref="IC4" pin="12"/>
+      <node ref="IC6" pin="32"/>
+      <node ref="IC2" pin="32"/>
+      <node ref="IC10" pin="32"/>
+      <node ref="IC7" pin="19"/>
+      <node ref="X3" pin="4"/>
+      <node ref="IC5" pin="12"/>
+    </net>
+    <net code="112" name="/IO/D2">
+      <node ref="IC2" pin="31"/>
+      <node ref="IC4" pin="13"/>
+      <node ref="IC10" pin="31"/>
+      <node ref="IC5" pin="13"/>
+      <node ref="IC6" pin="31"/>
+      <node ref="IC7" pin="20"/>
+      <node ref="X3" pin="6"/>
+    </net>
+    <net code="113" name="/IO/D3">
+      <node ref="IC5" pin="15"/>
+      <node ref="IC6" pin="30"/>
+      <node ref="IC2" pin="30"/>
+      <node ref="IC10" pin="30"/>
+      <node ref="IC7" pin="21"/>
+      <node ref="X3" pin="8"/>
+      <node ref="IC4" pin="15"/>
+    </net>
+    <net code="114" name="/IO/D4">
+      <node ref="IC7" pin="22"/>
+      <node ref="IC2" pin="29"/>
+      <node ref="X3" pin="10"/>
+      <node ref="IC5" pin="16"/>
+      <node ref="IC4" pin="16"/>
+      <node ref="IC6" pin="29"/>
+      <node ref="IC10" pin="29"/>
+    </net>
+    <net code="115" name="/IO/D5">
+      <node ref="X3" pin="12"/>
+      <node ref="IC4" pin="17"/>
+      <node ref="IC7" pin="23"/>
+      <node ref="IC6" pin="28"/>
+      <node ref="IC10" pin="28"/>
+      <node ref="IC5" pin="17"/>
+      <node ref="IC2" pin="28"/>
+    </net>
+    <net code="116" name="/IO/D6">
+      <node ref="IC7" pin="24"/>
+      <node ref="X3" pin="14"/>
+      <node ref="IC4" pin="18"/>
+      <node ref="IC6" pin="27"/>
+      <node ref="IC10" pin="27"/>
+      <node ref="IC5" pin="18"/>
+      <node ref="IC2" pin="27"/>
+    </net>
+    <net code="117" name="/IO/A10">
+      <node ref="IC5" pin="21"/>
+      <node ref="IC4" pin="21"/>
+      <node ref="IC3" pin="1"/>
+      <node ref="IC2" pin="19"/>
+      <node ref="X3" pin="21"/>
+    </net>
+    <net code="118" name="/LCD / PS2/LCD0">
+      <node ref="IC10" pin="10"/>
+      <node ref="DS1" pin="6"/>
+    </net>
+    <net code="119" name="/LCD / PS2/LCD1">
+      <node ref="DS1" pin="5"/>
+      <node ref="IC10" pin="11"/>
+    </net>
+    <net code="120" name="/LCD / PS2/LCD2">
+      <node ref="IC10" pin="12"/>
+      <node ref="DS1" pin="4"/>
+    </net>
+    <net code="121" name="/LCD / PS2/LCD3">
+      <node ref="DS1" pin="7"/>
+      <node ref="IC10" pin="2"/>
+    </net>
+    <net code="122" name="/LCD / PS2/LCD4">
+      <node ref="IC10" pin="3"/>
+      <node ref="DS1" pin="8"/>
+    </net>
+    <net code="123" name="/LCD / PS2/LCD5">
+      <node ref="IC10" pin="4"/>
+      <node ref="DS1" pin="9"/>
+    </net>
+    <net code="124" name="/LCD / PS2/LCD6">
+      <node ref="DS1" pin="10"/>
+      <node ref="IC10" pin="5"/>
+    </net>
+    <net code="125" name="/LCD / PS2/LCD7">
+      <node ref="IC10" pin="6"/>
+      <node ref="DS1" pin="11"/>
+    </net>
+    <net code="126" name="/LCD / PS2/LCD8">
+      <node ref="IC10" pin="7"/>
+      <node ref="DS1" pin="12"/>
+    </net>
+    <net code="127" name="/LCD / PS2/LCD9">
+      <node ref="IC10" pin="8"/>
+      <node ref="DS1" pin="13"/>
+    </net>
+    <net code="128" name="/LCD / PS2/LCD10">
+      <node ref="DS1" pin="14"/>
+      <node ref="IC10" pin="9"/>
+    </net>
+    <net code="129" name="/IO/PB2">
+      <node ref="IC6" pin="12"/>
+      <node ref="RN1" pin="9"/>
+      <node ref="SW3" pin="6"/>
+    </net>
+    <net code="130" name="/IO/PB3">
+      <node ref="RN1" pin="8"/>
+      <node ref="IC6" pin="13"/>
+      <node ref="SW3" pin="5"/>
+    </net>
+    <net code="131" name="/IO/PB4">
+      <node ref="IC6" pin="14"/>
+      <node ref="SW3" pin="4"/>
+      <node ref="RN1" pin="7"/>
+    </net>
+    <net code="132" name="/IO/PB5">
+      <node ref="SW3" pin="3"/>
+      <node ref="IC6" pin="15"/>
+      <node ref="RN1" pin="6"/>
+    </net>
+    <net code="133" name="/IO/PB6">
+      <node ref="RN1" pin="5"/>
+      <node ref="IC6" pin="16"/>
+      <node ref="SW3" pin="2"/>
+    </net>
+    <net code="134" name="/IO/PB7">
+      <node ref="RN1" pin="4"/>
+      <node ref="IC6" pin="17"/>
+      <node ref="SW3" pin="1"/>
+    </net>
+    <net code="135" name="/LCD / PS2/PS20">
+      <node ref="IC10" pin="16"/>
+      <node ref="X4" pin="2"/>
+    </net>
+    <net code="136" name="/IO/A0">
+      <node ref="IC4" pin="10"/>
+      <node ref="IC5" pin="10"/>
+      <node ref="IC6" pin="38"/>
+      <node ref="X3" pin="1"/>
+      <node ref="IC7" pin="13"/>
+      <node ref="IC2" pin="9"/>
+      <node ref="IC10" pin="38"/>
+    </net>
+    <net code="137" name="/IO/A1">
+      <node ref="IC5" pin="9"/>
+      <node ref="IC7" pin="14"/>
+      <node ref="IC2" pin="10"/>
+      <node ref="IC10" pin="37"/>
+      <node ref="IC4" pin="9"/>
+      <node ref="X3" pin="3"/>
+      <node ref="IC6" pin="37"/>
+    </net>
+    <net code="138" name="/IO/A2">
+      <node ref="IC5" pin="8"/>
+      <node ref="IC10" pin="36"/>
+      <node ref="IC2" pin="11"/>
+      <node ref="IC4" pin="8"/>
+      <node ref="X3" pin="5"/>
+      <node ref="IC6" pin="36"/>
+    </net>
+    <net code="139" name="/IO/A3">
+      <node ref="X3" pin="7"/>
+      <node ref="IC4" pin="7"/>
+      <node ref="IC2" pin="12"/>
+      <node ref="IC10" pin="35"/>
+      <node ref="IC5" pin="7"/>
+      <node ref="IC6" pin="35"/>
+    </net>
+    <net code="140" name="/IO/A4">
+      <node ref="X3" pin="9"/>
+      <node ref="IC5" pin="6"/>
+      <node ref="IC4" pin="6"/>
+      <node ref="IC2" pin="13"/>
+    </net>
+    <net code="141" name="/IO/A5">
+      <node ref="IC5" pin="5"/>
+      <node ref="X3" pin="11"/>
+      <node ref="IC2" pin="14"/>
+      <node ref="IC4" pin="5"/>
+    </net>
+    <net code="142" name="/IO/A6">
+      <node ref="IC2" pin="15"/>
+      <node ref="IC4" pin="4"/>
+      <node ref="IC5" pin="4"/>
+      <node ref="X3" pin="13"/>
+    </net>
+    <net code="143" name="/IO/A7">
+      <node ref="IC4" pin="3"/>
+      <node ref="IC2" pin="16"/>
+      <node ref="IC5" pin="3"/>
+      <node ref="X3" pin="15"/>
+    </net>
+    <net code="144" name="/IO/A8">
+      <node ref="IC4" pin="25"/>
+      <node ref="IC5" pin="25"/>
+      <node ref="X3" pin="17"/>
+      <node ref="IC2" pin="17"/>
+    </net>
+    <net code="145" name="/IO/A9">
+      <node ref="X3" pin="19"/>
+      <node ref="IC4" pin="24"/>
+      <node ref="IC5" pin="24"/>
+      <node ref="IC2" pin="18"/>
+    </net>
+    <net code="146" name="/LCD / PS2/PS21">
+      <node ref="X4" pin="1"/>
+      <node ref="IC10" pin="17"/>
+    </net>
+    <net code="147" name="/IO/PA6">
+      <node ref="IC6" pin="8"/>
+      <node ref="D6" pin="2"/>
+    </net>
+    <net code="148" name="/IO/PA7">
+      <node ref="IC6" pin="9"/>
+      <node ref="D7" pin="2"/>
+    </net>
+    <net code="149" name="/IO/PA5">
+      <node ref="IC6" pin="7"/>
+      <node ref="D5" pin="2"/>
+    </net>
+    <net code="150" name="/IO/PB1">
+      <node ref="RN1" pin="10"/>
+      <node ref="IC6" pin="11"/>
+      <node ref="SW3" pin="7"/>
+    </net>
+    <net code="151" name="/IO/CB1">
+      <node ref="RN1" pin="3"/>
+      <node ref="IC6" pin="18"/>
+      <node ref="SW2" pin="2"/>
+    </net>
+    <net code="152" name="/IO/CB2">
+      <node ref="IC6" pin="19"/>
+      <node ref="RN1" pin="2"/>
+      <node ref="SW2" pin="1"/>
+    </net>
+    <net code="153" name="/IO/PB0">
+      <node ref="IC6" pin="10"/>
+      <node ref="RN1" pin="11"/>
+      <node ref="SW3" pin="8"/>
+    </net>
+    <net code="154" name="/IO/PA0">
+      <node ref="IC6" pin="2"/>
+      <node ref="D0" pin="2"/>
+    </net>
+    <net code="155" name="/IO/PA1">
+      <node ref="IC6" pin="3"/>
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="156" name="/IO/PA2">
+      <node ref="D2" pin="2"/>
+      <node ref="IC6" pin="4"/>
+    </net>
+    <net code="157" name="/IO/PA3">
+      <node ref="D3" pin="2"/>
+      <node ref="IC6" pin="5"/>
+    </net>
+    <net code="158" name="/IO/PA4">
+      <node ref="IC6" pin="6"/>
+      <node ref="D4" pin="2"/>
+    </net>
+  </nets>
+</export>

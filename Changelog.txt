@@ -1,0 +1,3 @@
+Verion				Comment
+1.0					Initial release
+1.1					Add pull-up resistor for RESET signal

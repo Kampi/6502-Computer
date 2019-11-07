@@ -395,7 +395,7 @@ Connection ~ 6400 4000
 Wire Wire Line
 	6400 4000 6800 4000
 Wire Wire Line
-	7800 3800 8200 3800
+	7800 3800 8050 3800
 $Comp
 L Power_Supervisor:TL7702B IC?
 U 1 1 5E9AA51D
@@ -489,4 +489,40 @@ F 6 "710-694106301002" H 2400 3850 50  0001 C CNN "Mouser"
 	1    2400 3850
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R R?
+U 1 1 5DC34307
+P 8050 3600
+AR Path="/5DC34307" Ref="R?"  Part="1" 
+AR Path="/5E9728CC/5DC34307" Ref="R?"  Part="1" 
+F 0 "R?" H 8120 3646 50  0000 L CNN
+F 1 "10k" H 8120 3555 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7980 3600 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf" H 8050 3600 50  0001 C CNN
+F 4 "Yageo" H 8050 3600 50  0001 C CNN "Mfr."
+F 5 "MFP-25BRD52-10K" H 8050 3600 50  0001 C CNN "Mfr. No."
+F 6 "603-MFP-25BRD52-10K" H 8050 3600 50  0001 C CNN "Mouser"
+	1    8050 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DC3430D
+P 8050 3300
+AR Path="/5DC3430D" Ref="#PWR?"  Part="1" 
+AR Path="/5E9728CC/5DC3430D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8050 3150 50  0001 C CNN
+F 1 "+5V" H 8065 3473 50  0000 C CNN
+F 2 "" H 8050 3300 50  0001 C CNN
+F 3 "" H 8050 3300 50  0001 C CNN
+	1    8050 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 3300 8050 3450
+Wire Wire Line
+	8050 3750 8050 3800
+Connection ~ 8050 3800
+Wire Wire Line
+	8050 3800 8200 3800
 $EndSCHEMATC

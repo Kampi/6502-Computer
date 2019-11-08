@@ -271,50 +271,50 @@ Wire Wire Line
 $Comp
 L ECS:ECS-100X X?
 U 1 1 5EBEB282
-P 1350 1350
+P 2600 1400
 AR Path="/5EBEB282" Ref="X?"  Part="1" 
 AR Path="/5EAD40C0/5EBEB282" Ref="X?"  Part="1" 
 AR Path="/5EB09E21/5EBEB282" Ref="XTAL1"  Part="1" 
-F 0 "XTAL1" H 1021 1396 50  0000 R CNN
-F 1 "1MHz" H 1021 1305 50  0000 R CNN
-F 2 "Oscillator:Oscillator_DIP-14" H 1500 1350 50  0001 C CNN
-F 3 "https://ecsxtal.com/store/pdf/ecs-100x.pdf" H 1600 1900 50  0001 C CNN
-F 4 "ECS" H 1350 1350 50  0001 C CNN "Mfr."
-F 5 "ECS-100AX-010" H 1350 1350 50  0001 C CNN "Mfr. No."
-F 6 "520-TCF100-X" H 1350 1350 50  0001 C CNN "Mouser"
-	1    1350 1350
+F 0 "XTAL1" H 2271 1446 50  0000 R CNN
+F 1 "1MHz" H 2271 1355 50  0000 R CNN
+F 2 "Oscillator:Oscillator_DIP-14" H 2750 1400 50  0001 C CNN
+F 3 "https://ecsxtal.com/store/pdf/ecs-100x.pdf" H 2850 1950 50  0001 C CNN
+F 4 "ECS" H 2600 1400 50  0001 C CNN "Mfr."
+F 5 "ECS-100AX-010" H 2600 1400 50  0001 C CNN "Mfr. No."
+F 6 "520-TCF100-X" H 2600 1400 50  0001 C CNN "Mouser"
+	1    2600 1400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1350 1050 1350 850 
+	2600 1100 2600 750 
 Wire Wire Line
-	1750 1350 1900 1350
+	4500 1000 4650 1000
 Wire Wire Line
-	1350 1650 1350 1900
+	2600 1700 2600 2100
 $Comp
 L power:+5V #PWR?
 U 1 1 5EBEB292
-P 1350 850
+P 2600 750
 AR Path="/5EBEB292" Ref="#PWR?"  Part="1" 
 AR Path="/5EB09E21/5EBEB292" Ref="#PWR01"  Part="1" 
-F 0 "#PWR01" H 1350 700 50  0001 C CNN
-F 1 "+5V" H 1365 1023 50  0000 C CNN
-F 2 "" H 1350 850 50  0001 C CNN
-F 3 "" H 1350 850 50  0001 C CNN
-	1    1350 850 
+F 0 "#PWR01" H 2600 600 50  0001 C CNN
+F 1 "+5V" H 2615 923 50  0000 C CNN
+F 2 "" H 2600 750 50  0001 C CNN
+F 3 "" H 2600 750 50  0001 C CNN
+	1    2600 750 
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5EBEB298
-P 1350 1900
+P 2600 2100
 AR Path="/5EBEB298" Ref="#PWR?"  Part="1" 
 AR Path="/5EB09E21/5EBEB298" Ref="#PWR02"  Part="1" 
-F 0 "#PWR02" H 1350 1650 50  0001 C CNN
-F 1 "GND" H 1355 1727 50  0000 C CNN
-F 2 "" H 1350 1900 50  0001 C CNN
-F 3 "" H 1350 1900 50  0001 C CNN
-	1    1350 1900
+F 0 "#PWR02" H 2600 1850 50  0001 C CNN
+F 1 "GND" H 2605 1927 50  0000 C CNN
+F 2 "" H 2600 2100 50  0001 C CNN
+F 3 "" H 2600 2100 50  0001 C CNN
+	1    2600 2100
 	1    0    0    -1  
 $EndComp
 Text HLabel 3100 4300 0    50   Input ~ 0
@@ -385,12 +385,12 @@ F 3 "" H 12000 8300 50  0001 C CNN
 	1    12000 8300
 	1    0    0    -1  
 $EndComp
-Text Label 1900 1350 0    50   ~ 0
-1MHZ
+Text Label 4650 1000 0    50   ~ 0
+Clock_Int
 Text Label 4400 4300 0    50   ~ 0
-1MHZ
+Clock_Int
 Text Label 11300 6100 2    50   ~ 0
-1MHZ
+Clock_Int
 $Comp
 L Device:Crystal XTAL2
 U 1 1 5F163710
@@ -496,7 +496,7 @@ CTS
 Text HLabel 13900 7750 2    50   Input ~ 0
 ~ModemReady
 Text Label 6750 7450 2    50   ~ 0
-1MHZ
+Clock_Int
 Text Label 11200 7350 0    50   ~ 0
 D1
 Text Label 11200 7450 0    50   ~ 0
@@ -520,7 +520,7 @@ A1
 Text Label 10950 2450 2    50   ~ 0
 R~W
 Text Label 10950 2150 2    50   ~ 0
-1MHZ
+Clock_Int
 Text Label 12700 3900 0    50   ~ 0
 PB7
 Text Label 12700 3800 0    50   ~ 0
@@ -1396,83 +1396,83 @@ Wire Wire Line
 $Comp
 L 74xx:74HC00 IC1
 U 5 2 5DD62749
-P 2600 1400
-F 0 "IC1" H 2658 1446 50  0000 L CNN
-F 1 "74HC00" H 2658 1355 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 2600 1400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 2600 1400 50  0001 C CNN
-F 4 "Texas Instruments" H 2600 1400 50  0001 C CNN "Mfr."
-F 5 "SN74HC00AN" H 2600 1400 50  0001 C CNN "Mfr. No."
-F 6 "595-SN74HC00AN" H 2600 1400 50  0001 C CNN "Mouser"
-	5    2600 1400
+P 10750 10350
+F 0 "IC1" H 10808 10396 50  0000 L CNN
+F 1 "74HC00" H 10808 10305 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 10750 10350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 10750 10350 50  0001 C CNN
+F 4 "Texas Instruments" H 10750 10350 50  0001 C CNN "Mfr."
+F 5 "SN74HC00AN" H 10750 10350 50  0001 C CNN "Mfr. No."
+F 6 "595-SN74HC00AN" H 10750 10350 50  0001 C CNN "Mouser"
+	5    10750 10350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 5DD67E33
-P 3200 1300
+P 11350 10250
 AR Path="/5DD67E33" Ref="C?"  Part="1" 
 AR Path="/5EB09E21/5DD67E33" Ref="C1"  Part="1" 
-F 0 "C1" H 3315 1346 50  0000 L CNN
-F 1 "100nF" H 3315 1255 50  0000 L CNN
-F 2 "Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm" H 3238 1150 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/400/eadmlcc_halogenfree_fa150_en-890480.pdf" H 3200 1300 50  0001 C CNN
-F 4 "TDK" H 3200 1300 50  0001 C CNN "Mfr."
-F 5 "FA18X8R1H104KRU06" H 3200 1300 50  0001 C CNN "Mfr. No."
-F 6 "810-FA18X8R1H104KRU6" H 3200 1300 50  0001 C CNN "Mouser"
-	1    3200 1300
+F 0 "C1" H 11465 10296 50  0000 L CNN
+F 1 "100nF" H 11465 10205 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm" H 11388 10100 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/400/eadmlcc_halogenfree_fa150_en-890480.pdf" H 11350 10250 50  0001 C CNN
+F 4 "TDK" H 11350 10250 50  0001 C CNN "Mfr."
+F 5 "FA18X8R1H104KRU06" H 11350 10250 50  0001 C CNN "Mfr. No."
+F 6 "810-FA18X8R1H104KRU6" H 11350 10250 50  0001 C CNN "Mouser"
+	1    11350 10250
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5DD67E39
-P 3200 1950
+P 11350 10900
 AR Path="/5DD67E39" Ref="#PWR?"  Part="1" 
 AR Path="/5EB09E21/5DD67E39" Ref="#PWR06"  Part="1" 
-F 0 "#PWR06" H 3200 1700 50  0001 C CNN
-F 1 "GND" H 3205 1777 50  0000 C CNN
-F 2 "" H 3200 1950 50  0001 C CNN
-F 3 "" H 3200 1950 50  0001 C CNN
-	1    3200 1950
+F 0 "#PWR06" H 11350 10650 50  0001 C CNN
+F 1 "GND" H 11355 10727 50  0000 C CNN
+F 2 "" H 11350 10900 50  0001 C CNN
+F 3 "" H 11350 10900 50  0001 C CNN
+	1    11350 10900
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 5DD7BAB1
-P 2600 850
+P 10750 9800
 AR Path="/5DD7BAB1" Ref="#PWR?"  Part="1" 
 AR Path="/5EB09E21/5DD7BAB1" Ref="#PWR04"  Part="1" 
-F 0 "#PWR04" H 2600 700 50  0001 C CNN
-F 1 "+5V" H 2615 1023 50  0000 C CNN
-F 2 "" H 2600 850 50  0001 C CNN
-F 3 "" H 2600 850 50  0001 C CNN
-	1    2600 850 
+F 0 "#PWR04" H 10750 9650 50  0001 C CNN
+F 1 "+5V" H 10765 9973 50  0000 C CNN
+F 2 "" H 10750 9800 50  0001 C CNN
+F 3 "" H 10750 9800 50  0001 C CNN
+	1    10750 9800
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5DD90602
-P 2600 1950
+P 10750 10900
 AR Path="/5DD90602" Ref="#PWR?"  Part="1" 
 AR Path="/5EB09E21/5DD90602" Ref="#PWR05"  Part="1" 
-F 0 "#PWR05" H 2600 1700 50  0001 C CNN
-F 1 "GND" H 2605 1777 50  0000 C CNN
-F 2 "" H 2600 1950 50  0001 C CNN
-F 3 "" H 2600 1950 50  0001 C CNN
-	1    2600 1950
+F 0 "#PWR05" H 10750 10650 50  0001 C CNN
+F 1 "GND" H 10755 10727 50  0000 C CNN
+F 2 "" H 10750 10900 50  0001 C CNN
+F 3 "" H 10750 10900 50  0001 C CNN
+	1    10750 10900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2600 850  2600 900 
+	10750 9800 10750 9850
 Wire Wire Line
-	2600 1900 2600 1950
+	10750 10850 10750 10900
 Wire Wire Line
-	2600 900  3200 900 
-Connection ~ 2600 900 
+	10750 9850 11350 9850
+Connection ~ 10750 9850
 Wire Wire Line
-	3200 900  3200 1150
+	11350 9850 11350 10100
 Wire Wire Line
-	3200 1450 3200 1950
+	11350 10400 11350 10900
 $Comp
 L 74xx:74HC00 IC1
 U 1 1 5DE24ADF
@@ -1944,7 +1944,7 @@ F 6 "625-SD103A" H 2000 4350 50  0001 C CNN "Mouser"
 	1    0    0    -1  
 $EndComp
 Text Label 7650 1700 2    50   ~ 0
-1MHZ
+Clock_Int
 Text HLabel 7950 1600 0    50   Input ~ 0
 ~Reset
 Wire Wire Line
@@ -2190,6 +2190,147 @@ Wire Wire Line
 Connection ~ 3650 7650
 Wire Wire Line
 	3650 7650 3650 7750
+$Comp
+L Device:R R?
+U 1 1 5DCE27F1
+P 800 950
+AR Path="/5DCE27F1" Ref="R?"  Part="1" 
+AR Path="/5E9728CC/5DCE27F1" Ref="R?"  Part="1" 
+AR Path="/5EB09E21/5DCE27F1" Ref="R10"  Part="1" 
+F 0 "R10" H 870 996 50  0000 L CNN
+F 1 "10k" H 870 905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 730 950 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf" H 800 950 50  0001 C CNN
+F 4 "Yageo" H 800 950 50  0001 C CNN "Mfr."
+F 5 "MFP-25BRD52-10K" H 800 950 50  0001 C CNN "Mfr. No."
+F 6 "603-MFP-25BRD52-10K" H 800 950 50  0001 C CNN "Mouser"
+	1    800  950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5DCE27FA
+P 800 1850
+AR Path="/5DCE27FA" Ref="SW?"  Part="1" 
+AR Path="/5E9728CC/5DCE27FA" Ref="SW?"  Part="1" 
+AR Path="/5EB09E21/5DCE27FA" Ref="SW6"  Part="1" 
+F 0 "SW6" V 846 1802 50  0000 R CNN
+F 1 "CLOCK" V 755 1802 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 800 2050 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F1825910%7FC10%7Fpdf%7FEnglish%7FENG_CD_1825910_C10.pdf%7F2-1825910-7" H 800 2050 50  0001 C CNN
+F 4 "TE Connectivity / Alcoswitch" H 800 1850 50  0001 C CNN "Mfr."
+F 5 "2-1825910-7" H 800 1850 50  0001 C CNN "Mfr. No."
+F 6 "506-2-1825910-7" H 800 1850 50  0001 C CNN "Mouser"
+	1    800  1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DCE2800
+P 800 750
+AR Path="/5DCE2800" Ref="#PWR?"  Part="1" 
+AR Path="/5E9728CC/5DCE2800" Ref="#PWR?"  Part="1" 
+AR Path="/5EB09E21/5DCE2800" Ref="#PWR074"  Part="1" 
+F 0 "#PWR074" H 800 600 50  0001 C CNN
+F 1 "+5V" H 815 923 50  0000 C CNN
+F 2 "" H 800 750 50  0001 C CNN
+F 3 "" H 800 750 50  0001 C CNN
+	1    800  750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  750  800  800 
+$Comp
+L power:GND #PWR?
+U 1 1 5DCE2807
+P 800 2100
+AR Path="/5DCE2807" Ref="#PWR?"  Part="1" 
+AR Path="/5E9728CC/5DCE2807" Ref="#PWR?"  Part="1" 
+AR Path="/5EB09E21/5DCE2807" Ref="#PWR075"  Part="1" 
+F 0 "#PWR075" H 800 1850 50  0001 C CNN
+F 1 "GND" H 805 1927 50  0000 C CNN
+F 2 "" H 800 2100 50  0001 C CNN
+F 3 "" H 800 2100 50  0001 C CNN
+	1    800  2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DCE2810
+P 1250 1850
+AR Path="/5DCE2810" Ref="C?"  Part="1" 
+AR Path="/5E9728CC/5DCE2810" Ref="C?"  Part="1" 
+AR Path="/5EB09E21/5DCE2810" Ref="C19"  Part="1" 
+F 0 "C19" H 1365 1896 50  0000 L CNN
+F 1 "100nF" H 1365 1805 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm" H 1288 1700 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/400/eadmlcc_halogenfree_fa150_en-890480.pdf" H 1250 1850 50  0001 C CNN
+F 4 "TDK" H 1250 1850 50  0001 C CNN "Mfr."
+F 5 "FA18X8R1H104KRU06" H 1250 1850 50  0001 C CNN "Mfr. No."
+F 6 "810-FA18X8R1H104KRU6" H 1250 1850 50  0001 C CNN "Mouser"
+	1    1250 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DCE281B
+P 1250 2100
+AR Path="/5DCE281B" Ref="#PWR?"  Part="1" 
+AR Path="/5E9728CC/5DCE281B" Ref="#PWR?"  Part="1" 
+AR Path="/5EB09E21/5DCE281B" Ref="#PWR076"  Part="1" 
+F 0 "#PWR076" H 1250 1850 50  0001 C CNN
+F 1 "GND" H 1255 1927 50  0000 C CNN
+F 2 "" H 1250 2100 50  0001 C CNN
+F 3 "" H 1250 2100 50  0001 C CNN
+	1    1250 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 2000 1250 2100
+Wire Wire Line
+	800  1100 800  1500
+Text Label 1350 1500 0    50   ~ 0
+CLOCK_BTN
+Text Label 4000 900  2    50   ~ 0
+CLOCK_BTN
+Text Label 3100 1400 0    50   ~ 0
+CLOCK_OSC
+Wire Wire Line
+	3100 1400 3000 1400
+Text Label 4000 1100 2    50   ~ 0
+CLOCK_OSC
+Wire Wire Line
+	4000 1100 4100 1100
+Wire Wire Line
+	4100 900  4000 900 
+$Comp
+L Switch:SW_SPDT SW?
+U 1 1 5E027064
+P 4300 1000
+AR Path="/5EC67F7B/5E027064" Ref="SW?"  Part="1" 
+AR Path="/5EB09E21/5E027064" Ref="SW7"  Part="1" 
+F 0 "SW7" H 4300 1350 50  0000 C CNN
+F 1 "CLOCK INPUT" H 4300 1250 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_E-Switch_EG1271_DPDT" H 4300 1000 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/140/EG-345873.pdf" H 4300 1000 50  0001 C CNN
+F 4 "E-Switch" H 4300 1000 50  0001 C CNN "Mfr."
+F 5 "EG1271" H 4300 1000 50  0001 C CNN "Mfr. No."
+F 6 "612-EG1271" H 4300 1000 50  0001 C CNN "Mouser"
+	1    4300 1000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	800  2050 800  2100
+Wire Wire Line
+	800  1500 1250 1500
+Connection ~ 800  1500
+Wire Wire Line
+	800  1500 800  1650
+Wire Wire Line
+	1250 1500 1250 1700
+Wire Wire Line
+	1250 1500 1350 1500
+Connection ~ 1250 1500
 Wire Bus Line
 	9800 2650 9800 3350
 Wire Bus Line

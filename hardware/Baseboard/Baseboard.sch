@@ -4,10 +4,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title "Baseboard"
-Date "2019-10-08"
-Rev "1.0"
+Date "2019-11-24"
+Rev "1.1"
 Comp "https://www.kampis-elektroecke.de"
 Comment1 "Author: Daniel Kampert"
 Comment2 ""
@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 "System architecture"
 $EndDescr
 Text Notes 900  1450 0    100  ~ 20
-Address range:
+Address ranges:
 Text Notes 3550 1850 0    100  ~ 0
 Available memory
 Text Notes 900  3100 0    100  ~ 0
@@ -46,7 +46,7 @@ Connection ~ 8000 4900
 Wire Wire Line
 	8000 4900 8200 4900
 $Sheet
-S 5100 4700 1400 1200
+S 5100 4700 1400 1250
 U 5E9728CC
 F0 "Supply" 50
 F1 "Supply.sch" 50
@@ -63,18 +63,18 @@ S 8250 8150 1400 1200
 U 5EC67F7B
 F0 "IO" 50
 F1 "IO.sch" 50
-F2 "CB[1..2]" O R 9650 8300 50 
-F3 "PB[0..7]" O R 9650 8400 50 
-F4 "PA[0..7]" O R 9650 8500 50 
-F5 "~NMI" O L 8250 9300 50 
-F6 "~IRQ" O L 8250 9200 50 
-F7 "R~W" I R 9650 9150 50 
-F8 "A[15..0]" I R 9650 8950 50 
-F9 "D[7..0]" B R 9650 9050 50 
-F10 "Clock" I R 9650 9250 50 
-F11 "~TerminalReady" I R 9650 8750 50 
-F12 "~CarrierDetect" O R 9650 8850 50 
-F13 "~Reset" O L 8250 8350 50 
+F2 "PB[0..7]" O R 9650 8400 50 
+F3 "PA[0..7]" O R 9650 8500 50 
+F4 "~NMI" O L 8250 9275 50 
+F5 "~IRQ" O L 8250 9175 50 
+F6 "R~W" I R 9650 9150 50 
+F7 "Clock" I R 9650 9250 50 
+F8 "~TerminalReady" I R 9650 8750 50 
+F9 "~CarrierDetect" O R 9650 8850 50 
+F10 "~Reset" O L 8250 8350 50 
+F11 "CB[0..1]" O R 9650 8300 50 
+F12 "A[0..15]" I R 9650 8950 50 
+F13 "D[0..7]" B R 9650 9050 50 
 $EndSheet
 Text Notes 900  1850 0    100  ~ 0
 $0000 - $FFFF\n
@@ -139,8 +139,6 @@ Text Notes 2650 2850 0    100  ~ 0
 Text Notes 2650 3100 0    100  ~ 0
 24K
 Wire Wire Line
-	7900 7650 8250 7650
-Wire Wire Line
 	10450 5450 10450 6450
 $Sheet
 S 5150 6350 1350 1250
@@ -156,24 +154,29 @@ U 5EB09E21
 F0 "Processor" 50
 F1 "Processor.sch" 50
 F2 "PA[0..7]" O R 9850 7500 50 
-F3 "CB[1..2]" I R 9850 7700 50 
-F4 "PB[0..7]" I R 9850 7600 50 
-F5 "TxD" O R 9850 6350 50 
-F6 "RxD" I R 9850 6450 50 
-F7 "RTS" O R 9850 6550 50 
-F8 "CTS" I R 9850 6650 50 
-F9 "~NMI" I L 8250 7750 50 
-F10 "~IRQ" I L 8250 7650 50 
-F11 "R~W" O R 9850 7250 50 
-F12 "A[15..0]" O R 9850 7050 50 
-F13 "D[7..0]" B R 9850 7150 50 
-F14 "LCD[0..10]" B L 8250 6700 50 
-F15 "PS2[0..1]" B L 8250 6800 50 
-F16 "~ModemReady" I R 9850 6750 50 
-F17 "Clock" O R 9850 7350 50 
-F18 "~TerminalReady" O R 9850 6850 50 
-F19 "~CarrierDetect" I R 9850 6950 50 
-F20 "~Reset" I L 8250 6450 50 
+F3 "PB[0..7]" I R 9850 7600 50 
+F4 "TxD" O R 9850 6350 50 
+F5 "RxD" I R 9850 6450 50 
+F6 "RTS" O R 9850 6550 50 
+F7 "CTS" I R 9850 6650 50 
+F8 "~NMI" I L 8250 7725 50 
+F9 "R~W" O R 9850 7250 50 
+F10 "LCD[0..10]" B L 8250 6700 50 
+F11 "PS2[0..1]" B L 8250 6800 50 
+F12 "~ModemReady" I R 9850 6750 50 
+F13 "Clock" O R 9850 7350 50 
+F14 "~TerminalReady" O R 9850 6850 50 
+F15 "~CarrierDetect" I R 9850 6950 50 
+F16 "~Reset" I L 8250 6450 50 
+F17 "~IRQ_VIA_2" O L 8250 7175 50 
+F18 "~IRQ_VIA_1" O L 8250 7075 50 
+F19 "~IRQ_ACIA" O L 8250 7275 50 
+F20 "~IRQ_CPU" I L 8250 7375 50 
+F21 "IRQ_Sync" O L 8250 7475 50 
+F22 "~IRQ_Read" I L 8250 7575 50 
+F23 "CB[0..1]" I R 9850 7700 50 
+F24 "A[0..15]" O R 9850 7050 50 
+F25 "D[0..7]" B R 9850 7150 50 
 $EndSheet
 Wire Bus Line
 	10900 8950 9650 8950
@@ -228,8 +231,6 @@ Wire Wire Line
 	9850 7250 10700 7250
 Wire Bus Line
 	9850 7050 10900 7050
-Wire Wire Line
-	7800 7750 8250 7750
 Wire Bus Line
 	9650 8400 10100 8400
 Wire Bus Line
@@ -250,12 +251,83 @@ Wire Wire Line
 	11000 8850 11000 6950
 Wire Wire Line
 	11000 6950 9850 6950
+$Sheet
+S 5150 8100 1350 1250
+U 5E710B5B
+F0 "IRQ" 50
+F1 "IRQ.sch" 50
+F2 "~IRQ" I R 6500 9175 50 
+F3 "~IRQ_VIA_1" I L 5150 8225 50 
+F4 "~IRQ_VIA_2" I L 5150 8325 50 
+F5 "~IRQ_ACIA" I L 5150 8425 50 
+F6 "~IRQ_CPU" O R 6500 8200 50 
+F7 "IRQ_Sync" I R 6500 8300 50 
+F8 "~IRQ_Read" I R 6500 8400 50 
+F9 "D[0..7]" O R 6500 8500 50 
+$EndSheet
 Wire Wire Line
-	8250 9200 7900 9200
+	8250 7375 7425 7375
 Wire Wire Line
-	8250 9300 7800 9300
+	8250 7475 7525 7475
+Wire Bus Line
+	10800 9050 10800 9700
+Wire Bus Line
+	10800 9700 7525 9700
+Wire Bus Line
+	7525 9700 7525 8500
+Connection ~ 10800 9050
 Wire Wire Line
-	7800 7750 7800 9300
+	8250 7075 7125 7075
 Wire Wire Line
-	7900 7650 7900 9200
+	7125 7075 7125 7800
+Wire Wire Line
+	7125 7800 4925 7800
+Wire Wire Line
+	8250 7175 7225 7175
+Wire Wire Line
+	7225 7175 7225 7900
+Wire Wire Line
+	7225 7900 5000 7900
+Wire Wire Line
+	8250 7275 7325 7275
+Wire Wire Line
+	7325 7275 7325 8000
+Wire Wire Line
+	7325 8000 5075 8000
+Wire Wire Line
+	7625 7575 8250 7575
+Wire Wire Line
+	8250 7725 8150 7725
+Wire Wire Line
+	8150 7725 8150 9275
+Wire Wire Line
+	8250 9275 8150 9275
+Wire Wire Line
+	8250 9175 6500 9175
+Wire Bus Line
+	6500 8500 7525 8500
+Wire Wire Line
+	6500 8400 7625 8400
+Wire Wire Line
+	6500 8300 7525 8300
+Wire Wire Line
+	6500 8200 7425 8200
+Wire Wire Line
+	7425 7375 7425 8200
+Wire Wire Line
+	7525 7475 7525 8300
+Wire Wire Line
+	7625 7575 7625 8400
+Wire Wire Line
+	5150 8425 5075 8425
+Wire Wire Line
+	5150 8325 5000 8325
+Wire Wire Line
+	4925 8225 5150 8225
+Wire Wire Line
+	5000 7900 5000 8325
+Wire Wire Line
+	5075 8000 5075 8425
+Wire Wire Line
+	4925 7800 4925 8225
 $EndSCHEMATC

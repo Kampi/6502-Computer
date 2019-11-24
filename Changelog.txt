@@ -3,3 +3,5 @@ Verion				Comment
 1.1					Add pull-up resistor for RESET signal
 					Add switch to select between the oscillator or a push button as clock source
 					Change value of C8 to 30 pF
+					Fix wrong PS/2 connection, connect PS/2 clock with W65C22 interrupt line
+					Improve hardware for IRQ handling

@@ -4,15 +4,15 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 6
+Sheet 2 7
 Title "Baseboard"
-Date "2019-10-08"
-Rev "1.0"
+Date "2019-11-24"
+Rev "1.1"
 Comp "https://www.kampis-elektroecke.de"
 Comment1 "Author: Daniel Kampert"
 Comment2 ""
 Comment3 ""
-Comment4 "Supply"
+Comment4 "Power Supply & Reset"
 $EndDescr
 $Comp
 L Device:R R?

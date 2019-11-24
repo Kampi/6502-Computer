@@ -4,10 +4,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 6
+Sheet 3 7
 Title "Baseboard"
-Date "2019-10-08"
-Rev "1.0"
+Date "2019-11-24"
+Rev "1.1"
 Comp "https://www.kampis-elektroecke.de"
 Comment1 "Author: Daniel Kampert"
 Comment2 ""
@@ -91,14 +91,10 @@ Wire Wire Line
 	4200 3050 4200 2700
 Entry Wire Line
 	1900 2050 1800 1950
-Text Label 2000 2050 0    50   ~ 0
-CB2
-Text Label 2000 2150 0    50   ~ 0
-CB1
 Wire Bus Line
 	1800 1950 950  1950
 Text HLabel 950  1950 0    50   Output ~ 0
-CB[1..2]
+CB[0..1]
 Wire Bus Line
 	1800 1950 1800 2050
 Entry Wire Line
@@ -630,9 +626,9 @@ Text HLabel 1600 6400 2    50   Output ~ 0
 Text HLabel 10350 2150 2    50   Input ~ 0
 R~W
 Text HLabel 8800 1150 0    50   Input ~ 0
-A[15..0]
+A[0..15]
 Text HLabel 8800 1050 0    50   BiDi ~ 0
-D[7..0]
+D[0..7]
 Entry Wire Line
 	9250 1550 9350 1450
 Entry Wire Line
@@ -858,58 +854,62 @@ Text HLabel 10350 2550 2    50   Input ~ 0
 ~TerminalReady
 Wire Wire Line
 	10350 2550 10250 2550
-Text HLabel 3850 6200 0    50   Output ~ 0
+Text HLabel 2500 6825 0    50   Output ~ 0
 ~CarrierDetect
 $Comp
 L Switch:SW_SPDT SW5
 U 1 1 5DC04457
-P 4050 6200
-F 0 "SW5" H 4050 6485 50  0000 C CNN
-F 1 "CARRIER" H 4050 6394 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_E-Switch_EG1224_SPDT_Angled" H 4050 6200 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/140/EG-345873.pdf" H 4050 6200 50  0001 C CNN
-F 4 "E-Switch" H 4050 6200 50  0001 C CNN "Mfr."
-F 5 "EG1224" H 4050 6200 50  0001 C CNN "Mfr. No."
-F 6 "612-EG1224" H 4050 6200 50  0001 C CNN "Mouser"
-	1    4050 6200
+P 2700 6825
+F 0 "SW5" H 2700 7110 50  0000 C CNN
+F 1 "CARRIER" H 2700 7019 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_E-Switch_EG1224_SPDT_Angled" H 2700 6825 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/140/EG-345873.pdf" H 2700 6825 50  0001 C CNN
+F 4 "E-Switch" H 2700 6825 50  0001 C CNN "Mfr."
+F 5 "EG1224" H 2700 6825 50  0001 C CNN "Mfr. No."
+F 6 "612-EG1224" H 2700 6825 50  0001 C CNN "Mouser"
+	1    2700 6825
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5DC0FBD8
-P 4350 6400
+P 3000 7050
 AR Path="/5DC0FBD8" Ref="#PWR?"  Part="1" 
 AR Path="/5EB09E21/5DC0FBD8" Ref="#PWR?"  Part="1" 
 AR Path="/5EC67F7B/5DC0FBD8" Ref="#PWR048"  Part="1" 
-F 0 "#PWR048" H 4350 6150 50  0001 C CNN
-F 1 "GND" H 4355 6227 50  0000 C CNN
-F 2 "" H 4350 6400 50  0001 C CNN
-F 3 "" H 4350 6400 50  0001 C CNN
-	1    4350 6400
+F 0 "#PWR048" H 3000 6800 50  0001 C CNN
+F 1 "GND" H 3005 6877 50  0000 C CNN
+F 2 "" H 3000 7050 50  0001 C CNN
+F 3 "" H 3000 7050 50  0001 C CNN
+	1    3000 7050
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 5DC13EF2
-P 4350 6050
+P 3000 6675
 AR Path="/5DC13EF2" Ref="#PWR?"  Part="1" 
 AR Path="/5E9728CC/5DC13EF2" Ref="#PWR?"  Part="1" 
 AR Path="/5EC67F7B/5DC13EF2" Ref="#PWR032"  Part="1" 
-F 0 "#PWR032" H 4350 5900 50  0001 C CNN
-F 1 "+5V" H 4365 6223 50  0000 C CNN
-F 2 "" H 4350 6050 50  0001 C CNN
-F 3 "" H 4350 6050 50  0001 C CNN
-	1    4350 6050
+F 0 "#PWR032" H 3000 6525 50  0001 C CNN
+F 1 "+5V" H 3015 6848 50  0000 C CNN
+F 2 "" H 3000 6675 50  0001 C CNN
+F 3 "" H 3000 6675 50  0001 C CNN
+	1    3000 6675
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4250 6100 4350 6100
+	2900 6725 3000 6725
 Wire Wire Line
-	4350 6100 4350 6050
+	3000 6725 3000 6675
 Wire Wire Line
-	4250 6300 4350 6300
+	2900 6925 3000 6925
+Text Label 2000 2150 0    50   ~ 0
+CB0
+Text Label 2000 2050 0    50   ~ 0
+CB1
 Wire Wire Line
-	4350 6300 4350 6400
+	3000 6925 3000 7050
 Wire Bus Line
 	2850 3450 2850 4150
 Wire Bus Line

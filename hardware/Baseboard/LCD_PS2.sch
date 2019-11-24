@@ -4,15 +4,15 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 4 7
 Title "Baseboard"
-Date ""
-Rev "1.0"
+Date "2019-11-24"
+Rev "1.1"
 Comp "https://www.kampis-elektroecke.de"
 Comment1 "Author: Daniel Kampert"
 Comment2 ""
 Comment3 ""
-Comment4 ""
+Comment4 "LCD & P2/2"
 $EndDescr
 Wire Wire Line
 	5600 4600 5600 4650
@@ -171,41 +171,21 @@ F 6 "571-5749180-1" H 5550 5550 50  0001 C CNN "Mouser"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
-U 1 1 5DD59313
-P 5000 5900
-AR Path="/5DD59313" Ref="#PWR?"  Part="1" 
-AR Path="/5EB09E21/5DD59313" Ref="#PWR?"  Part="1" 
-AR Path="/5DADBF97/5DD59313" Ref="#PWR072"  Part="1" 
-F 0 "#PWR072" H 5000 5650 50  0001 C CNN
-F 1 "GND" H 5005 5727 50  0000 C CNN
-F 2 "" H 5000 5900 50  0001 C CNN
-F 3 "" H 5000 5900 50  0001 C CNN
-	1    5000 5900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5250 5550 5000 5550
-Wire Wire Line
-	5000 5550 5000 5900
-Wire Wire Line
-	5850 5450 5950 5450
-$Comp
 L power:+5V #PWR?
 U 1 1 5DD5A54C
-P 5950 5350
+P 5075 5450
 AR Path="/5DD5A54C" Ref="#PWR?"  Part="1" 
 AR Path="/5EB09E21/5DD5A54C" Ref="#PWR?"  Part="1" 
 AR Path="/5DADBF97/5DD5A54C" Ref="#PWR073"  Part="1" 
-F 0 "#PWR073" H 5950 5200 50  0001 C CNN
-F 1 "+5V" H 5965 5523 50  0000 C CNN
-F 2 "" H 5950 5350 50  0001 C CNN
-F 3 "" H 5950 5350 50  0001 C CNN
-	1    5950 5350
+F 0 "#PWR073" H 5075 5300 50  0001 C CNN
+F 1 "+5V" H 5090 5623 50  0000 C CNN
+F 2 "" H 5075 5450 50  0001 C CNN
+F 3 "" H 5075 5450 50  0001 C CNN
+	1    5075 5450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5950 5450 5950 5350
+	5075 5550 5075 5450
 Entry Wire Line
 	4600 6200 4700 6300
 Entry Wire Line
@@ -214,12 +194,6 @@ Wire Bus Line
 	4600 6050 2500 6050
 Text HLabel 2500 6050 0    50   BiDi ~ 0
 PS2[0..1]
-Wire Wire Line
-	4700 6300 5200 6300
-Wire Wire Line
-	5200 6300 5200 5650
-Wire Wire Line
-	5200 5650 5250 5650
 Wire Wire Line
 	4700 6450 6000 6450
 Wire Wire Line
@@ -231,7 +205,6 @@ PS20
 Wire Wire Line
 	5850 5650 6000 5650
 NoConn ~ 5250 5450
-NoConn ~ 5850 5550
 Wire Wire Line
 	5600 2900 5600 3000
 Wire Wire Line
@@ -278,6 +251,33 @@ F 6 "763-0220GZ-FSW-GBW" H 5600 3800 50  0001 C CNN "Mouser"
 	1    5600 3800
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DDCDE4D
+P 6125 5900
+AR Path="/5DDCDE4D" Ref="#PWR?"  Part="1" 
+AR Path="/5EB09E21/5DDCDE4D" Ref="#PWR?"  Part="1" 
+AR Path="/5DADBF97/5DDCDE4D" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0103" H 6125 5650 50  0001 C CNN
+F 1 "GND" H 6130 5727 50  0000 C CNN
+F 2 "" H 6125 5900 50  0001 C CNN
+F 3 "" H 6125 5900 50  0001 C CNN
+	1    6125 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6125 5550 6125 5900
+Wire Wire Line
+	5850 5550 6125 5550
+Wire Wire Line
+	5250 5550 5075 5550
+Wire Wire Line
+	5900 5450 5900 6300
+Wire Wire Line
+	4700 6300 5900 6300
+Wire Wire Line
+	5850 5450 5900 5450
+NoConn ~ 5250 5650
 Wire Bus Line
 	4600 6050 4600 6350
 Wire Bus Line

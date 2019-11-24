@@ -4,10 +4,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
+Sheet 6 7
 Title "Baseboard"
-Date "2019-10-08"
-Rev "1.0"
+Date "2019-11-24"
+Rev "1.1"
 Comp "https://www.kampis-elektroecke.de"
 Comment1 "Author: Daniel Kampert"
 Comment2 ""
@@ -31,67 +31,35 @@ F 6 "895-FT232RL" H 5650 3850 50  0001 C CNN "Mouser"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D?
-U 1 1 5E95D1E6
-P 7400 3500
-AR Path="/5E95D1E6" Ref="D?"  Part="1" 
-AR Path="/5E9064F2/5E95D1E6" Ref="D11"  Part="1" 
-F 0 "D11" V 7439 3382 50  0000 R CNN
-F 1 "TX" V 7348 3382 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 7400 3500 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/216/apt2012pyw-1173287.pdf" H 7400 3500 50  0001 C CNN
-F 4 "Kingbright" H 7400 3500 50  0001 C CNN "Mfr."
-F 5 "APT2012PYW" H 7400 3500 50  0001 C CNN "Mfr. No."
-F 6 "604-APT2012PYW" H 7400 3500 50  0001 C CNN "Mouser"
-	1    7400 3500
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5E95D1EC
-P 7400 3950
-AR Path="/5E95D1EC" Ref="R?"  Part="1" 
-AR Path="/5E9064F2/5E95D1EC" Ref="R6"  Part="1" 
-F 0 "R6" H 7470 3996 50  0000 L CNN
-F 1 "1k" H 7470 3905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 7330 3950 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf" H 7400 3950 50  0001 C CNN
-F 4 "Yageo" H 7400 3950 50  0001 C CNN "Mfr."
-F 5 "MFP-25BRD52-1K" H 7400 3950 50  0001 C CNN "Mfr. No."
-F 6 "603-MFP-25BRD52-1K" H 7400 3950 50  0001 C CNN "Mouser"
-	1    7400 3950
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R?
 U 1 1 5E95D1F2
-P 7750 3950
+P 7775 3950
 AR Path="/5E95D1F2" Ref="R?"  Part="1" 
 AR Path="/5E9064F2/5E95D1F2" Ref="R7"  Part="1" 
-F 0 "R7" H 7820 3996 50  0000 L CNN
-F 1 "1k" H 7820 3905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 7680 3950 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf" H 7750 3950 50  0001 C CNN
-F 4 "Yageo" H 7750 3950 50  0001 C CNN "Mfr."
-F 5 "MFP-25BRD52-1K" H 7750 3950 50  0001 C CNN "Mfr. No."
-F 6 "603-MFP-25BRD52-1K" H 7750 3950 50  0001 C CNN "Mouser"
-	1    7750 3950
+F 0 "R7" H 7845 3996 50  0000 L CNN
+F 1 "1k" H 7845 3905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7705 3950 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf" H 7775 3950 50  0001 C CNN
+F 4 "Yageo" H 7775 3950 50  0001 C CNN "Mfr."
+F 5 "MFP-25BRD52-1K" H 7775 3950 50  0001 C CNN "Mfr. No."
+F 6 "603-MFP-25BRD52-1K" H 7775 3950 50  0001 C CNN "Mouser"
+	1    7775 3950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D?
 U 1 1 5E95D1F8
-P 7750 3500
+P 7775 3500
 AR Path="/5E95D1F8" Ref="D?"  Part="1" 
 AR Path="/5E9064F2/5E95D1F8" Ref="D12"  Part="1" 
-F 0 "D12" V 7789 3382 50  0000 R CNN
-F 1 "RX" V 7698 3382 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 7750 3500 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/216/apt2012pgw-1173286.pdf" H 7750 3500 50  0001 C CNN
-F 4 "Kingbright" H 7750 3500 50  0001 C CNN "Mfr."
-F 5 "APT2012PGW" H 7750 3500 50  0001 C CNN "Mfr. No."
-F 6 "604-APT2012PGW" H 7750 3500 50  0001 C CNN "Mouser"
-	1    7750 3500
+F 0 "D12" V 7814 3382 50  0000 R CNN
+F 1 "RX" V 7723 3382 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 7775 3500 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/216/apt2012pgw-1173286.pdf" H 7775 3500 50  0001 C CNN
+F 4 "Kingbright" H 7775 3500 50  0001 C CNN "Mfr."
+F 5 "APT2012PGW" H 7775 3500 50  0001 C CNN "Mfr. No."
+F 6 "604-APT2012PGW" H 7775 3500 50  0001 C CNN "Mouser"
+	1    7775 3500
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -157,16 +125,12 @@ $EndComp
 Wire Wire Line
 	7600 3250 7600 3300
 Wire Wire Line
-	7600 3300 7400 3300
-Wire Wire Line
-	7600 3300 7750 3300
+	7600 3300 7775 3300
 Connection ~ 7600 3300
 Wire Wire Line
-	6450 4150 7400 4150
+	6450 4250 7775 4250
 Wire Wire Line
-	6450 4250 7750 4250
-Wire Wire Line
-	7750 3800 7750 3650
+	7775 3800 7775 3650
 Wire Wire Line
 	4750 3850 4850 3850
 Wire Wire Line
@@ -354,15 +318,9 @@ Wire Wire Line
 	5750 2000 5750 2100
 Connection ~ 5750 2100
 Wire Wire Line
-	7400 4100 7400 4150
+	7775 4100 7775 4250
 Wire Wire Line
-	7750 4100 7750 4250
-Wire Wire Line
-	7400 3650 7400 3800
-Wire Wire Line
-	7400 3350 7400 3300
-Wire Wire Line
-	7750 3350 7750 3300
+	7775 3350 7775 3300
 $Comp
 L Connector_Custom:USB-B X2
 U 1 1 5DA7E5BF
@@ -380,4 +338,46 @@ F 6 "571-292304-2" H 3257 3825 50  0001 C CNN "Mouser"
 	1    0    0    -1  
 $EndComp
 NoConn ~ 3500 3250
+Wire Wire Line
+	7400 3350 7400 3300
+Wire Wire Line
+	7400 3650 7400 3800
+Wire Wire Line
+	7400 4100 7400 4150
+Wire Wire Line
+	6450 4150 7400 4150
+Wire Wire Line
+	7600 3300 7400 3300
+$Comp
+L Device:R R?
+U 1 1 5E95D1EC
+P 7400 3950
+AR Path="/5E95D1EC" Ref="R?"  Part="1" 
+AR Path="/5E9064F2/5E95D1EC" Ref="R6"  Part="1" 
+F 0 "R6" H 7470 3996 50  0000 L CNN
+F 1 "1k" H 7470 3905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7330 3950 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf" H 7400 3950 50  0001 C CNN
+F 4 "Yageo" H 7400 3950 50  0001 C CNN "Mfr."
+F 5 "MFP-25BRD52-1K" H 7400 3950 50  0001 C CNN "Mfr. No."
+F 6 "603-MFP-25BRD52-1K" H 7400 3950 50  0001 C CNN "Mouser"
+	1    7400 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5E95D1E6
+P 7400 3500
+AR Path="/5E95D1E6" Ref="D?"  Part="1" 
+AR Path="/5E9064F2/5E95D1E6" Ref="D11"  Part="1" 
+F 0 "D11" V 7439 3382 50  0000 R CNN
+F 1 "TX" V 7348 3382 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 7400 3500 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/216/apt2012pyw-1173287.pdf" H 7400 3500 50  0001 C CNN
+F 4 "Kingbright" H 7400 3500 50  0001 C CNN "Mfr."
+F 5 "APT2012PYW" H 7400 3500 50  0001 C CNN "Mfr. No."
+F 6 "604-APT2012PYW" H 7400 3500 50  0001 C CNN "Mouser"
+	1    7400 3500
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

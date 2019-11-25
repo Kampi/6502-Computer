@@ -14,22 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 "Processor and Bus"
 $EndDescr
-$Comp
-L Western_Design_Center:W65C02 IC?
-U 1 1 5EBEAF78
-P 5200 5375
-AR Path="/5EBEAF78" Ref="IC?"  Part="1" 
-AR Path="/5EB09E21/5EBEAF78" Ref="IC2"  Part="1" 
-F 0 "IC2" H 4800 6575 50  0000 C CNN
-F 1 "W65C02" H 4890 4175 50  0000 C CNN
-F 2 "Package_DIP:DIP-40_W15.24mm_LongPads" H 5200 5075 50  0001 C CNN
-F 3 "https://www.westerndesigncenter.com/wdc/documentation/w65c02s.pdf" H 5200 5375 50  0001 C CNN
-F 4 "Western Design Center" H 5200 5375 50  0001 C CNN "Mfr."
-F 5 "W65C02S6TPG-14" H 5200 5375 50  0001 C CNN "Mfr. No."
-F 6 "955-W65C02S6TPG-14" H 5200 5375 50  0001 C CNN "Mouser"
-	1    5200 5375
-	1    0    0    -1  
-$EndComp
 Entry Wire Line
 	4150 5125 4250 5025
 Entry Wire Line
@@ -148,7 +132,6 @@ Wire Wire Line
 Wire Wire Line
 	5450 3925 5450 3975
 NoConn ~ 5750 4525
-NoConn ~ 5750 5225
 NoConn ~ 5750 4925
 Wire Wire Line
 	5750 5025 5850 5025
@@ -271,7 +254,7 @@ $EndComp
 Wire Wire Line
 	2750 1175 2750 825 
 Wire Wire Line
-	4650 1075 4800 1075
+	4850 1500 5400 1500
 Wire Wire Line
 	2750 1775 2750 2175
 $Comp
@@ -368,9 +351,9 @@ F 3 "" H 13400 8325 50  0001 C CNN
 	1    13400 8325
 	1    0    0    -1  
 $EndComp
-Text Label 4800 1075 0    50   ~ 0
+Text Label 4900 1500 0    50   ~ 0
 CLOCK_INT
-Text Label 5800 4325 0    50   ~ 0
+Text Label 6200 4325 0    50   ~ 0
 CLOCK_INT
 Text Label 12700 6125 2    50   ~ 0
 CLOCK_INT
@@ -2017,7 +2000,7 @@ NoConn ~ 10700 3275
 NoConn ~ 10700 3725
 NoConn ~ 10700 1625
 NoConn ~ 10700 1725
-Text HLabel 6200 4325 2    50   Output ~ 0
+Text HLabel 5400 1500 2    50   Output ~ 0
 Clock
 $Comp
 L Memory_EEPROM:28C256 IC?
@@ -2035,7 +2018,6 @@ F 6 "556-AT28C256-15PU" H 8000 5525 50  0001 C CNN "Mouser"
 	1    8000 5525
 	1    0    0    -1  
 $EndComp
-NoConn ~ 5750 5325
 NoConn ~ 5750 4725
 Wire Wire Line
 	5050 7575 5050 7675
@@ -2151,32 +2133,32 @@ Wire Wire Line
 	950  1175 950  1575
 Text Label 1500 1575 0    50   ~ 0
 CLOCK_BTN
-Text Label 4150 975  2    50   ~ 0
+Text Label 4350 1400 2    50   ~ 0
 CLOCK_BTN
 Text Label 3250 1475 0    50   ~ 0
 CLOCK_OSC
 Wire Wire Line
 	3250 1475 3150 1475
-Text Label 4150 1175 2    50   ~ 0
+Text Label 4350 1600 2    50   ~ 0
 CLOCK_OSC
 Wire Wire Line
-	4150 1175 4250 1175
+	4350 1600 4450 1600
 Wire Wire Line
-	4250 975  4150 975 
+	4450 1400 4350 1400
 $Comp
 L Switch:SW_SPDT SW?
 U 1 1 5E027064
-P 4450 1075
+P 4650 1500
 AR Path="/5EC67F7B/5E027064" Ref="SW?"  Part="1" 
 AR Path="/5EB09E21/5E027064" Ref="SW7"  Part="1" 
-F 0 "SW7" H 4450 1425 50  0000 C CNN
-F 1 "CLOCK INPUT" H 4450 1325 50  0000 C CNN
-F 2 "Switches:SW_E-Switch_EG1271_DPDT" H 4450 1075 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/140/EG-345873.pdf" H 4450 1075 50  0001 C CNN
-F 4 "E-Switch" H 4450 1075 50  0001 C CNN "Mfr."
-F 5 "EG1271" H 4450 1075 50  0001 C CNN "Mfr. No."
-F 6 "612-EG1271" H 4450 1075 50  0001 C CNN "Mouser"
-	1    4450 1075
+F 0 "SW7" H 4650 1850 50  0000 C CNN
+F 1 "CLOCK INPUT" H 4650 1750 50  0000 C CNN
+F 2 "Switches:SW_E-Switch_EG1271_DPDT" H 4650 1500 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/140/EG-345873.pdf" H 4650 1500 50  0001 C CNN
+F 4 "E-Switch" H 4650 1500 50  0001 C CNN "Mfr."
+F 5 "EG1271" H 4650 1500 50  0001 C CNN "Mfr. No."
+F 6 "612-EG1271" H 4650 1500 50  0001 C CNN "Mouser"
+	1    4650 1500
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -2195,8 +2177,6 @@ Wire Wire Line
 	10700 3625 11100 3625
 Entry Wire Line
 	11100 3625 11200 3525
-Wire Wire Line
-	5750 4425 6200 4425
 Text HLabel 9350 1825 0    50   Output ~ 0
 ~IRQ_VIA_2
 Text HLabel 12650 2275 0    50   Output ~ 0
@@ -2205,49 +2185,7 @@ Text HLabel 12700 6425 0    50   Output ~ 0
 ~IRQ_ACIA
 Text HLabel 4500 4725 0    50   Input ~ 0
 ~IRQ_CPU
-Wire Wire Line
-	4650 4725 4575 4725
-Text HLabel 6200 4425 2    50   Output ~ 0
-IRQ_Sync
 NoConn ~ 10700 3375
-$Comp
-L Device:R R?
-U 1 1 5E83B12B
-P 4325 4575
-AR Path="/5E83B12B" Ref="R?"  Part="1" 
-AR Path="/5EB09E21/5E83B12B" Ref="R1"  Part="1" 
-F 0 "R1" V 4325 4525 50  0000 L CNN
-F 1 "10k" V 4425 4525 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4255 4575 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf" H 4325 4575 50  0001 C CNN
-F 4 "Yageo" H 4325 4575 50  0001 C CNN "Mfr."
-F 5 "MFP-25BRD52-10K" H 4325 4575 50  0001 C CNN "Mfr. No."
-F 6 "603-MFP-25BRD52-10K" H 4325 4575 50  0001 C CNN "Mouser"
-	1    4325 4575
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4475 4575 4575 4575
-Wire Wire Line
-	4575 4575 4575 4725
-Connection ~ 4575 4725
-Wire Wire Line
-	4575 4725 4500 4725
-$Comp
-L power:+5V #PWR?
-U 1 1 5E87D7A7
-P 4075 4575
-AR Path="/5E87D7A7" Ref="#PWR?"  Part="1" 
-AR Path="/5EB09E21/5E87D7A7" Ref="#PWR079"  Part="1" 
-F 0 "#PWR079" H 4075 4425 50  0001 C CNN
-F 1 "+5V" H 4090 4748 50  0000 C CNN
-F 2 "" H 4075 4575 50  0001 C CNN
-F 3 "" H 4075 4575 50  0001 C CNN
-	1    4075 4575
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4075 4575 4175 4575
 NoConn ~ 10700 3075
 Text HLabel 6200 5125 2    50   Output ~ 0
 ~IRQ_Read
@@ -2273,6 +2211,48 @@ Wire Wire Line
 	6550 5025 6550 4950
 Wire Wire Line
 	6150 5025 6550 5025
+NoConn ~ 5750 4425
+Text Notes 3875 1125 0    50   ~ 0
+NOTE: WDC recommends to use an oscillator for system time base \ninstead of PHI1O and PHI2O, because the clock delay of PHI1O \nand PHI2O to PHI2 is no longer tested.
+$Comp
+L Western_Design_Center:W65C02 IC?
+U 1 1 5EBEAF78
+P 5200 5375
+AR Path="/5EBEAF78" Ref="IC?"  Part="1" 
+AR Path="/5EB09E21/5EBEAF78" Ref="IC2"  Part="1" 
+F 0 "IC2" H 4800 6575 50  0000 C CNN
+F 1 "W65C02" H 4890 4175 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm_LongPads" H 5200 5075 50  0001 C CNN
+F 3 "https://www.westerndesigncenter.com/wdc/documentation/w65c02s.pdf" H 5200 5375 50  0001 C CNN
+F 4 "Western Design Center" H 5200 5375 50  0001 C CNN "Mfr."
+F 5 "W65C02S6TPG-14" H 5200 5375 50  0001 C CNN "Mfr. No."
+F 6 "955-W65C02S6TPG-14" H 5200 5375 50  0001 C CNN "Mouser"
+	1    5200 5375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 4725 4650 4725
+$Comp
+L power:+5V #PWR?
+U 1 1 5DECCA6F
+P 6200 5275
+AR Path="/5DECCA6F" Ref="#PWR?"  Part="1" 
+AR Path="/5EB09E21/5DECCA6F" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0107" H 6200 5125 50  0001 C CNN
+F 1 "+5V" H 6215 5448 50  0000 C CNN
+F 2 "" H 6200 5275 50  0001 C CNN
+F 3 "" H 6200 5275 50  0001 C CNN
+	1    6200 5275
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5750 5225 5825 5225
+Wire Wire Line
+	5825 5225 5825 5275
+Wire Wire Line
+	5825 5325 5750 5325
+Wire Wire Line
+	5825 5275 6200 5275
 Wire Bus Line
 	11200 2675 11200 3525
 Wire Bus Line
@@ -2307,4 +2287,7 @@ Wire Bus Line
 	9300 3875 9300 7025
 Wire Bus Line
 	7150 4725 7150 7125
+Connection ~ 5825 5275
+Wire Wire Line
+	5825 5275 5825 5325
 $EndSCHEMATC

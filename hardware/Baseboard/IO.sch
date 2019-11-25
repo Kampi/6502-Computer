@@ -510,121 +510,6 @@ Wire Wire Line
 Connection ~ 4200 2050
 Wire Wire Line
 	4200 2050 4300 2050
-$Comp
-L Device:R R?
-U 1 1 5D9FD99A
-P 850 6050
-AR Path="/5D9FD99A" Ref="R?"  Part="1" 
-AR Path="/5E9728CC/5D9FD99A" Ref="R?"  Part="1" 
-AR Path="/5EC67F7B/5D9FD99A" Ref="R9"  Part="1" 
-F 0 "R9" H 920 6096 50  0000 L CNN
-F 1 "10k" H 920 6005 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 780 6050 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf" H 850 6050 50  0001 C CNN
-F 4 "Yageo" H 850 6050 50  0001 C CNN "Mfr."
-F 5 "MFP-25BRD52-10K" H 850 6050 50  0001 C CNN "Mfr. No."
-F 6 "603-MFP-25BRD52-10K" H 850 6050 50  0001 C CNN "Mouser"
-	1    850  6050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW?
-U 1 1 5D9FD9A3
-P 850 6650
-AR Path="/5D9FD9A3" Ref="SW?"  Part="1" 
-AR Path="/5E9728CC/5D9FD9A3" Ref="SW?"  Part="1" 
-AR Path="/5EC67F7B/5D9FD9A3" Ref="SW4"  Part="1" 
-F 0 "SW4" V 896 6602 50  0000 R CNN
-F 1 "~NMI" V 805 6602 50  0000 R CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 850 6850 50  0001 C CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F1825910%7FC10%7Fpdf%7FEnglish%7FENG_CD_1825910_C10.pdf%7F2-1825910-7" H 850 6850 50  0001 C CNN
-F 4 "TE Connectivity / Alcoswitch" H 850 6650 50  0001 C CNN "Mfr."
-F 5 "2-1825910-7" H 850 6650 50  0001 C CNN "Mfr. No."
-F 6 "506-2-1825910-7" H 850 6650 50  0001 C CNN "Mouser"
-	1    850  6650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5D9FD9A9
-P 850 5700
-AR Path="/5D9FD9A9" Ref="#PWR?"  Part="1" 
-AR Path="/5E9728CC/5D9FD9A9" Ref="#PWR?"  Part="1" 
-AR Path="/5EC67F7B/5D9FD9A9" Ref="#PWR057"  Part="1" 
-F 0 "#PWR057" H 850 5550 50  0001 C CNN
-F 1 "+5V" H 865 5873 50  0000 C CNN
-F 2 "" H 850 5700 50  0001 C CNN
-F 3 "" H 850 5700 50  0001 C CNN
-	1    850  5700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	850  5700 850  5900
-$Comp
-L power:GND #PWR?
-U 1 1 5D9FD9B0
-P 850 7050
-AR Path="/5D9FD9B0" Ref="#PWR?"  Part="1" 
-AR Path="/5E9728CC/5D9FD9B0" Ref="#PWR?"  Part="1" 
-AR Path="/5EC67F7B/5D9FD9B0" Ref="#PWR058"  Part="1" 
-F 0 "#PWR058" H 850 6800 50  0001 C CNN
-F 1 "GND" H 855 6877 50  0000 C CNN
-F 2 "" H 850 7050 50  0001 C CNN
-F 3 "" H 850 7050 50  0001 C CNN
-	1    850  7050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5D9FD9B9
-P 1300 6800
-AR Path="/5D9FD9B9" Ref="C?"  Part="1" 
-AR Path="/5E9728CC/5D9FD9B9" Ref="C?"  Part="1" 
-AR Path="/5EC67F7B/5D9FD9B9" Ref="C17"  Part="1" 
-F 0 "C17" H 1415 6846 50  0000 L CNN
-F 1 "100nF" H 1415 6755 50  0000 L CNN
-F 2 "Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm" H 1338 6650 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/400/eadmlcc_halogenfree_fa150_en-890480.pdf" H 1300 6800 50  0001 C CNN
-F 4 "TDK" H 1300 6800 50  0001 C CNN "Mfr."
-F 5 "FA18X8R1H104KRU06" H 1300 6800 50  0001 C CNN "Mfr. No."
-F 6 "810-FA18X8R1H104KRU6" H 1300 6800 50  0001 C CNN "Mouser"
-	1    1300 6800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	850  6200 850  6400
-Wire Wire Line
-	850  6400 1300 6400
-Wire Wire Line
-	1300 6400 1300 6650
-Connection ~ 850  6400
-Wire Wire Line
-	850  6400 850  6450
-$Comp
-L power:GND #PWR?
-U 1 1 5D9FD9C4
-P 1300 7050
-AR Path="/5D9FD9C4" Ref="#PWR?"  Part="1" 
-AR Path="/5E9728CC/5D9FD9C4" Ref="#PWR?"  Part="1" 
-AR Path="/5EC67F7B/5D9FD9C4" Ref="#PWR065"  Part="1" 
-F 0 "#PWR065" H 1300 6800 50  0001 C CNN
-F 1 "GND" H 1305 6877 50  0000 C CNN
-F 2 "" H 1300 7050 50  0001 C CNN
-F 3 "" H 1300 7050 50  0001 C CNN
-	1    1300 7050
-	1    0    0    -1  
-$EndComp
-Connection ~ 1300 6400
-Wire Wire Line
-	850  6850 850  7050
-Wire Wire Line
-	1300 6950 1300 7050
-Wire Wire Line
-	1300 6400 1600 6400
-Text HLabel 1600 6400 2    50   Output ~ 0
-~NMI
-Text HLabel 10350 2150 2    50   Input ~ 0
-R~W
 Text HLabel 8800 1150 0    50   Input ~ 0
 A[0..15]
 Text HLabel 8800 1050 0    50   BiDi ~ 0
@@ -829,8 +714,6 @@ Wire Wire Line
 	10250 3250 10650 3250
 Text Label 9450 1450 0    50   ~ 0
 A1
-Text HLabel 10350 2250 2    50   Input ~ 0
-Clock
 Wire Wire Line
 	10350 2250 10250 2250
 Text HLabel 10350 2350 2    50   Output ~ 0
@@ -910,6 +793,10 @@ Text Label 2000 2050 0    50   ~ 0
 CB1
 Wire Wire Line
 	3000 6925 3000 7050
+Text HLabel 10350 2150 2    50   Input ~ 0
+R~W
+Text HLabel 10350 2250 2    50   Input ~ 0
+Clock
 Wire Bus Line
 	2850 3450 2850 4150
 Wire Bus Line

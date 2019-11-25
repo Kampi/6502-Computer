@@ -2253,6 +2253,9 @@ Wire Wire Line
 	5825 5325 5750 5325
 Wire Wire Line
 	5825 5275 6200 5275
+Connection ~ 5825 5275
+Wire Wire Line
+	5825 5275 5825 5325
 Wire Bus Line
 	11200 2675 11200 3525
 Wire Bus Line
@@ -2287,7 +2290,4 @@ Wire Bus Line
 	9300 3875 9300 7025
 Wire Bus Line
 	7150 4725 7150 7125
-Connection ~ 5825 5275
-Wire Wire Line
-	5825 5275 5825 5325
 $EndSCHEMATC

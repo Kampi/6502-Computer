@@ -5,3 +5,4 @@ Verion				Comment
 					Change value of C8 to 30 pF
 					Fix wrong PS/2 connection, connect PS/2 clock with W65C22 interrupt line
 					Improve hardware for IRQ handling
+					Pull SO and BE to high state to meet the datasheet requirements

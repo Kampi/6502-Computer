@@ -12,7 +12,7 @@
 
 A simple W650C02 microprocessor based computer development board to learn some basics of older computer systems.
 
-![Overview](doc/img/Overview_Small.jpg)
+![Overview](docs/img/Overview_Small.jpg)
 
 Please write an e-mail to [DanielKampert@kampis-elektroecke.de](DanielKampert@kampis-elektroecke.de) if you have any questions.
 

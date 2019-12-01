@@ -731,8 +731,6 @@ NoConn ~ 10250 3150
 NoConn ~ 10250 3050
 NoConn ~ 10250 2950
 NoConn ~ 10250 2850
-NoConn ~ 10250 2750
-NoConn ~ 10250 2650
 Text HLabel 10350 2550 2    50   Input ~ 0
 ~TerminalReady
 Wire Wire Line
@@ -797,6 +795,14 @@ Text HLabel 10350 2150 2    50   Input ~ 0
 R~W
 Text HLabel 10350 2250 2    50   Input ~ 0
 Clock
+Text HLabel 10350 2650 2    50   Output ~ 0
+RDY
+Wire Wire Line
+	10350 2650 10250 2650
+Text HLabel 10350 2750 2    50   Input ~ 0
+Sync
+Wire Wire Line
+	10350 2750 10250 2750
 Wire Bus Line
 	2850 3450 2850 4150
 Wire Bus Line

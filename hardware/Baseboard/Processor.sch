@@ -134,8 +134,6 @@ Wire Wire Line
 NoConn ~ 5750 4525
 NoConn ~ 5750 4925
 Wire Wire Line
-	5750 5025 5850 5025
-Wire Wire Line
 	4250 4925 4650 4925
 Wire Wire Line
 	4250 5025 4650 5025
@@ -449,7 +447,7 @@ Text HLabel 12700 6225 0    50   Input ~ 0
 ~Reset
 Text Label 12700 6625 2    50   ~ 0
 R~W
-Text Label 6000 5425 0    50   ~ 0
+Text Label 5825 5425 0    50   ~ 0
 R~W
 Text HLabel 15300 7175 2    50   Output ~ 0
 TxD
@@ -1136,15 +1134,15 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR?
 U 1 1 5EBEB095
-P 6550 4950
+P 6550 4900
 AR Path="/5EBEB095" Ref="#PWR?"  Part="1" 
 AR Path="/5EB09E21/5EBEB095" Ref="#PWR014"  Part="1" 
-F 0 "#PWR014" H 6550 4800 50  0001 C CNN
-F 1 "+5V" H 6565 5123 50  0000 C CNN
-F 2 "" H 6550 4950 50  0001 C CNN
-F 3 "" H 6550 4950 50  0001 C CNN
-	1    6550 4950
-	1    0    0    -1  
+F 0 "#PWR014" H 6550 4750 50  0001 C CNN
+F 1 "+5V" H 6565 5073 50  0000 C CNN
+F 2 "" H 6550 4900 50  0001 C CNN
+F 3 "" H 6550 4900 50  0001 C CNN
+	1    6550 4900
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	8250 4075 8250 4125
@@ -1492,30 +1490,9 @@ Entry Wire Line
 Text Label 4400 8325 0    50   ~ 0
 A13
 Wire Wire Line
-	5750 8225 7500 8225
-Wire Wire Line
-	7500 8225 7500 6425
-Wire Wire Line
-	7500 6425 7600 6425
+	5750 8225 6300 8225
 Wire Wire Line
 	8000 6625 8000 6725
-$Comp
-L power:GND #PWR?
-U 1 1 5DEBFFC7
-P 7300 6725
-AR Path="/5DEBFFC7" Ref="#PWR?"  Part="1" 
-AR Path="/5EB09E21/5DEBFFC7" Ref="#PWR016"  Part="1" 
-F 0 "#PWR016" H 7300 6475 50  0001 C CNN
-F 1 "GND" H 7305 6552 50  0000 C CNN
-F 2 "" H 7300 6725 50  0001 C CNN
-F 3 "" H 7300 6725 50  0001 C CNN
-	1    7300 6725
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7300 6325 7300 6725
-Wire Wire Line
-	7300 6325 7600 6325
 Wire Wire Line
 	4250 8325 5150 8325
 $Comp
@@ -1569,7 +1546,7 @@ Wire Wire Line
 	12800 2675 12350 2675
 Text Label 12350 2675 2    50   ~ 0
 ~CS_VIA_1
-Text HLabel 6200 4825 2    50   Input ~ 0
+Text HLabel 5800 4825 2    50   Input ~ 0
 ~NMI
 Wire Wire Line
 	12700 6425 12850 6425
@@ -1685,7 +1662,7 @@ NoConn ~ 5650 10225
 NoConn ~ 5650 10325
 NoConn ~ 5650 10425
 Wire Wire Line
-	5750 4825 6200 4825
+	5750 4825 5800 4825
 $Comp
 L Western_Design_Center:W65C22 IC10
 U 1 1 5DA8CE2C
@@ -1899,10 +1876,10 @@ Text HLabel 11950 4725 2    50   Output ~ 0
 A[0..15]
 Text HLabel 11950 4575 2    50   BiDi ~ 0
 D[0..7]
-Text HLabel 6200 5425 2    50   Output ~ 0
+Text HLabel 6025 5425 2    50   Output ~ 0
 R~W
 Wire Wire Line
-	5750 5425 6200 5425
+	5750 5425 6025 5425
 Wire Wire Line
 	5750 4325 6200 4325
 Wire Wire Line
@@ -2018,7 +1995,6 @@ F 6 "556-AT28C256-15PU" H 8000 5525 50  0001 C CNN "Mouser"
 	1    8000 5525
 	1    0    0    -1  
 $EndComp
-NoConn ~ 5750 4725
 Wire Wire Line
 	5050 7575 5050 7675
 Entry Wire Line
@@ -2187,30 +2163,22 @@ Text HLabel 4500 4725 0    50   Input ~ 0
 ~IRQ_CPU
 NoConn ~ 10700 3375
 NoConn ~ 10700 3075
-Text HLabel 6200 5125 2    50   Output ~ 0
-~IRQ_Read
 $Comp
 L Device:R R?
 U 1 1 5EBEB08E
-P 6000 5025
+P 6350 4900
 AR Path="/5EBEB08E" Ref="R?"  Part="1" 
 AR Path="/5EB09E21/5EBEB08E" Ref="R3"  Part="1" 
-F 0 "R3" V 6000 4975 50  0000 L CNN
-F 1 "10k" V 5900 4950 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5930 5025 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf" H 6000 5025 50  0001 C CNN
-F 4 "Yageo" H 6000 5025 50  0001 C CNN "Mfr."
-F 5 "MFP-25BRD52-10K" H 6000 5025 50  0001 C CNN "Mfr. No."
-F 6 "603-MFP-25BRD52-10K" H 6000 5025 50  0001 C CNN "Mouser"
-	1    6000 5025
+F 0 "R3" V 6350 4850 50  0000 L CNN
+F 1 "10k" V 6250 4825 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6280 4900 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf" H 6350 4900 50  0001 C CNN
+F 4 "Yageo" H 6350 4900 50  0001 C CNN "Mfr."
+F 5 "MFP-25BRD52-10K" H 6350 4900 50  0001 C CNN "Mfr. No."
+F 6 "603-MFP-25BRD52-10K" H 6350 4900 50  0001 C CNN "Mouser"
+	1    6350 4900
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5750 5125 6200 5125
-Wire Wire Line
-	6550 5025 6550 4950
-Wire Wire Line
-	6150 5025 6550 5025
 NoConn ~ 5750 4425
 Text Notes 3875 1125 0    50   ~ 0
 NOTE: WDC recommends to use an oscillator for system time base \ninstead of PHI1O and PHI2O, because the clock delay of PHI1O \nand PHI2O to PHI2 is no longer tested.
@@ -2256,6 +2224,45 @@ Wire Wire Line
 Connection ~ 5825 5275
 Wire Wire Line
 	5825 5275 5825 5325
+Wire Wire Line
+	6300 6425 6300 8225
+Wire Wire Line
+	6300 6425 7600 6425
+$Comp
+L power:GND #PWR?
+U 1 1 5DEBFFC7
+P 7300 6725
+AR Path="/5DEBFFC7" Ref="#PWR?"  Part="1" 
+AR Path="/5EB09E21/5DEBFFC7" Ref="#PWR016"  Part="1" 
+F 0 "#PWR016" H 7300 6475 50  0001 C CNN
+F 1 "GND" H 7305 6552 50  0000 C CNN
+F 2 "" H 7300 6725 50  0001 C CNN
+F 3 "" H 7300 6725 50  0001 C CNN
+	1    7300 6725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 6325 7300 6725
+Wire Wire Line
+	7300 6325 7600 6325
+Text HLabel 6350 5025 2    50   Input ~ 0
+RDY
+Wire Wire Line
+	6350 5025 6150 5025
+Wire Wire Line
+	6550 4900 6500 4900
+Connection ~ 6150 5025
+Wire Wire Line
+	6150 5025 5750 5025
+NoConn ~ 5750 5125
+Wire Wire Line
+	6200 4900 6150 4900
+Wire Wire Line
+	6150 4900 6150 5025
+Text HLabel 6350 4725 2    50   Output ~ 0
+Sync
+Wire Wire Line
+	5750 4725 6350 4725
 Wire Bus Line
 	11200 2675 11200 3525
 Wire Bus Line

@@ -1,4 +1,4 @@
-update=25.11.2019 14:37:55
+update=30.11.2019 08:26:39
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=Retro PC.net
+LastNetListRead=Baseboard.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
@@ -68,7 +68,7 @@ OthersTextUpright=1
 SolderMaskClearance=0
 SolderMaskMinWidth=0
 SolderPasteClearance=0
-SolderPasteRatio=-0
+SolderPasteRatio=0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
 Type=0

@@ -12,7 +12,7 @@
 
 A simple W650C02 microprocessor based computer development board to learn some basics of older computer systems.
 
-![Overview](docs/img/Overview_Small.jpg)
+![Overview](docs/imgages/Overview_Small.jpg)
 
 Please write an e-mail to [DanielKampert@kampis-elektroecke.de](DanielKampert@kampis-elektroecke.de) if you have any questions.
 
@@ -21,6 +21,7 @@ Please write an e-mail to [DanielKampert@kampis-elektroecke.de](DanielKampert@ka
 | **Version**  | **Description**                            | **Date**   |
 |:------------:|:------------------------------------------:|:----------:|
 | 1.0          | First hardware release                              | 18.10.2019 |
+| 2.0          | New design concept                              |  |
 
 ## Maintainer
 

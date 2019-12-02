@@ -263,8 +263,6 @@ NoConn ~ 6800 4425
 NoConn ~ 6800 4525
 NoConn ~ 6800 4625
 NoConn ~ 6800 4725
-Wire Wire Line
-	6725 5025 6775 5025
 NoConn ~ 5100 4675
 $Comp
 L Device:R R?
@@ -287,7 +285,6 @@ Wire Wire Line
 	6775 5175 6750 5175
 Wire Wire Line
 	6775 5025 6775 5175
-Connection ~ 6775 5025
 Wire Wire Line
 	6775 5025 6800 5025
 $Comp
@@ -487,4 +484,6 @@ Wire Wire Line
 	875  1625 1550 1625
 Wire Bus Line
 	7950 4125 7950 5025
+Text Notes 3800 5925 0    100  ~ 0
+NOTE: This solution isn´t ready yet. I need a proper way to\noutput the interrupt number on the data bus.
 $EndSCHEMATC

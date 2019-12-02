@@ -5,14 +5,14 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
-Title "Retro PC 2.0"
+Title "Power Supply & Reset"
 Date "2019-12-02"
 Rev "1.0"
 Comp "https://www.kampis-elektroecke.de"
 Comment1 "Author: Daniel Kampert"
-Comment2 ""
+Comment2 "Retro PC 2.0"
 Comment3 ""
-Comment4 "Power Supply & Reset"
+Comment4 ""
 $EndDescr
 $Comp
 L Device:R R2

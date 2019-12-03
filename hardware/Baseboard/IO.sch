@@ -374,7 +374,7 @@ AR Path="/5EE8631D" Ref="SW?"  Part="1"
 AR Path="/5EB09E21/5EE8631D" Ref="SW?"  Part="1" 
 AR Path="/5EC67F7B/5EE8631D" Ref="SW2"  Part="1" 
 F 0 "SW2" H 4600 2000 50  0000 C CNN
-F 1 "Interrupt" H 4650 1900 50  0000 C CNN
+F 1 "INTERRUPT" H 4650 1900 50  0000 C CNN
 F 2 "Button_Switch_THT:SW_DIP_SPSTx02_Slide_9.78x7.26mm_W7.62mm_P2.54mm" H 4600 2150 50  0001 C CNN
 F 3 "https://www.weltroniker.de/DB-Pool/DIP_NDI.pdf" H 4600 2150 50  0001 C CNN
 F 4 "Diptronics" H 4600 2150 50  0001 C CNN "Mfr."
@@ -391,7 +391,7 @@ AR Path="/5EE69B10" Ref="SW?"  Part="1"
 AR Path="/5EB09E21/5EE69B10" Ref="SW?"  Part="1" 
 AR Path="/5EC67F7B/5EE69B10" Ref="SW3"  Part="1" 
 F 0 "SW3" H 4600 2167 50  0000 C CNN
-F 1 "Port B" H 4600 2076 50  0000 C CNN
+F 1 "PORT B" H 4600 2076 50  0000 C CNN
 F 2 "Button_Switch_THT:SW_DIP_SPSTx08_Slide_9.78x22.5mm_W7.62mm_P2.54mm" H 4600 1500 50  0001 C CNN
 F 3 "https://www.weltroniker.de/DB-Pool/DIP_NDI.pdf" H 4600 1500 50  0001 C CNN
 F 4 "Diptronics" H 4600 1500 50  0001 C CNN "Mfr."

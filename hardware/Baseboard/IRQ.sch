@@ -340,24 +340,6 @@ F 6 "603-MFP-25BRD52-10K" H 875 1275 50  0001 C CNN "Mouser"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW?
-U 1 1 5DE0C710
-P 875 1875
-AR Path="/5DE0C710" Ref="SW?"  Part="1" 
-AR Path="/5E9728CC/5DE0C710" Ref="SW?"  Part="1" 
-AR Path="/5EC67F7B/5DE0C710" Ref="SW?"  Part="1" 
-AR Path="/5E710B5B/5DE0C710" Ref="SW4"  Part="1" 
-F 0 "SW4" V 921 1827 50  0000 R CNN
-F 1 "NMI" V 830 1827 50  0000 R CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 875 2075 50  0001 C CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F1825910%7FC10%7Fpdf%7FEnglish%7FENG_CD_1825910_C10.pdf%7F2-1825910-7" H 875 2075 50  0001 C CNN
-F 4 "TE Connectivity / Alcoswitch" H 875 1875 50  0001 C CNN "Mfr."
-F 5 "2-1825910-7" H 875 1875 50  0001 C CNN "Mfr. No."
-F 6 "506-2-1825910-7" H 875 1875 50  0001 C CNN "Mouser"
-	1    875  1875
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:+5V #PWR?
 U 1 1 5DE0C716
 P 875 925
@@ -482,8 +464,26 @@ Wire Wire Line
 	5200 4575 5750 4575
 Wire Wire Line
 	875  1625 1550 1625
-Wire Bus Line
-	7950 4125 7950 5025
 Text Notes 3800 5925 0    100  ~ 0
 NOTE: This solution isn´t ready yet. I need a proper way to\noutput the interrupt number on the data bus.
+Wire Bus Line
+	7950 4125 7950 5025
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5DE0C710
+P 875 1875
+AR Path="/5DE0C710" Ref="SW?"  Part="1" 
+AR Path="/5E9728CC/5DE0C710" Ref="SW?"  Part="1" 
+AR Path="/5EC67F7B/5DE0C710" Ref="SW?"  Part="1" 
+AR Path="/5E710B5B/5DE0C710" Ref="SW4"  Part="1" 
+F 0 "SW4" V 921 1827 50  0000 R CNN
+F 1 "NMI" V 830 1827 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 875 2075 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F1825910%7FC10%7Fpdf%7FEnglish%7FENG_CD_1825910_C10.pdf%7F2-1825910-7" H 875 2075 50  0001 C CNN
+F 4 "TE Connectivity / Alcoswitch" H 875 1875 50  0001 C CNN "Mfr."
+F 5 "2-1825910-7" H 875 1875 50  0001 C CNN "Mfr. No."
+F 6 "506-2-1825910-7" H 875 1875 50  0001 C CNN "Mouser"
+	1    875  1875
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

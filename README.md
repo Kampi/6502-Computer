@@ -10,7 +10,7 @@
 
 ## About
 
-A simple W650C02 microprocessor based computer development board to learn some basics of older computer systems.
+A simple W65C02 based computer. This project should realize an old style computer with peripheral interfaces like PS/2, LCD, VGA, etc.
 
 ![Overview](docs/imgages/Overview_Small.jpg)
 

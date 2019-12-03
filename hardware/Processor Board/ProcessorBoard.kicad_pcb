@@ -912,7 +912,7 @@
     (fp_text reference SW1 (at -3.556 0.204 180) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value ~NMI (at -3.81 -0.05 180) (layer F.SilkS)
+    (fp_text value NMI (at -3.81 -0.05 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 0.5 -8.35) (end 0.5 -2.59) (layer F.Fab) (width 0.1))

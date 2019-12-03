@@ -11,12 +11,12 @@
 
   (page A3)
   (title_block
-    (title "Retro PC 2.0")
+    (title "Board Design Template")
     (date 2019-12-02)
     (rev 1.0)
     (company https://www.kampis-elektroecke.de)
     (comment 1 "Author: Daniel Kampert")
-    (comment 4 "Board Design Template")
+    (comment 2 "Retro PC 2.0")
   )
 
   (layers

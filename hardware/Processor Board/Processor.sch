@@ -909,7 +909,7 @@ Connection ~ 5050 7675
 Wire Wire Line
 	5050 7675 5050 7775
 Text Label 3250 1475 0    50   ~ 0
-CLOCK_OSC
+CLOCK
 Wire Wire Line
 	3250 1475 3150 1475
 $Comp
@@ -1059,15 +1059,15 @@ Wire Wire Line
 Wire Wire Line
 	14375 6825 14775 6825
 Wire Wire Line
-	14475 5925 14375 5925
+	14475 5725 14375 5725
 Wire Wire Line
-	14475 6025 14375 6025
+	14475 5825 14375 5825
 NoConn ~ 14375 6725
 NoConn ~ 14375 6625
 NoConn ~ 14375 6525
 NoConn ~ 14375 6425
 Wire Wire Line
-	14475 6125 14375 6125
+	14475 5925 14375 5925
 Wire Bus Line
 	11550 4725 11550 7125
 Connection ~ 4150 7125
@@ -1124,15 +1124,15 @@ Text Label 5875 5425 0    50   ~ 0
 R~W
 Text Label 13775 6525 2    50   ~ 0
 R~W
-Text Label 13800 6725 2    50   ~ 0
+Text Label 13775 6725 2    50   ~ 0
 ~RESET
 Wire Wire Line
-	13875 6725 13800 6725
-Text Label 14475 5925 0    50   ~ 0
+	13875 6725 13775 6725
+Text Label 14475 5725 0    50   ~ 0
 ~IRQ
-Text Label 14475 6125 0    50   ~ 0
+Text Label 14475 5825 0    50   ~ 0
 RDY
-Text Label 14475 6225 0    50   ~ 0
+Text Label 14475 6025 0    50   ~ 0
 SYNC
 NoConn ~ 14375 6325
 Text Label 5875 4825 0    50   ~ 0
@@ -1252,22 +1252,20 @@ Text Label 1725 1525 0    50   ~ 0
 Wire Wire Line
 	1725 1525 1400 1525
 Connection ~ 1400 1525
-Text Label 14475 6025 0    50   ~ 0
+Text Label 14475 5925 0    50   ~ 0
 ~NMI
 Wire Wire Line
-	14375 6225 14475 6225
+	14375 6025 14475 6025
 Wire Wire Line
 	13775 6525 13875 6525
 Text Label 5875 4325 0    50   ~ 0
-CLOCK_OSC
+CLOCK
 Text Label 8150 7475 2    50   ~ 0
-CLOCK_OSC
-Text Label 13800 6625 2    50   ~ 0
-CLOCK_OSC
-NoConn ~ 14375 5725
-NoConn ~ 14375 5825
+CLOCK
+Text Label 13775 6625 2    50   ~ 0
+CLOCK
 Wire Wire Line
-	13800 6625 13875 6625
+	13775 6625 13875 6625
 Wire Bus Line
 	11400 4625 14825 4625
 Text Label 14525 5625 0    50   ~ 0
@@ -1416,6 +1414,8 @@ Entry Wire Line
 	13475 5025 13375 4925
 Entry Wire Line
 	13475 5125 13375 5025
+NoConn ~ 14375 6125
+NoConn ~ 14375 6225
 Wire Bus Line
 	4150 7125 4150 8225
 Wire Bus Line

@@ -26,20 +26,16 @@ Text Notes 900  2100 0    100  ~ 0
 $0000 - $7FFF
 Text Notes 3550 2100 0    100  ~ 0
 SRAM
-Text Notes 5600 1450 0    100  ~ 20
-Select:
 Wire Notes Line width 18 style solid
 	5350 1150 5350 3700
-Text Notes 3250 1100 0    150  ~ 30
+Text Notes 2300 1075 0    150  ~ 30
 Memory map
 Text Notes 900  1850 0    100  ~ 0
 $0000 - $FFFF\n
 Wire Notes Line width 18 style solid
-	750  1550 6700 1550
+	750  1550 5350 1550
 Wire Notes Line width 18 style solid
-	750  1150 6700 1150
-Wire Notes Line width 18 style solid
-	6700 1150 6700 3700
+	750  1150 5350 1150
 Wire Notes Line width 18 style solid
 	750  1150 750  3700
 Text Notes 2650 1450 0    100  ~ 20

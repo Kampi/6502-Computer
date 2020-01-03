@@ -282,12 +282,12 @@ AR Path="/5ED5BED1" Ref="RN?"  Part="1"
 AR Path="/5EB09E21/5ED5BED1" Ref="RN?"  Part="1" 
 AR Path="/5EC67F7B/5ED5BED1" Ref="RN2"  Part="1" 
 F 0 "RN2" H 4188 4696 50  0000 L CNN
-F 1 "470" H 4188 4605 50  0000 L CNN
+F 1 "390" H 4188 4605 50  0000 L CNN
 F 2 "Resistor_THT:R_Array_SIP9" V 4275 4650 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 3800 4650 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/54/4600x-776645.pdf" H 3800 4650 50  0001 C CNN
 F 4 "Bourns" H 3800 4650 50  0001 C CNN "Mfr."
-F 5 "4608M-102-471LF" H 3800 4650 50  0001 C CNN "Mfr. No."
-F 6 "652-4608M-2LF-470" H 3800 4650 50  0001 C CNN "Mouser"
+F 5 "4609X-101-391LF" H 3800 4650 50  0001 C CNN "Mfr. No."
+F 6 "652-4609X-1LF-390" H 3800 4650 50  0001 C CNN "Mouser"
 	1    3800 4650
 	-1   0    0    1   
 $EndComp

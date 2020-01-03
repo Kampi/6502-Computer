@@ -7,3 +7,4 @@ Verion				Comment
 					Improve hardware for IRQ handling
 					Pull SO and BE to high state to meet the datasheet requirements
 					Add RDY and SYNC signal to expansion header
+					Move CS signal for peripherals to !CS pin

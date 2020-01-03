@@ -1351,10 +1351,6 @@ Text Label 4400 10325 0    50   ~ 0
 A14
 Text Label 5750 9925 0    50   ~ 0
 ~CS_ACIA
-Text Label 12700 6775 2    50   ~ 0
-~CS_ACIA
-Wire Wire Line
-	12850 6775 12700 6775
 $Comp
 L 74xx:74HC00 IC1
 U 5 2 5DD62749
@@ -1512,40 +1508,6 @@ Wire Wire Line
 	10950 6225 11250 6225
 Wire Wire Line
 	11250 6225 11250 6725
-$Comp
-L power:GND #PWR?
-U 1 1 5DF61328
-P 12700 6875
-AR Path="/5DF61328" Ref="#PWR?"  Part="1" 
-AR Path="/5EB09E21/5DF61328" Ref="#PWR025"  Part="1" 
-F 0 "#PWR025" H 12700 6625 50  0001 C CNN
-F 1 "GND" H 12705 6702 50  0000 C CNN
-F 2 "" H 12700 6875 50  0001 C CNN
-F 3 "" H 12700 6875 50  0001 C CNN
-	1    12700 6875
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	12700 6875 12850 6875
-$Comp
-L power:GND #PWR?
-U 1 1 5DF78C36
-P 12700 2775
-AR Path="/5DF78C36" Ref="#PWR?"  Part="1" 
-AR Path="/5EB09E21/5DF78C36" Ref="#PWR024"  Part="1" 
-F 0 "#PWR024" H 12700 2525 50  0001 C CNN
-F 1 "GND" H 12705 2602 50  0000 C CNN
-F 2 "" H 12700 2775 50  0001 C CNN
-F 3 "" H 12700 2775 50  0001 C CNN
-	1    12700 2775
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	12700 2775 12800 2775
-Wire Wire Line
-	12800 2675 12350 2675
-Text Label 12350 2675 2    50   ~ 0
-~CS_VIA_1
 Text HLabel 5800 4825 2    50   Input ~ 0
 ~NMI
 Wire Wire Line
@@ -1809,25 +1771,6 @@ Wire Wire Line
 	9500 1725 9050 1725
 Wire Wire Line
 	9350 1625 9500 1625
-$Comp
-L power:GND #PWR?
-U 1 1 5DD17184
-P 9400 2325
-AR Path="/5DD17184" Ref="#PWR?"  Part="1" 
-AR Path="/5EB09E21/5DD17184" Ref="#PWR013"  Part="1" 
-F 0 "#PWR013" H 9400 2075 50  0001 C CNN
-F 1 "GND" H 9405 2152 50  0000 C CNN
-F 2 "" H 9400 2325 50  0001 C CNN
-F 3 "" H 9400 2325 50  0001 C CNN
-	1    9400 2325
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9400 2325 9500 2325
-Wire Wire Line
-	9500 2225 9050 2225
-Text Label 9050 2225 2    50   ~ 0
-~CS_VIA_2
 Text Label 5750 9825 0    50   ~ 0
 ~CS_VIA_2
 Wire Wire Line
@@ -2263,6 +2206,63 @@ Text HLabel 6350 4725 2    50   Output ~ 0
 Sync
 Wire Wire Line
 	5750 4725 6350 4725
+Wire Wire Line
+	12800 2775 12350 2775
+Text Label 12350 2775 2    50   ~ 0
+~CS_VIA_1
+Wire Wire Line
+	12700 2675 12800 2675
+$Comp
+L power:+5V #PWR?
+U 1 1 5E1808C3
+P 12700 2675
+AR Path="/5E1808C3" Ref="#PWR?"  Part="1" 
+AR Path="/5EB09E21/5E1808C3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 12700 2525 50  0001 C CNN
+F 1 "+5V" H 12715 2848 50  0000 C CNN
+F 2 "" H 12700 2675 50  0001 C CNN
+F 3 "" H 12700 2675 50  0001 C CNN
+	1    12700 2675
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9500 2325 9050 2325
+Text Label 9050 2325 2    50   ~ 0
+~CS_VIA_2
+Wire Wire Line
+	9400 2225 9500 2225
+$Comp
+L power:+5V #PWR?
+U 1 1 5E1E7B71
+P 9400 2225
+AR Path="/5E1E7B71" Ref="#PWR?"  Part="1" 
+AR Path="/5EB09E21/5E1E7B71" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9400 2075 50  0001 C CNN
+F 1 "+5V" H 9415 2398 50  0000 C CNN
+F 2 "" H 9400 2225 50  0001 C CNN
+F 3 "" H 9400 2225 50  0001 C CNN
+	1    9400 2225
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12850 6875 12400 6875
+Text Label 12400 6875 2    50   ~ 0
+~CS_ACIA
+Wire Wire Line
+	12750 6775 12850 6775
+$Comp
+L power:+5V #PWR?
+U 1 1 5E20A942
+P 12750 6775
+AR Path="/5E20A942" Ref="#PWR?"  Part="1" 
+AR Path="/5EB09E21/5E20A942" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 12750 6625 50  0001 C CNN
+F 1 "+5V" H 12765 6948 50  0000 C CNN
+F 2 "" H 12750 6775 50  0001 C CNN
+F 3 "" H 12750 6775 50  0001 C CNN
+	1    12750 6775
+	0    -1   -1   0   
+$EndComp
 Wire Bus Line
 	11200 2675 11200 3525
 Wire Bus Line

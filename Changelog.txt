@@ -9,3 +9,4 @@ Verion				Comment
 					Add RDY and SYNC signal to expansion header
 					Move CS signal for peripherals to !CS pin
 					Change RN2 to 390 Ohms
+					Add !VP signal to expansion header

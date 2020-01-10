@@ -1,4 +1,4 @@
-# Retro PC
+# 6502 Computer
 
 ## Table of Contents
 
@@ -14,13 +14,13 @@ A simple W650C02 microprocessor based computer development board to learn some b
 
 ![Overview](docs/img/Overview_Small.jpg)
 
-Please write an e-mail to [DanielKampert@kampis-elektroecke.de](DanielKampert@kampis-elektroecke.de) if you have any questions.
+Please check the [wiki](https://gitlab.com/Kampi/retro-pc/-/wikis/home) or write an e-mail to [DanielKampert@kampis-elektroecke.de](DanielKampert@kampis-elektroecke.de) if you have any questions.
 
 ## History
 
 | **Version**  | **Description**                            | **Date**   |
 |:------------:|:------------------------------------------:|:----------:|
-| 1.0          | First hardware release                              | 18.10.2019 |
+| 1.0          | First hardware release                     | 18.10.2019 |
 
 ## Maintainer
 

@@ -1,15 +1,17 @@
-TARGET = Addition
+TARGET = main
 
-OBJS = $(patsubst %.s,%.o, $(wildcard *.s))
-BUILDDIR = build
+BUILD_DIR = build
 
-all: $(TARGET).bin
+OBJS = $(addprefix $(BUILD_DIR)/, $(patsubst %.s,%.o, $(wildcard *.s)))
+
+all: $(BUILD_DIR)/$(TARGET).bin
 
 clean:
-	rm -rf $(BUILDDIR)/*.o $(BUILDDIR)/*.map $(BUILDDIR)/*.bin
+	rm -rf $(BUILD_DIR)/*.o $(BUILD_DIR)/*.map $(BUILD_DIR)/*.bin
 
-$(TARGET).bin: $(OBJS)
-	ld65 -C W65C02.ld $(BUILDDIR)/$(OBJS) -o $(BUILDDIR)/$(TARGET).bin -m $(BUILDDIR)/$(TARGET).map
+$(BUILD_DIR)/$(TARGET).bin: $(OBJS)
+	ld65 -C W65C02.ld $(OBJS) -o $@ -m $(BUILD_DIR)/$(TARGET).map
 
-%.o: %.s
-	ca65 $< -o $(BUILDDIR)/$@
+$(BUILD_DIR)/%.o: %.s
+	mkdir build
+	ca65 $< -o $@

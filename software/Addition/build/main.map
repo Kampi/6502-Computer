@@ -1,0 +1,23 @@
+Modules list:
+-------------
+main.o:
+    CODE              Offs = 000000   Size = 000006
+    VECTORS           Offs = 000000   Size = 000006
+
+
+Segment list:
+-------------
+Name                  Start   End     Size
+--------------------------------------------
+CODE                  00A000  00A005  000006
+VECTORS               00FFFA  00FFFF  000006
+
+
+Exports list:
+-------------
+
+
+
+Imports list:
+-------------
+

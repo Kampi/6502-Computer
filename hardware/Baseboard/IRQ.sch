@@ -4,10 +4,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 7
+Sheet 6 7
 Title "Baseboard"
-Date "2019-11-24"
-Rev "1.1"
+Date "2020-01-17"
+Rev "1.0"
 Comp "https://www.kampis-elektroecke.de"
 Comment1 "Author: Daniel Kampert"
 Comment2 ""

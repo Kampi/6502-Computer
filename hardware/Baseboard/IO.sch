@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 7
 Title "Baseboard"
-Date "2019-11-24"
-Rev "1.1"
+Date "2020-01-17"
+Rev "1.0"
 Comp "https://www.kampis-elektroecke.de"
 Comment1 "Author: Daniel Kampert"
 Comment2 ""
@@ -730,82 +730,81 @@ NoConn ~ 9750 2950
 NoConn ~ 10250 3150
 NoConn ~ 10250 3050
 NoConn ~ 10250 2950
-Text HLabel 10350 2550 2    50   Input ~ 0
-~TerminalReady
-Wire Wire Line
-	10350 2550 10250 2550
-Text HLabel 2500 6825 0    50   Output ~ 0
-~CarrierDetect
-$Comp
-L Switch:SW_SPDT SW5
-U 1 1 5DC04457
-P 2700 6825
-F 0 "SW5" H 2700 7110 50  0000 C CNN
-F 1 "CARRIER" H 2700 7019 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_E-Switch_EG1224_SPDT_Angled" H 2700 6825 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/140/EG-345873.pdf" H 2700 6825 50  0001 C CNN
-F 4 "E-Switch" H 2700 6825 50  0001 C CNN "Mfr."
-F 5 "EG1224" H 2700 6825 50  0001 C CNN "Mfr. No."
-F 6 "612-EG1224" H 2700 6825 50  0001 C CNN "Mouser"
-	1    2700 6825
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5DC0FBD8
-P 3000 7050
-AR Path="/5DC0FBD8" Ref="#PWR?"  Part="1" 
-AR Path="/5EB09E21/5DC0FBD8" Ref="#PWR?"  Part="1" 
-AR Path="/5EC67F7B/5DC0FBD8" Ref="#PWR048"  Part="1" 
-F 0 "#PWR048" H 3000 6800 50  0001 C CNN
-F 1 "GND" H 3005 6877 50  0000 C CNN
-F 2 "" H 3000 7050 50  0001 C CNN
-F 3 "" H 3000 7050 50  0001 C CNN
-	1    3000 7050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5DC13EF2
-P 3000 6675
-AR Path="/5DC13EF2" Ref="#PWR?"  Part="1" 
-AR Path="/5E9728CC/5DC13EF2" Ref="#PWR?"  Part="1" 
-AR Path="/5EC67F7B/5DC13EF2" Ref="#PWR032"  Part="1" 
-F 0 "#PWR032" H 3000 6525 50  0001 C CNN
-F 1 "+5V" H 3015 6848 50  0000 C CNN
-F 2 "" H 3000 6675 50  0001 C CNN
-F 3 "" H 3000 6675 50  0001 C CNN
-	1    3000 6675
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2900 6725 3000 6725
-Wire Wire Line
-	3000 6725 3000 6675
-Wire Wire Line
-	2900 6925 3000 6925
 Text Label 2000 2150 0    50   ~ 0
 CB0
 Text Label 2000 2050 0    50   ~ 0
 CB1
-Wire Wire Line
-	3000 6925 3000 7050
 Text HLabel 10350 2150 2    50   Input ~ 0
 R~W
 Text HLabel 10350 2250 2    50   Input ~ 0
 Clock
-Text HLabel 10350 2650 2    50   Output ~ 0
-RDY
-Wire Wire Line
-	10350 2650 10250 2650
-Text HLabel 10350 2750 2    50   Input ~ 0
-Sync
-Wire Wire Line
-	10350 2750 10250 2750
 Text HLabel 10350 2850 2    50   Input ~ 0
 ~VP
 Wire Wire Line
 	10350 2850 10250 2850
+Text HLabel 10350 2550 2    50   Output ~ 0
+RDY
+Wire Wire Line
+	10350 2550 10250 2550
+Text HLabel 10350 2650 2    50   Input ~ 0
+Sync
+Wire Wire Line
+	10350 2650 10250 2650
+NoConn ~ 10250 2750
+Wire Wire Line
+	1925 6475 1925 6600
+Wire Wire Line
+	1825 6475 1925 6475
+Wire Wire Line
+	1925 6275 1925 6225
+Wire Wire Line
+	1825 6275 1925 6275
+$Comp
+L power:+5V #PWR?
+U 1 1 5E24E58E
+P 1925 6225
+AR Path="/5E24E58E" Ref="#PWR?"  Part="1" 
+AR Path="/5E9728CC/5E24E58E" Ref="#PWR?"  Part="1" 
+AR Path="/5EC67F7B/5E24E58E" Ref="#PWR013"  Part="1" 
+F 0 "#PWR013" H 1925 6075 50  0001 C CNN
+F 1 "+5V" H 1940 6398 50  0000 C CNN
+F 2 "" H 1925 6225 50  0001 C CNN
+F 3 "" H 1925 6225 50  0001 C CNN
+	1    1925 6225
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E24E594
+P 1925 6600
+AR Path="/5E24E594" Ref="#PWR?"  Part="1" 
+AR Path="/5EB09E21/5E24E594" Ref="#PWR?"  Part="1" 
+AR Path="/5EC67F7B/5E24E594" Ref="#PWR024"  Part="1" 
+F 0 "#PWR024" H 1925 6350 50  0001 C CNN
+F 1 "GND" H 1930 6427 50  0000 C CNN
+F 2 "" H 1925 6600 50  0001 C CNN
+F 3 "" H 1925 6600 50  0001 C CNN
+	1    1925 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPDT SW5
+U 1 1 5E24E59D
+P 1625 6375
+F 0 "SW5" H 1625 6660 50  0000 C CNN
+F 1 "CARRIER" H 1625 6569 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_E-Switch_EG1224_SPDT_Angled" H 1625 6375 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/140/EG-345873.pdf" H 1625 6375 50  0001 C CNN
+F 4 "E-Switch" H 1625 6375 50  0001 C CNN "Mfr."
+F 5 "EG1224" H 1625 6375 50  0001 C CNN "Mfr. No."
+F 6 "612-EG1224" H 1625 6375 50  0001 C CNN "Mouser"
+	1    1625 6375
+	1    0    0    -1  
+$EndComp
+Text HLabel 950  6375 0    50   Output ~ 0
+~DCD
+Wire Wire Line
+	1425 6375 950  6375
 Wire Bus Line
 	2850 3450 2850 4150
 Wire Bus Line

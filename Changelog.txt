@@ -1,6 +1,6 @@
 Verion				Comment
-1.0					Initial release
-1.1					Add pull-up resistor for RESET signal
+0.1					First version
+1.0					Add missing pull-up resistor for RESET signal
 					Add switch to select between the oscillator or a push button as clock source
 					Change value of C8 to 30 pF
 					Fix wrong PS/2 connection, connect PS/2 clock with W65C22 interrupt line
@@ -10,3 +10,6 @@ Verion				Comment
 					Move CS signal for peripherals to !CS pin
 					Change RN2 to 390 Ohms
 					Add !VP signal to expansion header
+					Rework DTR and DSR RS232 handshake
+					Add reset button for FT232
+					Add a single pin for GND reference

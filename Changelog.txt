@@ -1,4 +1,4 @@
-Verion				Comment
+Version             Comment
 0.1					First version
 1.0					Add missing pull-up resistor for RESET signal
 					Add switch to select between the oscillator or a push button as clock source

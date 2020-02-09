@@ -1635,7 +1635,7 @@ Wire Wire Line
 Text Label 9300 2725 0    50   ~ 0
 A2
 Text HLabel 11450 1425 2    50   BiDi ~ 0
-LCD[0..10]
+LCD[0..11]
 Wire Bus Line
 	11400 4575 11950 4575
 Connection ~ 11400 4575
@@ -1821,7 +1821,6 @@ Text HLabel 12700 6425 0    50   Output ~ 0
 Text HLabel 4500 4725 0    50   Input ~ 0
 ~IRQ_CPU
 NoConn ~ 10700 3375
-NoConn ~ 10700 3075
 $Comp
 L Device:R R?
 U 1 1 5EBEB08E
@@ -2144,6 +2143,12 @@ Text HLabel 12650 2175 0    50   Output ~ 0
 Clock
 Text HLabel 9350 1725 0    50   Output ~ 0
 Clock
+Wire Wire Line
+	10700 3075 11050 3075
+Text Label 10800 3075 0    50   ~ 0
+LCD11
+Entry Wire Line
+	11050 3075 11150 2975
 Wire Bus Line
 	11275 1550 11275 3525
 Wire Bus Line
@@ -2155,8 +2160,6 @@ Wire Bus Line
 Wire Bus Line
 	14350 2225 14350 2925
 Wire Bus Line
-	11150 1425 11150 2875
-Wire Bus Line
 	11400 7025 11400 7875
 Wire Bus Line
 	4150 7125 4150 10325
@@ -2164,6 +2167,8 @@ Wire Bus Line
 	11400 3575 11400 4575
 Wire Bus Line
 	6200 5825 6200 7025
+Wire Bus Line
+	11150 1425 11150 2975
 Wire Bus Line
 	4150 5025 4150 7125
 Wire Bus Line

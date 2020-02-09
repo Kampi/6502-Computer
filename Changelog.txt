@@ -13,3 +13,5 @@ Verion				Comment
 					Rework DTR and DSR RS232 handshake
 					Add reset button for FT232
 					Add a single pin for GND reference
+					Add pull up resistors for PS/2 interface
+					Add LCD backlight switch

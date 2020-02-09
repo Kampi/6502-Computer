@@ -27,4 +27,4 @@ Please check the [wiki](https://gitlab.com/Kampi/retro-pc/-/wikis/home) or write
 
 ## Maintainer
 
-- [Daniel Kampert](DanielKampert@kampis-elektroecke.de)
+- [Daniel Kampert](mailto:DanielKampert@kampis-elektroecke.de)

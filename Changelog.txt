@@ -14,4 +14,6 @@ Verion				Comment
 					Add reset button for FT232
 					Add a single pin for GND reference
 					Add pull up resistors for PS/2 interface
+					Change PS/2 interface to CB1 and CB2 on VIA2
 					Add LCD backlight switch
+					Add timer inputs/outputs for VIA2

@@ -1,0 +1,30 @@
+Modules list:
+-------------
+main.o:
+    CODE              Offs = 000000   Size = 00001C
+    VECTORS           Offs = 000000   Size = 000006
+VIA.o:
+    CODE              Offs = 00001C   Size = 00001F
+
+
+Segment list:
+-------------
+Name                  Start   End     Size
+--------------------------------------------
+CODE                  00A000  00A03A  00003B
+VECTORS               00FFFA  00FFFF  000006
+
+
+Exports list:
+-------------
+VIA1_Init                 00A01C RLA    VIA1_UpdateLED            00A035 RLA    
+
+
+
+Imports list:
+-------------
+VIA1_Init (VIA.o):
+    main.o                    src/main.s(28)
+VIA1_UpdateLED (VIA.o):
+    main.o                    src/main.s(29)
+

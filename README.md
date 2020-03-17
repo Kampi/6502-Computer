@@ -23,7 +23,7 @@ Please check the [wiki](https://gitlab.com/Kampi/retro-pc/-/wikis/home) or write
 | **Version**  | **Description**                            | **Date**   |
 |:------------:|:------------------------------------------:|:----------:|
 | 0.1          | First hardware release                     | 18.10.2019 |
-| 1.0          | Fix different hardware bugs                |  |
+| 1.0          | Fix different hardware bugs, add new features                |  |
 
 ## Maintainer
 

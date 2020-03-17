@@ -1,0 +1,21 @@
+TARGET = main
+
+INCLUDE_DIRS = VIA/
+BUILD_DIR = build
+
+OBJS = $(addprefix $(BUILD_DIR)/, $(patsubst %.s,%.o, $(wildcard *.s)))
+
+.PHONY: all
+all: $(BUILD_DIR)/$(TARGET).bin
+
+.PHONY: clean
+clean:
+	rm -rf $(BUILD_DIR)/*.o $(BUILD_DIR)/*.map $(BUILD_DIR)/*.bin
+	rm -rf $(BUILD_DIR)
+
+$(BUILD_DIR)/$(TARGET).bin: $(OBJS)
+	ld65 -C W65C02.ld $(OBJS) -o $@ -m $(BUILD_DIR)/$(TARGET).map
+
+$(BUILD_DIR)/%.o: %.s
+	mkdir build
+	ca65 $< -o $@ -I $(INCLUDE_DIRS)

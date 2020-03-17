@@ -1,0 +1,21 @@
+VIA1_BASE		= $8000
+VIA2_BASE		= $8400
+
+; Register addresses
+VIA_ORB 		= $00
+VIA_ORA 		= $01
+VIA_DDRB 		= $02
+VIA_DDRA		= $03
+VIA_T1CL		= $04
+VIA_T1CH		= $05
+VIA_T1LL		= $06
+VIA_T1LH		= $07
+VIA_T2CL		= $08
+VIA_T2CH		= $09
+VIA_SR			= $0A
+VIA_ACR			= $0B
+VIA_PCR			= $0C
+VIA_IFR			= $0D
+VIA_IER			= $0E
+VIA_ORA2		= $0F
+

@@ -1,18 +1,17 @@
 EESchema Schematic File Version 4
-LIBS:Mainboard-cache
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 7
 Title "Mainboard"
-Date "2020-01-17"
+Date "2020-10-11"
 Rev "1.0"
 Comp "https://www.kampis-elektroecke.de"
-Comment1 "Author: Daniel Kampert"
+Comment1 ""
 Comment2 ""
 Comment3 ""
-Comment4 "System architecture"
+Comment4 "Author: Ing. Daniel Kampert"
 $EndDescr
 Text Notes 900  1450 0    100  ~ 20
 Address ranges:

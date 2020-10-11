@@ -1,318 +1,339 @@
 EESchema Schematic File Version 4
-LIBS:Mainboard-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 7
-Title "Mainboard"
-Date "2020-01-17"
+Title "Interrupt logic"
+Date "2020-10-11"
 Rev "1.0"
 Comp "https://www.kampis-elektroecke.de"
-Comment1 "Author: Daniel Kampert"
+Comment1 ""
 Comment2 ""
 Comment3 ""
-Comment4 "Interrupt logic"
+Comment4 "Author: Ing. Daniel Kampert"
 $EndDescr
 Wire Wire Line
-	6075 4175 5550 4175
+	5950 3250 5400 3250
 Wire Wire Line
-	4900 3875 5250 3875
-Text HLabel 4900 4075 0    50   Input ~ 0
+	4775 2950 5100 2950
+Text HLabel 4775 3150 0    50   Input ~ 0
 ~IRQ
 $Comp
 L power:+5V #PWR?
 U 1 1 5E717796
-P 6475 3025
+P 6350 2100
 AR Path="/5E717796" Ref="#PWR?"  Part="1" 
 AR Path="/5EB09E21/5E717796" Ref="#PWR?"  Part="1" 
-AR Path="/5E710B5B/5E717796" Ref="#PWR059"  Part="1" 
-F 0 "#PWR059" H 6475 2875 50  0001 C CNN
-F 1 "+5V" H 6490 3198 50  0000 C CNN
-F 2 "" H 6475 3025 50  0001 C CNN
-F 3 "" H 6475 3025 50  0001 C CNN
-	1    6475 3025
+AR Path="/5E710B5B/5E717796" Ref="#PWR060"  Part="1" 
+F 0 "#PWR060" H 6350 1950 50  0001 C CNN
+F 1 "+5V" H 6365 2273 50  0000 C CNN
+F 2 "" H 6350 2100 50  0001 C CNN
+F 3 "" H 6350 2100 50  0001 C CNN
+	1    6350 2100
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5E7177A8
-P 6475 5250
+P 6350 4300
 AR Path="/5E7177A8" Ref="#PWR?"  Part="1" 
 AR Path="/5EB09E21/5E7177A8" Ref="#PWR?"  Part="1" 
-AR Path="/5E710B5B/5E7177A8" Ref="#PWR060"  Part="1" 
-F 0 "#PWR060" H 6475 5000 50  0001 C CNN
-F 1 "GND" H 6480 5077 50  0000 C CNN
-F 2 "" H 6475 5250 50  0001 C CNN
-F 3 "" H 6475 5250 50  0001 C CNN
-	1    6475 5250
+AR Path="/5E710B5B/5E7177A8" Ref="#PWR061"  Part="1" 
+F 0 "#PWR061" H 6350 4050 50  0001 C CNN
+F 1 "GND" H 6355 4127 50  0000 C CNN
+F 2 "" H 6350 4300 50  0001 C CNN
+F 3 "" H 6350 4300 50  0001 C CNN
+	1    6350 4300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6475 5250 6475 4875
+	6350 4300 6350 3950
 $Comp
 L power:GND #PWR?
 U 1 1 5E7177AF
-P 6025 5250
+P 5900 4300
 AR Path="/5E7177AF" Ref="#PWR?"  Part="1" 
 AR Path="/5EB09E21/5E7177AF" Ref="#PWR?"  Part="1" 
-AR Path="/5E710B5B/5E7177AF" Ref="#PWR058"  Part="1" 
-F 0 "#PWR058" H 6025 5000 50  0001 C CNN
-F 1 "GND" H 6030 5077 50  0000 C CNN
-F 2 "" H 6025 5250 50  0001 C CNN
-F 3 "" H 6025 5250 50  0001 C CNN
-	1    6025 5250
+AR Path="/5E710B5B/5E7177AF" Ref="#PWR059"  Part="1" 
+F 0 "#PWR059" H 5900 4050 50  0001 C CNN
+F 1 "GND" H 5905 4127 50  0000 C CNN
+F 2 "" H 5900 4300 50  0001 C CNN
+F 3 "" H 5900 4300 50  0001 C CNN
+	1    5900 4300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6075 4675 6025 4675
+	5950 3750 5900 3750
 Wire Wire Line
-	6025 4675 6025 5250
+	5900 3750 5900 4300
 Wire Wire Line
-	5250 3575 5250 3875
-Connection ~ 5250 3875
+	5100 2650 5100 2950
+Connection ~ 5100 2950
 Wire Wire Line
-	5250 3875 6075 3875
+	5100 2950 5950 2950
 Wire Wire Line
-	5350 3575 5350 3975
+	5200 2650 5200 3050
 Wire Wire Line
-	5350 3975 6075 3975
+	5200 3050 5950 3050
 Wire Wire Line
-	5450 3575 5450 4075
-Connection ~ 5450 4075
+	5300 2650 5300 3150
+Connection ~ 5300 3150
 Wire Wire Line
-	5450 4075 6075 4075
+	5300 3150 5950 3150
 Wire Wire Line
-	5550 3575 5550 4175
+	5400 2650 5400 3250
 Wire Wire Line
-	5650 3575 5650 4575
+	5500 2650 5500 3650
 Wire Wire Line
-	5750 4475 6075 4475
+	5600 3550 5950 3550
 Wire Wire Line
-	5750 3575 5750 4475
+	5600 2650 5600 3550
 Wire Wire Line
-	5950 4275 5950 3575
+	5800 3350 5800 2650
 Wire Wire Line
-	5850 4375 6075 4375
+	5700 3450 5950 3450
 Wire Wire Line
-	5650 4575 6075 4575
+	5500 3650 5950 3650
 Wire Wire Line
-	5950 4275 6075 4275
-Text HLabel 4900 3875 0    50   Input ~ 0
+	5800 3350 5950 3350
+Text HLabel 4775 2950 0    50   Input ~ 0
 ~IRQ_VIA_1
-Text HLabel 4900 4475 0    50   Input ~ 0
+Text HLabel 4775 3550 0    50   Input ~ 0
 ~IRQ_VIA_2
 Wire Wire Line
-	4900 4075 5450 4075
-Text HLabel 7525 4525 2    50   Output ~ 0
+	4775 3150 5300 3150
+Text HLabel 7400 3600 2    50   Output ~ 0
 ~IRQ_CPU
-NoConn ~ 6875 4625
+NoConn ~ 6750 3700
 Wire Wire Line
-	6475 3025 6475 3675
+	6350 2100 6350 2750
 Wire Wire Line
-	5650 4575 4900 4575
-Text HLabel 4900 4575 0    50   Input ~ 0
+	5500 3650 4775 3650
+Text HLabel 4775 3650 0    50   Input ~ 0
 ~IRQ_ACIA
-Connection ~ 5650 4575
+Connection ~ 5500 3650
 Wire Wire Line
-	4900 4475 5750 4475
-Connection ~ 5750 4475
+	4775 3550 5600 3550
+Connection ~ 5600 3550
 $Comp
 L Device:R R?
 U 1 1 5DE0C707
-P 875 875
+P 900 900
 AR Path="/5DE0C707" Ref="R?"  Part="1" 
 AR Path="/5E9728CC/5DE0C707" Ref="R?"  Part="1" 
 AR Path="/5EC67F7B/5DE0C707" Ref="R?"  Part="1" 
 AR Path="/5E710B5B/5DE0C707" Ref="R6"  Part="1" 
-F 0 "R6" V 875 825 50  0000 L CNN
-F 1 "10k" V 975 800 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 805 875 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf" H 875 875 50  0001 C CNN
-F 4 "Yageo" H 875 875 50  0001 C CNN "Mfr."
-F 5 "MFP-25BRD52-10K" H 875 875 50  0001 C CNN "Mfr. No."
-F 6 "603-MFP-25BRD52-10K" H 875 875 50  0001 C CNN "Mouser"
-	1    875  875 
+F 0 "R6" V 900 850 50  0000 L CNN
+F 1 "10k" V 1000 825 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 830 900 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf" H 900 900 50  0001 C CNN
+F 4 "Yageo" H 900 900 50  0001 C CNN "Mfr."
+F 5 "MFP-25BRD52-10K" H 900 900 50  0001 C CNN "Mfr. No."
+F 6 "603-MFP-25BRD52-10K" H 900 900 50  0001 C CNN "Mouser"
+F 7 "Mouser" H 900 900 50  0001 C CNN "Distributor"
+F 8 "603-MFP-25BRD52-10K" H 900 900 50  0001 C CNN "Order Number"
+	1    900  900 
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 5DE0C716
-P 875 700
+P 900 725
 AR Path="/5DE0C716" Ref="#PWR?"  Part="1" 
 AR Path="/5E9728CC/5DE0C716" Ref="#PWR?"  Part="1" 
 AR Path="/5EC67F7B/5DE0C716" Ref="#PWR?"  Part="1" 
-AR Path="/5E710B5B/5DE0C716" Ref="#PWR054"  Part="1" 
-F 0 "#PWR054" H 875 550 50  0001 C CNN
-F 1 "+5V" H 890 873 50  0000 C CNN
-F 2 "" H 875 700 50  0001 C CNN
-F 3 "" H 875 700 50  0001 C CNN
-	1    875  700 
+AR Path="/5E710B5B/5DE0C716" Ref="#PWR055"  Part="1" 
+F 0 "#PWR055" H 900 575 50  0001 C CNN
+F 1 "+5V" H 915 898 50  0000 C CNN
+F 2 "" H 900 725 50  0001 C CNN
+F 3 "" H 900 725 50  0001 C CNN
+	1    900  725 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	875  700  875  725 
+	900  725  900  750 
 $Comp
 L power:GND #PWR?
 U 1 1 5DE0C71D
-P 875 2275
+P 900 1925
 AR Path="/5DE0C71D" Ref="#PWR?"  Part="1" 
 AR Path="/5E9728CC/5DE0C71D" Ref="#PWR?"  Part="1" 
 AR Path="/5EC67F7B/5DE0C71D" Ref="#PWR?"  Part="1" 
-AR Path="/5E710B5B/5DE0C71D" Ref="#PWR055"  Part="1" 
-F 0 "#PWR055" H 875 2025 50  0001 C CNN
-F 1 "GND" H 880 2102 50  0000 C CNN
-F 2 "" H 875 2275 50  0001 C CNN
-F 3 "" H 875 2275 50  0001 C CNN
-	1    875  2275
+AR Path="/5E710B5B/5DE0C71D" Ref="#PWR056"  Part="1" 
+F 0 "#PWR056" H 900 1675 50  0001 C CNN
+F 1 "GND" H 905 1752 50  0000 C CNN
+F 2 "" H 900 1925 50  0001 C CNN
+F 3 "" H 900 1925 50  0001 C CNN
+	1    900  1925
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 5DE0C726
-P 1275 1650
+P 1300 1600
 AR Path="/5DE0C726" Ref="C?"  Part="1" 
 AR Path="/5E9728CC/5DE0C726" Ref="C?"  Part="1" 
 AR Path="/5EC67F7B/5DE0C726" Ref="C?"  Part="1" 
 AR Path="/5E710B5B/5DE0C726" Ref="C9"  Part="1" 
-F 0 "C9" H 1390 1696 50  0000 L CNN
-F 1 "100nF" H 1390 1605 50  0000 L CNN
-F 2 "Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm" H 1313 1500 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/400/eadmlcc_halogenfree_fa150_en-890480.pdf" H 1275 1650 50  0001 C CNN
-F 4 "TDK" H 1275 1650 50  0001 C CNN "Mfr."
-F 5 "FA18X8R1H104KRU06" H 1275 1650 50  0001 C CNN "Mfr. No."
-F 6 "810-FA18X8R1H104KRU6" H 1275 1650 50  0001 C CNN "Mouser"
-	1    1275 1650
+F 0 "C9" H 1415 1646 50  0000 L CNN
+F 1 "100nF" H 1415 1555 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm" H 1338 1450 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/400/eadmlcc_halogenfree_fa150_en-890480.pdf" H 1300 1600 50  0001 C CNN
+F 4 "TDK" H 1300 1600 50  0001 C CNN "Mfr."
+F 5 "FA18X8R1H104KRU06" H 1300 1600 50  0001 C CNN "Mfr. No."
+F 6 "810-FA18X8R1H104KRU6" H 1300 1600 50  0001 C CNN "Mouser"
+F 7 "Mouser" H 1300 1600 50  0001 C CNN "Distributor"
+F 8 "810-FA18X8R1H104KRU6" H 1300 1600 50  0001 C CNN "Order Number"
+	1    1300 1600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	875  1025 875  1225
+	900  1050 900  1250
 Wire Wire Line
-	1275 1225 1275 1500
-Connection ~ 875  1225
-Wire Wire Line
-	875  1225 875  1300
+	1300 1250 1300 1450
+Connection ~ 900  1250
 $Comp
 L power:GND #PWR?
 U 1 1 5DE0C731
-P 1275 2275
+P 1300 1925
 AR Path="/5DE0C731" Ref="#PWR?"  Part="1" 
 AR Path="/5E9728CC/5DE0C731" Ref="#PWR?"  Part="1" 
 AR Path="/5EC67F7B/5DE0C731" Ref="#PWR?"  Part="1" 
-AR Path="/5E710B5B/5DE0C731" Ref="#PWR056"  Part="1" 
-F 0 "#PWR056" H 1275 2025 50  0001 C CNN
-F 1 "GND" H 1280 2102 50  0000 C CNN
-F 2 "" H 1275 2275 50  0001 C CNN
-F 3 "" H 1275 2275 50  0001 C CNN
-	1    1275 2275
+AR Path="/5E710B5B/5DE0C731" Ref="#PWR057"  Part="1" 
+F 0 "#PWR057" H 1300 1675 50  0001 C CNN
+F 1 "GND" H 1305 1752 50  0000 C CNN
+F 2 "" H 1300 1925 50  0001 C CNN
+F 3 "" H 1300 1925 50  0001 C CNN
+	1    1300 1925
 	1    0    0    -1  
 $EndComp
-Connection ~ 1275 1225
+Connection ~ 1300 1250
 Wire Wire Line
-	875  2075 875  2275
+	900  1800 900  1925
 Wire Wire Line
-	1275 1800 1275 2275
+	1300 1750 1300 1925
 Wire Wire Line
-	1275 1225 1575 1225
-Text HLabel 1575 1225 2    50   Output ~ 0
+	1300 1250 1600 1250
+Text HLabel 1600 1250 2    50   Output ~ 0
 ~NMI
 Wire Wire Line
-	875  1225 1275 1225
+	900  1250 950  1250
 $Comp
 L Switch:SW_Push SW?
 U 1 1 5DE0C710
-P 875 1875
+P 900 1600
 AR Path="/5DE0C710" Ref="SW?"  Part="1" 
 AR Path="/5E9728CC/5DE0C710" Ref="SW?"  Part="1" 
 AR Path="/5EC67F7B/5DE0C710" Ref="SW?"  Part="1" 
 AR Path="/5E710B5B/5DE0C710" Ref="SW5"  Part="1" 
-F 0 "SW5" V 921 1827 50  0000 R CNN
-F 1 "NMI" V 830 1827 50  0000 R CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 875 2075 50  0001 C CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F1825910%7FC10%7Fpdf%7FEnglish%7FENG_CD_1825910_C10.pdf%7F2-1825910-7" H 875 2075 50  0001 C CNN
-F 4 "TE Connectivity / Alcoswitch" H 875 1875 50  0001 C CNN "Mfr."
-F 5 "2-1825910-7" H 875 1875 50  0001 C CNN "Mfr. No."
-F 6 "506-2-1825910-7" H 875 1875 50  0001 C CNN "Mouser"
-	1    875  1875
+F 0 "SW5" V 946 1552 50  0000 R CNN
+F 1 "NMI" V 855 1552 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 900 1800 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F1825910%7FC10%7Fpdf%7FEnglish%7FENG_CD_1825910_C10.pdf%7F2-1825910-7" H 900 1800 50  0001 C CNN
+F 4 "TE Connectivity / Alcoswitch" H 900 1600 50  0001 C CNN "Mfr."
+F 5 "2-1825910-7" H 900 1600 50  0001 C CNN "Mfr. No."
+F 6 "506-2-1825910-7" H 900 1600 50  0001 C CNN "Mouser"
+F 7 "Mouser" H 900 1600 50  0001 C CNN "Distributor"
+F 8 "506-2-1825910-7" H 900 1600 50  0001 C CNN "Order Number"
+	1    900  1600
 	0    -1   -1   0   
 $EndComp
-NoConn ~ 6875 3975
-NoConn ~ 6875 4075
-NoConn ~ 6875 4175
-Text Notes 1050 4225 0    50   ~ 0
-NOTE: The W65C22N does need external pull up resistors for the IRQB line, \nbecause of the open collector IRQ output.
+NoConn ~ 6750 3050
+NoConn ~ 6750 3150
+NoConn ~ 6750 3250
+Text Notes 7100 5950 0    50   ~ 0
+- The W65C22N does need external pull up resistors for the IRQB line, because \nof the open collector IRQ output.
 Wire Wire Line
-	5250 3025 5250 3175
+	5100 2100 5100 2250
 $Comp
 L power:+5V #PWR?
 U 1 1 5E7177C0
-P 5250 3025
+P 5100 2100
 AR Path="/5E7177C0" Ref="#PWR?"  Part="1" 
 AR Path="/5EB09E21/5E7177C0" Ref="#PWR?"  Part="1" 
-AR Path="/5E710B5B/5E7177C0" Ref="#PWR057"  Part="1" 
-F 0 "#PWR057" H 5250 2875 50  0001 C CNN
-F 1 "+5V" H 5265 3198 50  0000 C CNN
-F 2 "" H 5250 3025 50  0001 C CNN
-F 3 "" H 5250 3025 50  0001 C CNN
-	1    5250 3025
+AR Path="/5E710B5B/5E7177C0" Ref="#PWR058"  Part="1" 
+F 0 "#PWR058" H 5100 1950 50  0001 C CNN
+F 1 "+5V" H 5115 2273 50  0000 C CNN
+F 2 "" H 5100 2100 50  0001 C CNN
+F 3 "" H 5100 2100 50  0001 C CNN
+	1    5100 2100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Network08 RN?
 U 1 1 5E7177BA
-P 5650 3375
+P 5500 2450
 AR Path="/5E7177BA" Ref="RN?"  Part="1" 
 AR Path="/5EB09E21/5E7177BA" Ref="RN?"  Part="1" 
 AR Path="/5EC67F7B/5E7177BA" Ref="RN?"  Part="1" 
-AR Path="/5E710B5B/5E7177BA" Ref="RN2"  Part="1" 
-F 0 "RN2" H 6038 3421 50  0000 L CNN
-F 1 "4k7" H 6038 3330 50  0000 L CNN
-F 2 "Resistor_THT:R_Array_SIP9" V 6125 3375 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5650 3375 50  0001 C CNN
-F 4 "Bourns" H 5650 3375 50  0001 C CNN "Mfr."
-F 5 "4609M-101-472LF" H 5650 3375 50  0001 C CNN "Mfr. No."
-F 6 "652-4609M-1LF-4.7K " H 5650 3375 50  0001 C CNN "Mouser"
-	1    5650 3375
+AR Path="/5E710B5B/5E7177BA" Ref="RN3"  Part="1" 
+F 0 "RN3" H 5888 2496 50  0000 L CNN
+F 1 "4k7" H 5888 2405 50  0000 L CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 5975 2450 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5500 2450 50  0001 C CNN
+F 4 "Bourns" H 5500 2450 50  0001 C CNN "Mfr."
+F 5 "4609M-101-472LF" H 5500 2450 50  0001 C CNN "Mfr. No."
+F 6 "652-4609M-1LF-4.7K " H 5500 2450 50  0001 C CNN "Mouser"
+F 7 "Mouser" H 5500 2450 50  0001 C CNN "Distributor"
+F 8 "652-4609M-1LF-4.7K " H 5500 2450 50  0001 C CNN "Order Number"
+	1    5500 2450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5850 4375 5850 3575
+	5700 3450 5700 2650
 $Comp
 L Logic:74HC148 IC?
 U 1 1 5E7177D6
-P 6475 4275
+P 6350 3350
 AR Path="/5EB09E21/5E7177D6" Ref="IC?"  Part="1" 
 AR Path="/5E710B5B/5E7177D6" Ref="IC9"  Part="1" 
-F 0 "IC9" H 6225 4825 50  0000 C CNN
-F 1 "74HC148" H 6325 3725 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 6475 4275 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/sn74hc148.pdf" H 6475 4275 50  0001 C CNN
-F 4 "Texas Instruments" H 6475 4275 50  0001 C CNN "Mfr."
-F 5 "SN74HC148N" H 6475 4275 50  0001 C CNN "Mfr. No."
-F 6 "595-SN74HC148N" H 6475 4275 50  0001 C CNN "Mouser"
-	1    6475 4275
+F 0 "IC9" H 6100 3900 50  0000 C CNN
+F 1 "74HC148" H 6200 2800 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 6350 3350 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74hc148.pdf" H 6350 3350 50  0001 C CNN
+F 4 "Texas Instruments" H 6350 3350 50  0001 C CNN "Mfr."
+F 5 "SN74HC148N" H 6350 3350 50  0001 C CNN "Mfr. No."
+F 6 "595-SN74HC148N" H 6350 3350 50  0001 C CNN "Mouser"
+F 7 "Mouser" H 6350 3350 50  0001 C CNN "Distributor"
+F 8 "595-SN74HC148N" H 6350 3350 50  0001 C CNN "Order Number"
+	1    6350 3350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6875 4525 7525 4525
+	6750 3600 7400 3600
 $Comp
 L Device:R R?
 U 1 1 5E72F959
-P 875 1450
+P 1100 1250
 AR Path="/5E72F959" Ref="R?"  Part="1" 
 AR Path="/5E9728CC/5E72F959" Ref="R?"  Part="1" 
 AR Path="/5EC67F7B/5E72F959" Ref="R?"  Part="1" 
-AR Path="/5E710B5B/5E72F959" Ref="R13"  Part="1" 
-F 0 "R13" V 875 1375 50  0000 L CNN
-F 1 "1k" V 975 1400 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 805 1450 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf" H 875 1450 50  0001 C CNN
-F 4 "Yageo" H 875 1450 50  0001 C CNN "Mfr."
-F 5 "MFP-25BRD52-1K" H 875 1450 50  0001 C CNN "Mfr. No."
-F 6 "603-MFP-25BRD52-1K" H 875 1450 50  0001 C CNN "Mouser"
-	1    875  1450
-	1    0    0    -1  
+AR Path="/5E710B5B/5E72F959" Ref="R7"  Part="1" 
+F 0 "R7" V 1100 1175 50  0000 L CNN
+F 1 "1k" V 1200 1200 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1030 1250 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf" H 1100 1250 50  0001 C CNN
+F 4 "Yageo" H 1100 1250 50  0001 C CNN "Mfr."
+F 5 "MFP-25BRD52-1K" H 1100 1250 50  0001 C CNN "Mfr. No."
+F 6 "603-MFP-25BRD52-1K" H 1100 1250 50  0001 C CNN "Mouser"
+F 7 "Mouser" H 1100 1250 50  0001 C CNN "Distributor"
+F 8 "603-MFP-25BRD52-1K" H 1100 1250 50  0001 C CNN "Order Number"
+	1    1100 1250
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	875  1600 875  1675
+	1250 1250 1300 1250
+Wire Wire Line
+	900  1250 900  1400
+Wire Notes Line
+	7000 6450 11150 6450
+Wire Notes Line
+	11150 6450 11150 5550
+Wire Notes Line
+	11125 5550 6975 5550
+Wire Notes Line
+	6975 5550 6975 6450
+Text Notes 7050 5750 0    100  ~ 20
+Info
 $EndSCHEMATC

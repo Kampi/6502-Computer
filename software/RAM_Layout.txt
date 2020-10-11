@@ -1,3 +1,0 @@
-Address					Data
-0x0000					LED output
-0x0001					PS/2 data

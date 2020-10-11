@@ -1,18 +1,17 @@
 EESchema Schematic File Version 4
-LIBS:Mainboard-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 7
-Title "Mainboard"
-Date "2020-01-17"
+Title "Power Supply & Reset"
+Date "2020-10-11"
 Rev "1.0"
 Comp "https://www.kampis-elektroecke.de"
-Comment1 "Author: Daniel Kampert"
+Comment1 ""
 Comment2 ""
 Comment3 ""
-Comment4 "Power Supply, Reset & Clock"
+Comment4 "Author: Ing. Daniel Kampert"
 $EndDescr
 Wire Wire Line
 	2375 4600 2375 4650
@@ -21,8 +20,8 @@ L power:GND #PWR?
 U 1 1 5E234E9F
 P 2375 4650
 AR Path="/5E234E9F" Ref="#PWR?"  Part="1" 
-AR Path="/5E9728CC/5E234E9F" Ref="#PWR069"  Part="1" 
-F 0 "#PWR069" H 2375 4400 50  0001 C CNN
+AR Path="/5E9728CC/5E234E9F" Ref="#PWR070"  Part="1" 
+F 0 "#PWR070" H 2375 4400 50  0001 C CNN
 F 1 "GND" H 2380 4477 50  0000 C CNN
 F 2 "" H 2375 4650 50  0001 C CNN
 F 3 "" H 2375 4650 50  0001 C CNN
@@ -30,130 +29,136 @@ F 3 "" H 2375 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 X6
+L Connector_Generic:Conn_01x01 X7
 U 1 1 5E232D80
 P 2375 4400
-F 0 "X6" V 2339 4312 50  0000 R CNN
+F 0 "X7" V 2339 4312 50  0000 R CNN
 F 1 "GND" V 2248 4312 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 2375 4400 50  0001 C CNN
 F 3 "https://www.mouser.de/datasheet/2/418/NG_CD_103327_T_baseFilename-749242.pdf" H 2375 4400 50  0001 C CNN
 F 4 "TE Connectivity / AMP" H 2375 4400 50  0001 C CNN "Mfr."
 F 5 "4-103327-3" H 2375 4400 50  0001 C CNN "Mfr. No."
 F 6 "571-4-103327-3" H 2375 4400 50  0001 C CNN "Mouser"
+F 7 "Mouser" H 2375 4400 50  0001 C CNN "Distributor"
+F 8 "571-4-103327-3" H 2375 4400 50  0001 C CNN "Order Number"
 	1    2375 4400
 	0    -1   -1   0   
 $EndComp
-Text HLabel 3775 5950 2    50   Output ~ 0
+Text HLabel 3750 5975 2    50   Output ~ 0
 ~Reset_FT232
 Wire Wire Line
-	3475 5950 3475 6275
-Connection ~ 3475 5950
+	3450 5975 3450 6100
+Connection ~ 3450 5975
 Wire Wire Line
-	2750 5950 3475 5950
+	2725 5975 2925 5975
 $Comp
 L Switch:SW_Push SW?
 U 1 1 5E27BBF0
-P 2750 6575
+P 2725 6250
 AR Path="/5E27BBF0" Ref="SW?"  Part="1" 
 AR Path="/5E9728CC/5E27BBF0" Ref="SW6"  Part="1" 
 AR Path="/5E9064F2/5E27BBF0" Ref="SW?"  Part="1" 
-F 0 "SW6" V 2796 6527 50  0000 R CNN
-F 1 "FT232 RESET" V 2705 6527 50  0000 R CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 2750 6775 50  0001 C CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F1825910%7FC10%7Fpdf%7FEnglish%7FENG_CD_1825910_C10.pdf%7F2-1825910-7" H 2750 6775 50  0001 C CNN
-F 4 "TE Connectivity / Alcoswitch" H 2750 6575 50  0001 C CNN "Mfr."
-F 5 "2-1825910-7" H 2750 6575 50  0001 C CNN "Mfr. No."
-F 6 "506-2-1825910-7" H 2750 6575 50  0001 C CNN "Mouser"
-	1    2750 6575
+F 0 "SW6" V 2771 6202 50  0000 R CNN
+F 1 "FT232 RESET" V 2680 6202 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 2725 6450 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F1825910%7FC10%7Fpdf%7FEnglish%7FENG_CD_1825910_C10.pdf%7F2-1825910-7" H 2725 6450 50  0001 C CNN
+F 4 "TE Connectivity / Alcoswitch" H 2725 6250 50  0001 C CNN "Mfr."
+F 5 "2-1825910-7" H 2725 6250 50  0001 C CNN "Mfr. No."
+F 6 "506-2-1825910-7" H 2725 6250 50  0001 C CNN "Mouser"
+F 7 "Mouser" H 2725 6250 50  0001 C CNN "Distributor"
+F 8 "506-2-1825910-7" H 2725 6250 50  0001 C CNN "Order Number"
+	1    2725 6250
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3475 6575 3475 6975
+	3450 6400 3450 6500
 $Comp
 L power:GND #PWR?
 U 1 1 5E27BBE6
-P 3475 6975
+P 3450 6500
 AR Path="/5E27BBE6" Ref="#PWR?"  Part="1" 
-AR Path="/5E9728CC/5E27BBE6" Ref="#PWR075"  Part="1" 
+AR Path="/5E9728CC/5E27BBE6" Ref="#PWR076"  Part="1" 
 AR Path="/5E9064F2/5E27BBE6" Ref="#PWR?"  Part="1" 
-F 0 "#PWR075" H 3475 6725 50  0001 C CNN
-F 1 "GND" H 3480 6802 50  0000 C CNN
-F 2 "" H 3475 6975 50  0001 C CNN
-F 3 "" H 3475 6975 50  0001 C CNN
-	1    3475 6975
+F 0 "#PWR076" H 3450 6250 50  0001 C CNN
+F 1 "GND" H 3455 6327 50  0000 C CNN
+F 2 "" H 3450 6500 50  0001 C CNN
+F 3 "" H 3450 6500 50  0001 C CNN
+	1    3450 6500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 5E27BBE0
-P 3475 6425
+P 3450 6250
 AR Path="/5E27BBE0" Ref="C?"  Part="1" 
 AR Path="/5E9728CC/5E27BBE0" Ref="C14"  Part="1" 
 AR Path="/5E9064F2/5E27BBE0" Ref="C?"  Part="1" 
-F 0 "C14" H 3590 6471 50  0000 L CNN
-F 1 "100nF" H 3590 6380 50  0000 L CNN
-F 2 "Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm" H 3513 6275 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/400/eadmlcc_halogenfree_fa150_en-890480.pdf" H 3475 6425 50  0001 C CNN
-F 4 "TDK" H 3475 6425 50  0001 C CNN "Mfr."
-F 5 "FA18X8R1H104KRU06" H 3475 6425 50  0001 C CNN "Mfr. No."
-F 6 "810-FA18X8R1H104KRU6" H 3475 6425 50  0001 C CNN "Mouser"
-	1    3475 6425
+F 0 "C14" H 3565 6296 50  0000 L CNN
+F 1 "100nF" H 3565 6205 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm" H 3488 6100 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/400/eadmlcc_halogenfree_fa150_en-890480.pdf" H 3450 6250 50  0001 C CNN
+F 4 "TDK" H 3450 6250 50  0001 C CNN "Mfr."
+F 5 "FA18X8R1H104KRU06" H 3450 6250 50  0001 C CNN "Mfr. No."
+F 6 "810-FA18X8R1H104KRU6" H 3450 6250 50  0001 C CNN "Mouser"
+F 7 "Mouser" H 3450 6250 50  0001 C CNN "Distributor"
+F 8 "810-FA18X8R1H104KRU6" H 3450 6250 50  0001 C CNN "Order Number"
+	1    3450 6250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3475 5950 3775 5950
+	3450 5975 3750 5975
 Wire Wire Line
-	2750 6775 2750 6975
+	2725 6450 2725 6500
+Connection ~ 2725 5975
 Wire Wire Line
-	2750 5950 2750 6025
-Connection ~ 2750 5950
-Wire Wire Line
-	2750 5875 2750 5950
+	2725 5900 2725 5975
 $Comp
 L power:GND #PWR?
 U 1 1 5E27BBD2
-P 2750 6975
+P 2725 6500
 AR Path="/5E27BBD2" Ref="#PWR?"  Part="1" 
-AR Path="/5E9728CC/5E27BBD2" Ref="#PWR072"  Part="1" 
+AR Path="/5E9728CC/5E27BBD2" Ref="#PWR073"  Part="1" 
 AR Path="/5E9064F2/5E27BBD2" Ref="#PWR?"  Part="1" 
-F 0 "#PWR072" H 2750 6725 50  0001 C CNN
-F 1 "GND" H 2755 6802 50  0000 C CNN
-F 2 "" H 2750 6975 50  0001 C CNN
-F 3 "" H 2750 6975 50  0001 C CNN
-	1    2750 6975
+F 0 "#PWR073" H 2725 6250 50  0001 C CNN
+F 1 "GND" H 2730 6327 50  0000 C CNN
+F 2 "" H 2725 6500 50  0001 C CNN
+F 3 "" H 2725 6500 50  0001 C CNN
+	1    2725 6500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2750 5550 2750 5575
+	2725 5575 2725 5600
 $Comp
 L power:+5V #PWR?
 U 1 1 5E27BBCB
-P 2750 5550
+P 2725 5575
 AR Path="/5E27BBCB" Ref="#PWR?"  Part="1" 
-AR Path="/5E9728CC/5E27BBCB" Ref="#PWR071"  Part="1" 
+AR Path="/5E9728CC/5E27BBCB" Ref="#PWR072"  Part="1" 
 AR Path="/5E9064F2/5E27BBCB" Ref="#PWR?"  Part="1" 
-F 0 "#PWR071" H 2750 5400 50  0001 C CNN
-F 1 "+5V" H 2765 5723 50  0000 C CNN
-F 2 "" H 2750 5550 50  0001 C CNN
-F 3 "" H 2750 5550 50  0001 C CNN
-	1    2750 5550
+F 0 "#PWR072" H 2725 5425 50  0001 C CNN
+F 1 "+5V" H 2740 5748 50  0000 C CNN
+F 2 "" H 2725 5575 50  0001 C CNN
+F 3 "" H 2725 5575 50  0001 C CNN
+	1    2725 5575
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 5E27BBC5
-P 2750 5725
+P 2725 5750
 AR Path="/5E27BBC5" Ref="R?"  Part="1" 
-AR Path="/5E9728CC/5E27BBC5" Ref="R9"  Part="1" 
+AR Path="/5E9728CC/5E27BBC5" Ref="R10"  Part="1" 
 AR Path="/5E9064F2/5E27BBC5" Ref="R?"  Part="1" 
-F 0 "R9" V 2750 5675 50  0000 L CNN
-F 1 "10k" V 2850 5650 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2680 5725 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf" H 2750 5725 50  0001 C CNN
-F 4 "Yageo" H 2750 5725 50  0001 C CNN "Mfr."
-F 5 "MFP-25BRD52-10K" H 2750 5725 50  0001 C CNN "Mfr. No."
-F 6 "603-MFP-25BRD52-10K" H 2750 5725 50  0001 C CNN "Mouser"
-	1    2750 5725
+F 0 "R10" V 2725 5700 50  0000 L CNN
+F 1 "10k" V 2825 5675 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2655 5750 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf" H 2725 5750 50  0001 C CNN
+F 4 "Yageo" H 2725 5750 50  0001 C CNN "Mfr."
+F 5 "MFP-25BRD52-10K" H 2725 5750 50  0001 C CNN "Mfr. No."
+F 6 "603-MFP-25BRD52-10K" H 2725 5750 50  0001 C CNN "Mouser"
+F 7 "Mouser" H 2725 5750 50  0001 C CNN "Distributor"
+F 8 "603-MFP-25BRD52-10K" H 2725 5750 50  0001 C CNN "Order Number"
+	1    2725 5750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -174,8 +179,8 @@ L power:+5V #PWR?
 U 1 1 5DC3430D
 P 8050 3050
 AR Path="/5DC3430D" Ref="#PWR?"  Part="1" 
-AR Path="/5E9728CC/5DC3430D" Ref="#PWR087"  Part="1" 
-F 0 "#PWR087" H 8050 2900 50  0001 C CNN
+AR Path="/5E9728CC/5DC3430D" Ref="#PWR088"  Part="1" 
+F 0 "#PWR088" H 8050 2900 50  0001 C CNN
 F 1 "+5V" H 8065 3223 50  0000 C CNN
 F 2 "" H 8050 3050 50  0001 C CNN
 F 3 "" H 8050 3050 50  0001 C CNN
@@ -187,28 +192,32 @@ L Device:R R?
 U 1 1 5DC34307
 P 8050 3600
 AR Path="/5DC34307" Ref="R?"  Part="1" 
-AR Path="/5E9728CC/5DC34307" Ref="R12"  Part="1" 
-F 0 "R12" V 8050 3525 50  0000 L CNN
+AR Path="/5E9728CC/5DC34307" Ref="R15"  Part="1" 
+F 0 "R15" V 8050 3525 50  0000 L CNN
 F 1 "10k" V 8150 3525 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7980 3600 50  0001 C CNN
 F 3 "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf" H 8050 3600 50  0001 C CNN
 F 4 "Yageo" H 8050 3600 50  0001 C CNN "Mfr."
 F 5 "MFP-25BRD52-10K" H 8050 3600 50  0001 C CNN "Mfr. No."
 F 6 "603-MFP-25BRD52-10K" H 8050 3600 50  0001 C CNN "Mouser"
+F 7 "Mouser" H 8050 3600 50  0001 C CNN "Distributor"
+F 8 "603-MFP-25BRD52-10K" H 8050 3600 50  0001 C CNN "Order Number"
 	1    8050 3600
 	1    0    0    -1  
 $EndComp
 $Comp
-L Wuerth:ConBarrel X7
+L Wuerth:ConBarrel X8
 U 1 1 5DA7C8DA
 P 2400 3850
-F 0 "X7" H 2457 4083 50  0000 C CNN
+F 0 "X8" H 2457 4083 50  0000 C CNN
 F 1 "DC IN" H 2400 3650 50  0000 C CNN
 F 2 "Connector_Custom:BarrelJack_Wuerth_6941xx301002" H 2450 3810 50  0001 C CNN
 F 3 "https://katalog.we-online.de/em/datasheet/6941xx301002.pdf" H 2450 3810 50  0001 C CNN
 F 4 "Wurth Elektronik" H 2400 3850 50  0001 C CNN "Mfr."
 F 5 "694106301002" H 2400 3850 50  0001 C CNN "Mfr. No."
 F 6 "710-694106301002" H 2400 3850 50  0001 C CNN "Mouser"
+F 7 "Mouser" H 2400 3850 50  0001 C CNN "Distributor"
+F 8 "710-694106301002" H 2400 3850 50  0001 C CNN "Order Number"
 	1    2400 3850
 	1    0    0    -1  
 $EndComp
@@ -219,8 +228,8 @@ L power:GND #PWR?
 U 1 1 5D9EC35B
 P 4750 4650
 AR Path="/5D9EC35B" Ref="#PWR?"  Part="1" 
-AR Path="/5E9728CC/5D9EC35B" Ref="#PWR079"  Part="1" 
-F 0 "#PWR079" H 4750 4400 50  0001 C CNN
+AR Path="/5E9728CC/5D9EC35B" Ref="#PWR080"  Part="1" 
+F 0 "#PWR080" H 4750 4400 50  0001 C CNN
 F 1 "GND" H 4755 4477 50  0000 C CNN
 F 2 "" H 4750 4650 50  0001 C CNN
 F 3 "" H 4750 4650 50  0001 C CNN
@@ -234,14 +243,16 @@ L Device:R R?
 U 1 1 5D9EA844
 P 4750 4000
 AR Path="/5D9EA844" Ref="R?"  Part="1" 
-AR Path="/5E9728CC/5D9EA844" Ref="R10"  Part="1" 
-F 0 "R10" V 4750 3925 50  0000 L CNN
+AR Path="/5E9728CC/5D9EA844" Ref="R12"  Part="1" 
+F 0 "R12" V 4750 3925 50  0000 L CNN
 F 1 "470" V 4850 3925 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4680 4000 50  0001 C CNN
 F 3 "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf" H 4750 4000 50  0001 C CNN
 F 4 "Yageo" H 4750 4000 50  0001 C CNN "Mfr."
 F 5 "MFP-25BRD52-470R" H 4750 4000 50  0001 C CNN "Mfr. No."
 F 6 "603-MFP-25BRD52-470R" H 4750 4000 50  0001 C CNN "Mouser"
+F 7 "Mouser" H 4750 4000 50  0001 C CNN "Distributor"
+F 8 "603-MFP-25BRD52-470R" H 4750 4000 50  0001 C CNN "Order Number"
 	1    4750 4000
 	1    0    0    -1  
 $EndComp
@@ -260,6 +271,8 @@ F 3 "https://www.mouser.de/datasheet/2/90/C503B_RAS_RAN_AAS_AAN_RBS_RBN_ABS_ABN_
 F 4 "Cree Inc." H 4750 4350 50  0001 C CNN "Mfr."
 F 5 "C503B-RAN-CZ0C0AA1" H 4750 4350 50  0001 C CNN "Mfr. No."
 F 6 "941-C503BRANCZ0C0AA1" H 4750 4350 50  0001 C CNN "Mouser"
+F 7 "Mouser" H 4750 4350 50  0001 C CNN "Distributor"
+F 8 "941-C503BRANCZ0C0AA1" H 4750 4350 50  0001 C CNN "Order Number"
 	1    4750 4350
 	0    -1   -1   0   
 $EndComp
@@ -281,6 +294,8 @@ F 3 "http://www.ti.com.cn/cn/lit/ds/symlink/tl7705b.pdf" H 7300 4000 50  0001 C 
 F 4 "Texas Instruments" H 7300 4000 50  0001 C CNN "Mfr."
 F 5 "TL7702ACP" H 7300 4000 50  0001 C CNN "Mfr. No."
 F 6 "595-TL7702ACP" H 7300 4000 50  0001 C CNN "Mouser"
+F 7 "Mouser" H 7300 4000 50  0001 C CNN "Distributor"
+F 8 "595-TL7702ACP" H 7300 4000 50  0001 C CNN "Order Number"
 	1    7300 4000
 	1    0    0    -1  
 $EndComp
@@ -306,8 +321,8 @@ L power:GND #PWR?
 U 1 1 5E9AA50B
 P 7900 4650
 AR Path="/5E9AA50B" Ref="#PWR?"  Part="1" 
-AR Path="/5E9728CC/5E9AA50B" Ref="#PWR086"  Part="1" 
-F 0 "#PWR086" H 7900 4400 50  0001 C CNN
+AR Path="/5E9728CC/5E9AA50B" Ref="#PWR087"  Part="1" 
+F 0 "#PWR087" H 7900 4400 50  0001 C CNN
 F 1 "GND" H 7905 4477 50  0000 C CNN
 F 2 "" H 7900 4650 50  0001 C CNN
 F 3 "" H 7900 4650 50  0001 C CNN
@@ -327,6 +342,8 @@ F 3 "https://www.mouser.de/datasheet/2/400/eadmlcc_halogenfree_fa150_en-890480.p
 F 4 "TDK" H 7900 4400 50  0001 C CNN "Mfr."
 F 5 "FA18X8R1H104KRU06" H 7900 4400 50  0001 C CNN "Mfr. No."
 F 6 "810-FA18X8R1H104KRU6" H 7900 4400 50  0001 C CNN "Mouser"
+F 7 "Mouser" H 7900 4400 50  0001 C CNN "Distributor"
+F 8 "810-FA18X8R1H104KRU6" H 7900 4400 50  0001 C CNN "Order Number"
 	1    7900 4400
 	1    0    0    -1  
 $EndComp
@@ -341,8 +358,8 @@ L power:GND #PWR?
 U 1 1 5E9AA4FC
 P 6550 4650
 AR Path="/5E9AA4FC" Ref="#PWR?"  Part="1" 
-AR Path="/5E9728CC/5E9AA4FC" Ref="#PWR083"  Part="1" 
-F 0 "#PWR083" H 6550 4400 50  0001 C CNN
+AR Path="/5E9728CC/5E9AA4FC" Ref="#PWR084"  Part="1" 
+F 0 "#PWR084" H 6550 4400 50  0001 C CNN
 F 1 "GND" H 6555 4477 50  0000 C CNN
 F 2 "" H 6550 4650 50  0001 C CNN
 F 3 "" H 6550 4650 50  0001 C CNN
@@ -362,6 +379,8 @@ F 3 "https://www.mouser.de/datasheet/2/400/eadmlcc_halogenfree_fa150_en-890480.p
 F 4 "TDK" H 6550 4400 50  0001 C CNN "Mfr."
 F 5 "FA18X8R1H104KRU06" H 6550 4400 50  0001 C CNN "Mfr. No."
 F 6 "810-FA18X8R1H104KRU6" H 6550 4400 50  0001 C CNN "Mouser"
+F 7 "Mouser" H 6550 4400 50  0001 C CNN "Distributor"
+F 8 "810-FA18X8R1H104KRU6" H 6550 4400 50  0001 C CNN "Order Number"
 	1    6550 4400
 	1    0    0    -1  
 $EndComp
@@ -374,8 +393,8 @@ L power:GND #PWR?
 U 1 1 5E9AA4EE
 P 7300 4650
 AR Path="/5E9AA4EE" Ref="#PWR?"  Part="1" 
-AR Path="/5E9728CC/5E9AA4EE" Ref="#PWR085"  Part="1" 
-F 0 "#PWR085" H 7300 4400 50  0001 C CNN
+AR Path="/5E9728CC/5E9AA4EE" Ref="#PWR086"  Part="1" 
+F 0 "#PWR086" H 7300 4400 50  0001 C CNN
 F 1 "GND" H 7305 4477 50  0000 C CNN
 F 2 "" H 7300 4650 50  0001 C CNN
 F 3 "" H 7300 4650 50  0001 C CNN
@@ -387,8 +406,8 @@ L power:+VDC #PWR?
 U 1 1 5E9AA4E8
 P 7300 3150
 AR Path="/5E9AA4E8" Ref="#PWR?"  Part="1" 
-AR Path="/5E9728CC/5E9AA4E8" Ref="#PWR084"  Part="1" 
-F 0 "#PWR084" H 7300 3050 50  0001 C CNN
+AR Path="/5E9728CC/5E9AA4E8" Ref="#PWR085"  Part="1" 
+F 0 "#PWR085" H 7300 3050 50  0001 C CNN
 F 1 "+VDC" H 7300 3425 50  0000 C CNN
 F 2 "" H 7300 3150 50  0001 C CNN
 F 3 "" H 7300 3150 50  0001 C CNN
@@ -402,8 +421,8 @@ L power:+VDC #PWR?
 U 1 1 5E9AA4E1
 P 3250 3150
 AR Path="/5E9AA4E1" Ref="#PWR?"  Part="1" 
-AR Path="/5E9728CC/5E9AA4E1" Ref="#PWR073"  Part="1" 
-F 0 "#PWR073" H 3250 3050 50  0001 C CNN
+AR Path="/5E9728CC/5E9AA4E1" Ref="#PWR074"  Part="1" 
+F 0 "#PWR074" H 3250 3050 50  0001 C CNN
 F 1 "+VDC" H 3250 3425 50  0000 C CNN
 F 2 "" H 3250 3150 50  0001 C CNN
 F 3 "" H 3250 3150 50  0001 C CNN
@@ -423,6 +442,8 @@ F 3 "https://www.recom-power.com/pdf/Innoline/R-78xx-0.1.pdf" H 3750 3750 50  00
 F 4 "919-R-785.0-1.0" H 3750 3750 50  0001 C CNN "Mouser"
 F 5 "R-785.0-1.0" H 3750 3750 50  0001 C CNN "Mfr. No."
 F 6 "Recom" H 3750 3750 50  0001 C CNN "Mfr."
+F 7 "Mouser" H 3750 3750 50  0001 C CNN "Distributor"
+F 8 "919-R-785.0-1.0" H 3750 3750 50  0001 C CNN "Order Number"
 	1    3750 3750
 	1    0    0    -1  
 $EndComp
@@ -435,8 +456,8 @@ L power:GND #PWR?
 U 1 1 5E9AA4CF
 P 2750 4650
 AR Path="/5E9AA4CF" Ref="#PWR?"  Part="1" 
-AR Path="/5E9728CC/5E9AA4CF" Ref="#PWR070"  Part="1" 
-F 0 "#PWR070" H 2750 4400 50  0001 C CNN
+AR Path="/5E9728CC/5E9AA4CF" Ref="#PWR071"  Part="1" 
+F 0 "#PWR071" H 2750 4400 50  0001 C CNN
 F 1 "GND" H 2755 4477 50  0000 C CNN
 F 2 "" H 2750 4650 50  0001 C CNN
 F 3 "" H 2750 4650 50  0001 C CNN
@@ -450,8 +471,8 @@ L power:GND #PWR?
 U 1 1 5E9AA4BF
 P 3750 4650
 AR Path="/5E9AA4BF" Ref="#PWR?"  Part="1" 
-AR Path="/5E9728CC/5E9AA4BF" Ref="#PWR076"  Part="1" 
-F 0 "#PWR076" H 3750 4400 50  0001 C CNN
+AR Path="/5E9728CC/5E9AA4BF" Ref="#PWR077"  Part="1" 
+F 0 "#PWR077" H 3750 4400 50  0001 C CNN
 F 1 "GND" H 3755 4477 50  0000 C CNN
 F 2 "" H 3750 4650 50  0001 C CNN
 F 3 "" H 3750 4650 50  0001 C CNN
@@ -478,6 +499,8 @@ F 3 "https://www.mouser.de/datasheet/2/308/1N4148-1118184.pdf" H 3000 3750 50  0
 F 4 "ON Semiconductor / Fairchild" H 3000 3750 50  0001 C CNN "Mfr."
 F 5 "1N4148" H 3000 3750 50  0001 C CNN "Mfr. No."
 F 6 "512-1N4148" H 3000 3750 50  0001 C CNN "Mouser"
+F 7 "Mouser" H 3000 3750 50  0001 C CNN "Distributor"
+F 8 "512-1N4148" H 3000 3750 50  0001 C CNN "Order Number"
 	1    3000 3750
 	-1   0    0    1   
 $EndComp
@@ -495,8 +518,8 @@ L power:+5V #PWR?
 U 1 1 5E9AA4A9
 P 4200 3050
 AR Path="/5E9AA4A9" Ref="#PWR?"  Part="1" 
-AR Path="/5E9728CC/5E9AA4A9" Ref="#PWR077"  Part="1" 
-F 0 "#PWR077" H 4200 2900 50  0001 C CNN
+AR Path="/5E9728CC/5E9AA4A9" Ref="#PWR078"  Part="1" 
+F 0 "#PWR078" H 4200 2900 50  0001 C CNN
 F 1 "+5V" H 4215 3223 50  0000 C CNN
 F 2 "" H 4200 3050 50  0001 C CNN
 F 3 "" H 4200 3050 50  0001 C CNN
@@ -508,8 +531,8 @@ L power:GND #PWR?
 U 1 1 5E9AA4A3
 P 4200 4650
 AR Path="/5E9AA4A3" Ref="#PWR?"  Part="1" 
-AR Path="/5E9728CC/5E9AA4A3" Ref="#PWR078"  Part="1" 
-F 0 "#PWR078" H 4200 4400 50  0001 C CNN
+AR Path="/5E9728CC/5E9AA4A3" Ref="#PWR079"  Part="1" 
+F 0 "#PWR079" H 4200 4400 50  0001 C CNN
 F 1 "GND" H 4205 4477 50  0000 C CNN
 F 2 "" H 4200 4650 50  0001 C CNN
 F 3 "" H 4200 4650 50  0001 C CNN
@@ -521,8 +544,8 @@ L power:GND #PWR?
 U 1 1 5E9AA49D
 P 3250 4650
 AR Path="/5E9AA49D" Ref="#PWR?"  Part="1" 
-AR Path="/5E9728CC/5E9AA49D" Ref="#PWR074"  Part="1" 
-F 0 "#PWR074" H 3250 4400 50  0001 C CNN
+AR Path="/5E9728CC/5E9AA49D" Ref="#PWR075"  Part="1" 
+F 0 "#PWR075" H 3250 4400 50  0001 C CNN
 F 1 "GND" H 3255 4477 50  0000 C CNN
 F 2 "" H 3250 4650 50  0001 C CNN
 F 3 "" H 3250 4650 50  0001 C CNN
@@ -542,6 +565,8 @@ F 3 "https://www.mouser.de/datasheet/2/400/eadmlcc_halogenfree_fa150_en-890480.p
 F 4 "TDK" H 4200 4200 50  0001 C CNN "Mfr."
 F 5 "FA18X8R1H104KRU06" H 4200 4200 50  0001 C CNN "Mfr. No."
 F 6 "810-FA18X8R1H104KRU6" H 4200 4200 50  0001 C CNN "Mouser"
+F 7 "Mouser" H 4200 4200 50  0001 C CNN "Distributor"
+F 8 "810-FA18X8R1H104KRU6" H 4200 4200 50  0001 C CNN "Order Number"
 	1    4200 4200
 	1    0    0    -1  
 $EndComp
@@ -558,20 +583,20 @@ F 3 "https://www.mouser.de/datasheet/2/40/SR-Series-1016911.pdf" H 3250 4200 50 
 F 4 "AVX" H 3250 4200 50  0001 C CNN "Mfr."
 F 5 "SR205E334MARTR1" H 3250 4200 50  0001 C CNN "Mfr. No."
 F 6 "581-SR205E334MARTR1" H 3250 4200 50  0001 C CNN "Mouser"
+F 7 "Mouser" H 3250 4200 50  0001 C CNN "Distributor"
+F 8 "581-SR205E334MARTR1" H 3250 4200 50  0001 C CNN "Order Number"
 	1    3250 4200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	6100 4550 6100 4650
-Wire Wire Line
-	5650 4450 5650 4650
 $Comp
 L power:GND #PWR?
 U 1 1 5E9AA487
 P 6100 4650
 AR Path="/5E9AA487" Ref="#PWR?"  Part="1" 
-AR Path="/5E9728CC/5E9AA487" Ref="#PWR082"  Part="1" 
-F 0 "#PWR082" H 6100 4400 50  0001 C CNN
+AR Path="/5E9728CC/5E9AA487" Ref="#PWR083"  Part="1" 
+F 0 "#PWR083" H 6100 4400 50  0001 C CNN
 F 1 "GND" H 6105 4477 50  0000 C CNN
 F 2 "" H 6100 4650 50  0001 C CNN
 F 3 "" H 6100 4650 50  0001 C CNN
@@ -593,6 +618,8 @@ F 3 "https://www.mouser.de/datasheet/2/400/eadmlcc_halogenfree_fa150_en-890480.p
 F 4 "TDK" H 6100 4400 50  0001 C CNN "Mfr."
 F 5 "FA18X8R1H104KRU06" H 6100 4400 50  0001 C CNN "Mfr. No."
 F 6 "810-FA18X8R1H104KRU6" H 6100 4400 50  0001 C CNN "Mouser"
+F 7 "Mouser" H 6100 4400 50  0001 C CNN "Distributor"
+F 8 "810-FA18X8R1H104KRU6" H 6100 4400 50  0001 C CNN "Order Number"
 	1    6100 4400
 	1    0    0    -1  
 $EndComp
@@ -601,8 +628,8 @@ L power:GND #PWR?
 U 1 1 5E9AA476
 P 5650 4650
 AR Path="/5E9AA476" Ref="#PWR?"  Part="1" 
-AR Path="/5E9728CC/5E9AA476" Ref="#PWR081"  Part="1" 
-F 0 "#PWR081" H 5650 4400 50  0001 C CNN
+AR Path="/5E9728CC/5E9AA476" Ref="#PWR082"  Part="1" 
+F 0 "#PWR082" H 5650 4400 50  0001 C CNN
 F 1 "GND" H 5655 4477 50  0000 C CNN
 F 2 "" H 5650 4650 50  0001 C CNN
 F 3 "" H 5650 4650 50  0001 C CNN
@@ -616,14 +643,62 @@ L power:+5V #PWR?
 U 1 1 5E9AA46F
 P 5650 3050
 AR Path="/5E9AA46F" Ref="#PWR?"  Part="1" 
-AR Path="/5E9728CC/5E9AA46F" Ref="#PWR080"  Part="1" 
-F 0 "#PWR080" H 5650 2900 50  0001 C CNN
+AR Path="/5E9728CC/5E9AA46F" Ref="#PWR081"  Part="1" 
+F 0 "#PWR081" H 5650 2900 50  0001 C CNN
 F 1 "+5V" H 5665 3223 50  0000 C CNN
 F 2 "" H 5650 3050 50  0001 C CNN
 F 3 "" H 5650 3050 50  0001 C CNN
 	1    5650 3050
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R R?
+U 1 1 5E9AA460
+P 5650 3300
+AR Path="/5E9AA460" Ref="R?"  Part="1" 
+AR Path="/5E9728CC/5E9AA460" Ref="R13"  Part="1" 
+F 0 "R13" V 5650 3225 50  0000 L CNN
+F 1 "10k" V 5750 3225 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5580 3300 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf" H 5650 3300 50  0001 C CNN
+F 4 "Yageo" H 5650 3300 50  0001 C CNN "Mfr."
+F 5 "MFP-25BRD52-10K" H 5650 3300 50  0001 C CNN "Mfr. No."
+F 6 "603-MFP-25BRD52-10K" H 5650 3300 50  0001 C CNN "Mouser"
+F 7 "Mouser" H 5650 3300 50  0001 C CNN "Distributor"
+F 8 "603-MFP-25BRD52-10K" H 5650 3300 50  0001 C CNN "Order Number"
+	1    5650 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3450 5650 3600
+Wire Wire Line
+	6100 3600 6100 4000
+Connection ~ 5650 3600
+Connection ~ 6100 4000
+$Comp
+L Device:R R?
+U 1 1 5E74121A
+P 3075 5975
+AR Path="/5E74121A" Ref="R?"  Part="1" 
+AR Path="/5E9728CC/5E74121A" Ref="R11"  Part="1" 
+F 0 "R11" V 3075 5900 50  0000 L CNN
+F 1 "10k" V 3175 5900 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3005 5975 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf" H 3075 5975 50  0001 C CNN
+F 4 "Yageo" H 3075 5975 50  0001 C CNN "Mfr."
+F 5 "MFP-25BRD52-10K" H 3075 5975 50  0001 C CNN "Mfr. No."
+F 6 "603-MFP-25BRD52-10K" H 3075 5975 50  0001 C CNN "Mouser"
+F 7 "Mouser" H 3075 5975 50  0001 C CNN "Distributor"
+F 8 "603-MFP-25BRD52-10K" H 3075 5975 50  0001 C CNN "Order Number"
+	1    3075 5975
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3225 5975 3450 5975
+Wire Wire Line
+	2725 5975 2725 6050
+Wire Wire Line
+	5650 4450 5650 4650
 $Comp
 L Switch:SW_Push SW?
 U 1 1 5E9AA469
@@ -637,69 +712,33 @@ F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&D
 F 4 "TE Connectivity / Alcoswitch" H 5650 4250 50  0001 C CNN "Mfr."
 F 5 "2-1825910-7" H 5650 4250 50  0001 C CNN "Mfr. No."
 F 6 "506-2-1825910-7" H 5650 4250 50  0001 C CNN "Mouser"
+F 7 "Mouser" H 5650 4250 50  0001 C CNN "Distributor"
+F 8 "506-2-1825910-7" H 5650 4250 50  0001 C CNN "Order Number"
 	1    5650 4250
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:R R?
-U 1 1 5E9AA460
-P 5650 3300
-AR Path="/5E9AA460" Ref="R?"  Part="1" 
-AR Path="/5E9728CC/5E9AA460" Ref="R11"  Part="1" 
-F 0 "R11" V 5650 3225 50  0000 L CNN
-F 1 "10k" V 5750 3225 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5580 3300 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf" H 5650 3300 50  0001 C CNN
-F 4 "Yageo" H 5650 3300 50  0001 C CNN "Mfr."
-F 5 "MFP-25BRD52-10K" H 5650 3300 50  0001 C CNN "Mfr. No."
-F 6 "603-MFP-25BRD52-10K" H 5650 3300 50  0001 C CNN "Mouser"
-	1    5650 3300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	5650 3450 5650 3600
-Wire Wire Line
-	5650 3600 6100 3600
-Wire Wire Line
-	6100 3600 6100 4000
-Connection ~ 5650 3600
+	5650 4000 5650 4050
 Wire Wire Line
 	5650 3600 5650 3700
-Connection ~ 6100 4000
+Wire Wire Line
+	5650 3600 6100 3600
 $Comp
 L Device:R R?
 U 1 1 5E734C17
 P 5650 3850
 AR Path="/5E734C17" Ref="R?"  Part="1" 
-AR Path="/5E9728CC/5E734C17" Ref="R15"  Part="1" 
-F 0 "R15" V 5650 3775 50  0000 L CNN
+AR Path="/5E9728CC/5E734C17" Ref="R14"  Part="1" 
+F 0 "R14" V 5650 3775 50  0000 L CNN
 F 1 "1k" V 5750 3800 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5580 3850 50  0001 C CNN
 F 3 "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf" H 5650 3850 50  0001 C CNN
 F 4 "Yageo" H 5650 3850 50  0001 C CNN "Mfr."
 F 5 "MFP-25BRD52-1K" H 5650 3850 50  0001 C CNN "Mfr. No."
 F 6 "603-MFP-25BRD52-1K" H 5650 3850 50  0001 C CNN "Mouser"
+F 7 "Mouser" H 5650 3850 50  0001 C CNN "Distributor"
+F 8 "603-MFP-25BRD52-1K" H 5650 3850 50  0001 C CNN "Order Number"
 	1    5650 3850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5650 4000 5650 4050
-$Comp
-L Device:R R?
-U 1 1 5E74121A
-P 2750 6175
-AR Path="/5E74121A" Ref="R?"  Part="1" 
-AR Path="/5E9728CC/5E74121A" Ref="R14"  Part="1" 
-F 0 "R14" V 2750 6100 50  0000 L CNN
-F 1 "10k" V 2850 6100 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2680 6175 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf" H 2750 6175 50  0001 C CNN
-F 4 "Yageo" H 2750 6175 50  0001 C CNN "Mfr."
-F 5 "MFP-25BRD52-10K" H 2750 6175 50  0001 C CNN "Mfr. No."
-F 6 "603-MFP-25BRD52-10K" H 2750 6175 50  0001 C CNN "Mouser"
-	1    2750 6175
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2750 6325 2750 6375
 $EndSCHEMATC

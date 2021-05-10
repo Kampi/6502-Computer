@@ -32,8 +32,9 @@ The `tutorial` folder of the repository contains the software examples from my [
 
 | **Version**  | **Description**                            	| **Date**   |
 |:------------:|:----------------------------------------------:|:----------:|
-| 0.1          | First hardware release                     	| 18.10.2019 |
+| 0.1          | First hardware release.                     	| 18.10.2019 |
 | 0.2          | Fix different hardware bugs, add new features. | 10.05.2021 |
+| 0.3          |  |  |
 
 ## Maintainer
 

@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 7
 Title "USB-Serial"
-Date "2020-10-11"
+Date "2021-05-10"
 Rev "1.0"
 Comp "https://www.kampis-elektroecke.de"
 Comment1 ""
@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 "Author: Ing. Daniel Kampert"
 $EndDescr
 $Comp
-L Interface_USB:FT232RL IC?
+L Mainboard-rescue:FT232RL-Interface_USB IC?
 U 1 1 5E95D1D6
 P 5650 3850
 AR Path="/5E95D1D6" Ref="IC?"  Part="1" 
@@ -32,7 +32,7 @@ F 8 "895-FT232RL" H 5650 3850 50  0001 C CNN "Order Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Mainboard-rescue:C-Device C?
 U 1 1 5E95D20C
 P 4650 3150
 AR Path="/5E95D20C" Ref="C?"  Part="1" 
@@ -50,7 +50,7 @@ F 8 "80-C0805C104K5R" H 4650 3150 50  0001 C CNN "Order Number"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L Mainboard-rescue:GND-power #PWR?
 U 1 1 5E95D212
 P 4500 3150
 AR Path="/5E95D212" Ref="#PWR?"  Part="1" 
@@ -81,7 +81,7 @@ Wire Wire Line
 	5850 4950 5850 4850
 Connection ~ 5750 4950
 $Comp
-L power:+5V #PWR?
+L Mainboard-rescue:+5V-power #PWR?
 U 1 1 5E95D229
 P 7600 3250
 AR Path="/5E95D229" Ref="#PWR?"  Part="1" 
@@ -116,7 +116,7 @@ Connection ~ 3150 3900
 Wire Wire Line
 	3150 3900 3200 3900
 $Comp
-L power:GND #PWR?
+L Mainboard-rescue:GND-power #PWR?
 U 1 1 5E95D244
 P 3150 3950
 AR Path="/5E95D244" Ref="#PWR?"  Part="1" 
@@ -147,7 +147,7 @@ NoConn ~ 6450 4350
 NoConn ~ 6450 3850
 NoConn ~ 6450 3750
 $Comp
-L power:+5V #PWR?
+L Mainboard-rescue:+5V-power #PWR?
 U 1 1 5ECF03CA
 P 5550 2000
 AR Path="/5ECF03CA" Ref="#PWR?"  Part="1" 
@@ -160,7 +160,7 @@ F 3 "" H 5550 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L Mainboard-rescue:GND-power #PWR?
 U 1 1 5ECF08BF
 P 5650 5050
 AR Path="/5ECF08BF" Ref="#PWR?"  Part="1" 
@@ -196,7 +196,7 @@ Connection ~ 5550 2100
 Wire Wire Line
 	5750 2100 5750 2850
 $Comp
-L power:+5V #PWR?
+L Mainboard-rescue:+5V-power #PWR?
 U 1 1 5D9D8F30
 P 5750 2000
 AR Path="/5D9D8F30" Ref="#PWR?"  Part="1" 
@@ -212,7 +212,7 @@ Wire Wire Line
 	5750 2000 5750 2100
 Connection ~ 5750 2100
 $Comp
-L Connector_Custom:USB-B X?
+L Mainboard-rescue:USB-B-Connector_Custom X?
 U 1 1 5DA7E5BF
 P 3200 3450
 AR Path="/5DA7E5BF" Ref="X?"  Part="1" 
@@ -239,7 +239,7 @@ Wire Wire Line
 Wire Wire Line
 	6450 4150 7450 4150
 $Comp
-L Device:R R?
+L Mainboard-rescue:R-Device R?
 U 1 1 5E95D1EC
 P 7450 3950
 AR Path="/5E95D1EC" Ref="R?"  Part="1" 
@@ -257,7 +257,7 @@ F 8 "603-MFP-25BRD52-1K" H 7450 3950 50  0001 C CNN "Order Number"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:LED D?
+L Mainboard-rescue:LED-Device D?
 U 1 1 5E95D1E6
 P 7450 3500
 AR Path="/5E95D1E6" Ref="D?"  Part="1" 
@@ -289,7 +289,7 @@ Wire Wire Line
 Wire Wire Line
 	5400 2550 5400 2650
 $Comp
-L power:GND #PWR?
+L Mainboard-rescue:GND-power #PWR?
 U 1 1 5E2B8CA7
 P 5400 2650
 AR Path="/5E2B8CA7" Ref="#PWR?"  Part="1" 
@@ -302,7 +302,7 @@ F 3 "" H 5400 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Mainboard-rescue:C-Device C?
 U 1 1 5E2B4DFA
 P 5400 2400
 AR Path="/5E2B4DFA" Ref="C?"  Part="1" 
@@ -326,7 +326,7 @@ Wire Wire Line
 Wire Wire Line
 	5900 2100 5900 2250
 $Comp
-L power:GND #PWR?
+L Mainboard-rescue:GND-power #PWR?
 U 1 1 5E2BDF14
 P 5900 2650
 AR Path="/5E2BDF14" Ref="#PWR?"  Part="1" 
@@ -339,7 +339,7 @@ F 3 "" H 5900 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Mainboard-rescue:C-Device C?
 U 1 1 5E2BDF0E
 P 5900 2400
 AR Path="/5E2BDF0E" Ref="C?"  Part="1" 
@@ -363,7 +363,7 @@ Wire Wire Line
 Wire Wire Line
 	7750 3800 7750 3650
 $Comp
-L Device:LED D?
+L Mainboard-rescue:LED-Device D?
 U 1 1 5E95D1F8
 P 7750 3500
 AR Path="/5E95D1F8" Ref="D?"  Part="1" 
@@ -381,7 +381,7 @@ F 8 "604-APT2012PGW" H 7750 3500 50  0001 C CNN "Order Number"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R?
+L Mainboard-rescue:R-Device R?
 U 1 1 5E95D1F2
 P 7750 3950
 AR Path="/5E95D1F2" Ref="R?"  Part="1" 

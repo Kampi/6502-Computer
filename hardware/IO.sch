@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 7
 Title "I/O"
-Date "2020-10-11"
+Date "2021-05-10"
 Rev "1.0"
 Comp "https://www.kampis-elektroecke.de"
 Comment1 ""
@@ -122,7 +122,7 @@ Entry Wire Line
 Entry Wire Line
 	1900 1650 1800 1550
 $Comp
-L Device:LED D?
+L Mainboard-rescue:LED-Device D?
 U 1 1 5ED5BEAF
 P 3600 4250
 AR Path="/5ED5BEAF" Ref="D?"  Part="1" 
@@ -141,7 +141,7 @@ F 8 "941-C503BRANCZ0C0AA1" H 3600 4250 50  0001 C CNN "Order Number"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D?
+L Mainboard-rescue:LED-Device D?
 U 1 1 5ED5BEB8
 P 3500 4250
 AR Path="/5ED5BEB8" Ref="D?"  Part="1" 
@@ -160,7 +160,7 @@ F 8 "941-C503BRANCZ0C0AA1" H 3500 4250 50  0001 C CNN "Order Number"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D?
+L Mainboard-rescue:LED-Device D?
 U 1 1 5ED5BEA6
 P 3700 4250
 AR Path="/5ED5BEA6" Ref="D?"  Part="1" 
@@ -179,7 +179,7 @@ F 8 "941-C503BRANCZ0C0AA1" H 3700 4250 50  0001 C CNN "Order Number"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D?
+L Mainboard-rescue:LED-Device D?
 U 1 1 5ED5BE9D
 P 3800 4250
 AR Path="/5ED5BE9D" Ref="D?"  Part="1" 
@@ -198,7 +198,7 @@ F 8 "941-C503BRANCZ0C0AA1" H 3800 4250 50  0001 C CNN "Order Number"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D?
+L Mainboard-rescue:LED-Device D?
 U 1 1 5ED5BE94
 P 3900 4250
 AR Path="/5ED5BE94" Ref="D?"  Part="1" 
@@ -217,7 +217,7 @@ F 8 "941-C503BRANCZ0C0AA1" H 3900 4250 50  0001 C CNN "Order Number"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D?
+L Mainboard-rescue:LED-Device D?
 U 1 1 5ED5BE8B
 P 4000 4250
 AR Path="/5ED5BE8B" Ref="D?"  Part="1" 
@@ -236,7 +236,7 @@ F 8 "941-C503BRANCZ0C0AA1" H 4000 4250 50  0001 C CNN "Order Number"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D?
+L Mainboard-rescue:LED-Device D?
 U 1 1 5ED5BE82
 P 4100 4250
 AR Path="/5ED5BE82" Ref="D?"  Part="1" 
@@ -255,7 +255,7 @@ F 8 "941-C503BRANCZ0C0AA1" H 4100 4250 50  0001 C CNN "Order Number"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Network08 RN?
+L Mainboard-rescue:R_Network08-Device RN?
 U 1 1 5ED5BED1
 P 3800 4650
 AR Path="/5ED5BED1" Ref="RN?"  Part="1" 
@@ -274,7 +274,7 @@ F 8 "652-4609X-1LF-390" H 3800 4650 50  0001 C CNN "Order Number"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:LED D?
+L Mainboard-rescue:LED-Device D?
 U 1 1 5ED5BE79
 P 4200 4250
 AR Path="/5ED5BE79" Ref="D?"  Part="1" 
@@ -293,7 +293,7 @@ F 8 "941-C503BRANCZ0C0AA1" H 4200 4250 50  0001 C CNN "Order Number"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L Mainboard-rescue:GND-power #PWR?
 U 1 1 5DDAB6B1
 P 4200 4900
 AR Path="/5DDAB6B1" Ref="#PWR?"  Part="1" 
@@ -351,7 +351,7 @@ Wire Wire Line
 Wire Wire Line
 	4100 3450 4100 4100
 $Comp
-L Switch:SW_DIP_x02 SW?
+L Mainboard-rescue:SW_DIP_x02-Switch SW?
 U 1 1 5EE8631D
 P 3800 2500
 AR Path="/5EE8631D" Ref="SW?"  Part="1" 
@@ -370,7 +370,7 @@ F 8 "113-NDI02SV" H 3800 2500 50  0001 C CNN "Order Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_DIP_x08 SW?
+L Mainboard-rescue:SW_DIP_x08-Switch SW?
 U 1 1 5EE69B10
 P 3800 1850
 AR Path="/5EE69B10" Ref="SW?"  Part="1" 
@@ -561,7 +561,7 @@ D6
 Text Label 10400 2050 0    50   ~ 0
 D7
 $Comp
-L Connector_Generic:Conn_02x20_Odd_Even X2
+L Mainboard-rescue:Conn_02x20_Odd_Even-Connector_Generic X2
 U 1 1 5DBDED7E
 P 9950 2250
 F 0 "X2" H 10000 3367 50  0000 C CNN
@@ -582,26 +582,12 @@ Wire Bus Line
 	8800 1050 10700 1050
 Wire Wire Line
 	10350 2150 10250 2150
-$Comp
-L power:GND #PWR?
-U 1 1 5DC0914B
-P 9650 3400
-AR Path="/5DC0914B" Ref="#PWR?"  Part="1" 
-AR Path="/5EB09E21/5DC0914B" Ref="#PWR?"  Part="1" 
-AR Path="/5EC67F7B/5DC0914B" Ref="#PWR06"  Part="1" 
-F 0 "#PWR06" H 9650 3150 50  0001 C CNN
-F 1 "GND" H 9655 3227 50  0000 C CNN
-F 2 "" H 9650 3400 50  0001 C CNN
-F 3 "" H 9650 3400 50  0001 C CNN
-	1    9650 3400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9650 3400 9650 3250
 Wire Wire Line
 	9750 3250 9650 3250
 $Comp
-L power:+5V #PWR?
+L Mainboard-rescue:+5V-power #PWR?
 U 1 1 5DC11208
 P 10450 3150
 AR Path="/5DC11208" Ref="#PWR?"  Part="1" 
@@ -666,7 +652,7 @@ Wire Wire Line
 Wire Wire Line
 	1800 6300 1900 6300
 $Comp
-L power:+5V #PWR?
+L Mainboard-rescue:+5V-power #PWR?
 U 1 1 5E24E58E
 P 1900 6250
 AR Path="/5E24E58E" Ref="#PWR?"  Part="1" 
@@ -680,7 +666,7 @@ F 3 "" H 1900 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L Mainboard-rescue:GND-power #PWR?
 U 1 1 5E24E594
 P 1900 6625
 AR Path="/5E24E594" Ref="#PWR?"  Part="1" 
@@ -694,7 +680,7 @@ F 3 "" H 1900 6625 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_SPDT SW1
+L Mainboard-rescue:SW_SPDT-Switch SW1
 U 1 1 5E24E59D
 P 1600 6400
 F 0 "SW1" H 1600 6685 50  0000 C CNN
@@ -714,7 +700,7 @@ Text HLabel 925  6400 0    50   Output ~ 0
 Wire Wire Line
 	1400 6400 925  6400
 $Comp
-L power:GND #PWR?
+L Mainboard-rescue:GND-power #PWR?
 U 1 1 5E75385F
 P 4200 3100
 AR Path="/5E75385F" Ref="#PWR?"  Part="1" 
@@ -744,10 +730,8 @@ Wire Wire Line
 	1900 1550 2650 1550
 Wire Wire Line
 	1900 1450 2550 1450
-Text Notes 7100 5850 0    50   ~ 0
-- The W65C22N I/O lines of PB have internal current limiting resistors.
 $Comp
-L Connector_Generic:Conn_01x10 X1
+L Mainboard-rescue:Conn_01x10-Connector_Generic X1
 U 1 1 5E73E8FD
 P 2750 2900
 F 0 "X1" V 2967 2846 50  0000 C CNN
@@ -794,16 +778,6 @@ Wire Wire Line
 Connection ~ 2350 2400
 Wire Wire Line
 	2350 2400 3500 2400
-Wire Notes Line
-	7000 6450 11150 6450
-Wire Notes Line
-	11150 6450 11150 5550
-Wire Notes Line
-	11150 5550 7000 5550
-Wire Notes Line
-	7000 5550 7000 6450
-Text Notes 7050 5750 0    100  ~ 20
-Info
 Wire Wire Line
 	1900 2500 2450 2500
 Wire Wire Line
@@ -829,7 +803,7 @@ Wire Wire Line
 Wire Wire Line
 	2350 800  2350 950 
 $Comp
-L power:+5V #PWR?
+L Mainboard-rescue:+5V-power #PWR?
 U 1 1 5FB069AF
 P 2350 800
 AR Path="/5FB069AF" Ref="#PWR?"  Part="1" 
@@ -844,7 +818,7 @@ F 3 "" H 2350 800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Network10 RN?
+L Mainboard-rescue:R_Network10-Device RN?
 U 1 1 5FB069BA
 P 2850 1150
 AR Path="/5FB069BA" Ref="RN?"  Part="1" 

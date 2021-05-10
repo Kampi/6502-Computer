@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 7
 Title "Power Supply & Reset"
-Date "2020-10-11"
+Date "2021-05-10"
 Rev "1.0"
 Comp "https://www.kampis-elektroecke.de"
 Comment1 ""
@@ -16,7 +16,7 @@ $EndDescr
 Wire Wire Line
 	2375 4600 2375 4650
 $Comp
-L power:GND #PWR?
+L Mainboard-rescue:GND-power #PWR?
 U 1 1 5E234E9F
 P 2375 4650
 AR Path="/5E234E9F" Ref="#PWR?"  Part="1" 
@@ -29,7 +29,7 @@ F 3 "" H 2375 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 X7
+L Mainboard-rescue:Conn_01x01-Connector_Generic X7
 U 1 1 5E232D80
 P 2375 4400
 F 0 "X7" V 2339 4312 50  0000 R CNN
@@ -52,7 +52,7 @@ Connection ~ 3450 5975
 Wire Wire Line
 	2725 5975 2925 5975
 $Comp
-L Switch:SW_Push SW?
+L Mainboard-rescue:SW_Push-Switch SW?
 U 1 1 5E27BBF0
 P 2725 6250
 AR Path="/5E27BBF0" Ref="SW?"  Part="1" 
@@ -73,7 +73,7 @@ $EndComp
 Wire Wire Line
 	3450 6400 3450 6500
 $Comp
-L power:GND #PWR?
+L Mainboard-rescue:GND-power #PWR?
 U 1 1 5E27BBE6
 P 3450 6500
 AR Path="/5E27BBE6" Ref="#PWR?"  Part="1" 
@@ -87,7 +87,7 @@ F 3 "" H 3450 6500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Mainboard-rescue:C-Device C?
 U 1 1 5E27BBE0
 P 3450 6250
 AR Path="/5E27BBE0" Ref="C?"  Part="1" 
@@ -113,7 +113,7 @@ Connection ~ 2725 5975
 Wire Wire Line
 	2725 5900 2725 5975
 $Comp
-L power:GND #PWR?
+L Mainboard-rescue:GND-power #PWR?
 U 1 1 5E27BBD2
 P 2725 6500
 AR Path="/5E27BBD2" Ref="#PWR?"  Part="1" 
@@ -129,7 +129,7 @@ $EndComp
 Wire Wire Line
 	2725 5575 2725 5600
 $Comp
-L power:+5V #PWR?
+L Mainboard-rescue:+5V-power #PWR?
 U 1 1 5E27BBCB
 P 2725 5575
 AR Path="/5E27BBCB" Ref="#PWR?"  Part="1" 
@@ -143,7 +143,7 @@ F 3 "" H 2725 5575 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Mainboard-rescue:R-Device R?
 U 1 1 5E27BBC5
 P 2725 5750
 AR Path="/5E27BBC5" Ref="R?"  Part="1" 
@@ -175,7 +175,7 @@ Wire Wire Line
 Wire Wire Line
 	8050 3050 8050 3450
 $Comp
-L power:+5V #PWR?
+L Mainboard-rescue:+5V-power #PWR?
 U 1 1 5DC3430D
 P 8050 3050
 AR Path="/5DC3430D" Ref="#PWR?"  Part="1" 
@@ -188,7 +188,7 @@ F 3 "" H 8050 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Mainboard-rescue:R-Device R?
 U 1 1 5DC34307
 P 8050 3600
 AR Path="/5DC34307" Ref="R?"  Part="1" 
@@ -206,7 +206,7 @@ F 8 "603-MFP-25BRD52-10K" H 8050 3600 50  0001 C CNN "Order Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Wuerth:ConBarrel X8
+L Mainboard-rescue:ConBarrel-Wuerth X8
 U 1 1 5DA7C8DA
 P 2400 3850
 F 0 "X8" H 2457 4083 50  0000 C CNN
@@ -224,7 +224,7 @@ $EndComp
 Wire Wire Line
 	4750 4650 4750 4500
 $Comp
-L power:GND #PWR?
+L Mainboard-rescue:GND-power #PWR?
 U 1 1 5D9EC35B
 P 4750 4650
 AR Path="/5D9EC35B" Ref="#PWR?"  Part="1" 
@@ -239,7 +239,7 @@ $EndComp
 Wire Wire Line
 	4750 4150 4750 4200
 $Comp
-L Device:R R?
+L Mainboard-rescue:R-Device R?
 U 1 1 5D9EA844
 P 4750 4000
 AR Path="/5D9EA844" Ref="R?"  Part="1" 
@@ -257,7 +257,7 @@ F 8 "603-MFP-25BRD52-470R" H 4750 4000 50  0001 C CNN "Order Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D?
+L Mainboard-rescue:LED-Device D?
 U 1 1 5D9EA3B0
 P 4750 4350
 AR Path="/5D9EA3B0" Ref="D?"  Part="1" 
@@ -282,7 +282,7 @@ NoConn ~ 7800 4000
 Text HLabel 8200 3800 2    50   Output ~ 0
 ~Reset
 $Comp
-L Power_Supervisor:TL7702B IC?
+L Mainboard-rescue:TL7702B-Power_Supervisor IC?
 U 1 1 5E9AA51D
 P 7300 4000
 AR Path="/5E9AA51D" Ref="IC?"  Part="1" 
@@ -317,7 +317,7 @@ Wire Wire Line
 Wire Wire Line
 	7900 4650 7900 4550
 $Comp
-L power:GND #PWR?
+L Mainboard-rescue:GND-power #PWR?
 U 1 1 5E9AA50B
 P 7900 4650
 AR Path="/5E9AA50B" Ref="#PWR?"  Part="1" 
@@ -330,7 +330,7 @@ F 3 "" H 7900 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Mainboard-rescue:C-Device C?
 U 1 1 5E9AA505
 P 7900 4400
 AR Path="/5E9AA505" Ref="C?"  Part="1" 
@@ -354,7 +354,7 @@ Wire Wire Line
 Wire Wire Line
 	6550 4550 6550 4650
 $Comp
-L power:GND #PWR?
+L Mainboard-rescue:GND-power #PWR?
 U 1 1 5E9AA4FC
 P 6550 4650
 AR Path="/5E9AA4FC" Ref="#PWR?"  Part="1" 
@@ -367,7 +367,7 @@ F 3 "" H 6550 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Mainboard-rescue:C-Device C?
 U 1 1 5E9AA4F6
 P 6550 4400
 AR Path="/5E9AA4F6" Ref="C?"  Part="1" 
@@ -389,7 +389,7 @@ Wire Wire Line
 Wire Wire Line
 	7300 4400 7300 4650
 $Comp
-L power:GND #PWR?
+L Mainboard-rescue:GND-power #PWR?
 U 1 1 5E9AA4EE
 P 7300 4650
 AR Path="/5E9AA4EE" Ref="#PWR?"  Part="1" 
@@ -402,7 +402,7 @@ F 3 "" H 7300 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+VDC #PWR?
+L Mainboard-rescue:+VDC-power #PWR?
 U 1 1 5E9AA4E8
 P 7300 3150
 AR Path="/5E9AA4E8" Ref="#PWR?"  Part="1" 
@@ -417,7 +417,7 @@ $EndComp
 Wire Wire Line
 	3250 3150 3250 3750
 $Comp
-L power:+VDC #PWR?
+L Mainboard-rescue:+VDC-power #PWR?
 U 1 1 5E9AA4E1
 P 3250 3150
 AR Path="/5E9AA4E1" Ref="#PWR?"  Part="1" 
@@ -430,7 +430,7 @@ F 3 "" H 3250 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Switching:R-785.0-1.0 U?
+L Mainboard-rescue:R-785.0-1.0-Regulator_Switching U?
 U 1 1 5E9AA4DB
 P 3750 3750
 AR Path="/5E9AA4DB" Ref="U?"  Part="1" 
@@ -452,7 +452,7 @@ Wire Wire Line
 Wire Wire Line
 	2700 3950 2750 3950
 $Comp
-L power:GND #PWR?
+L Mainboard-rescue:GND-power #PWR?
 U 1 1 5E9AA4CF
 P 2750 4650
 AR Path="/5E9AA4CF" Ref="#PWR?"  Part="1" 
@@ -467,7 +467,7 @@ $EndComp
 Wire Wire Line
 	3750 4050 3750 4650
 $Comp
-L power:GND #PWR?
+L Mainboard-rescue:GND-power #PWR?
 U 1 1 5E9AA4BF
 P 3750 4650
 AR Path="/5E9AA4BF" Ref="#PWR?"  Part="1" 
@@ -487,7 +487,7 @@ Connection ~ 3250 3750
 Wire Wire Line
 	3150 3750 3250 3750
 $Comp
-L Diode:1N4148W D?
+L Mainboard-rescue:1N4148W-Diode D?
 U 1 1 5E9AA4B5
 P 3000 3750
 AR Path="/5E9AA4B5" Ref="D?"  Part="1" 
@@ -514,7 +514,7 @@ Wire Wire Line
 Wire Wire Line
 	3450 3750 3250 3750
 $Comp
-L power:+5V #PWR?
+L Mainboard-rescue:+5V-power #PWR?
 U 1 1 5E9AA4A9
 P 4200 3050
 AR Path="/5E9AA4A9" Ref="#PWR?"  Part="1" 
@@ -527,7 +527,7 @@ F 3 "" H 4200 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L Mainboard-rescue:GND-power #PWR?
 U 1 1 5E9AA4A3
 P 4200 4650
 AR Path="/5E9AA4A3" Ref="#PWR?"  Part="1" 
@@ -540,7 +540,7 @@ F 3 "" H 4200 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L Mainboard-rescue:GND-power #PWR?
 U 1 1 5E9AA49D
 P 3250 4650
 AR Path="/5E9AA49D" Ref="#PWR?"  Part="1" 
@@ -553,7 +553,7 @@ F 3 "" H 3250 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Mainboard-rescue:C-Device C?
 U 1 1 5E9AA497
 P 4200 4200
 AR Path="/5E9AA497" Ref="C?"  Part="1" 
@@ -571,7 +571,7 @@ F 8 "810-FA18X8R1H104KRU6" H 4200 4200 50  0001 C CNN "Order Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Mainboard-rescue:C-Device C?
 U 1 1 5E9AA491
 P 3250 4200
 AR Path="/5E9AA491" Ref="C?"  Part="1" 
@@ -591,7 +591,7 @@ $EndComp
 Wire Wire Line
 	6100 4550 6100 4650
 $Comp
-L power:GND #PWR?
+L Mainboard-rescue:GND-power #PWR?
 U 1 1 5E9AA487
 P 6100 4650
 AR Path="/5E9AA487" Ref="#PWR?"  Part="1" 
@@ -606,7 +606,7 @@ $EndComp
 Wire Wire Line
 	6100 4000 6100 4250
 $Comp
-L Device:C C?
+L Mainboard-rescue:C-Device C?
 U 1 1 5E9AA47C
 P 6100 4400
 AR Path="/5E9AA47C" Ref="C?"  Part="1" 
@@ -624,7 +624,7 @@ F 8 "810-FA18X8R1H104KRU6" H 6100 4400 50  0001 C CNN "Order Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L Mainboard-rescue:GND-power #PWR?
 U 1 1 5E9AA476
 P 5650 4650
 AR Path="/5E9AA476" Ref="#PWR?"  Part="1" 
@@ -639,7 +639,7 @@ $EndComp
 Wire Wire Line
 	5650 3050 5650 3150
 $Comp
-L power:+5V #PWR?
+L Mainboard-rescue:+5V-power #PWR?
 U 1 1 5E9AA46F
 P 5650 3050
 AR Path="/5E9AA46F" Ref="#PWR?"  Part="1" 
@@ -652,7 +652,7 @@ F 3 "" H 5650 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Mainboard-rescue:R-Device R?
 U 1 1 5E9AA460
 P 5650 3300
 AR Path="/5E9AA460" Ref="R?"  Part="1" 
@@ -676,7 +676,7 @@ Wire Wire Line
 Connection ~ 5650 3600
 Connection ~ 6100 4000
 $Comp
-L Device:R R?
+L Mainboard-rescue:R-Device R?
 U 1 1 5E74121A
 P 3075 5975
 AR Path="/5E74121A" Ref="R?"  Part="1" 
@@ -700,7 +700,7 @@ Wire Wire Line
 Wire Wire Line
 	5650 4450 5650 4650
 $Comp
-L Switch:SW_Push SW?
+L Mainboard-rescue:SW_Push-Switch SW?
 U 1 1 5E9AA469
 P 5650 4250
 AR Path="/5E9AA469" Ref="SW?"  Part="1" 
@@ -724,7 +724,7 @@ Wire Wire Line
 Wire Wire Line
 	5650 3600 6100 3600
 $Comp
-L Device:R R?
+L Mainboard-rescue:R-Device R?
 U 1 1 5E734C17
 P 5650 3850
 AR Path="/5E734C17" Ref="R?"  Part="1" 

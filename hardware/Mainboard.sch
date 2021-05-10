@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 7
 Title "Mainboard"
-Date "2020-10-11"
-Rev "1.0"
+Date "2021-05-10"
+Rev "1.1"
 Comp "https://www.kampis-elektroecke.de"
 Comment1 ""
 Comment2 ""
@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 "Author: Ing. Daniel Kampert"
 $EndDescr
 Text Notes 900  1450 0    100  ~ 20
-Address ranges:
+Address range:
 Text Notes 3550 1850 0    100  ~ 0
 Available memory
 Text Notes 900  3100 0    100  ~ 0
@@ -327,4 +327,20 @@ F1 "Supply.sch" 50
 F2 "~Reset" O R 6500 4800 50 
 F3 "~Reset_FT232" O R 6500 4900 50 
 $EndSheet
+Text Notes 11900 750  0    100  ~ 20
+Notes\n
+Wire Notes Line
+	11850 550  11850 1450
+Wire Notes Line
+	16000 550  11850 550 
+Wire Notes Line
+	16000 1450 16000 550 
+Wire Notes Line
+	11850 1450 16000 1450
+Text Notes 11950 1050 0    50   ~ 0
+- WDC recommends to use an oscillator for system time base instead of PHI1O and PHI2O, \nbecause the clock delay of PHI1O and PHI2O to PHI2 is no longer tested.
+Text Notes 11950 1400 0    50   ~ 0
+- The W65C22N I/O lines of PB have internal current limiting resistors.\n
+Text Notes 11950 1250 0    50   ~ 0
+- The W65C22N does need external pull up resistors for the IRQB line, because of the open collector \nIRQ output.
 $EndSCHEMATC

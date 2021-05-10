@@ -1,0 +1,403 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 7
+Title "USB-Serial"
+Date "2020-10-11"
+Rev "1.0"
+Comp "https://www.kampis-elektroecke.de"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 "Author: Ing. Daniel Kampert"
+$EndDescr
+$Comp
+L Interface_USB:FT232RL IC?
+U 1 1 5E95D1D6
+P 5650 3850
+AR Path="/5E95D1D6" Ref="IC?"  Part="1" 
+AR Path="/5E9064F2/5E95D1D6" Ref="IC10"  Part="1" 
+F 0 "IC10" H 5050 4750 50  0000 C CNN
+F 1 "FT232RL" H 5150 2950 50  0000 C CNN
+F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 5650 3850 50  0001 C CNN
+F 3 "http://www.ftdichip.com/Products/ICs/FT232RL.htm" H 5650 3850 50  0001 C CNN
+F 4 "FTDI" H 5650 3850 50  0001 C CNN "Mfr."
+F 5 "FT232RL-REEL" H 5650 3850 50  0001 C CNN "Mfr. No."
+F 6 "895-FT232RL" H 5650 3850 50  0001 C CNN "Mouser"
+F 7 "Mouser" H 5650 3850 50  0001 C CNN "Distributor"
+F 8 "895-FT232RL" H 5650 3850 50  0001 C CNN "Order Number"
+	1    5650 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E95D20C
+P 4650 3150
+AR Path="/5E95D20C" Ref="C?"  Part="1" 
+AR Path="/5E9064F2/5E95D20C" Ref="C10"  Part="1" 
+F 0 "C10" V 4900 3075 50  0000 L CNN
+F 1 "100nF" V 4800 3025 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4688 3000 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 4650 3150 50  0001 C CNN
+F 4 "KEMET" H 4650 3150 50  0001 C CNN "Mfr."
+F 5 "C0805C104K5RACTU" H 4650 3150 50  0001 C CNN "Mfr. No."
+F 6 "80-C0805C104K5R" H 4650 3150 50  0001 C CNN "Mouser"
+F 7 "Mouser" H 4650 3150 50  0001 C CNN "Distributor"
+F 8 "80-C0805C104K5R" H 4650 3150 50  0001 C CNN "Order Number"
+	1    4650 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E95D212
+P 4500 3150
+AR Path="/5E95D212" Ref="#PWR?"  Part="1" 
+AR Path="/5E9064F2/5E95D212" Ref="#PWR063"  Part="1" 
+F 0 "#PWR063" H 4500 2900 50  0001 C CNN
+F 1 "GND" H 4505 2977 50  0000 C CNN
+F 2 "" H 4500 3150 50  0001 C CNN
+F 3 "" H 4500 3150 50  0001 C CNN
+	1    4500 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4800 3150 4850 3150
+Wire Wire Line
+	5450 4950 5650 4950
+Wire Wire Line
+	5450 4850 5450 4950
+Wire Wire Line
+	5650 4950 5650 4850
+Connection ~ 5650 4950
+Wire Wire Line
+	5650 4950 5750 4950
+Wire Wire Line
+	5750 4950 5750 4850
+Wire Wire Line
+	5750 4950 5850 4950
+Wire Wire Line
+	5850 4950 5850 4850
+Connection ~ 5750 4950
+$Comp
+L power:+5V #PWR?
+U 1 1 5E95D229
+P 7600 3250
+AR Path="/5E95D229" Ref="#PWR?"  Part="1" 
+AR Path="/5E9064F2/5E95D229" Ref="#PWR069"  Part="1" 
+F 0 "#PWR069" H 7600 3100 50  0001 C CNN
+F 1 "+5V" H 7615 3423 50  0000 C CNN
+F 2 "" H 7600 3250 50  0001 C CNN
+F 3 "" H 7600 3250 50  0001 C CNN
+	1    7600 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 3250 7600 3300
+Wire Wire Line
+	7600 3300 7750 3300
+Connection ~ 7600 3300
+Wire Wire Line
+	6450 4250 7750 4250
+Wire Wire Line
+	3500 3450 4850 3450
+Wire Wire Line
+	4850 3550 3500 3550
+Wire Wire Line
+	3100 3850 3100 3900
+Wire Wire Line
+	3100 3900 3150 3900
+Wire Wire Line
+	3200 3900 3200 3850
+Wire Wire Line
+	3150 3900 3150 3950
+Connection ~ 3150 3900
+Wire Wire Line
+	3150 3900 3200 3900
+$Comp
+L power:GND #PWR?
+U 1 1 5E95D244
+P 3150 3950
+AR Path="/5E95D244" Ref="#PWR?"  Part="1" 
+AR Path="/5E9064F2/5E95D244" Ref="#PWR062"  Part="1" 
+F 0 "#PWR062" H 3150 3700 50  0001 C CNN
+F 1 "GND" H 3155 3777 50  0000 C CNN
+F 2 "" H 3150 3950 50  0001 C CNN
+F 3 "" H 3150 3950 50  0001 C CNN
+	1    3150 3950
+	1    0    0    -1  
+$EndComp
+Text HLabel 6600 3150 2    50   Output ~ 0
+TxD
+Text HLabel 6600 3250 2    50   Input ~ 0
+RxD
+Wire Wire Line
+	5650 4950 5650 5050
+Wire Wire Line
+	6600 3150 6450 3150
+Wire Wire Line
+	6450 3250 6600 3250
+NoConn ~ 4850 4050
+NoConn ~ 4850 4250
+NoConn ~ 4850 4550
+NoConn ~ 6450 4550
+NoConn ~ 6450 4450
+NoConn ~ 6450 4350
+NoConn ~ 6450 3850
+NoConn ~ 6450 3750
+$Comp
+L power:+5V #PWR?
+U 1 1 5ECF03CA
+P 5550 2000
+AR Path="/5ECF03CA" Ref="#PWR?"  Part="1" 
+AR Path="/5E9064F2/5ECF03CA" Ref="#PWR065"  Part="1" 
+F 0 "#PWR065" H 5550 1850 50  0001 C CNN
+F 1 "+5V" H 5565 2173 50  0000 C CNN
+F 2 "" H 5550 2000 50  0001 C CNN
+F 3 "" H 5550 2000 50  0001 C CNN
+	1    5550 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5ECF08BF
+P 5650 5050
+AR Path="/5ECF08BF" Ref="#PWR?"  Part="1" 
+AR Path="/5E9064F2/5ECF08BF" Ref="#PWR066"  Part="1" 
+F 0 "#PWR066" H 5650 4800 50  0001 C CNN
+F 1 "GND" H 5655 4877 50  0000 C CNN
+F 2 "" H 5650 5050 50  0001 C CNN
+F 3 "" H 5650 5050 50  0001 C CNN
+	1    5650 5050
+	1    0    0    -1  
+$EndComp
+Text HLabel 6600 3450 2    50   Input ~ 0
+~CTS
+Text HLabel 6600 3350 2    50   Output ~ 0
+~RTS
+Wire Wire Line
+	6450 3350 6600 3350
+Wire Wire Line
+	6600 3450 6450 3450
+Text HLabel 6600 3550 2    50   Output ~ 0
+~DTR
+Wire Wire Line
+	6450 3550 6600 3550
+Wire Wire Line
+	5550 2100 5550 2000
+Text Label 3900 3450 0    50   ~ 0
+D+
+Text Label 3900 3550 0    50   ~ 0
+D-
+Wire Wire Line
+	5550 2100 5550 2850
+Connection ~ 5550 2100
+Wire Wire Line
+	5750 2100 5750 2850
+$Comp
+L power:+5V #PWR?
+U 1 1 5D9D8F30
+P 5750 2000
+AR Path="/5D9D8F30" Ref="#PWR?"  Part="1" 
+AR Path="/5E9064F2/5D9D8F30" Ref="#PWR067"  Part="1" 
+F 0 "#PWR067" H 5750 1850 50  0001 C CNN
+F 1 "+5V" H 5765 2173 50  0000 C CNN
+F 2 "" H 5750 2000 50  0001 C CNN
+F 3 "" H 5750 2000 50  0001 C CNN
+	1    5750 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2000 5750 2100
+Connection ~ 5750 2100
+$Comp
+L Connector_Custom:USB-B X?
+U 1 1 5DA7E5BF
+P 3200 3450
+AR Path="/5DA7E5BF" Ref="X?"  Part="1" 
+AR Path="/5E9064F2/5DA7E5BF" Ref="X6"  Part="1" 
+F 0 "X6" H 3257 3917 50  0000 C CNN
+F 1 "SERIAL" H 3257 3826 50  0000 C CNN
+F 2 "Connector_Custom:USB-B_TE_2923042_Horizontal" H 3350 3400 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F292304%7FD4%7Fpdf%7FEnglish%7FENG_CD_292304_D4.pdf%7F292304-2" H 3350 3400 50  0001 C CNN
+F 4 "TE Connectivity" H 3257 4007 50  0001 C CNN "Mfr."
+F 5 "292304-2" H 3257 3916 50  0001 C CNN "Mfr. No."
+F 6 "571-292304-2" H 3257 3825 50  0001 C CNN "Mouser"
+F 7 "Mouser" H 3200 3450 50  0001 C CNN "Distributor"
+F 8 "571-292304-2" H 3200 3450 50  0001 C CNN "Order Number"
+	1    3200 3450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3500 3250
+Wire Wire Line
+	7450 3350 7450 3300
+Wire Wire Line
+	7450 3650 7450 3800
+Wire Wire Line
+	7450 4100 7450 4150
+Wire Wire Line
+	6450 4150 7450 4150
+$Comp
+L Device:R R?
+U 1 1 5E95D1EC
+P 7450 3950
+AR Path="/5E95D1EC" Ref="R?"  Part="1" 
+AR Path="/5E9064F2/5E95D1EC" Ref="R8"  Part="1" 
+F 0 "R8" V 7450 3900 50  0000 L CNN
+F 1 "1k" V 7525 3900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7380 3950 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf" H 7450 3950 50  0001 C CNN
+F 4 "Yageo" H 7450 3950 50  0001 C CNN "Mfr."
+F 5 "MFP-25BRD52-1K" H 7450 3950 50  0001 C CNN "Mfr. No."
+F 6 "603-MFP-25BRD52-1K" H 7450 3950 50  0001 C CNN "Mouser"
+F 7 "Mouser" H 7450 3950 50  0001 C CNN "Distributor"
+F 8 "603-MFP-25BRD52-1K" H 7450 3950 50  0001 C CNN "Order Number"
+	1    7450 3950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5E95D1E6
+P 7450 3500
+AR Path="/5E95D1E6" Ref="D?"  Part="1" 
+AR Path="/5E9064F2/5E95D1E6" Ref="D9"  Part="1" 
+F 0 "D9" V 7500 3700 50  0000 R CNN
+F 1 "TX" V 7400 3700 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 7450 3500 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/216/apt2012pyw-1173287.pdf" H 7450 3500 50  0001 C CNN
+F 4 "Kingbright" H 7450 3500 50  0001 C CNN "Mfr."
+F 5 "APT2012PYW" H 7450 3500 50  0001 C CNN "Mfr. No."
+F 6 "604-APT2012PYW" H 7450 3500 50  0001 C CNN "Mouser"
+F 7 "Mouser" H 7450 3500 50  0001 C CNN "Distributor"
+F 8 "604-APT2012PYW" H 7450 3500 50  0001 C CNN "Order Number"
+	1    7450 3500
+	0    -1   -1   0   
+$EndComp
+Text HLabel 6600 3650 2    50   Input ~ 0
+~DSR
+Wire Wire Line
+	6600 3650 6450 3650
+Text HLabel 4775 3850 0    50   Input ~ 0
+~Reset_FT232
+Wire Wire Line
+	4775 3850 4850 3850
+Wire Wire Line
+	5400 2100 5550 2100
+Wire Wire Line
+	5400 2250 5400 2100
+Wire Wire Line
+	5400 2550 5400 2650
+$Comp
+L power:GND #PWR?
+U 1 1 5E2B8CA7
+P 5400 2650
+AR Path="/5E2B8CA7" Ref="#PWR?"  Part="1" 
+AR Path="/5E9064F2/5E2B8CA7" Ref="#PWR064"  Part="1" 
+F 0 "#PWR064" H 5400 2400 50  0001 C CNN
+F 1 "GND" H 5405 2477 50  0000 C CNN
+F 2 "" H 5400 2650 50  0001 C CNN
+F 3 "" H 5400 2650 50  0001 C CNN
+	1    5400 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E2B4DFA
+P 5400 2400
+AR Path="/5E2B4DFA" Ref="C?"  Part="1" 
+AR Path="/5E9064F2/5E2B4DFA" Ref="C11"  Part="1" 
+F 0 "C11" H 5515 2446 50  0000 L CNN
+F 1 "100nF" H 5515 2355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5438 2250 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 5400 2400 50  0001 C CNN
+F 4 "KEMET" H 5400 2400 50  0001 C CNN "Mfr."
+F 5 "C0805C104K5RACTU" H 5400 2400 50  0001 C CNN "Mfr. No."
+F 6 "80-C0805C104K5R" H 5400 2400 50  0001 C CNN "Mouser"
+F 7 "Mouser" H 5400 2400 50  0001 C CNN "Distributor"
+F 8 "80-C0805C104K5R" H 5400 2400 50  0001 C CNN "Order Number"
+	1    5400 2400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2100 5900 2100
+Wire Wire Line
+	5900 2550 5900 2650
+Wire Wire Line
+	5900 2100 5900 2250
+$Comp
+L power:GND #PWR?
+U 1 1 5E2BDF14
+P 5900 2650
+AR Path="/5E2BDF14" Ref="#PWR?"  Part="1" 
+AR Path="/5E9064F2/5E2BDF14" Ref="#PWR068"  Part="1" 
+F 0 "#PWR068" H 5900 2400 50  0001 C CNN
+F 1 "GND" H 5905 2477 50  0000 C CNN
+F 2 "" H 5900 2650 50  0001 C CNN
+F 3 "" H 5900 2650 50  0001 C CNN
+	1    5900 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E2BDF0E
+P 5900 2400
+AR Path="/5E2BDF0E" Ref="C?"  Part="1" 
+AR Path="/5E9064F2/5E2BDF0E" Ref="C12"  Part="1" 
+F 0 "C12" H 6015 2446 50  0000 L CNN
+F 1 "100nF" H 6015 2355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5938 2250 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 5900 2400 50  0001 C CNN
+F 4 "KEMET" H 5900 2400 50  0001 C CNN "Mfr."
+F 5 "C0805C104K5RACTU" H 5900 2400 50  0001 C CNN "Mfr. No."
+F 6 "80-C0805C104K5R" H 5900 2400 50  0001 C CNN "Mouser"
+F 7 "Mouser" H 5900 2400 50  0001 C CNN "Distributor"
+F 8 "80-C0805C104K5R" H 5900 2400 50  0001 C CNN "Order Number"
+	1    5900 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 3350 7750 3300
+Wire Wire Line
+	7750 4100 7750 4250
+Wire Wire Line
+	7750 3800 7750 3650
+$Comp
+L Device:LED D?
+U 1 1 5E95D1F8
+P 7750 3500
+AR Path="/5E95D1F8" Ref="D?"  Part="1" 
+AR Path="/5E9064F2/5E95D1F8" Ref="D10"  Part="1" 
+F 0 "D10" V 7789 3382 50  0000 R CNN
+F 1 "RX" V 7698 3382 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 7750 3500 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/216/apt2012pgw-1173286.pdf" H 7750 3500 50  0001 C CNN
+F 4 "Kingbright" H 7750 3500 50  0001 C CNN "Mfr."
+F 5 "APT2012PGW" H 7750 3500 50  0001 C CNN "Mfr. No."
+F 6 "604-APT2012PGW" H 7750 3500 50  0001 C CNN "Mouser"
+F 7 "Mouser" H 7750 3500 50  0001 C CNN "Distributor"
+F 8 "604-APT2012PGW" H 7750 3500 50  0001 C CNN "Order Number"
+	1    7750 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E95D1F2
+P 7750 3950
+AR Path="/5E95D1F2" Ref="R?"  Part="1" 
+AR Path="/5E9064F2/5E95D1F2" Ref="R9"  Part="1" 
+F 0 "R9" V 7750 3900 50  0000 L CNN
+F 1 "1k" V 7825 3900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7680 3950 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf" H 7750 3950 50  0001 C CNN
+F 4 "Yageo" H 7750 3950 50  0001 C CNN "Mfr."
+F 5 "MFP-25BRD52-1K" H 7750 3950 50  0001 C CNN "Mfr. No."
+F 6 "603-MFP-25BRD52-1K" H 7750 3950 50  0001 C CNN "Mouser"
+F 7 "Mouser" H 7750 3950 50  0001 C CNN "Distributor"
+F 8 "603-MFP-25BRD52-1K" H 7750 3950 50  0001 C CNN "Order Number"
+	1    7750 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 3300 7600 3300
+$EndSCHEMATC

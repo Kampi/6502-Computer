@@ -1,0 +1,2 @@
+al 00A01C .VIA1_Init
+al 00A035 .VIA1_UpdateLED

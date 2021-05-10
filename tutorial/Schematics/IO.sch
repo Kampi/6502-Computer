@@ -1,0 +1,507 @@
+EESchema Schematic File Version 4
+LIBS:Tutorial-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title "Mainboard"
+Date "2020-01-17"
+Rev "1.0"
+Comp "https://www.kampis-elektroecke.de"
+Comment1 "Author: Daniel Kampert"
+Comment2 ""
+Comment3 ""
+Comment4 "I/O"
+$EndDescr
+Wire Wire Line
+	1900 3750 3800 3750
+Wire Wire Line
+	1900 3950 3600 3950
+Wire Wire Line
+	1900 3850 3700 3850
+Wire Wire Line
+	4100 1100 4200 1100
+Wire Wire Line
+	4200 1100 4200 1200
+Wire Wire Line
+	4200 1200 4100 1200
+Wire Wire Line
+	4100 1300 4200 1300
+Wire Wire Line
+	4200 1300 4200 1200
+Connection ~ 4200 1200
+Wire Wire Line
+	4100 1400 4200 1400
+Wire Wire Line
+	4200 1400 4200 1300
+Connection ~ 4200 1300
+Wire Wire Line
+	4100 1500 4200 1500
+Wire Wire Line
+	4200 1500 4200 1400
+Connection ~ 4200 1400
+Wire Wire Line
+	4100 1600 4200 1600
+Wire Wire Line
+	4200 1600 4200 1500
+Connection ~ 4200 1500
+Wire Wire Line
+	4100 1700 4200 1700
+Wire Wire Line
+	4200 1700 4200 1600
+Connection ~ 4200 1600
+Wire Wire Line
+	4100 1800 4200 1800
+Wire Wire Line
+	4200 1800 4200 1700
+Connection ~ 4200 1700
+Entry Wire Line
+	1900 2050 1800 1950
+Wire Bus Line
+	1800 1950 950  1950
+Text HLabel 950  1950 0    50   Output ~ 0
+CB[1..2]
+Wire Bus Line
+	1800 1950 1800 2050
+Entry Wire Line
+	1800 2050 1900 2150
+Text HLabel 950  1000 0    50   Output ~ 0
+PB[0..7]
+Wire Bus Line
+	950  1000 1800 1000
+Text HLabel 950  3250 0    50   Output ~ 0
+PA[0..7]
+Entry Wire Line
+	1900 4050 1800 3950
+Entry Wire Line
+	1900 3350 1800 3250
+Entry Wire Line
+	1900 3450 1800 3350
+Entry Wire Line
+	1900 3550 1800 3450
+Entry Wire Line
+	1900 3650 1800 3550
+Entry Wire Line
+	1900 3750 1800 3650
+Entry Wire Line
+	1900 3850 1800 3750
+Entry Wire Line
+	1900 3950 1800 3850
+Text Label 2050 3350 0    50   ~ 0
+PA7
+Text Label 2050 3450 0    50   ~ 0
+PA6
+Text Label 2050 3550 0    50   ~ 0
+PA5
+Text Label 2050 3650 0    50   ~ 0
+PA4
+Text Label 2050 3750 0    50   ~ 0
+PA3
+Text Label 2050 3850 0    50   ~ 0
+PA2
+Text Label 2050 3950 0    50   ~ 0
+PA1
+Text Label 2050 4050 0    50   ~ 0
+PA0
+Wire Bus Line
+	950  3250 1800 3250
+Entry Wire Line
+	1900 1100 1800 1000
+Entry Wire Line
+	1900 1800 1800 1700
+Entry Wire Line
+	1900 1600 1800 1500
+Entry Wire Line
+	1900 1700 1800 1600
+Entry Wire Line
+	1900 1500 1800 1400
+Entry Wire Line
+	1900 1400 1800 1300
+Entry Wire Line
+	1900 1200 1800 1100
+Entry Wire Line
+	1900 1300 1800 1200
+$Comp
+L Device:LED D?
+U 1 1 5ED5BEAF
+P 3600 4250
+AR Path="/5ED5BEAF" Ref="D?"  Part="1" 
+AR Path="/5EB09E21/5ED5BEAF" Ref="D?"  Part="1" 
+AR Path="/5EC67F7B/5ED5BEAF" Ref="D2"  Part="1" 
+F 0 "D2" V 3700 4350 50  0000 R CNN
+F 1 "LED1" V 3548 4133 50  0001 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 3600 4250 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/90/C503B_RAS_RAN_AAS_AAN_RBS_RBN_ABS_ABN_RCS_RCN_ACS_-269115.pdf" H 3600 4250 50  0001 C CNN
+F 4 "Cree Inc." H 3600 4250 50  0001 C CNN "Mfr."
+F 5 "C503B-RAN-CZ0C0AA1" H 3600 4250 50  0001 C CNN "Mfr. No."
+F 6 "941-C503BRANCZ0C0AA1" H 3600 4250 50  0001 C CNN "Mouser"
+	1    3600 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5ED5BEB8
+P 3500 4250
+AR Path="/5ED5BEB8" Ref="D?"  Part="1" 
+AR Path="/5EB09E21/5ED5BEB8" Ref="D?"  Part="1" 
+AR Path="/5EC67F7B/5ED5BEB8" Ref="D1"  Part="1" 
+F 0 "D1" V 3600 4350 50  0000 R CNN
+F 1 "LED0" V 3448 4133 50  0001 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 3500 4250 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/90/C503B_RAS_RAN_AAS_AAN_RBS_RBN_ABS_ABN_RCS_RCN_ACS_-269115.pdf" H 3500 4250 50  0001 C CNN
+F 4 "Cree Inc." H 3500 4250 50  0001 C CNN "Mfr."
+F 5 "C503B-RAN-CZ0C0AA1" H 3500 4250 50  0001 C CNN "Mfr. No."
+F 6 "941-C503BRANCZ0C0AA1" H 3500 4250 50  0001 C CNN "Mouser"
+	1    3500 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5ED5BEA6
+P 3700 4250
+AR Path="/5ED5BEA6" Ref="D?"  Part="1" 
+AR Path="/5EB09E21/5ED5BEA6" Ref="D?"  Part="1" 
+AR Path="/5EC67F7B/5ED5BEA6" Ref="D3"  Part="1" 
+F 0 "D3" V 3800 4350 50  0000 R CNN
+F 1 "LED2" V 3648 4133 50  0001 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 3700 4250 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/90/C503B_RAS_RAN_AAS_AAN_RBS_RBN_ABS_ABN_RCS_RCN_ACS_-269115.pdf" H 3700 4250 50  0001 C CNN
+F 4 "Cree Inc." H 3700 4250 50  0001 C CNN "Mfr."
+F 5 "C503B-RAN-CZ0C0AA1" H 3700 4250 50  0001 C CNN "Mfr. No."
+F 6 "941-C503BRANCZ0C0AA1" H 3700 4250 50  0001 C CNN "Mouser"
+	1    3700 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5ED5BE9D
+P 3800 4250
+AR Path="/5ED5BE9D" Ref="D?"  Part="1" 
+AR Path="/5EB09E21/5ED5BE9D" Ref="D?"  Part="1" 
+AR Path="/5EC67F7B/5ED5BE9D" Ref="D4"  Part="1" 
+F 0 "D4" V 3900 4350 50  0000 R CNN
+F 1 "LED3" V 3748 4133 50  0001 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 3800 4250 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/90/C503B_RAS_RAN_AAS_AAN_RBS_RBN_ABS_ABN_RCS_RCN_ACS_-269115.pdf" H 3800 4250 50  0001 C CNN
+F 4 "Cree Inc." H 3800 4250 50  0001 C CNN "Mfr."
+F 5 "C503B-RAN-CZ0C0AA1" H 3800 4250 50  0001 C CNN "Mfr. No."
+F 6 "941-C503BRANCZ0C0AA1" H 3800 4250 50  0001 C CNN "Mouser"
+	1    3800 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5ED5BE94
+P 3900 4250
+AR Path="/5ED5BE94" Ref="D?"  Part="1" 
+AR Path="/5EB09E21/5ED5BE94" Ref="D?"  Part="1" 
+AR Path="/5EC67F7B/5ED5BE94" Ref="D5"  Part="1" 
+F 0 "D5" V 4000 4350 50  0000 R CNN
+F 1 "LED4" V 3848 4133 50  0001 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 3900 4250 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/90/C503B_RAS_RAN_AAS_AAN_RBS_RBN_ABS_ABN_RCS_RCN_ACS_-269115.pdf" H 3900 4250 50  0001 C CNN
+F 4 "Cree Inc." H 3900 4250 50  0001 C CNN "Mfr."
+F 5 "C503B-RAN-CZ0C0AA1" H 3900 4250 50  0001 C CNN "Mfr. No."
+F 6 "941-C503BRANCZ0C0AA1" H 3900 4250 50  0001 C CNN "Mouser"
+	1    3900 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5ED5BE8B
+P 4000 4250
+AR Path="/5ED5BE8B" Ref="D?"  Part="1" 
+AR Path="/5EB09E21/5ED5BE8B" Ref="D?"  Part="1" 
+AR Path="/5EC67F7B/5ED5BE8B" Ref="D6"  Part="1" 
+F 0 "D6" V 4100 4350 50  0000 R CNN
+F 1 "LED5" V 3948 4133 50  0001 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 4000 4250 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/90/C503B_RAS_RAN_AAS_AAN_RBS_RBN_ABS_ABN_RCS_RCN_ACS_-269115.pdf" H 4000 4250 50  0001 C CNN
+F 4 "Cree Inc." H 4000 4250 50  0001 C CNN "Mfr."
+F 5 "C503B-RAN-CZ0C0AA1" H 4000 4250 50  0001 C CNN "Mfr. No."
+F 6 "941-C503BRANCZ0C0AA1" H 4000 4250 50  0001 C CNN "Mouser"
+	1    4000 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5ED5BE82
+P 4100 4250
+AR Path="/5ED5BE82" Ref="D?"  Part="1" 
+AR Path="/5EB09E21/5ED5BE82" Ref="D?"  Part="1" 
+AR Path="/5EC67F7B/5ED5BE82" Ref="D7"  Part="1" 
+F 0 "D7" V 4200 4350 50  0000 R CNN
+F 1 "LED6" V 4048 4133 50  0001 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 4100 4250 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/90/C503B_RAS_RAN_AAS_AAN_RBS_RBN_ABS_ABN_RCS_RCN_ACS_-269115.pdf" H 4100 4250 50  0001 C CNN
+F 4 "Cree Inc." H 4100 4250 50  0001 C CNN "Mfr."
+F 5 "C503B-RAN-CZ0C0AA1" H 4100 4250 50  0001 C CNN "Mfr. No."
+F 6 "941-C503BRANCZ0C0AA1" H 4100 4250 50  0001 C CNN "Mouser"
+	1    4100 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Network08 RN?
+U 1 1 5ED5BED1
+P 3800 4650
+AR Path="/5ED5BED1" Ref="RN?"  Part="1" 
+AR Path="/5EB09E21/5ED5BED1" Ref="RN?"  Part="1" 
+AR Path="/5EC67F7B/5ED5BED1" Ref="RN1"  Part="1" 
+F 0 "RN1" H 4188 4696 50  0000 L CNN
+F 1 "390" H 4188 4605 50  0000 L CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 4275 4650 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/54/4600x-776645.pdf" H 3800 4650 50  0001 C CNN
+F 4 "Bourns" H 3800 4650 50  0001 C CNN "Mfr."
+F 5 "4609X-101-391LF" H 3800 4650 50  0001 C CNN "Mfr. No."
+F 6 "652-4609X-1LF-390" H 3800 4650 50  0001 C CNN "Mouser"
+	1    3800 4650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5ED5BE79
+P 4200 4250
+AR Path="/5ED5BE79" Ref="D?"  Part="1" 
+AR Path="/5EB09E21/5ED5BE79" Ref="D?"  Part="1" 
+AR Path="/5EC67F7B/5ED5BE79" Ref="D8"  Part="1" 
+F 0 "D8" V 4300 4350 50  0000 R CNN
+F 1 "LED7" V 4148 4133 50  0001 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 4200 4250 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/90/C503B_RAS_RAN_AAS_AAN_RBS_RBN_ABS_ABN_RCS_RCN_ACS_-269115.pdf" H 4200 4250 50  0001 C CNN
+F 4 "Cree Inc." H 4200 4250 50  0001 C CNN "Mfr."
+F 5 "C503B-RAN-CZ0C0AA1" H 4200 4250 50  0001 C CNN "Mfr. No."
+F 6 "941-C503BRANCZ0C0AA1" H 4200 4250 50  0001 C CNN "Mouser"
+	1    4200 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DDAB6B1
+P 4200 4900
+AR Path="/5DDAB6B1" Ref="#PWR?"  Part="1" 
+AR Path="/5EB09E21/5DDAB6B1" Ref="#PWR?"  Part="1" 
+AR Path="/5EC67F7B/5DDAB6B1" Ref="#PWR030"  Part="1" 
+F 0 "#PWR030" H 4200 4650 50  0001 C CNN
+F 1 "GND" H 4205 4727 50  0000 C CNN
+F 2 "" H 4200 4900 50  0001 C CNN
+F 3 "" H 4200 4900 50  0001 C CNN
+	1    4200 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4850 4200 4900
+Wire Wire Line
+	3500 4450 3500 4400
+Wire Wire Line
+	3600 4450 3600 4400
+Wire Wire Line
+	3700 4450 3700 4400
+Wire Wire Line
+	3800 4450 3800 4400
+Wire Wire Line
+	3900 4450 3900 4400
+Wire Wire Line
+	4000 4450 4000 4400
+Wire Wire Line
+	4100 4450 4100 4400
+Wire Wire Line
+	4200 4450 4200 4400
+Wire Wire Line
+	3500 4050 3500 4100
+Wire Wire Line
+	1900 4050 3500 4050
+Wire Wire Line
+	3600 4100 3600 3950
+Wire Wire Line
+	3700 4100 3700 3850
+Wire Wire Line
+	3800 4100 3800 3750
+Wire Wire Line
+	3900 4100 3900 3650
+Wire Wire Line
+	4000 4100 4000 3550
+Wire Wire Line
+	4200 3350 4200 4100
+Wire Wire Line
+	1900 3350 4200 3350
+Wire Wire Line
+	1900 3450 4100 3450
+Wire Wire Line
+	1900 3550 4000 3550
+Wire Wire Line
+	1900 3650 3900 3650
+Wire Wire Line
+	4100 3450 4100 4100
+$Comp
+L Switch:SW_DIP_x02 SW?
+U 1 1 5EE8631D
+P 3800 2150
+AR Path="/5EE8631D" Ref="SW?"  Part="1" 
+AR Path="/5EB09E21/5EE8631D" Ref="SW?"  Part="1" 
+AR Path="/5EC67F7B/5EE8631D" Ref="SW2"  Part="1" 
+F 0 "SW2" H 3800 2000 50  0000 C CNN
+F 1 "INTERRUPT" H 3850 1900 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_DIP_SPSTx02_Slide_9.78x7.26mm_W7.62mm_P2.54mm" H 3800 2150 50  0001 C CNN
+F 3 "https://www.weltroniker.de/DB-Pool/DIP_NDI.pdf" H 3800 2150 50  0001 C CNN
+F 4 "Diptronics" H 3800 2150 50  0001 C CNN "Mfr."
+F 5 "NDI-02S-V" H 3800 2150 50  0001 C CNN "Mfr. No."
+F 6 "113-NDI02SV" H 3800 2150 50  0001 C CNN "Mouser"
+	1    3800 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DIP_x08 SW?
+U 1 1 5EE69B10
+P 3800 1500
+AR Path="/5EE69B10" Ref="SW?"  Part="1" 
+AR Path="/5EB09E21/5EE69B10" Ref="SW?"  Part="1" 
+AR Path="/5EC67F7B/5EE69B10" Ref="SW1"  Part="1" 
+F 0 "SW1" H 3800 2167 50  0000 C CNN
+F 1 "PORT B" H 3800 2076 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_DIP_SPSTx08_Slide_9.78x22.5mm_W7.62mm_P2.54mm" H 3800 1500 50  0001 C CNN
+F 3 "https://www.weltroniker.de/DB-Pool/DIP_NDI.pdf" H 3800 1500 50  0001 C CNN
+F 4 "Diptronics" H 3800 1500 50  0001 C CNN "Mfr."
+F 5 "NDI-08S-V" H 3800 1500 50  0001 C CNN "Mfr. No."
+F 6 "113-NDI08SV" H 3800 1500 50  0001 C CNN "Mouser"
+	1    3800 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 2050 4200 2050
+Wire Wire Line
+	4200 2050 4200 1800
+Connection ~ 4200 1800
+Wire Wire Line
+	4100 2150 4200 2150
+Wire Wire Line
+	4200 2150 4200 2050
+Connection ~ 4200 2050
+Text Label 2050 1100 0    50   ~ 0
+PB7
+Text Label 2050 1200 0    50   ~ 0
+PB6
+Text Label 2050 1300 0    50   ~ 0
+PB5
+Text Label 2050 1400 0    50   ~ 0
+PB4
+Text Label 2050 1500 0    50   ~ 0
+PB3
+Text Label 2050 1600 0    50   ~ 0
+PB2
+Text Label 2050 1700 0    50   ~ 0
+PB1
+Text Label 2050 1800 0    50   ~ 0
+PB0
+Text Label 2050 2150 0    50   ~ 0
+CB1
+Text Label 2050 2050 0    50   ~ 0
+CB2
+$Comp
+L power:GND #PWR?
+U 1 1 5E75385F
+P 4200 2775
+AR Path="/5E75385F" Ref="#PWR?"  Part="1" 
+AR Path="/5EB09E21/5E75385F" Ref="#PWR?"  Part="1" 
+AR Path="/5EC67F7B/5E75385F" Ref="#PWR029"  Part="1" 
+F 0 "#PWR029" H 4200 2525 50  0001 C CNN
+F 1 "GND" H 4205 2602 50  0000 C CNN
+F 2 "" H 4200 2775 50  0001 C CNN
+F 3 "" H 4200 2775 50  0001 C CNN
+	1    4200 2775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 2775 4200 2150
+Connection ~ 4200 2150
+Wire Wire Line
+	1900 1800 3250 1800
+Wire Wire Line
+	1900 1700 3150 1700
+Wire Wire Line
+	1900 1500 2950 1500
+Wire Wire Line
+	1900 1400 2850 1400
+Wire Wire Line
+	1900 1300 2750 1300
+Wire Wire Line
+	1900 1200 2650 1200
+Wire Wire Line
+	1900 1100 2550 1100
+Text Notes 4325 1500 0    50   ~ 0
+NOTE: The I/O lines of W65C22N have \ninternal current limiting resistors.
+$Comp
+L Connector_Generic:Conn_01x10 X1
+U 1 1 5E73E8FD
+P 2750 825
+F 0 "X1" V 2967 771 50  0000 C CNN
+F 1 "PORT B" V 2876 771 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 2750 825 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=825433&DocType=Customer+Drawing&DocLang=English&PartCntxt=1-825433-0&DocFormat=pdf" H 2750 825 50  0001 C CNN
+F 4 "TE Connectivity / AMP" H 2750 825 50  0001 C CNN "Mfr."
+F 5 "1-825433-0" H 2750 825 50  0001 C CNN "Mfr. No."
+F 6 "571-1-825433-0" H 2750 825 50  0001 C CNN "Mouser"
+	1    2750 825 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3250 1025 3250 1800
+Connection ~ 3250 1800
+Wire Wire Line
+	3250 1800 3500 1800
+Wire Wire Line
+	3150 1025 3150 1700
+Connection ~ 3150 1700
+Wire Wire Line
+	3150 1700 3500 1700
+Wire Wire Line
+	3050 1025 3050 1600
+Wire Wire Line
+	1900 1600 3050 1600
+Connection ~ 3050 1600
+Wire Wire Line
+	3050 1600 3500 1600
+Wire Wire Line
+	2950 1025 2950 1500
+Connection ~ 2950 1500
+Wire Wire Line
+	2950 1500 3500 1500
+Wire Wire Line
+	2850 1025 2850 1400
+Connection ~ 2850 1400
+Wire Wire Line
+	2850 1400 3500 1400
+Wire Wire Line
+	2750 1025 2750 1300
+Connection ~ 2750 1300
+Wire Wire Line
+	2750 1300 3500 1300
+Wire Wire Line
+	2650 1025 2650 1200
+Connection ~ 2650 1200
+Wire Wire Line
+	2650 1200 3500 1200
+Wire Wire Line
+	2550 1025 2550 1100
+Connection ~ 2550 1100
+Wire Wire Line
+	2550 1100 3500 1100
+Wire Wire Line
+	1900 2050 2350 2050
+Wire Wire Line
+	2450 1025 2450 2150
+Connection ~ 2450 2150
+Wire Wire Line
+	2450 2150 3500 2150
+Wire Wire Line
+	1900 2150 2450 2150
+Wire Wire Line
+	2350 1025 2350 2050
+Connection ~ 2350 2050
+Wire Wire Line
+	2350 2050 3500 2050
+Wire Bus Line
+	1800 3250 1800 3950
+Wire Bus Line
+	1800 1000 1800 1700
+$EndSCHEMATC

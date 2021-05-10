@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 7
 Title "Interrupt logic"
-Date "2021-05-10"
+Date "2020-10-11"
 Rev "1.0"
 Comp "https://www.kampis-elektroecke.de"
 Comment1 ""
@@ -20,7 +20,7 @@ Wire Wire Line
 Text HLabel 4775 3150 0    50   Input ~ 0
 ~IRQ
 $Comp
-L Mainboard-rescue:+5V-power #PWR?
+L power:+5V #PWR?
 U 1 1 5E717796
 P 6350 2100
 AR Path="/5E717796" Ref="#PWR?"  Part="1" 
@@ -34,7 +34,7 @@ F 3 "" H 6350 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-rescue:GND-power #PWR?
+L power:GND #PWR?
 U 1 1 5E7177A8
 P 6350 4300
 AR Path="/5E7177A8" Ref="#PWR?"  Part="1" 
@@ -50,7 +50,7 @@ $EndComp
 Wire Wire Line
 	6350 4300 6350 3950
 $Comp
-L Mainboard-rescue:GND-power #PWR?
+L power:GND #PWR?
 U 1 1 5E7177AF
 P 5900 4300
 AR Path="/5E7177AF" Ref="#PWR?"  Part="1" 
@@ -117,7 +117,7 @@ Wire Wire Line
 	4775 3550 5600 3550
 Connection ~ 5600 3550
 $Comp
-L Mainboard-rescue:R-Device R?
+L Device:R R?
 U 1 1 5DE0C707
 P 900 900
 AR Path="/5DE0C707" Ref="R?"  Part="1" 
@@ -137,7 +137,7 @@ F 8 "603-MFP-25BRD52-10K" H 900 900 50  0001 C CNN "Order Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-rescue:+5V-power #PWR?
+L power:+5V #PWR?
 U 1 1 5DE0C716
 P 900 725
 AR Path="/5DE0C716" Ref="#PWR?"  Part="1" 
@@ -154,7 +154,7 @@ $EndComp
 Wire Wire Line
 	900  725  900  750 
 $Comp
-L Mainboard-rescue:GND-power #PWR?
+L power:GND #PWR?
 U 1 1 5DE0C71D
 P 900 1925
 AR Path="/5DE0C71D" Ref="#PWR?"  Part="1" 
@@ -169,7 +169,7 @@ F 3 "" H 900 1925 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-rescue:C-Device C?
+L Device:C C?
 U 1 1 5DE0C726
 P 1300 1600
 AR Path="/5DE0C726" Ref="C?"  Part="1" 
@@ -194,7 +194,7 @@ Wire Wire Line
 	1300 1250 1300 1450
 Connection ~ 900  1250
 $Comp
-L Mainboard-rescue:GND-power #PWR?
+L power:GND #PWR?
 U 1 1 5DE0C731
 P 1300 1925
 AR Path="/5DE0C731" Ref="#PWR?"  Part="1" 
@@ -220,7 +220,7 @@ Text HLabel 1600 1250 2    50   Output ~ 0
 Wire Wire Line
 	900  1250 950  1250
 $Comp
-L Mainboard-rescue:SW_Push-Switch SW?
+L Switch:SW_Push SW?
 U 1 1 5DE0C710
 P 900 1600
 AR Path="/5DE0C710" Ref="SW?"  Part="1" 
@@ -242,10 +242,12 @@ $EndComp
 NoConn ~ 6750 3050
 NoConn ~ 6750 3150
 NoConn ~ 6750 3250
+Text Notes 7100 5950 0    50   ~ 0
+- The W65C22N does need external pull up resistors for the IRQB line, because \nof the open collector IRQ output.
 Wire Wire Line
 	5100 2100 5100 2250
 $Comp
-L Mainboard-rescue:+5V-power #PWR?
+L power:+5V #PWR?
 U 1 1 5E7177C0
 P 5100 2100
 AR Path="/5E7177C0" Ref="#PWR?"  Part="1" 
@@ -259,7 +261,7 @@ F 3 "" H 5100 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-rescue:R_Network08-Device RN?
+L Device:R_Network08 RN?
 U 1 1 5E7177BA
 P 5500 2450
 AR Path="/5E7177BA" Ref="RN?"  Part="1" 
@@ -281,7 +283,7 @@ $EndComp
 Wire Wire Line
 	5700 3450 5700 2650
 $Comp
-L Mainboard-rescue:74HC148-Logic IC?
+L Logic:74HC148 IC?
 U 1 1 5E7177D6
 P 6350 3350
 AR Path="/5EB09E21/5E7177D6" Ref="IC?"  Part="1" 
@@ -301,7 +303,7 @@ $EndComp
 Wire Wire Line
 	6750 3600 7400 3600
 $Comp
-L Mainboard-rescue:R-Device R?
+L Device:R R?
 U 1 1 5E72F959
 P 1100 1250
 AR Path="/5E72F959" Ref="R?"  Part="1" 
@@ -324,4 +326,14 @@ Wire Wire Line
 	1250 1250 1300 1250
 Wire Wire Line
 	900  1250 900  1400
+Wire Notes Line
+	7000 6450 11150 6450
+Wire Notes Line
+	11150 6450 11150 5550
+Wire Notes Line
+	11125 5550 6975 5550
+Wire Notes Line
+	6975 5550 6975 6450
+Text Notes 7050 5750 0    100  ~ 20
+Info
 $EndSCHEMATC

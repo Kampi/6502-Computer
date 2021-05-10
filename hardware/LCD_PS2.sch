@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 7
 Title "LCD, P2/2 & Timer"
-Date "2021-05-10"
+Date "2020-10-11"
 Rev "1.0"
 Comp "https://www.kampis-elektroecke.de"
 Comment1 ""
@@ -16,7 +16,7 @@ $EndDescr
 Wire Wire Line
 	5075 3575 5075 3625
 $Comp
-L Mainboard-rescue:GND-power #PWR?
+L power:GND #PWR?
 U 1 1 5DAE0AEC
 P 5075 3625
 AR Path="/5DAE0AEC" Ref="#PWR?"  Part="1" 
@@ -31,7 +31,7 @@ F 3 "" H 5075 3625 50  0001 C CNN
 $EndComp
 NoConn ~ 6125 2025
 $Comp
-L Mainboard-rescue:GND-power #PWR?
+L power:GND #PWR?
 U 1 1 5DE9A843
 P 6125 2400
 AR Path="/5DE9A843" Ref="#PWR?"  Part="1" 
@@ -49,7 +49,7 @@ Wire Wire Line
 Wire Wire Line
 	5475 2475 5625 2475
 $Comp
-L Mainboard-rescue:+5V-power #PWR?
+L power:+5V #PWR?
 U 1 1 5DE9C02E
 P 5625 2425
 AR Path="/5DE9C02E" Ref="#PWR?"  Part="1" 
@@ -65,7 +65,7 @@ $EndComp
 Wire Wire Line
 	5475 2175 5975 2175
 $Comp
-L Mainboard-rescue:+5V-power #PWR?
+L power:+5V #PWR?
 U 1 1 5DADFE9B
 P 5075 1875
 AR Path="/5DADFE9B" Ref="#PWR?"  Part="1" 
@@ -149,7 +149,7 @@ Wire Bus Line
 Text HLabel 1975 2075 0    50   BiDi ~ 0
 LCD[0..11]
 $Comp
-L Mainboard-rescue:Mini-DIN-6-Connector_Custom X4
+L Connector_Custom:Mini-DIN-6 X4
 U 1 1 5DD571A9
 P 5550 5550
 F 0 "X4" H 5550 5917 50  0000 C CNN
@@ -165,7 +165,7 @@ F 8 "571-5749231-1" H 5550 5550 50  0001 C CNN "Order Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-rescue:+5V-power #PWR?
+L power:+5V #PWR?
 U 1 1 5DD5A54C
 P 5075 5450
 AR Path="/5DD5A54C" Ref="#PWR?"  Part="1" 
@@ -204,7 +204,7 @@ Wire Wire Line
 Wire Wire Line
 	5550 5850 5550 5900
 $Comp
-L Mainboard-rescue:GND-power #PWR?
+L power:GND #PWR?
 U 1 1 5DA8A71B
 P 5550 5900
 AR Path="/5DA8A71B" Ref="#PWR?"  Part="1" 
@@ -218,7 +218,7 @@ F 3 "" H 5550 5900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-rescue:R_POT-Device RV1
+L Device:R_POT RV1
 U 1 1 5DE99AEE
 P 6125 2175
 F 0 "RV1" V 6125 2250 50  0000 R CNN
@@ -234,7 +234,7 @@ F 8 "652-3386Y-1-103LF" H 6125 2175 50  0001 C CNN "Order Number"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Mainboard-rescue:WC1602A-Display_Character DS1
+L Display_Character:WC1602A DS1
 U 1 1 5DAA1FEA
 P 5075 2775
 F 0 "DS1" H 4825 3525 50  0000 C CNN
@@ -250,7 +250,7 @@ F 8 "763-0220GZ-FSW-GBW" H 5075 2775 50  0001 C CNN "Order Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-rescue:GND-power #PWR?
+L power:GND #PWR?
 U 1 1 5DDCDE4D
 P 6125 5900
 AR Path="/5DDCDE4D" Ref="#PWR?"  Part="1" 
@@ -277,7 +277,7 @@ Wire Wire Line
 	5850 5450 5900 5450
 NoConn ~ 5250 5650
 $Comp
-L Mainboard-rescue:R-Device R?
+L Device:R R?
 U 1 1 5E36C0FD
 P 4975 6100
 AR Path="/5E36C0FD" Ref="R?"  Part="1" 
@@ -296,7 +296,7 @@ F 8 "603-MFP-25BRD52-10K" H 4975 6100 50  0001 C CNN "Order Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-rescue:R-Device R?
+L Device:R R?
 U 1 1 5E36C658
 P 5075 6100
 AR Path="/5E36C658" Ref="R?"  Part="1" 
@@ -336,7 +336,7 @@ Connection ~ 5025 5900
 Wire Wire Line
 	5025 5900 5075 5900
 $Comp
-L Mainboard-rescue:+5V-power #PWR?
+L power:+5V #PWR?
 U 1 1 5E36F16F
 P 5025 5850
 AR Path="/5E36F16F" Ref="#PWR?"  Part="1" 
@@ -350,7 +350,7 @@ F 3 "" H 5025 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-rescue:BC546-Transistor_BJT T1
+L Transistor_BJT:BC546 T1
 U 1 1 5E3A14A2
 P 5525 4400
 F 0 "T1" H 5716 4446 50  0000 L CNN
@@ -368,7 +368,7 @@ $EndComp
 Wire Wire Line
 	6125 2325 6125 2400
 $Comp
-L Mainboard-rescue:GND-power #PWR?
+L power:GND #PWR?
 U 1 1 5E3B1822
 P 5625 4725
 AR Path="/5E3B1822" Ref="#PWR?"  Part="1" 
@@ -388,7 +388,7 @@ Wire Wire Line
 Wire Wire Line
 	5625 2575 5625 4200
 $Comp
-L Mainboard-rescue:R-Device R?
+L Device:R R?
 U 1 1 5E3B3B17
 P 4650 4225
 AR Path="/5E3B3B17" Ref="R?"  Part="1" 
@@ -407,7 +407,7 @@ F 8 "603-MFP-25BRD52-4K7" H 4650 4225 50  0001 C CNN "Order Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-rescue:+5V-power #PWR?
+L power:+5V #PWR?
 U 1 1 5E3B5DDD
 P 4650 4000
 AR Path="/5E3B5DDD" Ref="#PWR?"  Part="1" 
@@ -436,7 +436,7 @@ Wire Wire Line
 Text HLabel 1975 1175 0    50   Output ~ 0
 Timer[0..1]
 $Comp
-L Mainboard-rescue:GND-power #PWR?
+L power:GND #PWR?
 U 1 1 5E772A75
 P 2925 1475
 AR Path="/5E772A75" Ref="#PWR?"  Part="1" 
@@ -462,7 +462,7 @@ Wire Bus Line
 Wire Bus Line
 	1975 1175 2275 1175
 $Comp
-L Mainboard-rescue:Conn_01x04-Connector_Generic X3
+L Connector_Generic:Conn_01x04 X3
 U 1 1 5E783A1F
 P 3200 1275
 F 0 "X3" H 3280 1267 50  0000 L CNN
@@ -480,7 +480,7 @@ $EndComp
 Wire Wire Line
 	2925 1475 3000 1475
 $Comp
-L Mainboard-rescue:GND-power #PWR?
+L power:GND #PWR?
 U 1 1 5E78679F
 P 2925 1175
 AR Path="/5E78679F" Ref="#PWR?"  Part="1" 
@@ -499,9 +499,9 @@ Wire Wire Line
 	2375 1275 3000 1275
 Wire Wire Line
 	2375 1375 3000 1375
-Text Notes 4300 5650 0    50   ~ 0
+Text Notes 4150 5850 0    50   ~ 0
 PS/2 Connector\n\n1\n2\n3\n4\n5\n6
-Text Notes 4525 5650 0    50   ~ 0
+Text Notes 4375 5850 0    50   ~ 0
 Data\nNC\nGND\n+5V\nClock\nNC
 Wire Bus Line
 	4600 6050 4600 6350

@@ -5,7 +5,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 4 7
 Title "Processor system"
-Date "2021-05-10"
+Date "2020-10-11"
 Rev "1.0"
 Comp "https://www.kampis-elektroecke.de"
 Comment1 ""
@@ -46,7 +46,7 @@ Entry Wire Line
 Entry Wire Line
 	4150 6500 4250 6400
 $Comp
-L Mainboard-rescue:GND-power #PWR?
+L power:GND #PWR?
 U 1 1 5EBEAFC0
 P 5200 6700
 AR Path="/5EBEAFC0" Ref="#PWR?"  Part="1" 
@@ -78,7 +78,7 @@ Entry Wire Line
 Entry Wire Line
 	6200 6500 6100 6400
 $Comp
-L Mainboard-rescue:C-Device C?
+L Device:C C?
 U 1 1 5EBEAFEE
 P 5350 3750
 AR Path="/5EBEAFEE" Ref="C?"  Part="1" 
@@ -96,7 +96,7 @@ F 8 "810-FA18X8R1H104KRU6" H 5350 3750 50  0001 C CNN "Order Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-rescue:+5V-power #PWR?
+L power:+5V #PWR?
 U 1 1 5EBEAFF4
 P 5200 3525
 AR Path="/5EBEAFF4" Ref="#PWR?"  Part="1" 
@@ -109,7 +109,7 @@ F 3 "" H 5200 3525 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-rescue:GND-power #PWR?
+L power:GND #PWR?
 U 1 1 5EBEAFFA
 P 5350 3950
 AR Path="/5EBEAFFA" Ref="#PWR?"  Part="1" 
@@ -236,7 +236,7 @@ Text HLabel 4500 4300 0    50   Input ~ 0
 Wire Wire Line
 	4500 4300 4650 4300
 $Comp
-L Mainboard-rescue:+5V-power #PWR?
+L power:+5V #PWR?
 U 1 1 5F0A0D76
 P 13400 5325
 AR Path="/5F0A0D76" Ref="#PWR?"  Part="1" 
@@ -249,7 +249,7 @@ F 3 "" H 13400 5325 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-rescue:C-Device C?
+L Device:C C?
 U 1 1 5F0A0D7C
 P 13550 5575
 AR Path="/5F0A0D7C" Ref="C?"  Part="1" 
@@ -267,7 +267,7 @@ F 8 "810-FA18X8R1H104KRU6" H 13550 5575 50  0001 C CNN "Order Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-rescue:GND-power #PWR?
+L power:GND #PWR?
 U 1 1 5F0A0D82
 P 13550 5750
 AR Path="/5F0A0D82" Ref="#PWR?"  Part="1" 
@@ -289,7 +289,7 @@ Wire Wire Line
 	13550 5375 13400 5375
 Connection ~ 13400 5375
 $Comp
-L Mainboard-rescue:GND-power #PWR?
+L power:GND #PWR?
 U 1 1 5F114440
 P 13400 8300
 AR Path="/5F114440" Ref="#PWR?"  Part="1" 
@@ -302,7 +302,7 @@ F 3 "" H 13400 8300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-rescue:Crystal-Device XTAL2
+L Device:Crystal XTAL2
 U 1 1 5F163710
 P 14550 6150
 F 0 "XTAL2" V 14504 6281 50  0000 L CNN
@@ -330,7 +330,7 @@ Wire Wire Line
 Wire Wire Line
 	14550 6350 14550 6300
 $Comp
-L Mainboard-rescue:C-Device C?
+L Device:C C?
 U 1 1 5F17EFA5
 P 15250 6150
 AR Path="/5F17EFA5" Ref="C?"  Part="1" 
@@ -348,7 +348,7 @@ F 8 "80-C315C300JCG5TA" H 15250 6150 50  0001 C CNN "Order Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-rescue:GND-power #PWR?
+L power:GND #PWR?
 U 1 1 5F17FE85
 P 15250 6350
 AR Path="/5F17FE85" Ref="#PWR?"  Part="1" 
@@ -368,7 +368,7 @@ Wire Wire Line
 	15250 5950 15250 6000
 Connection ~ 14550 5950
 $Comp
-L Mainboard-rescue:R-Device R?
+L Device:R R?
 U 1 1 5F1A8FA3
 P 14300 6150
 AR Path="/5F1A8FA3" Ref="R?"  Part="1" 
@@ -607,7 +607,7 @@ Connection ~ 13400 1300
 Wire Wire Line
 	13400 1300 13550 1300
 $Comp
-L Mainboard-rescue:GND-power #PWR?
+L power:GND #PWR?
 U 1 1 5EBEB073
 P 13550 1700
 AR Path="/5EBEB073" Ref="#PWR?"  Part="1" 
@@ -620,7 +620,7 @@ F 3 "" H 13550 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-rescue:C-Device C?
+L Device:C C?
 U 1 1 5EBEB06D
 P 13550 1500
 AR Path="/5EBEB06D" Ref="C?"  Part="1" 
@@ -638,7 +638,7 @@ F 8 "810-FA18X8R1H104KRU6" H 13550 1500 50  0001 C CNN "Order Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-rescue:+5V-power #PWR?
+L power:+5V #PWR?
 U 1 1 5EBEB067
 P 13400 1200
 AR Path="/5EBEB067" Ref="#PWR?"  Part="1" 
@@ -667,7 +667,7 @@ Wire Wire Line
 Wire Wire Line
 	11650 3450 12800 3450
 $Comp
-L Mainboard-rescue:GND-power #PWR?
+L power:GND #PWR?
 U 1 1 5EBEB024
 P 13400 4450
 AR Path="/5EBEB024" Ref="#PWR?"  Part="1" 
@@ -682,7 +682,7 @@ $EndComp
 Wire Wire Line
 	13400 4350 13400 4450
 $Comp
-L Mainboard-rescue:W65C22-Western_Design_Center IC?
+L Western_Design_Center:W65C22 IC?
 U 1 1 5EBEAF7E
 P 13400 3100
 AR Path="/5EBEAF7E" Ref="IC?"  Part="1" 
@@ -820,7 +820,7 @@ Wire Wire Line
 Wire Wire Line
 	10350 4200 10350 4250
 $Comp
-L Mainboard-rescue:GND-power #PWR?
+L power:GND #PWR?
 U 1 1 5EBEB04C
 P 10500 4650
 AR Path="/5EBEB04C" Ref="#PWR?"  Part="1" 
@@ -833,7 +833,7 @@ F 3 "" H 10500 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-rescue:C-Device C?
+L Device:C C?
 U 1 1 5EBEB046
 P 10500 4450
 AR Path="/5EBEB046" Ref="C?"  Part="1" 
@@ -851,7 +851,7 @@ F 8 "810-FA18X8R1H104KRU6" H 10500 4450 50  0001 C CNN "Order Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-rescue:+5V-power #PWR?
+L power:+5V #PWR?
 U 1 1 5EBEB040
 P 10350 4200
 AR Path="/5EBEB040" Ref="#PWR?"  Part="1" 
@@ -866,7 +866,7 @@ $EndComp
 Wire Wire Line
 	10350 6700 10350 6600
 $Comp
-L Mainboard-rescue:GND-power #PWR?
+L power:GND #PWR?
 U 1 1 5EBEB01C
 P 10350 6700
 AR Path="/5EBEB01C" Ref="#PWR?"  Part="1" 
@@ -879,7 +879,7 @@ F 3 "" H 10350 6700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-rescue:AS6C62256A-Alliance_Memory IC?
+L Alliance_Memory:AS6C62256A IC?
 U 1 1 5EBEAF84
 P 10350 5700
 AR Path="/5EBEAF84" Ref="IC?"  Part="1" 
@@ -900,7 +900,7 @@ Wire Bus Line
 	4150 7100 7150 7100
 Connection ~ 7150 7100
 $Comp
-L Mainboard-rescue:+5V-power #PWR?
+L power:+5V #PWR?
 U 1 1 5EBEB229
 P 7500 6200
 AR Path="/5EBEB229" Ref="#PWR?"  Part="1" 
@@ -1005,7 +1005,7 @@ Wire Wire Line
 Wire Wire Line
 	8400 4600 8650 4600
 $Comp
-L Mainboard-rescue:+5V-power #PWR?
+L power:+5V #PWR?
 U 1 1 5EBEB095
 P 6375 4875
 AR Path="/5EBEB095" Ref="#PWR?"  Part="1" 
@@ -1018,7 +1018,7 @@ F 3 "" H 6375 4875 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Mainboard-rescue:+5V-power #PWR?
+L power:+5V #PWR?
 U 1 1 5EBEB02A
 P 8000 4200
 AR Path="/5EBEB02A" Ref="#PWR?"  Part="1" 
@@ -1031,7 +1031,7 @@ F 3 "" H 8000 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-rescue:GND-power #PWR?
+L power:GND #PWR?
 U 1 1 5EBEB016
 P 8000 6700
 AR Path="/5EBEB016" Ref="#PWR?"  Part="1" 
@@ -1119,7 +1119,7 @@ Wire Wire Line
 Text Label 12600 7250 0    50   ~ 0
 D0
 $Comp
-L Mainboard-rescue:W65C51-Western_Design_Center IC8
+L Western_Design_Center:W65C51 IC8
 U 1 1 5F08EFF6
 P 13400 7050
 F 0 "IC8" H 13000 8150 50  0000 C CNN
@@ -1171,11 +1171,9 @@ Entry Wire Line
 Entry Wire Line
 	11650 7250 11550 7150
 $Comp
-L Mainboard-rescue:74HC00-74xx IC3
+L 74xx:74HC00 IC3
 U 5 2 5DD62749
 P 10600 10200
-AR Path="/5DD62749" Ref="IC3"  Part="5" 
-AR Path="/5EB09E21/5DD62749" Ref="IC3"  Part="5" 
 F 0 "IC3" H 10658 10246 50  0000 L CNN
 F 1 "74HC00" H 10658 10155 50  0000 L CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 10600 10200 50  0001 C CNN
@@ -1189,7 +1187,7 @@ F 8 "595-SN74HC00AN" H 10600 10200 50  0001 C CNN "Order Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-rescue:C-Device C?
+L Device:C C?
 U 1 1 5DD67E33
 P 11200 10200
 AR Path="/5DD67E33" Ref="C?"  Part="1" 
@@ -1207,7 +1205,7 @@ F 8 "810-FA18X8R1H104KRU6" H 11200 10200 50  0001 C CNN "Order Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-rescue:GND-power #PWR?
+L power:GND #PWR?
 U 1 1 5DD67E39
 P 11200 10725
 AR Path="/5DD67E39" Ref="#PWR?"  Part="1" 
@@ -1220,7 +1218,7 @@ F 3 "" H 11200 10725 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-rescue:+5V-power #PWR?
+L power:+5V #PWR?
 U 1 1 5DD7BAB1
 P 10600 9600
 AR Path="/5DD7BAB1" Ref="#PWR?"  Part="1" 
@@ -1233,7 +1231,7 @@ F 3 "" H 10600 9600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-rescue:GND-power #PWR?
+L power:GND #PWR?
 U 1 1 5DD90602
 P 10600 10750
 AR Path="/5DD90602" Ref="#PWR?"  Part="1" 
@@ -1254,7 +1252,7 @@ Wire Wire Line
 Wire Wire Line
 	8000 6600 8000 6700
 $Comp
-L Mainboard-rescue:GND-power #PWR?
+L power:GND #PWR?
 U 1 1 5DF4A850
 P 11250 6700
 AR Path="/5DF4A850" Ref="#PWR?"  Part="1" 
@@ -1277,7 +1275,7 @@ Wire Wire Line
 Wire Wire Line
 	5750 4800 5800 4800
 $Comp
-L Mainboard-rescue:W65C22-Western_Design_Center IC5
+L Western_Design_Center:W65C22 IC5
 U 1 1 5DA8CE2C
 P 10100 2650
 F 0 "IC5" H 9650 3850 50  0000 C CNN
@@ -1304,7 +1302,7 @@ Connection ~ 10100 850
 Wire Wire Line
 	10100 850  10250 850 
 $Comp
-L Mainboard-rescue:GND-power #PWR?
+L power:GND #PWR?
 U 1 1 5DA90421
 P 10250 1250
 AR Path="/5DA90421" Ref="#PWR?"  Part="1" 
@@ -1317,7 +1315,7 @@ F 3 "" H 10250 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-rescue:C-Device C?
+L Device:C C?
 U 1 1 5DA9042A
 P 10250 1050
 AR Path="/5DA9042A" Ref="C?"  Part="1" 
@@ -1335,7 +1333,7 @@ F 8 "810-FA18X8R1H104KRU6" H 10250 1050 50  0001 C CNN "Order Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-rescue:+5V-power #PWR?
+L power:+5V #PWR?
 U 1 1 5DA90430
 P 10100 750
 AR Path="/5DA90430" Ref="#PWR?"  Part="1" 
@@ -1488,7 +1486,7 @@ Wire Wire Line
 NoConn ~ 10700 1600
 NoConn ~ 10700 1700
 $Comp
-L Mainboard-rescue:28C256-Memory_EEPROM IC?
+L Memory_EEPROM:28C256 IC?
 U 1 1 5EBEAFAB
 P 8000 5500
 AR Path="/5EBEAFAB" Ref="IC?"  Part="1" 
@@ -1512,7 +1510,7 @@ Text HLabel 12350 6400 0    50   Output ~ 0
 Text HLabel 4500 4700 0    50   Input ~ 0
 ~IRQ_CPU
 $Comp
-L Mainboard-rescue:R-Device R?
+L Device:R R?
 U 1 1 5EBEB08E
 P 6175 4875
 AR Path="/5EBEB08E" Ref="R?"  Part="1" 
@@ -1531,7 +1529,7 @@ F 8 "603-MFP-25BRD52-10K" H 6175 4875 50  0001 C CNN "Order Number"
 $EndComp
 NoConn ~ 5750 4400
 $Comp
-L Mainboard-rescue:W65C02-Western_Design_Center IC?
+L Western_Design_Center:W65C02 IC?
 U 1 1 5EBEAF78
 P 5200 5350
 AR Path="/5EBEAF78" Ref="IC?"  Part="1" 
@@ -1551,7 +1549,7 @@ $EndComp
 Wire Wire Line
 	4500 4700 4650 4700
 $Comp
-L Mainboard-rescue:+5V-power #PWR?
+L power:+5V #PWR?
 U 1 1 5DECCA6F
 P 5875 5250
 AR Path="/5DECCA6F" Ref="#PWR?"  Part="1" 
@@ -1577,7 +1575,7 @@ Wire Wire Line
 Wire Wire Line
 	7475 6400 7600 6400
 $Comp
-L Mainboard-rescue:GND-power #PWR?
+L power:GND #PWR?
 U 1 1 5DEBFFC7
 P 7300 6700
 AR Path="/5DEBFFC7" Ref="#PWR?"  Part="1" 
@@ -1617,7 +1615,7 @@ Text Label 12350 2750 2    50   ~ 0
 Wire Wire Line
 	12700 2650 12800 2650
 $Comp
-L Mainboard-rescue:+5V-power #PWR?
+L power:+5V #PWR?
 U 1 1 5E1808C3
 P 12700 2650
 AR Path="/5E1808C3" Ref="#PWR?"  Part="1" 
@@ -1632,7 +1630,7 @@ $EndComp
 Wire Wire Line
 	9400 2200 9500 2200
 $Comp
-L Mainboard-rescue:+5V-power #PWR?
+L power:+5V #PWR?
 U 1 1 5E1E7B71
 P 9400 2200
 AR Path="/5E1E7B71" Ref="#PWR?"  Part="1" 
@@ -1651,7 +1649,7 @@ Text Label 12350 6850 2    50   ~ 0
 Wire Wire Line
 	12750 6750 12850 6750
 $Comp
-L Mainboard-rescue:+5V-power #PWR?
+L power:+5V #PWR?
 U 1 1 5E20A942
 P 12750 6750
 AR Path="/5E20A942" Ref="#PWR?"  Part="1" 
@@ -1670,7 +1668,7 @@ Wire Wire Line
 Wire Wire Line
 	10100 4050 10100 3900
 $Comp
-L Mainboard-rescue:GND-power #PWR?
+L power:GND #PWR?
 U 1 1 5DAAA0A4
 P 10100 4050
 AR Path="/5DAAA0A4" Ref="#PWR?"  Part="1" 
@@ -1847,7 +1845,7 @@ PS2[0..1]
 Wire Bus Line
 	11525 1600 11450 1600
 $Comp
-L Mainboard-rescue:Conn_01x02-Connector_Generic X5
+L Connector_Generic:Conn_01x02 X5
 U 1 1 5E26AB5F
 P 700 900
 F 0 "X5" H 700 1000 50  0000 C CNN
@@ -1867,7 +1865,7 @@ Wire Wire Line
 Wire Wire Line
 	900  900  1125 900 
 $Comp
-L Mainboard-rescue:GND-power #PWR?
+L power:GND #PWR?
 U 1 1 5DCE2807
 P 1125 1200
 AR Path="/5DCE2807" Ref="#PWR?"  Part="1" 
@@ -1883,7 +1881,7 @@ $EndComp
 Wire Wire Line
 	1125 1000 1125 1200
 $Comp
-L Mainboard-rescue:SW_SPDT-Switch SW?
+L Switch:SW_SPDT SW?
 U 1 1 5E027064
 P 4650 1450
 AR Path="/5EC67F7B/5E027064" Ref="SW?"  Part="1" 
@@ -1917,7 +1915,7 @@ CLOCK_EXT
 Text HLabel 4975 1450 2    50   Output ~ 0
 Clock
 $Comp
-L Mainboard-rescue:GND-power #PWR?
+L power:GND #PWR?
 U 1 1 5EBEB298
 P 2750 2150
 AR Path="/5EBEB298" Ref="#PWR?"  Part="1" 
@@ -1930,7 +1928,7 @@ F 3 "" H 2750 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-rescue:+5V-power #PWR?
+L power:+5V #PWR?
 U 1 1 5EBEB292
 P 2750 800
 AR Path="/5EBEB292" Ref="#PWR?"  Part="1" 
@@ -1949,7 +1947,7 @@ Wire Wire Line
 Wire Wire Line
 	2750 1150 2750 800 
 $Comp
-L Mainboard-rescue:ECS-100X-ECS XTAL?
+L ECS:ECS-100X XTAL?
 U 1 1 5EBEB282
 P 2750 1450
 AR Path="/5EBEB282" Ref="XTAL?"  Part="1" 
@@ -2041,7 +2039,7 @@ Wire Wire Line
 Wire Wire Line
 	5150 10700 5150 10750
 $Comp
-L Mainboard-rescue:C-Device C?
+L Device:C C?
 U 1 1 5DA77F99
 P 5300 9150
 AR Path="/5DA77F99" Ref="C?"  Part="1" 
@@ -2059,7 +2057,7 @@ F 8 "810-FA18X8R1H104KRU6" H 5300 9150 50  0001 C CNN "Order Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-rescue:GND-power #PWR?
+L power:GND #PWR?
 U 1 1 5DA30F54
 P 5300 9350
 AR Path="/5DA30F54" Ref="#PWR?"  Part="1" 
@@ -2074,7 +2072,7 @@ $EndComp
 Wire Wire Line
 	5150 8950 5300 8950
 $Comp
-L Mainboard-rescue:GND-power #PWR?
+L power:GND #PWR?
 U 1 1 5DA30F4B
 P 5150 10750
 AR Path="/5DA30F4B" Ref="#PWR?"  Part="1" 
@@ -2089,7 +2087,7 @@ $EndComp
 Wire Wire Line
 	5150 8950 5150 8900
 $Comp
-L Mainboard-rescue:+5V-power #PWR?
+L power:+5V #PWR?
 U 1 1 5DA30F43
 P 5150 8900
 AR Path="/5DA30F43" Ref="#PWR?"  Part="1" 
@@ -2102,7 +2100,7 @@ F 3 "" H 5150 8900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-rescue:74HC138-Logic IC?
+L Logic:74HC138 IC?
 U 1 1 5DA01AB5
 P 5150 10000
 AR Path="/5DA01AB5" Ref="IC?"  Part="1" 
@@ -2130,11 +2128,9 @@ A13
 Entry Wire Line
 	4150 8200 4250 8300
 $Comp
-L Mainboard-rescue:74HC00-74xx IC3
+L 74xx:74HC00 IC3
 U 3 1 5DE5C7B0
 P 5450 8200
-AR Path="/5DE5C7B0" Ref="IC3"  Part="3" 
-AR Path="/5EB09E21/5DE5C7B0" Ref="IC3"  Part="3" 
 F 0 "IC3" H 5450 8525 50  0000 C CNN
 F 1 "74HC00" H 5450 8434 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 5450 8200 50  0001 C CNN
@@ -2156,11 +2152,9 @@ Wire Wire Line
 Entry Wire Line
 	4150 8000 4250 8100
 $Comp
-L Mainboard-rescue:74HC00-74xx IC3
+L 74xx:74HC00 IC3
 U 2 1 5DE275DC
 P 8500 7550
-AR Path="/5DE275DC" Ref="IC3"  Part="2" 
-AR Path="/5EB09E21/5DE275DC" Ref="IC3"  Part="2" 
 F 0 "IC3" H 8500 7875 50  0000 C CNN
 F 1 "74HC00" H 8500 7784 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 8500 7550 50  0001 C CNN
@@ -2174,11 +2168,9 @@ F 8 "595-SN74HC00AN" H 8500 7550 50  0001 C CNN "Order Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mainboard-rescue:74HC00-74xx IC3
+L 74xx:74HC00 IC3
 U 1 1 5DE24ADF
 P 5450 7650
-AR Path="/5DE24ADF" Ref="IC3"  Part="1" 
-AR Path="/5EB09E21/5DE24ADF" Ref="IC3"  Part="1" 
 F 0 "IC3" H 5450 7975 50  0000 C CNN
 F 1 "74HC00" H 5450 7884 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 5450 7650 50  0001 C CNN
@@ -2219,6 +2211,18 @@ Wire Wire Line
 	8150 7450 8200 7450
 Wire Bus Line
 	4150 7075 4150 7100
+Text Notes 11900 9200 0    100  ~ 20
+Info
+Wire Notes Line
+	11850 9000 11850 9900
+Wire Notes Line
+	16000 9000 11850 9000
+Wire Notes Line
+	16000 9900 16000 9000
+Wire Notes Line
+	11850 9900 16000 9900
+Text Notes 11950 9400 0    50   ~ 0
+- WDC recommends to use an oscillator for system time base instead of PHI1O and \nPHI2O, because the clock delay of PHI1O and PHI2O to PHI2 is no longer tested.
 Wire Bus Line
 	11300 1500 11300 3350
 Wire Bus Line

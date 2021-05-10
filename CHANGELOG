@@ -1,6 +1,6 @@
 Verion				Comment
 0.1					First version
-1.0					Add missing pull-up resistor for RESET signal
+0.2					Add missing pull-up resistor for RESET signal
 					Add switch to select between the oscillator or a push button as clock source
 					Change value of C8 to 30 pF
 					Fix wrong PS/2 connection, connect PS/2 clock with W65C22 interrupt line
@@ -18,3 +18,4 @@ Verion				Comment
 					Add LCD backlight switch
 					Add timer inputs/outputs for VIA2
 					Add pull up resistors for PB
+					Release hardware version 1.0

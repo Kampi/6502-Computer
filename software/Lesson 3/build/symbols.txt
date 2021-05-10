@@ -1,3 +1,0 @@
-al 00A01F .VIA1_Init
-al 00A055 .VIA1_UpdateLED
-al 00A03A .VIA2_Init

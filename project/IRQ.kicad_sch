@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Interrupt logic")
-		(date "2024-10-06")
-		(rev "1.0")
+		(date "2024-10-12")
+		(rev "1.1")
 		(company "https://www.kampis-elektroecke.de")
 		(comment 4 "Author: Ing. Daniel Kampert")
 	)
@@ -874,7 +874,7 @@
 					)
 				)
 			)
-			(property "Value" "Logic_74HC148"
+			(property "Value" "74HC148"
 				(at -3.81 -13.97 0)
 				(effects
 					(font
@@ -891,7 +891,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74hc148.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -915,7 +915,7 @@
 					(end 7.62 -12.7)
 					(stroke
 						(width 0.254)
-						(type default)
+						(type solid)
 					)
 					(fill
 						(type background)
@@ -1360,9 +1360,9 @@
 		)
 		(symbol "power:+5V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1410,7 +1410,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "power-flag"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1460,8 +1460,8 @@
 			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+5V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1480,9 +1480,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1530,7 +1530,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "power-flag"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1556,8 +1556,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1675,7 +1675,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 92.71) (xy 121.285 92.71)
+			(xy 139.7 92.71) (xy 121.92 92.71)
 		)
 		(stroke
 			(width 0)
@@ -1735,7 +1735,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.285 80.01) (xy 134.62 80.01)
+			(xy 121.92 80.01) (xy 134.62 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1765,7 +1765,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.285 74.93) (xy 151.13 74.93)
+			(xy 121.92 74.93) (xy 151.13 74.93)
 		)
 		(stroke
 			(width 0)
@@ -1845,7 +1845,7 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 44.45) (xy 33.02 48.895)
+			(xy 33.02 44.45) (xy 33.02 49.53)
 		)
 		(stroke
 			(width 0)
@@ -1875,7 +1875,7 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 45.72) (xy 22.86 48.895)
+			(xy 22.86 45.72) (xy 22.86 49.53)
 		)
 		(stroke
 			(width 0)
@@ -1905,7 +1905,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.285 90.17) (xy 151.13 90.17)
+			(xy 121.92 90.17) (xy 151.13 90.17)
 		)
 		(stroke
 			(width 0)
@@ -1945,16 +1945,6 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 18.415) (xy 22.86 19.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e807127d-3013-4e6e-a160-f258e33d9fb8")
-	)
-	(wire
-		(pts
 			(xy 134.62 67.31) (xy 134.62 80.01)
 		)
 		(stroke
@@ -1988,7 +1978,7 @@
 	)
 	(text "The \"S\" variant of the VIA is used. This variant uses a Push-Pull driver at the IRQ line."
 		(exclude_from_sim no)
-		(at 179.324 149.352 0)
+		(at 179.07 149.86 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2011,7 +2001,7 @@
 	)
 	(hierarchical_label "~{IRQ_VIA_2}"
 		(shape input)
-		(at 121.285 90.17 180)
+		(at 121.92 90.17 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2035,7 +2025,7 @@
 	)
 	(hierarchical_label "~{IRQ_VIA_1}"
 		(shape input)
-		(at 121.285 74.93 180)
+		(at 121.92 74.93 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2047,7 +2037,7 @@
 	)
 	(hierarchical_label "~{IRQ_ACIA}"
 		(shape input)
-		(at 121.285 92.71 180)
+		(at 121.92 92.71 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2059,7 +2049,7 @@
 	)
 	(hierarchical_label "~{IRQ}"
 		(shape input)
-		(at 121.285 80.01 180)
+		(at 121.92 80.01 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2079,7 +2069,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005de0c707")
-		(property "Reference" "R6"
+		(property "Reference" "R301"
 			(at 20.32 21.5899 0)
 			(effects
 				(font
@@ -2106,7 +2096,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf"
+		(property "Datasheet" "~"
 			(at 22.86 22.86 0)
 			(effects
 				(font
@@ -2115,7 +2105,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 22.86 22.86 0)
 			(effects
 				(font
@@ -2178,7 +2168,7 @@
 		(instances
 			(project "Mainboard"
 				(path "/9db16341-dac0-4aab-9c62-7d88c111c1ce/00000000-0000-0000-0000-00005e710b5b"
-					(reference "R6")
+					(reference "R301")
 					(unit 1)
 				)
 			)
@@ -2194,7 +2184,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005de0c710")
-		(property "Reference" "SW5"
+		(property "Reference" "SW301"
 			(at 24.13 39.3699 90)
 			(effects
 				(font
@@ -2221,7 +2211,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F1825910%7FC10%7Fpdf%7FEnglish%7FENG_CD_1825910_C10.pdf%7F2-1825910-7"
+		(property "Datasheet" "~"
 			(at 17.78 40.64 0)
 			(effects
 				(font
@@ -2230,7 +2220,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 22.86 40.64 0)
 			(effects
 				(font
@@ -2293,7 +2283,7 @@
 		(instances
 			(project "Mainboard"
 				(path "/9db16341-dac0-4aab-9c62-7d88c111c1ce/00000000-0000-0000-0000-00005e710b5b"
-					(reference "SW5")
+					(reference "SW301")
 					(unit 1)
 				)
 			)
@@ -2301,15 +2291,15 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 22.86 18.415 0)
+		(at 22.86 19.05 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005de0c716")
-		(property "Reference" "#PWR055"
-			(at 22.86 22.225 0)
+		(property "Reference" "#PWR0301"
+			(at 22.86 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2318,7 +2308,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 23.241 14.0208 0)
+			(at 23.241 14.6558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2326,7 +2316,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 22.86 18.415 0)
+			(at 22.86 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2335,7 +2325,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 22.86 18.415 0)
+			(at 22.86 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2343,8 +2333,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 22.86 18.415 0)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 22.86 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2358,7 +2348,7 @@
 		(instances
 			(project "Mainboard"
 				(path "/9db16341-dac0-4aab-9c62-7d88c111c1ce/00000000-0000-0000-0000-00005e710b5b"
-					(reference "#PWR055")
+					(reference "#PWR0301")
 					(unit 1)
 				)
 			)
@@ -2366,15 +2356,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 22.86 48.895 0)
+		(at 22.86 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005de0c71d")
-		(property "Reference" "#PWR056"
-			(at 22.86 55.245 0)
+		(property "Reference" "#PWR0302"
+			(at 22.86 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2383,7 +2373,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 22.987 53.2892 0)
+			(at 22.987 53.9242 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2391,7 +2381,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 22.86 48.895 0)
+			(at 22.86 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2400,7 +2390,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 22.86 48.895 0)
+			(at 22.86 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2408,8 +2398,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 22.86 48.895 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 22.86 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2423,7 +2413,7 @@
 		(instances
 			(project "Mainboard"
 				(path "/9db16341-dac0-4aab-9c62-7d88c111c1ce/00000000-0000-0000-0000-00005e710b5b"
-					(reference "#PWR056")
+					(reference "#PWR0302")
 					(unit 1)
 				)
 			)
@@ -2438,7 +2428,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005de0c726")
-		(property "Reference" "C9"
+		(property "Reference" "C301"
 			(at 35.941 39.4716 0)
 			(effects
 				(font
@@ -2447,7 +2437,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100n"
 			(at 35.941 41.783 0)
 			(effects
 				(font
@@ -2465,7 +2455,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.de/datasheet/2/400/eadmlcc_halogenfree_fa150_en-890480.pdf"
+		(property "Datasheet" "~"
 			(at 33.02 40.64 0)
 			(effects
 				(font
@@ -2474,7 +2464,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 33.02 40.64 0)
 			(effects
 				(font
@@ -2537,7 +2527,7 @@
 		(instances
 			(project "Mainboard"
 				(path "/9db16341-dac0-4aab-9c62-7d88c111c1ce/00000000-0000-0000-0000-00005e710b5b"
-					(reference "C9")
+					(reference "C301")
 					(unit 1)
 				)
 			)
@@ -2545,15 +2535,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 33.02 48.895 0)
+		(at 33.02 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005de0c731")
-		(property "Reference" "#PWR057"
-			(at 33.02 55.245 0)
+		(property "Reference" "#PWR0303"
+			(at 33.02 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2562,7 +2552,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 33.147 53.2892 0)
+			(at 33.147 53.9242 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2570,7 +2560,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 33.02 48.895 0)
+			(at 33.02 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2579,7 +2569,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 33.02 48.895 0)
+			(at 33.02 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2587,8 +2577,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 33.02 48.895 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 33.02 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2602,7 +2592,7 @@
 		(instances
 			(project "Mainboard"
 				(path "/9db16341-dac0-4aab-9c62-7d88c111c1ce/00000000-0000-0000-0000-00005e710b5b"
-					(reference "#PWR057")
+					(reference "#PWR0303")
 					(unit 1)
 				)
 			)
@@ -2617,7 +2607,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005e717796")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR0306"
 			(at 161.29 57.15 0)
 			(effects
 				(font
@@ -2652,7 +2642,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 161.29 53.34 0)
 			(effects
 				(font
@@ -2667,7 +2657,7 @@
 		(instances
 			(project "Mainboard"
 				(path "/9db16341-dac0-4aab-9c62-7d88c111c1ce/00000000-0000-0000-0000-00005e710b5b"
-					(reference "#PWR060")
+					(reference "#PWR0306")
 					(unit 1)
 				)
 			)
@@ -2682,7 +2672,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005e7177a8")
-		(property "Reference" "#PWR061"
+		(property "Reference" "#PWR0307"
 			(at 161.29 115.57 0)
 			(effects
 				(font
@@ -2717,7 +2707,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 161.29 109.22 0)
 			(effects
 				(font
@@ -2732,7 +2722,7 @@
 		(instances
 			(project "Mainboard"
 				(path "/9db16341-dac0-4aab-9c62-7d88c111c1ce/00000000-0000-0000-0000-00005e710b5b"
-					(reference "#PWR061")
+					(reference "#PWR0307")
 					(unit 1)
 				)
 			)
@@ -2747,7 +2737,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005e7177af")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR0305"
 			(at 149.86 115.57 0)
 			(effects
 				(font
@@ -2782,7 +2772,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 149.86 109.22 0)
 			(effects
 				(font
@@ -2797,7 +2787,7 @@
 		(instances
 			(project "Mainboard"
 				(path "/9db16341-dac0-4aab-9c62-7d88c111c1ce/00000000-0000-0000-0000-00005e710b5b"
-					(reference "#PWR059")
+					(reference "#PWR0305")
 					(unit 1)
 				)
 			)
@@ -2812,7 +2802,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005e7177ba")
-		(property "Reference" "RN3"
+		(property "Reference" "RN301"
 			(at 149.5552 61.0616 0)
 			(effects
 				(font
@@ -2848,7 +2838,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "8 resistor network, star topology, bussed resistors, small symbol"
 			(at 139.7 62.23 0)
 			(effects
 				(font
@@ -2932,7 +2922,7 @@
 		(instances
 			(project "Mainboard"
 				(path "/9db16341-dac0-4aab-9c62-7d88c111c1ce/00000000-0000-0000-0000-00005e710b5b"
-					(reference "RN3")
+					(reference "RN301")
 					(unit 1)
 				)
 			)
@@ -2947,7 +2937,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005e7177c0")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR0304"
 			(at 129.54 57.15 0)
 			(effects
 				(font
@@ -2982,7 +2972,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 129.54 53.34 0)
 			(effects
 				(font
@@ -2997,7 +2987,7 @@
 		(instances
 			(project "Mainboard"
 				(path "/9db16341-dac0-4aab-9c62-7d88c111c1ce/00000000-0000-0000-0000-00005e710b5b"
-					(reference "#PWR058")
+					(reference "#PWR0304")
 					(unit 1)
 				)
 			)
@@ -3012,7 +3002,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005e7177d6")
-		(property "Reference" "IC9"
+		(property "Reference" "IC301"
 			(at 154.94 71.12 0)
 			(effects
 				(font
@@ -3100,6 +3090,15 @@
 				(hide yes)
 			)
 		)
+		(property "CONFIG" ""
+			(at 161.29 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "16"
 			(uuid "778d636a-003b-45a2-8176-805ff914d7ea")
 		)
@@ -3151,7 +3150,7 @@
 		(instances
 			(project "Mainboard"
 				(path "/9db16341-dac0-4aab-9c62-7d88c111c1ce/00000000-0000-0000-0000-00005e710b5b"
-					(reference "IC9")
+					(reference "IC301")
 					(unit 1)
 				)
 			)
@@ -3167,7 +3166,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005e72f959")
-		(property "Reference" "R7"
+		(property "Reference" "R302"
 			(at 27.94 25.4 90)
 			(effects
 				(font
@@ -3192,7 +3191,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.de/datasheet/2/447/Yageo%20LR_MFP_2013-594635.pdf"
+		(property "Datasheet" "~"
 			(at 27.94 31.75 0)
 			(effects
 				(font
@@ -3201,7 +3200,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 27.94 31.75 0)
 			(effects
 				(font
@@ -3264,7 +3263,7 @@
 		(instances
 			(project "Mainboard"
 				(path "/9db16341-dac0-4aab-9c62-7d88c111c1ce/00000000-0000-0000-0000-00005e710b5b"
-					(reference "R7")
+					(reference "R302")
 					(unit 1)
 				)
 			)

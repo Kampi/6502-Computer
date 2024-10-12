@@ -1552,6 +1552,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 88.9) (xy 118.11 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24c98d83-975e-40b8-90d4-4db18bc46c92")
+	)
+	(wire
+		(pts
 			(xy 158.75 85.09) (xy 162.56 85.09)
 		)
 		(stroke
@@ -1569,6 +1579,16 @@
 			(type default)
 		)
 		(uuid "2f8dfa45-14b0-4de4-b3b0-e7b73da81a0a")
+	)
+	(wire
+		(pts
+			(xy 88.9 87.63) (xy 115.57 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37643d7d-5100-42ef-87f2-e8cf628168b6")
 	)
 	(wire
 		(pts
@@ -1642,6 +1662,16 @@
 	)
 	(wire
 		(pts
+			(xy 115.57 87.63) (xy 115.57 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76a91c43-7763-4059-8232-63de2055adee")
+	)
+	(wire
+		(pts
 			(xy 121.92 95.25) (xy 123.19 95.25)
 		)
 		(stroke
@@ -1692,6 +1722,26 @@
 	)
 	(wire
 		(pts
+			(xy 118.11 87.63) (xy 123.19 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ad09641-4eae-42a5-88d8-5eeb2e6d512c")
+	)
+	(wire
+		(pts
+			(xy 113.03 90.17) (xy 113.03 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e0e9e12-802b-4396-9da4-8c989862ad8a")
+	)
+	(wire
+		(pts
 			(xy 134.62 57.15) (xy 134.62 53.34)
 		)
 		(stroke
@@ -1699,16 +1749,6 @@
 			(type default)
 		)
 		(uuid "92786ddd-53cc-4458-af25-eb5a2b46154e")
-	)
-	(wire
-		(pts
-			(xy 123.19 90.17) (xy 88.9 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "946b1da9-be3d-46a5-8490-1a85862f3b88")
 	)
 	(wire
 		(pts
@@ -1732,6 +1772,16 @@
 	)
 	(wire
 		(pts
+			(xy 118.11 88.9) (xy 118.11 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96d29b24-7e9b-4ce1-8571-ff5a933d117f")
+	)
+	(wire
+		(pts
 			(xy 80.01 99.06) (xy 81.28 99.06)
 		)
 		(stroke
@@ -1739,6 +1789,16 @@
 			(type default)
 		)
 		(uuid "977371ef-232c-40b3-8805-7fed7909b206")
+	)
+	(wire
+		(pts
+			(xy 88.9 90.17) (xy 113.03 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99789595-1365-4209-a8fa-0a93517d0296")
 	)
 	(wire
 		(pts
@@ -1762,6 +1822,16 @@
 	)
 	(wire
 		(pts
+			(xy 115.57 90.17) (xy 123.19 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4f36856-4c2d-48ff-bcd1-63d5a08624d6")
+	)
+	(wire
+		(pts
 			(xy 189.23 92.71) (xy 189.23 96.52)
 		)
 		(stroke
@@ -1769,16 +1839,6 @@
 			(type default)
 		)
 		(uuid "a559f63f-b3a0-4b81-aa6a-605d4da47af6")
-	)
-	(wire
-		(pts
-			(xy 88.9 87.63) (xy 123.19 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad541cb2-f097-4769-b1c0-c1cca23ca9bd")
 	)
 	(wire
 		(pts
@@ -2115,7 +2175,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.de/datasheet/2/418/7/ENG_CD_292304_D4-2061420.pdf"
 			(at 85.09 88.9 0)
 			(effects
 				(font
@@ -2144,15 +2204,6 @@
 		)
 		(property "Mfr. No." "292304-2"
 			(at 82.7278 75.7936 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "571-292304-2"
-			(at 82.7278 78.105 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2249,7 +2300,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.de/datasheet/2/447/KEM_C1002_X7R_SMD-3316098.pdf"
 			(at 134.62 60.96 0)
 			(effects
 				(font
@@ -2277,15 +2328,6 @@
 			)
 		)
 		(property "Mfr. No." "C0805C104K5RACTU"
-			(at 134.62 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "80-C0805C104K5R"
 			(at 134.62 60.96 0)
 			(effects
 				(font
@@ -2429,7 +2471,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.de/datasheet/2/447/KEM_C1002_X7R_SMD-3316098.pdf"
 			(at 147.32 60.96 0)
 			(effects
 				(font
@@ -2457,15 +2499,6 @@
 			)
 		)
 		(property "Mfr. No." "C0805C104K5RACTU"
-			(at 147.32 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "80-C0805C104K5R"
 			(at 147.32 60.96 0)
 			(effects
 				(font
@@ -2609,7 +2642,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.de/datasheet/2/216/apt2012pyw-1173287.pdf"
 			(at 189.23 88.9 0)
 			(effects
 				(font
@@ -2637,15 +2670,6 @@
 			)
 		)
 		(property "Mfr. No." "APT2012PYW"
-			(at 189.23 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "604-APT2012PYW"
 			(at 189.23 88.9 0)
 			(effects
 				(font
@@ -2724,7 +2748,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.de/datasheet/2/447/Yageo_LR_MFP_1-1947926.pdf"
 			(at 189.23 100.33 0)
 			(effects
 				(font
@@ -2751,16 +2775,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr. No." "MFP-25BRD52-1K"
-			(at 189.23 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "603-MFP-25BRD52-1K"
+		(property "Mfr. No." "RT0805DRE071KL"
 			(at 189.23 100.33 0)
 			(effects
 				(font
@@ -2839,7 +2854,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.de/datasheet/2/447/Yageo_LR_MFP_1-1947926.pdf"
 			(at 196.85 100.33 0)
 			(effects
 				(font
@@ -2866,16 +2881,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr. No." "MFP-25BRD52-1K"
-			(at 196.85 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "603-MFP-25BRD52-1K"
+		(property "Mfr. No." "RT0805DRE071KL"
 			(at 196.85 100.33 0)
 			(effects
 				(font
@@ -2954,7 +2960,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.de/datasheet/2/216/apt2012pyw-1173287.pdf"
 			(at 196.85 88.9 0)
 			(effects
 				(font
@@ -2982,15 +2988,6 @@
 			)
 		)
 		(property "Mfr. No." "APT2012PGW"
-			(at 196.85 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "604-APT2012PGW"
 			(at 196.85 88.9 0)
 			(effects
 				(font
@@ -3067,7 +3064,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.de/datasheet/2/447/KEM_C1002_X7R_SMD-3316098.pdf"
 			(at 118.11 80.01 0)
 			(effects
 				(font
@@ -3095,15 +3092,6 @@
 			)
 		)
 		(property "Mfr. No." "C0805C104K5RACTU"
-			(at 118.11 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "80-C0805C104K5R"
 			(at 118.11 80.01 0)
 			(effects
 				(font

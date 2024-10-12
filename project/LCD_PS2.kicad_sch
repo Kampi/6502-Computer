@@ -2874,19 +2874,21 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005daa1fea")
 		(property "Reference" "DS401"
-			(at 123.19 52.07 0)
+			(at 121.666 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "DISPLAY"
-			(at 125.73 90.17 0)
+			(at 121.92 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Display:WC1602A"
@@ -2927,15 +2929,6 @@
 			)
 		)
 		(property "Mfr. No." "NHD-0220GZ-FSW-GBW-L"
-			(at 129.54 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "763-0220GZ-FSW-GBW"
 			(at 129.54 71.12 0)
 			(effects
 				(font
@@ -3220,15 +3213,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" "571-5749180-1"
-			(at 140.97 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Distributor" "Mouser"
 			(at 140.97 140.97 0)
 			(effects
@@ -3453,7 +3437,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.de/datasheet/2/54/3386-776606.pdf"
 			(at 156.21 55.88 0)
 			(effects
 				(font
@@ -3481,15 +3465,6 @@
 			)
 		)
 		(property "Mfr. No." "3386Y-1-103LF"
-			(at 156.21 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "652-3386Y-1-103LF"
 			(at 156.21 55.88 0)
 			(effects
 				(font
@@ -3684,7 +3659,7 @@
 		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005e36c0fd")
 		(property "Reference" "R402"
-			(at 125.095 154.9399 0)
+			(at 124.46 154.9399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3693,7 +3668,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 125.095 157.4799 0)
+			(at 124.46 157.4799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3710,7 +3685,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.de/datasheet/2/447/YAGEO_MFP_datasheet_2024v3-3447153.pdf"
 			(at 127 156.21 0)
 			(effects
 				(font
@@ -3738,15 +3713,6 @@
 			)
 		)
 		(property "Mfr. No." "MFP-25BRD52-10K"
-			(at 127 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "603-MFP-25BRD52-10K"
 			(at 127 156.21 0)
 			(effects
 				(font
@@ -3799,7 +3765,7 @@
 		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005e36c658")
 		(property "Reference" "R403"
-			(at 131.445 154.9399 0)
+			(at 132.08 154.9399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3808,7 +3774,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 131.445 157.4799 0)
+			(at 132.08 157.4799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3825,7 +3791,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.de/datasheet/2/447/YAGEO_MFP_datasheet_2024v3-3447153.pdf"
 			(at 129.54 156.21 0)
 			(effects
 				(font
@@ -3853,15 +3819,6 @@
 			)
 		)
 		(property "Mfr. No." "MFP-25BRD52-10K"
-			(at 129.54 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "603-MFP-25BRD52-10K"
 			(at 129.54 156.21 0)
 			(effects
 				(font
@@ -3979,7 +3936,7 @@
 		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005e3a14a2")
 		(property "Reference" "T401"
-			(at 146.685 110.4899 0)
+			(at 146.05 110.4899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3988,7 +3945,7 @@
 			)
 		)
 		(property "Value" "BC546"
-			(at 146.685 113.0299 0)
+			(at 146.05 113.0299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4036,15 +3993,6 @@
 			)
 		)
 		(property "Mfr. No." "BC546CTA"
-			(at 140.97 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "512-BC546CTA"
 			(at 140.97 111.76 0)
 			(effects
 				(font
@@ -4219,15 +4167,6 @@
 			)
 		)
 		(property "Mfr. No." "MFP-25BRD52-4K7"
-			(at 118.11 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "603-MFP-25BRD52-4K7"
 			(at 118.11 106.68 0)
 			(effects
 				(font
@@ -4436,7 +4375,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.de/datasheet/2/418/7/ENG_CD_826629_AC1-2068659.pdf"
 			(at 81.28 33.02 0)
 			(effects
 				(font
@@ -4464,15 +4403,6 @@
 			)
 		)
 		(property "Mfr. No." "826926-4"
-			(at 81.28 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "571-826926-4"
 			(at 81.28 33.02 0)
 			(effects
 				(font

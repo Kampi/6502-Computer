@@ -13864,15 +13864,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" "595-SN74HC138AN"
-			(at 130.81 254 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Distributor" "Mouser"
 			(at 130.81 254 0)
 			(effects
@@ -14151,9 +14142,10 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005da77f99")
 		(property "Reference" "C501"
-			(at 137.541 231.2416 0)
+			(at 138.43 231.1399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14162,7 +14154,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 137.541 233.553 0)
+			(at 138.43 233.6799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14179,7 +14171,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fa150_en.pdf?ref_disty=mouser"
 			(at 134.62 232.41 0)
 			(effects
 				(font
@@ -14207,15 +14199,6 @@
 			)
 		)
 		(property "Mfr. No." "FA18X8R1H104KRU06"
-			(at 134.62 232.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "810-FA18X8R1H104KRU6"
 			(at 134.62 232.41 0)
 			(effects
 				(font
@@ -14267,7 +14250,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005da8ce2c")
 		(property "Reference" "IC505"
-			(at 245.11 36.83 0)
+			(at 246.38 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14319,15 +14302,6 @@
 			)
 		)
 		(property "Mfr. No." "W65C22S6TPG-14"
-			(at 256.54 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "955-W65C22S6TPG-14"
 			(at 256.54 67.31 0)
 			(effects
 				(font
@@ -14593,7 +14567,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fa150_en.pdf?ref_disty=mouser"
 			(at 260.35 26.67 0)
 			(effects
 				(font
@@ -14621,15 +14595,6 @@
 			)
 		)
 		(property "Mfr. No." "FA18X8R1H104KRU06"
-			(at 260.35 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "810-FA18X8R1H104KRU6"
 			(at 260.35 26.67 0)
 			(effects
 				(font
@@ -14939,15 +14904,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" "595-SN74HC00AN"
-			(at 269.24 259.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Distributor" "Mouser"
 			(at 269.24 259.08 0)
 			(effects
@@ -15025,9 +14981,10 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005dd67e33")
 		(property "Reference" "C505"
-			(at 287.401 257.9116 0)
+			(at 288.29 257.8099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15036,7 +14993,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 287.401 260.223 0)
+			(at 288.29 260.3499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15053,7 +15010,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fa150_en.pdf?ref_disty=mouser"
 			(at 284.48 259.08 0)
 			(effects
 				(font
@@ -15081,15 +15038,6 @@
 			)
 		)
 		(property "Mfr. No." "FA18X8R1H104KRU06"
-			(at 284.48 259.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "810-FA18X8R1H104KRU6"
 			(at 284.48 259.08 0)
 			(effects
 				(font
@@ -15396,15 +15344,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" "595-SN74HC00AN"
-			(at 138.43 194.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Distributor" "Mouser"
 			(at 138.43 194.31 0)
 			(effects
@@ -15544,15 +15483,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" "595-SN74HC00AN"
-			(at 215.9 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Distributor" "Mouser"
 			(at 215.9 191.77 0)
 			(effects
@@ -15684,15 +15614,6 @@
 			)
 		)
 		(property "Mfr. No." "SN74HC00AN"
-			(at 138.43 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "595-SN74HC00AN"
 			(at 138.43 208.28 0)
 			(effects
 				(font
@@ -16000,7 +15921,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.de/datasheet/2/140/EG1271-3452583.pdf"
 			(at 118.11 36.83 0)
 			(effects
 				(font
@@ -16028,15 +15949,6 @@
 			)
 		)
 		(property "Mfr. No." "EG1271"
-			(at 118.11 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "612-EG1271"
 			(at 118.11 36.83 0)
 			(effects
 				(font
@@ -16311,7 +16223,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.de/datasheet/2/18/1/amph_s_a0001292070_1-2260670.pdf"
 			(at 17.78 22.86 0)
 			(effects
 				(font
@@ -16339,15 +16251,6 @@
 			)
 		)
 		(property "Mfr. No." "901-144"
-			(at 17.78 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "523-901-144"
 			(at 17.78 22.86 0)
 			(effects
 				(font
@@ -16408,7 +16311,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ebeaf78")
 		(property "Reference" "IC502"
-			(at 121.92 105.41 0)
+			(at 123.19 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16460,15 +16363,6 @@
 			)
 		)
 		(property "Mfr. No." "W65C02S6TPG-14"
-			(at 132.08 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "955-W65C02S6TPG-14"
 			(at 132.08 135.89 0)
 			(effects
 				(font
@@ -16643,7 +16537,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ebeaf7e")
 		(property "Reference" "IC507"
-			(at 328.93 48.26 0)
+			(at 330.2 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16860,7 +16754,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ebeaf84")
 		(property "Reference" "IC506"
-			(at 250.19 123.19 0)
+			(at 251.46 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16912,15 +16806,6 @@
 			)
 		)
 		(property "Mfr. No." "AS6C62256-55PCN"
-			(at 262.89 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "913-AS6C62256-55PCN"
 			(at 262.89 144.78 0)
 			(effects
 				(font
@@ -17050,7 +16935,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ebeafab")
 		(property "Reference" "IC504"
-			(at 196.85 113.284 0)
+			(at 198.12 113.284 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17102,15 +16987,6 @@
 			)
 		)
 		(property "Mfr. No." "AT28C256-15PU"
-			(at 203.2 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "556-AT28C25615PU"
 			(at 203.2 139.7 0)
 			(effects
 				(font
@@ -17303,9 +17179,10 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005ebeafee")
 		(property "Reference" "C502"
-			(at 138.811 94.0816 0)
+			(at 139.7 93.9799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17314,7 +17191,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 138.811 96.393 0)
+			(at 139.7 96.5199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17331,7 +17208,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fa150_en.pdf?ref_disty=mouser"
 			(at 135.89 95.25 0)
 			(effects
 				(font
@@ -17359,15 +17236,6 @@
 			)
 		)
 		(property "Mfr. No." "FA18X8R1H104KRU06"
-			(at 135.89 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "810-FA18X8R1H104KRU6"
 			(at 135.89 95.25 0)
 			(effects
 				(font
@@ -17872,9 +17740,10 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005ebeb046")
 		(property "Reference" "C504"
-			(at 269.621 111.8616 0)
+			(at 270.51 111.7599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17883,7 +17752,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 269.621 114.173 0)
+			(at 270.51 114.2999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17900,7 +17769,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fa150_en.pdf?ref_disty=mouser"
 			(at 266.7 113.03 0)
 			(effects
 				(font
@@ -17928,15 +17797,6 @@
 			)
 		)
 		(property "Mfr. No." "FA18X8R1H104KRU06"
-			(at 266.7 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "810-FA18X8R1H104KRU6"
 			(at 266.7 113.03 0)
 			(effects
 				(font
@@ -18116,9 +17976,10 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005ebeb06d")
 		(property "Reference" "C506"
-			(at 347.091 36.9316 0)
+			(at 347.98 36.8299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18127,7 +17988,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 347.091 39.243 0)
+			(at 347.98 39.3699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18144,7 +18005,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fa150_en.pdf?ref_disty=mouser"
 			(at 344.17 38.1 0)
 			(effects
 				(font
@@ -18172,15 +18033,6 @@
 			)
 		)
 		(property "Mfr. No." "FA18X8R1H104KRU06"
-			(at 344.17 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "810-FA18X8R1H104KRU6"
 			(at 344.17 38.1 0)
 			(effects
 				(font
@@ -18322,7 +18174,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.de/datasheet/2/447/YAGEO_MFP_datasheet_2024v3-3447153.pdf"
 			(at 156.21 124.46 0)
 			(effects
 				(font
@@ -18350,15 +18202,6 @@
 			)
 		)
 		(property "Mfr. No." "MFP-25BRD52-10K"
-			(at 156.21 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "603-MFP-25BRD52-10K"
 			(at 156.21 124.46 0)
 			(effects
 				(font
@@ -18603,15 +18446,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" "520-TCF100-X"
-			(at 69.85 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Distributor" "Mouser"
 			(at 69.85 36.83 0)
 			(effects
@@ -18800,7 +18634,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f08eff6")
 		(property "Reference" "IC508"
-			(at 330.2 151.13 0)
+			(at 331.47 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18852,15 +18686,6 @@
 			)
 		)
 		(property "Mfr. No." "W65C51N6TPG-14"
-			(at 340.36 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "955-W65C51N6TPG-14"
 			(at 340.36 179.07 0)
 			(effects
 				(font
@@ -19062,9 +18887,10 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005f0a0d7c")
 		(property "Reference" "C507"
-			(at 347.091 139.8016 0)
+			(at 347.98 139.6999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19073,7 +18899,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 347.091 142.113 0)
+			(at 347.98 142.2399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19090,7 +18916,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fa150_en.pdf?ref_disty=mouser"
 			(at 344.17 140.97 0)
 			(effects
 				(font
@@ -19118,15 +18944,6 @@
 			)
 		)
 		(property "Mfr. No." "FA18X8R1H104KRU06"
-			(at 344.17 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "810-FA18X8R1H104KRU6"
 			(at 344.17 140.97 0)
 			(effects
 				(font
@@ -19335,7 +19152,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.de/datasheet/2/96/008-0308-0-1160929.pdf"
 			(at 375.92 156.21 0)
 			(effects
 				(font
@@ -19363,15 +19180,6 @@
 			)
 		)
 		(property "Mfr. No." "MP018B"
-			(at 375.92 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "774-MP018B"
 			(at 375.92 156.21 0)
 			(effects
 				(font
@@ -19450,7 +19258,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.de/datasheet/2/447/KEM_C1054_HIVOLT_GOLDMAX_300_C0G-3316440.pdf"
 			(at 393.7 156.21 0)
 			(effects
 				(font
@@ -19478,15 +19286,6 @@
 			)
 		)
 		(property "Mfr. No." "C315C300JCG5TA"
-			(at 393.7 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "80-C315C300JCG5TA"
 			(at 393.7 156.21 0)
 			(effects
 				(font
@@ -19630,7 +19429,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.de/datasheet/2/447/Yageo_LR_MFP_1-1947926.pdf"
 			(at 369.57 156.21 0)
 			(effects
 				(font
@@ -19658,15 +19457,6 @@
 			)
 		)
 		(property "Mfr. No." "MFR-25FRE52-1M"
-			(at 369.57 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "603-MFR-25FRE52-1M"
 			(at 369.57 156.21 0)
 			(effects
 				(font

@@ -2096,7 +2096,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.de/datasheet/2/447/YAGEO_MFP_datasheet_2024v3-3447153.pdf"
 			(at 22.86 22.86 0)
 			(effects
 				(font
@@ -2124,15 +2124,6 @@
 			)
 		)
 		(property "Mfr. No." "MFP-25BRD52-10K"
-			(at 22.86 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "603-MFP-25BRD52-10K"
 			(at 22.86 22.86 0)
 			(effects
 				(font
@@ -2211,7 +2202,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.de/datasheet/2/418/7/ENG_CD_1825910_C10-2021098.pdf"
 			(at 17.78 40.64 0)
 			(effects
 				(font
@@ -2239,15 +2230,6 @@
 			)
 		)
 		(property "Mfr. No." "2-1825910-7"
-			(at 22.86 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "506-2-1825910-7"
 			(at 22.86 40.64 0)
 			(effects
 				(font
@@ -2455,7 +2437,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fa150_en.pdf?ref_disty=mouser"
 			(at 33.02 40.64 0)
 			(effects
 				(font
@@ -2483,15 +2465,6 @@
 			)
 		)
 		(property "Mfr. No." "FA18X8R1H104KRU06"
-			(at 33.02 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "810-FA18X8R1H104KRU6"
 			(at 33.02 40.64 0)
 			(effects
 				(font
@@ -2865,15 +2838,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" "652-4609M-1LF-4.7K "
-			(at 139.7 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Distributor" "Mouser"
 			(at 139.7 62.23 0)
 			(effects
@@ -3063,15 +3027,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" "595-SN74HC148N"
-			(at 161.29 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Distributor" "Mouser"
 			(at 161.29 85.09 0)
 			(effects
@@ -3191,7 +3146,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.de/datasheet/2/447/Yageo_LR_MFP_1-1947926.pdf"
 			(at 27.94 31.75 0)
 			(effects
 				(font
@@ -3219,15 +3174,6 @@
 			)
 		)
 		(property "Mfr. No." "MFP-25BRD52-1K"
-			(at 27.94 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "603-MFP-25BRD52-1K"
 			(at 27.94 31.75 0)
 			(effects
 				(font
